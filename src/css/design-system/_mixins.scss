@@ -1,0 +1,129 @@
+
+ 
+@mixin flex-box($flex-direction , $justify-content , $align-items , $flex-wrap , $gap){
+    display: flex;
+    @if($flex-direction!="na"){
+        flex-direction: $flex-direction;
+    }
+    @if($justify-content!="na"){
+        justify-content: $justify-content;
+    }
+    @if($align-items!="na"){
+        align-items: $align-items;
+    }
+    @if($flex-wrap!="na"){
+        flex-wrap: $flex-wrap;
+    }
+    @if($gap!="na"){
+        gap: #{$gap}px;
+    }
+}
+ 
+@mixin dimensions($height, $width) {
+    @if $width != "na" {
+        @if type-of($width) == number and unitless($width) {
+            width: #{$width}px;
+        } @else {
+            width: #{$width};
+        }
+    }
+ 
+    @if $height != "na" {
+        @if type-of($height) == number and unitless($height) {
+            height: #{$height}px;
+        } @else {
+            height: #{$height};
+        }
+    }
+}
+ 
+@mixin screen-size($min-size , $max-size){
+    @media screen and (min-width: #{$min-size}px) and (max-width: #{$max-size}px) {
+        @content;
+    }
+}
+ 
+@mixin max-width($max-size){
+    @media screen and (max-width: #{$max-size}px) {
+        @content;
+    }
+}
+
+@mixin min-width($min-size){
+    @media screen and (min-width: #{$min-size}px) {
+        @content;
+    }
+}
+ 
+@mixin typography($font-size , $line-height , $font-weight , $color){
+    @if $font-size != "na" {
+        font-size: #{$font-size}px;
+    }
+    @if $line-height!="na"{
+        line-height: #{$line-height}px;
+    }
+    @if $font-weight!="na"{
+        font-weight: $font-weight;
+    }
+    @if $color!="na" {
+        color: $color;
+    }
+}
+ 
+@mixin btn($height , $horizontal-padding , $border-radius , $background-color){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: #{$height}px;
+    padding:0 #{$horizontal-padding}px;
+    background-color: $background-color;
+    border: none;
+    box-sizing: border-box;
+    @if ($border-radius != "na"){
+        border-radius: #{$border-radius}px;
+    }
+}
+ 
+@mixin absolute($top , $right , $bottom , $left){
+    position: absolute;
+    @if $top != "na" and str-index(#{$top}, '%') == null {
+        top: #{$top}px;
+    }
+    @else if $top != "na" {
+        top: $top;
+    }
+ 
+    @if $right != "na" and str-index(#{$right}, '%') == null {
+        right: #{$right}px;
+    }
+    @else if $right != "na" {
+        right: $right;
+    }
+ 
+    @if $bottom != "na" and str-index(#{$bottom}, '%') == null {
+        bottom: #{$bottom}px;
+    }
+    @else if $bottom != "na" {
+        bottom: $bottom;
+    }
+ 
+    @if $left != "na" and str-index(#{$left}, '%') == null {
+        left: #{$left}px;
+    }
+    @else if $left != "na" {
+        left: $left;
+    }
+}
+ 
+@mixin navbar($gap){
+    display: flex;
+    list-style-type: none;
+    @include flex-box(row, "na", center, "na", $gap);
+}
+ 
+@mixin nav-items($font-size , $line-height , $font-weight , $color){
+    @include typography($font-size, $line-height, $font-weight, $color);
+    cursor: pointer;
+}
+

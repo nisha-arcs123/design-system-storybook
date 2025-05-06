@@ -1,0 +1,261 @@
+@use "sass:math";
+@use './mixins.scss' as *;
+ 
+
+.m-auto{
+  margin-right: auto;
+  margin-left: auto;
+}
+.my-auto{
+  margin: 0 auto;
+}
+
+.w-28{
+  width: 28px;
+}
+
+.w-32{
+  width: 32px;
+}
+
+.w-38{
+  width: 38px;
+}
+
+.w-42{
+  width: 42px;
+}
+
+.w-48{
+  width: 48px;
+}
+.w-54{
+  width: 54px;
+}
+
+$spacing-properties: (
+  m: margin,
+  mt: margin-top,
+  mr: margin-right,
+  mb: margin-bottom,
+  ml: margin-left,
+  p: padding,
+  pt: padding-top,
+  pr: padding-right,
+  pb: padding-bottom,
+  pl: padding-left
+);
+
+$spacing-values: 0, 1, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 75, 80, 84, 90, 96, 100;
+
+@each $class, $property in $spacing-properties {
+  @each $value in $spacing-values {
+    .#{$class}-#{$value} {
+      #{$property}: #{$value}px !important;
+    }
+  }
+}
+
+
+/*************border-radius***********/
+
+$border-radius-small: 4px !important;
+$border-radius-medium: 8px !important;
+$border-radius-large: 16px !important;
+
+
+/************************* border-radius *************************/
+
+.br-4{
+  border-radius: 4px !important;
+}
+ 
+.br-8{
+  border-radius: 8px !important;
+}
+.br-16{
+  border-radius: 16px !important;
+}
+
+/********** box shadow *************/
+
+$box-shadow-small: 0px 3px 8px 0 #00000033 !important;
+$box-shadow-medium: 0px 6px 20px 0 #0000004D !important;
+$box-shadow-large: 0px 15px 50px 0 #0000004D !important;
+
+.bss {
+  box-shadow: $box-shadow-small !important;
+}
+
+.bsm {
+  box-shadow: $box-shadow-medium !important;
+}
+
+.bsl {
+  box-shadow: $box-shadow-large !important;
+}
+
+
+/************************** displays ***************************/
+ 
+.d-n{
+  display: none !important;
+}
+ 
+.d-i{
+  display: inline !important;
+}
+ 
+.d-b{
+  display: block !important;
+}
+ 
+.d-ib{
+  display: inline-block !important;
+}
+
+
+ 
+/***********************text alignment******************/
+ 
+.tx-center{
+  text-align: center !important;
+}
+ 
+.tx-end{
+  text-align: end !important;
+}
+ 
+.tx-left{
+  text-align: left !important;
+}
+ 
+.tx-start{
+  text-align: start !important;
+}
+ 
+.full-vh{
+  height: 100vh !important;
+}
+ 
+.h-auto{
+  height: auto !important;
+}
+ 
+.bx-border-box{
+  box-sizing: border-box !important;
+}
+ 
+.h-full{
+  height: 100% !important;
+}
+ 
+.w-full{
+  width: 100% !important;
+}
+ 
+.w-fc{
+  width: fit-content !important;
+}
+ 
+.cp{
+  cursor: pointer !important;
+}
+ 
+.tx-dec-none{
+  text-decoration: none !important;
+}
+ 
+
+
+/*********************** position-classes *********************/
+ 
+.p-rel {
+  position: relative !important;
+}
+ 
+.p-abs {
+  position: absolute !important;
+}
+ 
+.p-st {
+  position: static !important;
+}
+ 
+.p-fx {
+  position: fixed !important;
+}
+ 
+.p-sty {
+  position: sticky !important;
+}
+ 
+
+ 
+/*********************** z-index-classes ***********************/
+ 
+@for $z-index from 0 through 9 {
+  .z-#{$z-index} {
+    z-index: #{$z-index};
+  }
+}
+
+
+/************************ transitions ***********************/
+ 
+@for $transition-time from 1 through 9 {
+  .t-#{$transition-time} {
+    transition: all #{(0.1) * $transition-time}s ease;
+  }
+}
+ 
+
+/************************ overflows ****************************/
+
+$overflow-dimensions: (
+  o: overflow,
+  ox: overflow-x,
+  oy: overflow-y
+);
+
+$overflow-properties: (
+  a: auto,
+  h: hidden,
+  s: scroll,
+  v: visible
+);
+
+@each $dim-short, $dim-full in $overflow-dimensions {
+  @each $prop-short, $prop-full in $overflow-properties {
+    .#{$dim-short}-#{$prop-short} {
+      #{$dim-full}: #{$prop-full} !important;
+    }
+  }
+}
+
+/************************** breakpoints **************************/
+ 
+$breakpoints: 1720px, 1440px, 1200px, 992px, 768px , 576px;
+ 
+.wds{
+  @include min-width(1721){
+    width: 1650px;
+  }
+  @include screen-size(1440,1720){
+    width: 1350px;
+  }
+  @include screen-size(1200,1440){
+    width: 1050px;
+  }
+  @include screen-size(992,1200){
+    width: 940px;
+  }
+  @include screen-size(700,992){
+    width: 700px;
+  }
+  @include max-width(768){
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
+  }
+}

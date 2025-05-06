@@ -1,0 +1,145 @@
+// Font families
+@use './colors' as *;
+$font-family: "Figtree", sans-serif;
+
+// Font weights
+
+// variables
+$font-light: 300 !important;
+$font-regular: 400 !important;
+$font-medium: 500 !important;
+$font-bold: 700 !important;
+$font-extra-bold: 800 !important;
+
+
+// classess
+$font-weight:(
+  "300":300,
+  "400":400,
+  "500":500,
+  "700":700,
+  "800":800
+);
+
+@each $key, $value in $font-weight{
+  .fw-#{$key}{
+    font-weight: $value;
+  }
+}
+
+
+
+
+
+
+// Font sizes
+$fonts: (
+  "12": 12px,
+  "13": 13px,
+  "14": 14px,
+  "15": 15px,
+  "16": 16px,
+  "18": 18px,
+  "20": 20px,
+  "22": 22px,
+  "24": 24px,
+  "28": 28px,
+  "32": 32px,
+  "34": 34px,
+  "36": 36px,
+  "42": 42px,
+  "50": 50px,
+);
+
+@each $key, $value in $fonts {
+  .fs-#{$key} {
+    font-size: $value !important;
+  }
+}
+
+
+
+
+/**********font size**********/
+
+$fs-50: 50px !important;
+$fs-42: 42px !important;
+$fs-36: 36px !important;
+$fs-34: 34px !important;
+$fs-32: 32px !important;
+$fs-28: 28px !important;
+$fs-24: 24px !important;
+$fs-22: 22px !important;
+$fs-20: 20px !important;
+$fs-18: 18px !important;
+$fs-16: 16px !important;
+$fs-15: 15px !important;
+$fs-14: 14px !important;
+$fs-13: 13px !important;
+$fs-12: 12px !important;
+
+
+h1, .primary-heading{
+  font-size: $fs-28;
+  color: var(--primary_text_color);
+  font-family: $font-extra-bold;
+}
+
+h2, .secondary-heading{
+  font-size: $fs-20 !important;
+  color: var(--primary_text_color);
+  font-family: $font-bold;
+}
+
+h3, .tertiary-heading{
+  font-size: $fs-16 !important;
+  color: var(--primary_text_color);
+  font-family: $font-light;
+}
+
+h4, .fourth-heading{
+  font-size: $fs-16 !important;
+  color: var(--primary_text_color);
+  font-family: $font-bold;
+}
+
+h5, .subtitle-1{
+  font-size: $fs-15 !important;
+  color: var(--primary_text_color);
+  font-family: $font-medium;
+}
+
+h6, .subtitle-2{
+  font-size: $fs-13 !important;
+  color: var(--primary_text_color);
+  font-family: $font-medium;
+}
+
+p, .normal-text, td{
+  font-size: $fs-13;
+  color: var(--secondary_text_color);
+  font-family: $font-regular;
+}
+
+a, .link-text{
+  font-size: $fs-13;
+  color: var(--link_color);
+  font-family: $font-medium;
+}
+
+label, .label, th{
+  font-size: $fs-13;
+  color: var(--primary_text_color);
+  font-family: $font-medium;
+}
+
+.caption{
+  font-size: $fs-12;
+  color: var(--secondary_text_color);
+  font-family: $font-regular;
+}
+.caption-medium{
+  font-size: $fs-12;
+  color: var(--secondary_text_color);
+  font-family: $font-medium;
+}

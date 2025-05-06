@@ -1,0 +1,171 @@
+
+<div [ngSwitch]="variant">
+  <div *ngSwitchCase="'button-kinds'">
+    <div class="button-outer-container">
+      <div class="button-heading">
+        <h1>Button</h1>
+        <div class="line"></div>
+        <h2>{{heading}}</h2>
+        <p>
+          There can be more than one button in a screen, but to create the
+          hierarchy of actions we need to use button kinds.
+        </p>
+      </div>
+      <div class="button-container">
+        <button class="d-btn d-btn-primary md">Primary</button>
+        <button class="d-btn d-btn-secondary md">Secondary</button>
+        <button class="d-btn d-btn-tertiary md">Tertiary</button>
+        <button class="d-btn d-btn-link md">Link</button>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'primary-button-size'">
+    <div class="button-outer-container">
+      <div class="button-heading">
+        <h1>Button</h1>
+        <div class="line"></div>
+        <h2>{{heading}}</h2>
+        <p>
+          There can be more than one button in a screen, but to create the
+          hierarchy of actions we need to use button kinds.
+        </p>
+      </div>
+      <div class="button-container">
+        <button class="d-btn d-btn-primary vs">{{ label }}</button>
+        <button class="d-btn d-btn-primary sm">{{ label }}</button>
+        <button class="d-btn d-btn-primary md">{{ label }}</button>
+        <button class="d-btn d-btn-primary lg">{{ label }}</button>
+        <button class="d-btn d-btn-primary xl">{{ label }}</button>
+        <button class="d-btn d-btn-primary xxl">{{ label }}</button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'secondary-button-size'">
+    <div class="button-outer-container">
+      <div class="button-heading">
+        <h1>Button</h1>
+        <div class="line"></div>
+        <h2>{{heading}}</h2>
+        <p>
+          There can be more than one button in a screen, but to create the
+          hierarchy of actions we need to use button kinds.
+        </p>
+      </div>
+      <div class="button-container">
+        <button class="d-btn d-btn-secondary vs">{{ label }}</button>
+        <button class="d-btn d-btn-secondary sm">{{ label }}</button>
+        <button class="d-btn d-btn-secondary md">{{ label }}</button>
+        <button class="d-btn d-btn-secondary lg">{{ label }}</button>
+        <button class="d-btn d-btn-secondary xl">{{ label }}</button>
+        <button class="d-btn d-btn-secondary xxl">{{ label }}</button>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'tertiary-button-size'">
+    <div class="button-outer-container">
+      <div class="button-heading">
+        <h1>Button</h1>
+        <div class="line"></div>
+        <h2>{{heading}}</h2>
+        <p>
+          There can be more than one button in a screen, but to create the
+          hierarchy of actions we need to use button kinds.
+        </p>
+      </div>
+      <div class="button-container">
+        <button class="d-btn d-btn-tertiary vs">{{ label }}</button>
+        <button class="d-btn d-btn-tertiary sm">{{ label }}</button>
+        <button class="d-btn d-btn-tertiary md">{{ label }}</button>
+        <button class="d-btn d-btn-tertiary lg">{{ label }}</button>
+        <button class="d-btn d-btn-tertiary xl">{{ label }}</button>
+        <button class="d-btn d-btn-tertiary xxl">{{ label }}</button>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'link-button-size'">
+    <div class="button-outer-container">
+      <div class="button-heading">
+        <h1>Button</h1>
+        <div class="line"></div>
+        <h2>{{heading}}</h2>
+        <p>
+          There can be more than one button in a screen, but to create the
+          hierarchy of actions we need to use button kinds.
+        </p>
+      </div>
+      <div class="button-container">
+        <button class="d-btn d-btn-link vs">{{ label }}</button>
+        <button class="d-btn d-btn-link sm">{{ label }}</button>
+        <button class="d-btn d-btn-link md">{{ label }}</button>
+        <button class="d-btn d-btn-link lg">{{ label }}</button>
+        <button class="d-btn d-btn-link xl">{{ label }}</button>
+        <button class="d-btn d-btn-link xxl">{{ label }}</button>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'button-loader'">
+    <div class="button-outer-container">
+      <div class="button-heading">
+        <h1>Button</h1>
+        <div class="line"></div>
+        <h2>{{heading}}</h2>
+        <p>
+          There can be more than one button in a screen, but to create the
+          hierarchy of actions we need to use button kinds.
+        </p>
+      </div>
+      <div class="button-container">
+        <button class="d-btn loading-button loader-vs">
+        </button>
+        <button class="d-btn loading-button loader-sm">
+        </button>
+        <button class="d-btn loading-button loader-md">
+        </button>
+        <button class="d-btn loading-button loader-lg">
+        </button>
+        <button class="d-btn loading-button loader-xl">
+        </button>
+        <button class="d-btn loading-button loader-xxl ">
+        </button>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'disabled'">
+    <div class="button-outer-container">
+      <div class="button-heading">
+        <h1>Button</h1>
+        <div class="line"></div>
+        <h2>{{heading}}</h2>
+        <p>
+          There can be more than one button in a screen, but to create the
+          hierarchy of actions we need to use button kinds.
+        </p>
+      </div>
+      <div class="button-container">
+        <button class="d-btn d-btn-primary-disable md">{{ label }}</button>
+        <button class="d-btn d-btn-secondary-disable md">{{ label }}</button>
+        <button class="d-btn d-btn-tertiary-disable md">{{ label }}</button>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'error-and-success'">
+    <div class="button-outer-container">
+      <div class="button-heading">
+        <h1>Button</h1>
+        <div class="line"></div>
+        <h2>{{heading}}</h2>
+        <p>
+          There can be more than one button in a screen, but to create the
+          hierarchy of actions we need to use button kinds.
+        </p>
+      </div>
+      <div class="button-container">
+        <button class="d-btn d-btn-success md">Success</button>
+        <button class="d-btn d-btn-danger md">Danger</button>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchDefault>Default fallback if no match</div>
+</div>
