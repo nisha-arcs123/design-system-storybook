@@ -31,7 +31,7 @@ export const ButtonKinds: Story = {
       source: {
         code: `
 <div class="button-outer-container">
-      <div class="button-heading">
+      <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
         <h2>Buttons Kinds</h2>
@@ -68,7 +68,7 @@ export const PrimaryButtonSize: Story = {
           source: {
             code: `
   <div class="button-outer-container">
-      <div class="button-heading">
+      <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
         <h2>Buttons Kinds</h2>
@@ -104,7 +104,7 @@ export const SecondaryButtonSize: Story = {
       source: {
         code: `
    <div class="button-outer-container">
-      <div class="button-heading">
+      <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
         <h2>Buttons Kinds</h2>
@@ -139,7 +139,7 @@ export const TertiaryButtonSize: Story = {
       source: {
         code: `
    <div class="button-outer-container">
-      <div class="button-heading">
+      <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
         <h2>Buttons Kinds</h2>
@@ -175,7 +175,7 @@ export const LinkButtonSize: Story = {
           source: {
             code: `
        <div class="button-outer-container">
-          <div class="button-heading">
+          <div class="heading">
             <h1>Buttons</h1>
             <div class="line"></div>
             <h2>Buttons Kinds</h2>
@@ -212,7 +212,7 @@ export const LinkButtonSize: Story = {
           source: {
             code: `
         <div class="button-outer-container">
-      <div class="button-heading">
+      <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
         <h2>Buttons Kinds</h2>
@@ -260,7 +260,7 @@ export const LinkButtonSize: Story = {
           source: {
             code: `
             <div class="button-outer-container">
-      <div class="button-heading">
+      <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
         <h2>Buttons Kinds</h2>
@@ -293,7 +293,7 @@ export const LinkButtonSize: Story = {
           source: {
             code: `
             <div class="button-outer-container">
-      <div class="button-heading">
+      <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
         <h2>Buttons Kinds</h2>

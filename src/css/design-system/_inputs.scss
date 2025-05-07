@@ -10,21 +10,22 @@
   font-size: 13px;
   font-weight: 500;
   color: #676879;
-    padding: 0 8px;
+  padding: 0 8px;
+
+
   &--outer-circle-border {
     border: 1px solid #c3c6d4;
     border-radius: 100px;
   }
-  &--outer-rectangle-border{
+  &--outer-rectangle-border {
     border: 1px solid #c3c6d4;
     border-radius: 4px;
   }
+
   input[type="checkbox"] {
     display: none; // hide default checkbox
   }
-  input[type="radio"] {
-    display: none; // hide default checkbox
-  }
+
   .checkmark {
     border: 1px solid #c3c6d4;
     border-radius: 4px;
@@ -37,19 +38,9 @@
     }
   }
 
-  // inprocess
-  .radiomark{
-    display: inline-block;
-    border: 2px solid #666;
-    border-radius: 50%;
-    background-color: white;
-    position: relative;
-    transition: all 0.2s ease;
-    margin-right: 10px;
-  }
   input:checked + .checkmark {
     background-color: #007bff;
-    border-color: #007bff;
+    border-color:2px solid #007bff;
   }
 
   input:checked + .checkmark::after {
@@ -105,30 +96,190 @@
   }
 }
 
+.building-container-checkbox {
+  border: 1px solid #c3c6d4;
+  border-radius: 4px;
+  position: relative;
+  padding: 28px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #676879;
+  width: 274px;
+  span {
+    font-size: 44px;
+  }
+  &:hover {
+    background-color: #cce5ff;
+    border: 1px soldi #cce5ff;
+  }
 
-.building-container-checkbox{
-    border: 1px solid #C3C6D4;
-    border-radius: 4px;
+  label {
+    position: absolute;
+    top: 9px;
+    right: 9px;
+  }
+}
+
+.custome-radio {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #676879;
+  padding: 0 8px;
+
+  &--outer-circle-border {
+    border: 1px solid #c3c6d4;
+    border-radius: 100px;
+  }
+
+  input[type="radio"] {
+    display: none; // hide default checkbox
+  }
+
+  // inprocess
+  .radiomark {
+    display: inline-block;
+    border: 1px solid #c3c6d4;
+    border-radius: 50%;
+    background-color: #ffffff;
     position: relative;
-    padding: 28px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    font-size: 14px;
-    font-weight: 600;
-    color: #676879;
-    width: 274px;
-    span{
-        font-size: 44px;
+    transition: all 0.2s ease;
+    margin-right: 10px;
+  }
+
+  input:checked + .radiomark {
+    background-color: #ffffff;
+    border-color: #007bff;
+  }
+
+  input:checked + .radiomark::after {
+    content: "";
+    position: absolute;
+    // left: 25%;
+    // top: 2%;
+    // width: 40%;
+    // height: 70%;
+    // border: 2px solid white;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #007bff;
+    // border-width: 0 2px 2px 0;
+    // transform: rotate(45deg);
+  }
+
+  &--vs {
+    height: 28px;
+    .radiomark {
+      margin-right: 4px;
+      @include radio-size(16px);
     }
-    &:hover{
-        background-color: #CCE5FF;
-        border: 1px soldi #CCE5FF;
+  }
+  &--sm {
+    height: 28px;
+    .radiomark {
+      margin-right: 4px;
+      @include radio-size(18px);
+    }
+  }
+
+  &--md {
+    height: 32px;
+    .radiomark {
+      margin-right: 8px;
+      @include radio-size(20px);
+    }
+  }
+
+  &--lg {
+    height: 32px;
+    .radiomark {
+      margin-right: 8px;
+      @include radio-size(22px);
+    }
+  }
+
+  &--xl {
+    height: 38px;
+    font-size: 14px;
+    .radiomark {
+      margin-right: 8px;
+      @include radio-size(24px);
+    }
+  }
+}
+
+.switchBox {
+  font-size: 13px;
+  font-weight: 500;
+  color: #676879;
+
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 14px;
+    input {
+      display: none;
     }
 
-    label{
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #a3adba;
+      transition: 0.4s;
+      border-radius: 100px;
+
+      &::before {
         position: absolute;
-        top: 9px;
-        right: 9px;
+        content: "";
+        height: 10px;
+        width: 10px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 100px;
+      }
     }
+
+    input:checked + .slider {
+      background-color: #2196f3;
+    }
+
+    input:checked + .slider::before {
+      transform: translateX(10px);
+    }
+  }
+}
+
+.datetime{
+  padding: 12px;
+  border: 1px solid #c3c6d4;
+  border-radius: 4px;
+
+  &:focus{
+    outline: none;
+    border: 1px solid #2196f3;
+  }
+}
+
+.flatpickr-calendar{
+  // font-size: 14px;
+  color: #202020;
+  // font-weight: 400;
 }

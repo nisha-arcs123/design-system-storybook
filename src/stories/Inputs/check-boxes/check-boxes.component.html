@@ -1,29 +1,16 @@
-import type { Meta, StoryObj } from '@storybook/angular';
-import { InputsComponent } from './inputs.component';
-
-const meta: Meta<InputsComponent> = {
-  title: 'Inputs',
-  component: InputsComponent,
-  tags: ['autodocs'],
-  argTypes: {
-    inputClass: { control: 'text' }, // control added for story UI
-  },
-};
-
-export default meta;
-type Story = StoryObj<InputsComponent>;
-
-export const Checkbox: Story = {
-  args: {
-    label: 'Type Somthing....',
-    inputClass: 'checkbox',
-    heading:'CheckBox',
-  },
-  parameters: {
-    docs: {
-      source: {
-        code: `
-     <div class="button-container">
+<div [ngSwitch]="inputClass">
+  <div *ngSwitchCase="'simple-checkbox'" class="simple-input">
+    <div class="button-outer-container">
+      <div class="heading">
+        <h1>Check Box</h1>
+        <div class="line"></div>
+        <h2>{{ heading }}</h2>
+        <p>
+          Checkboxes allow users to select one or more items from a set of
+          options.
+        </p>
+      </div>
+      <div class="button-container">
         <label class="custom-checkbox custom-checkbox--vs">
           <input type="checkbox" />
           <span class="checkmark"></span>
@@ -45,7 +32,20 @@ export const Checkbox: Story = {
           <span class="checkmark"></span>
         </label>
       </div>
+    </div>
+  </div>
 
+  <div *ngSwitchCase="'rounded-checkbox'" class="simple-input">
+    <div class="button-outer-container">
+      <div class="heading">
+        <h1>Check Box</h1>
+        <div class="line"></div>
+        <h2>{{ heading }}</h2>
+        <p>
+          Checkboxes allow users to select one or more items from a set of
+          options.
+        </p>
+      </div>
       <div class="button-container">
         <label
           class="custom-checkbox custom-checkbox--vs custom-checkbox--outer-circle-border"
@@ -83,7 +83,20 @@ export const Checkbox: Story = {
           Add
         </label>
       </div>
+    </div>
+  </div>
 
+  <div *ngSwitchCase="'square-checkbox'" class="simple-input">
+    <div class="button-outer-container">
+      <div class="heading">
+        <h1>Check Box</h1>
+        <div class="line"></div>
+        <h2>{{ heading }}</h2>
+        <p>
+          Checkboxes allow users to select one or more items from a set of
+          options.
+        </p>
+      </div>
       <div class="button-container">
         <label
           class="custom-checkbox custom-checkbox--vs custom-checkbox--outer-rectangle-border"
@@ -121,7 +134,20 @@ export const Checkbox: Story = {
           Add
         </label>
       </div>
+    </div>
+  </div>
 
+  <div *ngSwitchCase="'building-box'" class="simple-input">
+    <div class="button-outer-container">
+      <div class="heading">
+        <h1>Check Box</h1>
+        <div class="line"></div>
+        <h2>{{ heading }}</h2>
+        <p>
+          Checkboxes allow users to select one or more items from a set of
+          options.
+        </p>
+      </div>
       <div class="button-container">
         <div class="building-container-checkbox">
           <span class="icon-Frame"></span>
@@ -148,67 +174,7 @@ export const Checkbox: Story = {
           </label>
         </div>
       </div>
-        `.trim(),
-        language: 'html',
-      },
-    },
-  },
-};
-
-
-export const Radio: Story = {
-  args: {
-    label: 'Username',
-    inputClass: 'radio',
-    heading:'Radio',
-  },
-  parameters: {
-    docs: {
-      source: {
-        code: `
-
-        `.trim(),
-        language: 'html',
-      },
-    },
-  },
-};
-
-
-
-export const DateAndTime: Story = {
-    args: {
-      label: 'Username',
-      inputClass: 'date&time',
-      heading:'Date And Time'
-    },
-    parameters: {
-      docs: {
-        source: {
-          code: `
-  
-          `.trim(),
-          language: 'html',
-        },
-      },
-    },
-  };
-
-
-  export const Switch: Story = {
-    args: {
-      label: 'Username',
-      inputClass: 'switch',
-      heading:'Switch',
-    },
-    parameters: {
-      docs: {
-        source: {
-          code: `
-  
-          `.trim(),
-          language: 'html',
-        },
-      },
-    },
-  };
+    </div>
+    <!-- ======================================= Radio ==================================-->
+  </div>
+</div>

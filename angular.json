@@ -29,7 +29,9 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "node_modules/flatpickr/dist/flatpickr.min.css",
+              "src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -83,7 +85,9 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.scss"],
+            "styles": [
+              "node_modules/flatpickr/dist/flatpickr.min.css",
+              "src/styles.scss"],
             "scripts": []
           }
         },

@@ -8,6 +8,15 @@ const preview: Preview = {
        date: /Date$/i,
       },
     },
+
+    options: {
+      storySort: {
+        order: [
+          'Inputs',
+          [ 'Docs', 'Check Boxes', 'Radio Boxes', 'Switch', 'Date And Time',],
+        ],
+      },
+    },
   },
 };
 
