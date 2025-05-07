@@ -1,5 +1,6 @@
 // Font families
-@use './colors' as *;
+@use "./colors" as *;
+@use "./mixins" as *;
 $font-family: "Figtree", sans-serif;
 
 // Font weights
@@ -11,26 +12,20 @@ $font-medium: 500 !important;
 $font-bold: 700 !important;
 $font-extra-bold: 800 !important;
 
-
 // classess
-$font-weight:(
-  "300":300,
-  "400":400,
-  "500":500,
-  "700":700,
-  "800":800
+$font-weight: (
+  "300": 300,
+  "400": 400,
+  "500": 500,
+  "700": 700,
+  "800": 800,
 );
 
-@each $key, $value in $font-weight{
-  .fw-#{$key}{
+@each $key, $value in $font-weight {
+  .fw-#{$key} {
     font-weight: $value;
   }
 }
-
-
-
-
-
 
 // Font sizes
 $fonts: (
@@ -57,9 +52,6 @@ $fonts: (
   }
 }
 
-
-
-
 /**********font size**********/
 
 $fs-50: 50px !important;
@@ -78,68 +70,136 @@ $fs-14: 14px !important;
 $fs-13: 13px !important;
 $fs-12: 12px !important;
 
+/****************line height*************/
+$lh-50: 50px !important;
+$lh-42: 42px !important;
+$lh-36: 36px !important;
+$lh-34: 34px !important;
+$lh-32: 32px !important;
+$lh-30: 30px !important;
+$lh-28: 28px !important;
+$lh-26: 26px !important;
+$lh-24: 24px !important;
+$lh-22: 22px !important;
+$lh-20: 20px !important;
+$lh-18: 18px !important;
+$lh-16: 16px !important;
+$lh-15: 15px !important;
+$lh-14: 14px !important;
+$lh-13: 13px !important;
+$lh-12: 12px !important;
 
-h1, .primary-heading{
-  font-size: $fs-28;
-  color: var(--primary_text_color);
-  font-family: $font-extra-bold;
-}
+// h1,
+// .primary-heading {
+//   font-size: $fs-32;
+//   color: $primary-text-color;
+//   font-weight: $font-extra-bold;
+//   text-transform: capitalize;
+//   @include max-width(1366px) {
+//     font-size: $fs-28;
+//   }
+//   @include max-width(768px) {
+//     font-size: $fs-20;
+//   }
+//   @include max-width(375px) {
+//     font-size: $fs-16;
+//   }
+// }
 
-h2, .secondary-heading{
-  font-size: $fs-20 !important;
-  color: var(--primary_text_color);
-  font-family: $font-bold;
-}
+// h2,
+// .secondary-heading {
+//   font-size: $fs-22 !important;
+//   line-height: $lh-30;
+//   color: $primary-text-color;
+//   font-weight: $font-bold;
+//   text-transform: capitalize;
+//   @include max-width(1366px) {
+//     font-size: $fs-20;
+//   }
+//   @include max-width(768px) {
+//     font-size: $fs-20;
+//   }
+//   @include max-width(375px) {
+//     font-size: $fs-14;
+//   }
+// }
 
-h3, .tertiary-heading{
-  font-size: $fs-16 !important;
-  color: var(--primary_text_color);
-  font-family: $font-light;
-}
+// h3,
+// .tertiary-heading {
+//   font-size: $fs-16 !important;
+//   line-height: $lh-30;
+//   color: $primary-text-color;
+//   font-weight: $font-light;
+//   text-transform: capitalize;
+// }
 
-h4, .fourth-heading{
-  font-size: $fs-16 !important;
-  color: var(--primary_text_color);
-  font-family: $font-bold;
-}
+// h4,
+// .fourth-heading {
+//   font-size: $fs-18 !important;
+//   line-height: $lh-26;
+//   color: $primary-text-color;
+//   font-weight: $font-bold;
+//   text-transform: capitalize;
+// }
 
-h5, .subtitle-1{
-  font-size: $fs-15 !important;
-  color: var(--primary_text_color);
-  font-family: $font-medium;
-}
+// h5,
+// .subtitle-1 {
+//   font-size: $fs-16 !important;
+//   line-height: $lh-24;
+//   color: $primary-text-color;
+//   font-weight: $font-bold;
+//   text-transform: capitalize;
+// }
 
-h6, .subtitle-2{
-  font-size: $fs-13 !important;
-  color: var(--primary_text_color);
-  font-family: $font-medium;
-}
+// h6,
+// .subtitle-2 {
+//   font-size: $fs-14 !important;
+//   line-height: $lh-22;
+//   color: $primary-text-color;
+//   font-weight: $font-medium;
+//   text-transform: capitalize;
+// }
 
-p, .normal-text, td{
-  font-size: $fs-13;
-  color: var(--secondary_text_color);
-  font-family: $font-regular;
-}
+// p,
+// .normal-text {
+//   font-size: $fs-13;
+//   line-height: $lh-20;
+//   color: $primary-text-color;
+//   font-weight: $font-regular;
+//   text-transform: capitalize;
+// }
 
-a, .link-text{
-  font-size: $fs-13;
-  color: var(--link_color);
-  font-family: $font-medium;
-}
+// a,
+// .link-text {
+//   font-size: $fs-14;
+//   line-height: $lh-22;
+//   color: $primary-text-color;
+//   font-weight: $font-medium;
+//   text-transform: capitalize;
+// }
 
-label, .label, th{
-  font-size: $fs-13;
-  color: var(--primary_text_color);
-  font-family: $font-medium;
-}
+// .common-btn .large {
+//   font-size: $fs-14;
+//   line-height: $lh-22;
+//   color: $primary-text-color;
+//   font-weight: $font-medium;
+//   text-transform: capitalize;
+// }
 
-.caption{
-  font-size: $fs-12;
-  color: var(--secondary_text_color);
-  font-family: $font-regular;
-}
-.caption-medium{
-  font-size: $fs-12;
-  color: var(--secondary_text_color);
-  font-family: $font-medium;
-}
+// label,
+// .label {
+//   font-size: $fs-14;
+//   line-height: $lh-22;
+//   color: $primary-text-color;
+//   font-weight: $font-medium;
+//   text-transform: capitalize;
+// }
+
+// .caption,
+// .caption-medium {
+//   font-size: $fs-12;
+//   line-height: $lh-20;
+//   color: $primary-text-color;
+//   font-weight: $font-medium;
+//   text-transform: capitalize;
+// }

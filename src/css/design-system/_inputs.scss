@@ -1,0 +1,134 @@
+@use "./mixins" as *;
+@use "./storybook";
+
+.custom-checkbox {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-size: 13px;
+  font-weight: 500;
+  color: #676879;
+    padding: 0 8px;
+  &--outer-circle-border {
+    border: 1px solid #c3c6d4;
+    border-radius: 100px;
+  }
+  &--outer-rectangle-border{
+    border: 1px solid #c3c6d4;
+    border-radius: 4px;
+  }
+  input[type="checkbox"] {
+    display: none; // hide default checkbox
+  }
+  input[type="radio"] {
+    display: none; // hide default checkbox
+  }
+  .checkmark {
+    border: 1px solid #c3c6d4;
+    border-radius: 4px;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    transition: all 0.2s ease;
+    &--circle {
+      border-radius: 100px;
+    }
+  }
+
+  // inprocess
+  .radiomark{
+    display: inline-block;
+    border: 2px solid #666;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+    transition: all 0.2s ease;
+    margin-right: 10px;
+  }
+  input:checked + .checkmark {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+  input:checked + .checkmark::after {
+    content: "";
+    position: absolute;
+    // left: 25%;
+    // top: 2%;
+    // width: 40%;
+    // height: 70%;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+  }
+
+  &--vs {
+    height: 28px;
+    .checkmark {
+      margin-right: 4px;
+      @include checkbox-size(16px);
+    }
+  }
+  &--sm {
+    height: 28px;
+    .checkmark {
+      margin-right: 4px;
+      @include checkbox-size(18px);
+    }
+  }
+
+  &--md {
+    height: 32px;
+    .checkmark {
+      margin-right: 8px;
+      @include checkbox-size(20px);
+    }
+  }
+
+  &--lg {
+    height: 32px;
+    .checkmark {
+      margin-right: 8px;
+      @include checkbox-size(22px);
+    }
+  }
+
+  &--xl {
+    height: 38px;
+    font-size: 14px;
+    .checkmark {
+      margin-right: 8px;
+      @include checkbox-size(24px);
+    }
+  }
+}
+
+
+.building-container-checkbox{
+    border: 1px solid #C3C6D4;
+    border-radius: 4px;
+    position: relative;
+    padding: 28px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #676879;
+    width: 274px;
+    span{
+        font-size: 44px;
+    }
+    &:hover{
+        background-color: #CCE5FF;
+        border: 1px soldi #CCE5FF;
+    }
+
+    label{
+        position: absolute;
+        top: 9px;
+        right: 9px;
+    }
+}

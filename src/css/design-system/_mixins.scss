@@ -127,3 +127,14 @@
     cursor: pointer;
 }
 
+@mixin checkbox-size($size) {
+    width: $size;
+    height: $size;
+  
+    &::after {
+      top: $size * 0.0 !important;
+      left: $size * 0.25 !important;
+      width: $size * 0.4 !important;
+      height: $size * 0.7 !important;
+    }
+  }

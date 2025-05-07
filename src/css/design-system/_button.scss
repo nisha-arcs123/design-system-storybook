@@ -13,6 +13,8 @@
   border: 1px solid transparent;
   background-color: transparent;
   height: 38px;
+  font-family: "Figtree", sans-serif;
+
   &.vs {
     font-size: 12px;
     padding: 7px 12px;
@@ -45,7 +47,7 @@
     height: 54px;
   }
 
-  &.d-btn-primary {
+  &--primary {
     background-color: #017BBA;
     color: #ffffff;
     &:hover {
@@ -53,7 +55,7 @@
     }
   }
 
-  &.d-btn-secondary {
+  &--secondary {
     border: 1px solid #017BBA;
     background-color: #ffffff;
     color: #017BBA;
@@ -64,7 +66,7 @@
     }
   }
 
-  &.d-btn-tertiary {
+  &--tertiary {
     background-color: #ffffff;
     color: #4d4d4d;
     &:hover {
@@ -72,7 +74,7 @@
     }
   }
 
-  &.d-btn-link {
+  &--link {
     background-color: #ffffff;
     color: #017bba;
     cursor: pointer;
@@ -81,24 +83,24 @@
     }
   }
 
-  &.d-btn-success {
+  &--success {
     background-color: #258750;
     color: #ffffff;
   }
 
-  &.d-btn-danger {
+  &--danger {
     background-color: #d83a52;
     color: #ffffff;
   }
 
-  &.d-btn-primary-disable {
+  &--primary-disable {
     background-color: #017bba;
     color: #ffffff;
     opacity: 0.5;
     cursor: not-allowed;
   }
 
-  &.d-btn-secondary-disable {
+  &--secondary-disable {
     border: 1px solid #0073ea;
     background-color: #ffffff;
     color: #0073ea;
@@ -106,7 +108,7 @@
     cursor: not-allowed;
   }
 
-  &.d-btn-tertiary-disable {
+  &--tertiary-disable {
     background-color: #ffffff;
     color: #4d4d4d;
     opacity: 0.5;
@@ -187,7 +189,12 @@
       }
     }
   }
+
+  
+  
 }
+
+
 @keyframes spin {
   to {
     transform: rotate(360deg);
