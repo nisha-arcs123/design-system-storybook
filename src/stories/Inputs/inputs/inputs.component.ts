@@ -20,11 +20,14 @@ export class InputsComponent {
       onReady: (selectedDates, dateStr, instance) => {
         // Create a custom div
         const customDiv = document.createElement('div');
-        customDiv.innerText = 'Custom Note or Message';
-        customDiv.style.padding = '10px';
+        customDiv.innerHTML = '<p>2019</p>  <span><h1>March</h1> <p>2019</p> </span>';
+        customDiv.style.padding = '16px 24px';
         customDiv.style.textAlign = 'center';
-        customDiv.style.fontSize = '14px';
-        customDiv.style.color = 'gray';
+        customDiv.style.fontSize = '22px';
+        customDiv.style.fontWeight='700';
+        customDiv.style.color = '#FFFFFF';
+        customDiv.style.margin='0';
+        customDiv.style.backgroundColor='#017BBA';
 
         // Create a custom button
         const customButton = document.createElement('button');
@@ -40,7 +43,7 @@ export class InputsComponent {
 
         // Append to the calendar container
         const calendarContainer = instance.calendarContainer;
-        calendarContainer.appendChild(customDiv);
+        calendarContainer.prepend(customDiv);
         calendarContainer.appendChild(customButton);
       },
     });

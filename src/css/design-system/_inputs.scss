@@ -283,3 +283,47 @@
   color: #202020;
   // font-weight: 400;
 }
+
+
+
+
+.calendar {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  width: 300px;
+
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.25rem;
+  }
+
+  .day-name {
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .calendar-day {
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &.today {
+      background-color: #007bff;
+      color: white;
+    }
+
+    &.other-month {
+      opacity: 0.4;
+    }
+  }
+}
