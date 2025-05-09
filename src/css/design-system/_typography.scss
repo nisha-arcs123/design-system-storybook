@@ -89,22 +89,22 @@ $lh-14: 14px !important;
 $lh-13: 13px !important;
 $lh-12: 12px !important;
 
-// h1,
-// .primary-heading {
-//   font-size: $fs-32;
-//   color: $primary-text-color;
-//   font-weight: $font-extra-bold;
-//   text-transform: capitalize;
-//   @include max-width(1366px) {
-//     font-size: $fs-28;
-//   }
-//   @include max-width(768px) {
-//     font-size: $fs-20;
-//   }
-//   @include max-width(375px) {
-//     font-size: $fs-16;
-//   }
-// }
+h1,
+.primary-heading {
+  font-size: $fs-32;
+  color: $primary-text-color;
+  font-weight: $font-extra-bold;
+  text-transform: capitalize;
+  @include max-width(1366px) {
+    font-size: $fs-28;
+  }
+  @include max-width(768px) {
+    font-size: $fs-20;
+  }
+  @include max-width(375px) {
+    font-size: $fs-16;
+  }
+}
 
 // h2,
 // .secondary-heading {

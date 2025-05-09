@@ -1,1 +1,134 @@
-<p>lable-select works!</p>
+<div [ngSwitch]="selectClass">
+  <div *ngSwitchCase="'very-small-label'" class="very-small">
+    <div class="heading">
+      <h1>Label Input</h1>
+      <div class="line"></div>
+      <h2>{{ heading }}</h2>
+      <p>
+        An input field includes a label and a text field users can type text
+        into. They typically appear in forms and dialogs.
+      </p>
+    </div>
+    <div class="form-group">
+      <label for="label">{{ label }}</label>
+      <div class="input-wrapper vs">
+        <select class="custom-select">
+          <option value="">Select Option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </div>
+      <div class="error-message d-none">This is error alert</div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'small-label'" class="small">
+    <div class="heading">
+      <h1>Label Input</h1>
+      <div class="line"></div>
+      <h2>{{ heading }}</h2>
+      <p>
+        An input field includes a label and a text field users can type text
+        into. They typically appear in forms and dialogs.
+      </p>
+    </div>
+    <div class="form-group">
+      <label for="label">{{ label }}</label>
+      <div class="input-wrapper sm">
+        <select class="custom-select">
+          <option value="">Select Option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </div>
+      <div class="error-message d-none">This is error alert</div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'medium-label'" class="medium">
+    <div class="heading">
+      <h1>Label Input</h1>
+      <div class="line"></div>
+      <h2>{{ heading }}</h2>
+      <p>
+        An input field includes a label and a text field users can type text
+        into. They typically appear in forms and dialogs.
+      </p>
+    </div>
+    <div class="form-group">
+      <label for="label">{{ label }}</label>
+      <div class="input-wrapper md">
+        <select class="custom-select">
+          <option value="">Select Option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </div>
+      <div class="error-message d-none">This is error alert</div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'large-label'" class="large">
+    <div class="heading">
+      <h1>Label Input</h1>
+      <div class="line"></div>
+      <h2>{{ heading }}</h2>
+      <p>
+        An input field includes a label and a text field users can type text
+        into. They typically appear in forms and dialogs.
+      </p>
+    </div>
+    <div class="form-group">
+      <label for="label">{{ label }}</label>
+      <div class="input-wrapper lg">
+        <select class="custom-select">
+          <option value="">Select Option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </div>
+      <div class="error-message d-none">This is error alert</div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'extra-large-label'" class="extra-large">
+    <div class="heading">
+      <h1>Label Input</h1>
+      <div class="line"></div>
+      <h2>{{ heading }}</h2>
+      <p>
+        An input field includes a label and a text field users can type text
+        into. They typically appear in forms and dialogs.
+      </p>
+    </div>
+    <div class="form-group">
+      <label for="label">{{ label }}</label>
+      <div class="input-wrapper xl">
+        <select class="custom-select">
+          <option value="">Select Option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </div>
+      <div class="error-message d-none">This is error alert</div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'double-extra-large-label'" class="double-extra-large">
+    <div class="heading">
+      <h1>Label Input</h1>
+      <div class="line"></div>
+      <h2>{{ heading }}</h2>
+      <p>
+        An input field includes a label and a text field users can type text
+        into. They typically appear in forms and dialogs.
+      </p>
+    </div>
+    <div class="form-group">
+      <label for="label">{{ label }}</label>
+      <div class="input-wrapper xxl">
+        <select class="custom-select">
+          <option value="">Select Option</option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+        </select>
+      </div>
+      <div class="error-message d-none">This is error alert</div>
+    </div>
+  </div>
+</div>

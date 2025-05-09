@@ -209,6 +209,7 @@
     }
   }
 }
+
 .second-container {
   .heading {
     h2 {
@@ -220,6 +221,8 @@
     }
   }
 }
+
+
 .outer-second-container {
   .heading {
     h2 {
@@ -237,6 +240,7 @@
     align-items: end;
   }
 }
+
 
 .border-container {
   display: flex;
@@ -257,6 +261,7 @@
       font-size: 18px;
       font-weight: 700;
       color: #323238;
+      box-sizing: border-box;
       &--small {
         border-radius: 4px;
       }
@@ -268,28 +273,10 @@
       }
     }
 
-    .border-text {
-      span {
-        font-size: 14px;
-        font-weight: 500;
-        color: #323238;
-      }
-      p {
-        font-size: 14px;
-        font-weight: 400;
-        color: #676879;
-        margin: 0;
-      }
-    }
-  }
-
-  .shadow-div {
-    width: 200px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
     .shadow {
+      width: 200px;
+      height: 200px;
+      box-sizing: border-box;
       padding: 43px 34px;
       border-radius: 4px;
 
@@ -342,8 +329,11 @@
         margin: 0;
       }
     }
+    
   }
+
 }
+
 
 .tabs-container {
   .tab-buttons {
@@ -593,16 +583,7 @@
         .heading {
           color: #323238;
           margin: 0;
-          //   &--heading-h1 {
-          //     font-size: 32px;
-          //     font-weight: 800;
-          //   }
-          //   &--heading-h2 {
-          //     font-size: 22px;
-          //     font-weight: 700;
-          //   }
         }
-
         p {
           font-size: 14px;
           font-weight: 400;

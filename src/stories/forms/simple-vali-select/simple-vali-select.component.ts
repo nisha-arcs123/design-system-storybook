@@ -1,13 +1,14 @@
-import { Component ,Input} from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component ,Input} from '@angular/core';
+
 @Component({
-  selector: 'app-simple-select',
+  selector: 'app-simple-vali-select',
   imports: [CommonModule],
-  templateUrl: './simple-select.component.html',
-  styleUrl: './simple-select.component.scss'
+  templateUrl: './simple-vali-select.component.html',
+  styleUrl: './simple-vali-select.component.scss'
 })
-export class SimpleSelectComponent {
- @Input() label = 'Type something...';
+export class SimpleValiSelectComponent {
+@Input() label = 'Type something...';
 
   @Input() heading: string = 'Default Heading';
   @Input() selectClass: 'very-small' | 'small' | 'medium' | 'large' | 'extra-large' | 'double-extra-large' | 'label-input' | 'left-img-input' | 'right-img-input' | 'both-img-input' = 'very-small';

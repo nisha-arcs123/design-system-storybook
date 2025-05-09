@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ValiInputComponent } from './vali-input.component';
+import { LableValiSelectComponent } from './lable-vali-select.component';
 
-describe('ValiInputComponent', () => {
-  let component: ValiInputComponent;
-  let fixture: ComponentFixture<ValiInputComponent>;
+describe('LableValiSelectComponent', () => {
+  let component: LableValiSelectComponent;
+  let fixture: ComponentFixture<LableValiSelectComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ValiInputComponent]
+      imports: [LableValiSelectComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ValiInputComponent);
+    fixture = TestBed.createComponent(LableValiSelectComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

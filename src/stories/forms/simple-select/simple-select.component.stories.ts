@@ -1,15 +1,29 @@
-<div [ngSwitch]="selectClass">
-  <div *ngSwitchCase="'very-small'" class="very-small">
-    <div class="heading">
-      <h1>Label Input</h1>
-      <div class="line"></div>
-      <h2>{{ heading }}</h2>
-      <p>
-        An input field includes a label and a text field users can type text
-        into. They typically appear in forms and dialogs.
-      </p>
-    </div>
-    <div class="form-group">
+import type { Meta, StoryObj } from '@storybook/angular';
+import { SimpleSelectComponent } from './simple-select.component';
+
+const meta: Meta<SimpleSelectComponent> = {
+  title: 'Forms/Select/Simple Select',
+  component: SimpleSelectComponent,
+  tags: ['autodocs'],
+  argTypes: {
+    selectClass: { control: 'text' }, // control added for story UI
+  },
+};
+
+export default meta;
+type Story = StoryObj<SimpleSelectComponent>;
+
+export const VerySmall: Story = {
+  args: {
+    label: 'Password',
+    selectClass: 'very-small',
+    heading: 'Very Small',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+ <div class="form-group">
       <label for="label" class="d-none">{{ label }}</label>
       <div class="input-wrapper vs">
         <select class="custom-select">
@@ -20,18 +34,24 @@
       </div>
       <div class="error-message d-none">This is error alert</div>
     </div>
-  </div>
-  <div *ngSwitchCase="'small'" class="small">
-    <div class="heading">
-      <h1>Label Input</h1>
-      <div class="line"></div>
-      <h2>{{ heading }}</h2>
-      <p>
-        An input field includes a label and a text field users can type text
-        into. They typically appear in forms and dialogs.
-      </p>
-    </div>
-    <div class="form-group">
+        `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};
+
+export const small: Story = {
+  args: {
+    label: 'Enter Username',
+    selectClass: 'small',
+    heading: 'Small',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+       <div class="form-group">
       <label for="label" class="d-none">{{ label }}</label>
       <div class="input-wrapper sm">
         <select class="custom-select">
@@ -42,18 +62,24 @@
       </div>
       <div class="error-message d-none">This is error alert</div>
     </div>
-  </div>
-  <div *ngSwitchCase="'medium'" class="medium">
-    <div class="heading">
-      <h1>Label Input</h1>
-      <div class="line"></div>
-      <h2>{{ heading }}</h2>
-      <p>
-        An input field includes a label and a text field users can type text
-        into. They typically appear in forms and dialogs.
-      </p>
-    </div>
-    <div class="form-group">
+          `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};
+
+export const Medium: Story = {
+  args: {
+    label: 'Enter Username',
+    selectClass: 'medium',
+    heading: 'Medium',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+       <div class="form-group">
       <label for="label" class="d-none">{{ label }}</label>
       <div class="input-wrapper md">
         <select class="custom-select">
@@ -64,18 +90,24 @@
       </div>
       <div class="error-message d-none">This is error alert</div>
     </div>
-  </div>
-  <div *ngSwitchCase="'large'" class="large">
-    <div class="heading">
-      <h1>Label Input</h1>
-      <div class="line"></div>
-      <h2>{{ heading }}</h2>
-      <p>
-        An input field includes a label and a text field users can type text
-        into. They typically appear in forms and dialogs.
-      </p>
-    </div>
-    <div class="form-group">
+          `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};
+
+export const Large: Story = {
+  args: {
+    label: 'Enter Username',
+    selectClass: 'large',
+    heading: 'Large',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+     <div class="form-group">
       <label for="label" class="d-none">{{ label }}</label>
       <div class="input-wrapper lg">
         <select class="custom-select">
@@ -86,18 +118,24 @@
       </div>
       <div class="error-message d-none">This is error alert</div>
     </div>
-  </div>
-  <div *ngSwitchCase="'extra-large'" class="extra-large">
-    <div class="heading">
-      <h1>Label Input</h1>
-      <div class="line"></div>
-      <h2>{{ heading }}</h2>
-      <p>
-        An input field includes a label and a text field users can type text
-        into. They typically appear in forms and dialogs.
-      </p>
-    </div>
-    <div class="form-group">
+          `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};
+
+export const ExtraLarge: Story = {
+  args: {
+    label: 'Enter Username',
+    selectClass: 'extra-large',
+    heading: 'Extra Large',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+       <div class="form-group">
       <label for="label" class="d-none">{{ label }}</label>
       <div class="input-wrapper xl">
         <select class="custom-select">
@@ -107,19 +145,24 @@
         </select>
       </div>
       <div class="error-message d-none">This is error alert</div>
-    </div>
-  </div>
-  <div *ngSwitchCase="'double-extra-large'" class="double-extra-large">
-    <div class="heading">
-      <h1>Label Input</h1>
-      <div class="line"></div>
-      <h2>{{ heading }}</h2>
-      <p>
-        An input field includes a label and a text field users can type text
-        into. They typically appear in forms and dialogs.
-      </p>
-    </div>
-    <div class="form-group">
+    </div> `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};
+
+export const DoubleExtraLarge: Story = {
+  args: {
+    label: 'Enter Username',
+    selectClass: 'double-extra-large',
+    heading: 'Double Extra Large',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+        <div class="form-group">
       <label for="label" class="d-none">{{ label }}</label>
       <div class="input-wrapper xxl">
         <select class="custom-select">
@@ -130,5 +173,9 @@
       </div>
       <div class="error-message d-none">This is error alert</div>
     </div>
-  </div>
-</div>
+            `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};
