@@ -30,7 +30,7 @@ export const ButtonKinds: Story = {
     docs: {
       source: {
         code: `
-<div class="button-outer-container">
+<div class="outer-container">
       <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
@@ -40,7 +40,7 @@ export const ButtonKinds: Story = {
           hierarchy of actions we need to use button kinds.
         </p>
       </div>
-      <div class="button-container">
+      <div class="container">
         <button class="btn btn-primary md">label</button>
         <button class="btn btn-secondary md">label</button>
         <button class="btn btn-tertiary md">label</button>
@@ -67,7 +67,7 @@ export const PrimaryButtonSize: Story = {
         docs: {
           source: {
             code: `
-  <div class="button-outer-container">
+  <div class="outer-container">
       <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
@@ -77,7 +77,7 @@ export const PrimaryButtonSize: Story = {
           hierarchy of actions we need to use button kinds.
         </p>
       </div>
-      <div class="button-container">
+      <div class="container">
         <button class="btn btn-primary vs">label</button>
         <button class="btn btn-primary sm">label</button>
         <button class="btn btn-primary md">label</button>
@@ -103,7 +103,7 @@ export const SecondaryButtonSize: Story = {
     docs: {
       source: {
         code: `
-   <div class="button-outer-container">
+   <div class="outer-container">
       <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
@@ -113,7 +113,7 @@ export const SecondaryButtonSize: Story = {
           hierarchy of actions we need to use button kinds.
         </p>
       </div>
-      <div class="button-container">
+      <div class="container">
         <button class="btn btn-secondary vs">label</button>
         <button class="btn btn-secondary sm">label</button>
         <button class="btn btn-secondary md">label</button>
@@ -138,7 +138,7 @@ export const TertiaryButtonSize: Story = {
     docs: {
       source: {
         code: `
-   <div class="button-outer-container">
+   <div class="outer-container">
       <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
@@ -148,7 +148,7 @@ export const TertiaryButtonSize: Story = {
           hierarchy of actions we need to use button kinds.
         </p>
       </div>
-      <div class="button-container">
+      <div class="container">
         <button class="btn btn-tertiary vs">label</button>
         <button class="btn btn-tertiary sm">label</button>
         <button class="btn btn-tertiary md">label</button>
@@ -174,7 +174,7 @@ export const LinkButtonSize: Story = {
         docs: {
           source: {
             code: `
-       <div class="button-outer-container">
+       <div class="outer-container">
           <div class="heading">
             <h1>Buttons</h1>
             <div class="line"></div>
@@ -184,7 +184,7 @@ export const LinkButtonSize: Story = {
               hierarchy of actions we need to use button kinds.
             </p>
           </div>
-          <div class="button-container">
+          <div class="container">
             <button class="btn btn-link vs">label</button>
             <button class="btn btn-link sm">label</button>
             <button class="btn btn-link md">label</button>
@@ -211,7 +211,7 @@ export const LinkButtonSize: Story = {
         docs: {
           source: {
             code: `
-        <div class="button-outer-container">
+        <div class="outer-container">
       <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
@@ -221,7 +221,7 @@ export const LinkButtonSize: Story = {
           hierarchy of actions we need to use button kinds.
         </p>
       </div>
-      <div class="button-container">
+      <div class="container">
         <button class="loading-button vs">
           <span class="loader"></span>
         </button>
@@ -259,7 +259,7 @@ export const LinkButtonSize: Story = {
         docs: {
           source: {
             code: `
-            <div class="button-outer-container">
+            <div class="outer-container">
       <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
@@ -269,7 +269,7 @@ export const LinkButtonSize: Story = {
           hierarchy of actions we need to use button kinds.
         </p>
       </div>
-      <div class="button-container">
+      <div class="container">
         <button class="btn btn-primary-disable md">{{ label }}</button>
         <button class="btn btn-secondary-disable md">{{ label }}</button>
         <button class="btn btn-tertiary-disable md">{{ label }}</button>
@@ -292,7 +292,7 @@ export const LinkButtonSize: Story = {
         docs: {
           source: {
             code: `
-            <div class="button-outer-container">
+            <div class="outer-container">
       <div class="heading">
         <h1>Buttons</h1>
         <div class="line"></div>
@@ -302,7 +302,7 @@ export const LinkButtonSize: Story = {
           hierarchy of actions we need to use button kinds.
         </p>
       </div>
-      <div class="button-container">
+      <div class="container">
         <button class="btn btn-success md"> label </button>
         <button class="btn btn-danger md">label </button>
       </div>

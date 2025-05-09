@@ -1,0 +1,1395 @@
+<div [ngSwitch]="foundClass">
+  <div *ngSwitchCase="'colors'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>Colors</h1>
+        <div class="line"></div>
+        <h2>{{ heading }}</h2>
+        <p>
+          Arcon tool is very visual and our color system helps users identify
+          status, see actions, locate help, and to indicate next steps. The
+          consistent use of color in our product keeps cognitive loads low, and
+          makes for a unified and engaging user experience. The colors are
+          designed to be clear and accessible. They come in six color themes.
+        </p>
+      </div>
+
+      <div class="container">
+        <div class="color-foundation">
+          <div class="color color--primary"></div>
+          <div class="color-text">
+            <h5>primary-color</h5>
+            <p>
+              Use this to emphasise main ui components (Tint side
+              <span>#017BBA</span> / 0%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--primary-hover"></div>
+          <div class="color-text">
+            <h5>primary-hover-color</h5>
+            <p>
+              Use only as a hover on primary color (Tint side<span>
+                #3397C5 </span
+              >/ 20%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--primary-selected"></div>
+          <div class="color-text">
+            <h5>primary-selected-color</h5>
+            <p>
+              Use this to indicate selected state of primary items (Tint side
+              <span>#B3D8E9 </span>/ 70%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--primary-selected-hover"></div>
+          <div class="color-text">
+            <h5>primary-selected-hover-color</h5>
+            <p>
+              Use to indicate hover state on a primary-selected-color items
+              (Tint side <span>#80BEDB</span> / 50%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--positive"></div>
+          <div class="color-text">
+            <h5>positive-color</h5>
+            <p>
+              Use when you want to indicate sometime positive (success,
+              completion of something...) (Tint side <span>#219C4B</span> / 10%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--positive-hover"></div>
+          <div class="color-text">
+            <h5>positive-color-hover</h5>
+            <p>
+              Use only as hover color on positive color (Tint side
+              <span>#089137</span> / 0%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--positive-selected"></div>
+          <div class="color-text">
+            <h5>positive-color-selected</h5>
+            <p>
+              Use only as selected indication for a positive colors (Tint side
+              <span> #84C89B</span> / 50%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--positive-selected-hover"></div>
+          <div class="color-text">
+            <h5>positive-color-selected-hover</h5>
+            <p>
+              Use to indicate hover state on a positive-color-selected items
+              (Tint side <span>#B5DEC3</span> / 70%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--negative"></div>
+          <div class="color-text">
+            <h5>negative-color</h5>
+            <p>
+              Use when you want to indicate a negative action/state (delete,
+              failed action..., error) (Tint side <span>#D72300</span> / 20%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--negative-hover"></div>
+          <div class="color-text">
+            <h5>negative-color-hover</h5>
+            <p>
+              Use only as hover color on negative color (Tint side
+              <span>#C22000</span> / 10%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--negative-selected"></div>
+          <div class="color-text">
+            <h5>negative-color-selected</h5>
+            <p>
+              Use only as selected indication for a positive colors (Tint side
+              <span>#F3BDB3</span>/ 70%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--negative-selected-hover"></div>
+          <div class="color-text">
+            <h5>negative-color-selected-hover</h5>
+            <p>
+              Use to indicate hover state on a negative-selected items (Tint
+              side <span>#EFA799</span> / 60%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--warning"></div>
+          <div class="color-text">
+            <h5>warning-color</h5>
+            <p>
+              Use to indicate a warning action/state (severity, alert,
+              caution...) (Tint side <span>#FFCB00</span> / 30%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--warning-hover"></div>
+          <div class="color-text">
+            <h5>warning-color-hover</h5>
+            <p>
+              Use only as hover color on warning color (Tint side
+              <span>#EAAA15</span> / 0%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--warning-selected"></div>
+          <div class="color-text">
+            <h5>warning-color-selected</h5>
+            <p>
+              Use as selected indication for warning colors (Tint side
+              <span>#FEE6B9</span> / 70%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--warning-selected-hover"></div>
+          <div class="color-text">
+            <h5>warning-color-selected-hover</h5>
+            <p>
+              Use to indicate hover state on a warning-selected items (Tint side
+              <span>#FDDEA1</span> / 60%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--private"></div>
+          <div class="color-text">
+            <h5>private-color</h5>
+            <p>
+              Use when you want to indicate that something is private (board,
+              icons...)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--shareable"></div>
+          <div class="color-text">
+            <h5>shareable-color</h5>
+            <p>
+              Use when you want to indicate that something is shareable (board,
+              dashboard...) (Tint side <span>#8F5B8B</span> / 30%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--inverted-background"></div>
+          <div class="color-text">
+            <h5>inverted-color-background</h5>
+            <p>
+              Inverted background color (opposite of primary background color)
+              (Tint side <span>#060606</span> / 80%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--icon"></div>
+          <div class="color-text">
+            <h5>icon-color</h5>
+            <p>
+              Default color for icons (Tint side <span>#363636</span> / 10%)
+            </p>
+          </div>
+        </div>
+
+        <div class="color-foundation">
+          <div class="color color--fixed-dark"></div>
+          <div class="color-text">
+            <h5>fixed-dark-color</h5>
+            <p>
+              Use as color that should remain dark in all themes (Tint side
+              <span>#1A1A1A</span> / 0%)
+            </p>
+          </div>
+        </div>
+        <div *ngSwitchCase="'rounded-corner'"></div>
+      </div>
+
+      <div class="second-container">
+        <div class="heading">
+          <h2>Background colors</h2>
+        </div>
+
+        <div class="container">
+          <div class="color-foundation">
+            <div class="color color--primary-background"></div>
+            <div class="color-text">
+              <h5>primary-background-color</h5>
+              <p>
+                Primary background color (Tint side <span>#FFFFFF</span> / 100%)
+              </p>
+            </div>
+          </div>
+
+          <div class="color-foundation">
+            <div class="color color--secondary-background"></div>
+            <div class="color-text">
+              <h5>secondary-background-color</h5>
+              <p>
+                Secondary background color (Tint side <span>#F2F3F5</span> / 0%)
+              </p>
+            </div>
+          </div>
+
+          <div class="color-foundation">
+            <div class="color color--primary-background-hover"></div>
+            <div class="color-text">
+              <h5>primary-background-hover-color</h5>
+              <p>Use as hover color (Tint side <span>#E6F2F8</span> / 90%)</p>
+            </div>
+          </div>
+
+          <div class="color-foundation">
+            <div class="color color--inverted-background"></div>
+            <div class="color-text">
+              <h5>inverted-color-background</h5>
+              <p>
+                Inverted background color (opposite of primary background color)
+                (Tint side <span>#060606</span> / 80%)
+              </p>
+            </div>
+          </div>
+
+          <div class="color-foundation">
+            <div class="color color--grey-background"></div>
+            <div class="color-text">
+              <h5>grey-background-color</h5>
+              <p>
+                Grey background color (Tint side <span>#EEEEEF</span> / 90%)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-container">
+        <div class="heading">
+          <h2>Text colors</h2>
+        </div>
+
+        <div class="container">
+          <div class="color-foundation">
+            <div class="color color--primary-text"></div>
+            <div class="color-text">
+              <h5>primary-text-color</h5>
+              <p>
+                Use for default text color (Tint side <span>#202020</span> / 0%)
+              </p>
+            </div>
+          </div>
+
+          <div class="color-foundation">
+            <div class="color color--secondary-text"></div>
+            <div class="color-text">
+              <h5>secondary-text-color</h5>
+              <p>
+                Use when you need text with lesser importance (Tint side
+                <span>#4D4D4D</span> / 20%)
+              </p>
+            </div>
+          </div>
+
+          <div class="color-foundation">
+            <div class="color color--secondary-text-on-secondary"></div>
+            <div class="color-text">
+              <h5>secondary-text-on-secondary-color</h5>
+              <p>
+                Use when you need text with lesser importance (on secondary
+                background color) (Tint side <span>#FFFFFF</span> / 0%)
+              </p>
+            </div>
+          </div>
+
+          <div class="color-foundation">
+            <div class="color color--text-color-on-inverted"></div>
+            <div class="color-text">
+              <h5>text-color-on-inverted</h5>
+              <p>
+                Inverted text color (opposite of primary text color) (Tint side
+                <span>#FFFFFF</span> / 0%)
+              </p>
+            </div>
+          </div>
+
+          <div class="color-foundation">
+            <div class="color color--text-color-on-primary"></div>
+            <div class="color-text">
+              <h5>text-color-on-primary</h5>
+              <p>
+                Use for text on primary color (Tint side <span>#FFFFFF</span> /
+                0%)
+              </p>
+            </div>
+          </div>
+
+          <div class="color-foundation">
+            <div class="color color--disabled-text"></div>
+            <div class="color-text">
+              <h5>disabled-text-color</h5>
+              <p>
+                Use as text in disabled components (Tint side
+                <span>#989B9D</span> / 40%)
+              </p>
+            </div>
+          </div>
+
+          <div class="color-foundation">
+            <div class="color color--placeholder"></div>
+            <div class="color-text">
+              <h5>placeholder-color</h5>
+              <p>
+                Use for placeholder text in inputs fields (Tint side
+                <span>#CBCDCE</span> / 70%)
+              </p>
+            </div>
+          </div>
+
+          <div class="color-foundation">
+            <div class="color color--link"></div>
+            <div class="color-text">
+              <h5>link-color</h5>
+              <p>Use only for links (Tint side <span>#1A8ABE</span> / 20%)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="second-container">
+        <div class="heading">
+          <h2>Border colors</h2>
+        </div>
+
+        <div class="container">
+          <div class="color-foundation">
+            <div class="color color--ui-border"></div>
+            <div class="color-text">
+              <h5>ui-border-color</h5>
+              <p>
+                Border color for ui elements and components (Button, Input...)
+                (Tint side <span>#DDDEDE</span> / 80%)
+              </p>
+            </div>
+          </div>
+
+          <div class="color-foundation">
+            <div class="color color--layout-border"></div>
+            <div class="color-text">
+              <h5>layout-border-color</h5>
+              <p>
+                Border color for general layout and separators (Left pane, Menu
+                Divider...) (Tint side <span>#CBCDCE</span> / 70%)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'rounded-corner'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          Our design system contains various fixed units for radius of elements
+          corners.
+        </p>
+      </div>
+
+      <div class="border-container">
+        <div class="border-div">
+          <div class="border border--small">4px</div>
+          <div class="border-text">
+            <span>Small</span>
+            <p>Forms</p>
+            <p>Buttons</p>
+            <p>Check boxes</p>
+            <p>Selected mark</p>
+            <p>Tooltips etc...</p>
+          </div>
+        </div>
+
+        <div class="border-div">
+          <div class="border border--medium">8px</div>
+          <div class="border-text">
+            <span>Medium</span>
+            <p>Dropdown</p>
+            <p>Popovers</p>
+            <p>Attention box</p>
+            <p>Update</p>
+          </div>
+        </div>
+
+        <div class="border-div">
+          <div class="border border--large">16px</div>
+          <div class="border-text">
+            <span>Large</span>
+            <p>Popups</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'shadow'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          Virtual light in arcon platform always comes from the top and creates
+          a shadows from layout and UI elements like in real world. Shadows used
+          to create the scenes of hierarchy and elevation withing the UI and
+          layout.
+        </p>
+      </div>
+
+      <div class="border-container">
+        <div class="shadow-div">
+          <div class="shadow shadow--small">
+            <div class="shadow-header">Drop shadow</div>
+            <div class="x-axis">
+              <p>X <span>0</span></p>
+              <p>Blur <span>8</span></p>
+            </div>
+            <div class="x-axis">
+              <p>X <span>3</span></p>
+              <p>Spread <span>0</span></p>
+            </div>
+            <div class="x-axis">
+              <p><span>000000</span></p>
+              <p>20%</p>
+            </div>
+          </div>
+          <div class="border-text">
+            <span>Small</span>
+            <p> 0 3px 8px 0 #00000033;</p>
+          </div>
+        </div>
+
+        <div class="shadow-div">
+          <div class="shadow shadow--medium">
+            <div class="shadow-header">Drop shadow</div>
+            <div class="x-axis">
+              <p>X <span>0</span></p>
+              <p>Blur <span>20</span></p>
+            </div>
+            <div class="x-axis">
+              <p>X <span>6</span></p>
+              <p>Spread <span>0</span></p>
+            </div>
+            <div class="x-axis">
+              <p><span>000000</span></p>
+              <p>20%</p>
+            </div>
+          </div>
+          <div class="border-text">
+            <span>Medium</span>
+            <p>0 6px 20px 0 #00000033;</p>
+          </div>
+        </div>
+
+        <div class="shadow-div">
+          <div class="shadow shadow--large">
+            <div class="shadow-header">Drop shadow</div>
+            <div class="x-axis">
+              <p>X <span>0</span></p>
+              <p>Blur <span>50</span></p>
+            </div>
+            <div class="x-axis">
+              <p>X <span>15</span></p>
+              <p>Spread <span>0</span></p>
+            </div>
+            <div class="x-axis">
+              <p><span>000000</span></p>
+              <p>30%</p>
+            </div>
+          </div>
+          <div class="border-text">
+            <span>Large</span>
+            <p>0 15px 50px 0 #00000033</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'margin'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          Positioning UI should be with taught including the empty space between
+          components. This is what creates relationships and hierarchy withing
+          the visual controls.
+        </p>
+      </div>
+
+      <div class="outer-second-container">
+        <div class="heading">
+          <h2>Margin-Left, Margin-Top, Margin-Right, Margin-Bottom</h2>
+        </div>
+
+        <div class="container">
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-1"></div>
+            <div class="box-txt">
+              <p>1px</p>
+              <p>Class: ml-1px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-2"></div>
+            <div class="box-txt">
+              <p>2px</p>
+              <p>Class: ml-2px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-4"></div>
+            <div class="box-txt">
+              <p>4px</p>
+              <p>Class: ml-4px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-8"></div>
+            <div class="box-txt">
+              <p>8px</p>
+              <p>Class: ml-8px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-12"></div>
+            <div class="box-txt">
+              <p>12px</p>
+              <p>Class: ml-12px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-16"></div>
+            <div class="box-txt">
+              <p>16px</p>
+              <p>Class: ml-16px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-20"></div>
+            <div class="box-txt">
+              <p>20px</p>
+              <p>Class: ml-20px</p>
+            </div>
+          </div>
+
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-24"></div>
+            <div class="box-txt">
+              <p>24px</p>
+              <p>Class: ml-24px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-32"></div>
+            <div class="box-txt">
+              <p>32px</p>
+              <p>Class: ml-32px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-40"></div>
+            <div class="box-txt">
+              <p>40px</p>
+              <p>Class: ml-40px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-46"></div>
+            <div class="box-txt">
+              <p>46px</p>
+              <p>Class: ml-46px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-48"></div>
+            <div class="box-txt">
+              <p>48px</p>
+              <p>Class: ml-48px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-64"></div>
+            <div class="box-txt">
+              <p>64px</p>
+              <p>Class: ml-64px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-80"></div>
+            <div class="box-txt">
+              <p>80px</p>
+              <p>Class: ml-80px</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'padding'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          Positioning UI should be with taught including the empty space between
+          components. This is what creates relationships and hierarchy withing
+          the visual controls.
+        </p>
+      </div>
+
+      <div class="outer-second-container">
+        <div class="heading">
+          <h2>Padding-Left, Padding-Top, Padding-Right, Padding-Bottom</h2>
+        </div>
+
+        <div class="container">
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-1"></div>
+            <div class="box-txt">
+              <p>1px</p>
+              <p>Class: ml-1px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-2"></div>
+            <div class="box-txt">
+              <p>2px</p>
+              <p>Class: ml-2px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-4"></div>
+            <div class="box-txt">
+              <p>4px</p>
+              <p>Class: ml-4px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-8"></div>
+            <div class="box-txt">
+              <p>8px</p>
+              <p>Class: ml-8px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-12"></div>
+            <div class="box-txt">
+              <p>12px</p>
+              <p>Class: ml-12px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-16"></div>
+            <div class="box-txt">
+              <p>16px</p>
+              <p>Class: ml-16px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-20"></div>
+            <div class="box-txt">
+              <p>20px</p>
+              <p>Class: ml-20px</p>
+            </div>
+          </div>
+
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-24"></div>
+            <div class="box-txt">
+              <p>24px</p>
+              <p>Class: ml-24px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-32"></div>
+            <div class="box-txt">
+              <p>32px</p>
+              <p>Class: ml-32px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-40"></div>
+            <div class="box-txt">
+              <p>40px</p>
+              <p>Class: ml-40px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-46"></div>
+            <div class="box-txt">
+              <p>46px</p>
+              <p>Class: ml-46px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-48"></div>
+            <div class="box-txt">
+              <p>48px</p>
+              <p>Class: ml-48px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-64"></div>
+            <div class="box-txt">
+              <p>64px</p>
+              <p>Class: ml-64px</p>
+            </div>
+          </div>
+          <div class="margin-padding-container">
+            <div class="margin margin--ml-80"></div>
+            <div class="box-txt">
+              <p>80px</p>
+              <p>Class: ml-80px</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'typography'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          Like in other ui in arcon interface, typography works by principle of
+          accessibility before aesthetics. Therefore the text should be readable
+          and help the user understand what's important by well contrasted size
+          and colors hierarchy.
+        </p>
+      </div>
+
+      <div class="tabs-container">
+        <div class="tab-buttons">
+          <button
+            [class.active]="selectedTab === 'desktop'"
+            (click)="selectTab('desktop')"
+          >
+            1920 Desktop
+          </button>
+          <button
+            [class.active]="selectedTab === 'laptop'"
+            (click)="selectTab('laptop')"
+          >
+            1366 Laptop
+          </button>
+          <button
+            [class.active]="selectedTab === 'tablet'"
+            (click)="selectTab('tablet')"
+          >
+            768 Tablet
+          </button>
+          <button
+            [class.active]="selectedTab === 'mobile'"
+            (click)="selectTab('mobile')"
+          >
+            375 Mobile
+          </button>
+        </div>
+
+        <div class="tab-content">
+          <ng-container [ngSwitch]="selectedTab">
+            <div *ngSwitchCase="'desktop'">
+              <div class="typography-grid">
+                <div class="heading heading--h1">H1</div>
+                <div class="class-name">.primary-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h1">
+                    Primary Heading medium(Roboto 32px extrabold)
+                  </div>
+                  <p>Use as main header on a page</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h2">H2</div>
+                <div class="class-name">.secondary-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h2">
+                    Secondary Heading Large (Roboto 22px bold)
+                  </div>
+                  <p>Use as secondary header on a page</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h3">H3</div>
+                <div class="class-name">.tertiary-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h3">
+                    Tertiary Heading Small (Roboto 16px light)
+                  </div>
+                  <p>Use after heading, profile page headings</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h4">H4</div>
+                <div class="class-name">.fourth-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h4">
+                    Fourth Heading Large (Roboto 18px bold)
+                  </div>
+                  <p>Use after heading, profile page headings</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h5">H5</div>
+                <div class="class-name">.subtitle-1</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h5">
+                    Subtitle-1-large (Roboto 16px bold)
+                  </div>
+                  <p>Use as subtitles for paragraphs</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h6">H6</div>
+                <div class="class-name">.subtitle-2</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h6">
+                    Subtitle-2-large (Roboto 14px medium)
+                  </div>
+                  <p>Use for item name, text in update</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--p">p</div>
+                <div class="class-name">.normal-text</div>
+                <div class="class-name">Sentence</div>
+                <div class="description">
+                  <div class="heading heading--p">
+                    Normal Text Medium (Roboto 13px normal)
+                  </div>
+                  <p>Use for general text or labels</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--a">a</div>
+                <div class="class-name">.link-text</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--a">
+                    Link Text Large (Roboto 14px medium)
+                  </div>
+                  <p>Use for links</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--btn-lg">button large</div>
+                <div class="class-name">.common-btn .large</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--btn-lg">
+                    Button Large (Roboto 14px medium)
+                  </div>
+                  <p>Use for large button</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--lg-lbl">label large</div>
+                <div class="class-name">.label</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--lg-lbl">
+                    Label Large (Roboto 14px medium)
+                  </div>
+                  <p>Use for item name, text in update</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--span">span</div>
+                <div class="class-name">.caption .medium</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--span">
+                    Caption (Roboto 12px medium)
+                  </div>
+                  <p>Use for item name, text in update</p>
+                </div>
+              </div>
+            </div>
+
+            <div *ngSwitchCase="'laptop'">
+              <div class="typography-grid">
+                <div class="heading heading--h1-l">H1</div>
+                <div class="class-name">.primary-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h1-l">
+                    Primary Heading medium(Roboto 28px extrabold)
+                  </div>
+                  <p>Use as main header on a page</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h2-l">H2</div>
+                <div class="class-name">.secondary-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h2-l">
+                    Secondary Heading Large (Roboto 20px bold)
+                  </div>
+                  <p>Use as secondary header on a page</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h3-l">H3</div>
+                <div class="class-name">.tertiary-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h3-l">
+                    Tertiary Heading Small (Roboto 16px light)
+                  </div>
+                  <p>Use after heading, profile page headings</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h4-l">H4</div>
+                <div class="class-name">.fourth-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h4-l">
+                    Fourth Heading Large (Roboto 18px bold)
+                  </div>
+                  <p>Use after heading, profile page headings</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h5-l">H5</div>
+                <div class="class-name">.subtitle-1</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h5-l">
+                    Subtitle-1-large (Roboto 15px bold)
+                  </div>
+                  <p>Use as subtitles for paragraphs</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h6-l">H6</div>
+                <div class="class-name">.subtitle-2</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h6-l">
+                    Subtitle-2-large (Roboto 13px medium)
+                  </div>
+                  <p>Use for item name, text in update</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--p-l">p</div>
+                <div class="class-name">.normal-text</div>
+                <div class="class-name">Sentence</div>
+                <div class="description">
+                  <div class="heading heading--p-l">
+                    Normal Text Medium (Roboto 12px normal)
+                  </div>
+                  <p>Use for general text or labels</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--a-l">a</div>
+                <div class="class-name">.link-text</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--a-l">
+                    Link Text Large (Roboto 13px medium)
+                  </div>
+                  <p>Use for links</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--btn-lg-l">button large</div>
+                <div class="class-name">.common-btn .large</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--btn-lg-l">
+                    Button Large (Roboto 14px medium)
+                  </div>
+                  <p>Use for large button</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--lg-lbl-l">label large</div>
+                <div class="class-name">.label</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--lg-lbl-l">
+                    Label Large (Roboto 13px medium)
+                  </div>
+                  <p>Use for item name, text in update</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--span-l">span</div>
+                <div class="class-name">.caption .medium</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--span-l">
+                    Caption (Roboto 12px medium)
+                  </div>
+                  <p>Use for item name, text in update</p>
+                </div>
+              </div>
+            </div>
+
+            <div *ngSwitchCase="'tablet'">
+              <div class="typography-grid">
+                <div class="heading heading--h1-t">H1</div>
+                <div class="class-name">.primary-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h1-t">
+                    Primary Heading medium(Roboto 20px extrabold)
+                  </div>
+                  <p>Use as main header on a page</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h2-t">H2</div>
+                <div class="class-name">.secondary-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h2-t">
+                    Secondary Heading Large (Roboto 13px bold)
+                  </div>
+                  <p>Use as secondary header on a page</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h3-t">H3</div>
+                <div class="class-name">.tertiary-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h3-t">
+                    Tertiary Heading Small (Roboto 13px light)
+                  </div>
+                  <p>Use after heading, profile page headings</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h4-t">H4</div>
+                <div class="class-name">.fourth-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h4-t">
+                    Fourth Heading Large (Roboto 14px bold)
+                  </div>
+                  <p>Use after heading, profile page headings</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h5-t">H5</div>
+                <div class="class-name">.subtitle-1</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h5-t">
+                    Subtitle-1-large (Roboto 12px bold)
+                  </div>
+                  <p>Use as subtitles for paragraphs</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h6-t">H6</div>
+                <div class="class-name">.subtitle-2</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h6-t">
+                    Subtitle-2-large (Roboto 13px medium)
+                  </div>
+                  <p>Use for item name, text in update</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--p-t">p</div>
+                <div class="class-name">.normal-text</div>
+                <div class="class-name">Sentence</div>
+                <div class="description">
+                  <div class="heading heading--p-t">
+                    Normal Text Medium (Roboto 12px normal)
+                  </div>
+                  <p>Use for general text or labels</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--a-t">a</div>
+                <div class="class-name">.link-text</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--a-t">
+                    Link Text Large (Roboto 13px medium)
+                  </div>
+                  <p>Use for links</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--btn-lg-t">button large</div>
+                <div class="class-name">.common-btn .large</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--btn-lg-t">
+                    Button Large (Roboto 14px medium)
+                  </div>
+                  <p>Use for large button</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--lg-lbl-t">label medium</div>
+                <div class="class-name">.label</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--lg-lbl-t">
+                    Label Large (Roboto 13px medium)
+                  </div>
+                  <p>Use for item name, text in update</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--span-t">span</div>
+                <div class="class-name">.caption .medium</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--span-t">
+                    Caption (Roboto 12px medium)
+                  </div>
+                  <p>Use for item name, text in update</p>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div *ngSwitchCase="'mobile'">
+              <div class="typography-grid">
+                <div class="heading heading--h1-m">H1</div>
+                <div class="class-name">.primary-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h1-m">
+                    Primary Heading medium(Roboto 16px extrabold)
+                  </div>
+                  <p>Use as main header on a page</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h2-m">H2</div>
+                <div class="class-name">.secondary-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h2-m">
+                    Secondary Heading Large (Roboto 14px bold)
+                  </div>
+                  <p>Use as secondary header on a page</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h3-m">H3</div>
+                <div class="class-name">.tertiary-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h3-m">
+                    Tertiary Heading Small (Roboto 13px light)
+                  </div>
+                  <p>Use after heading, profile page headings</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h4-m">H4</div>
+                <div class="class-name">.fourth-heading</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h4-m">
+                    Fourth Heading Large (Roboto 14px bold)
+                  </div>
+                  <p>Use after heading, profile page headings</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h5-m">H5</div>
+                <div class="class-name">.subtitle-1</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h5-m">
+                    Subtitle-1-large (Roboto 12px bold)
+                  </div>
+                  <p>Use as subtitles for paragraphs</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--h6-m">H6</div>
+                <div class="class-name">.subtitle-2</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--h6-m">
+                    Subtitle-2-large (Roboto 12px medium)
+                  </div>
+                  <p>Use for item name, text in update</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--p-m">p</div>
+                <div class="class-name">.normal-text</div>
+                <div class="class-name">Sentence</div>
+                <div class="description">
+                  <div class="heading heading--p-m">
+                    Normal Text Medium (Roboto 11px normal)
+                  </div>
+                  <p>Use for general text or labels</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--a-m">a</div>
+                <div class="class-name">.link-text</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--a-m">
+                    Link Text Large (Roboto 12px medium)
+                  </div>
+                  <p>Use for links</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--btn-lg-m">button large</div>
+                <div class="class-name">.common-btn .large</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--btn-lg-m">
+                    Button Large (Roboto 13px medium)
+                  </div>
+                  <p>Use for large button</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--lg-lbl-m">label medium</div>
+                <div class="class-name">.label</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--lg-lbl-m">
+                    Label Large (Roboto 12px medium)
+                  </div>
+                  <p>Use for item name, text in update</p>
+                </div>
+              </div>
+
+              <div class="typography-grid">
+                <div class="heading heading--span-m">span</div>
+                <div class="class-name">.caption .medium</div>
+                <div class="class-name">Capitalize</div>
+                <div class="description">
+                  <div class="heading heading--span-m">
+                    Caption (Roboto 10px medium)
+                  </div>
+                  <p>Use for item name, text in update</p>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

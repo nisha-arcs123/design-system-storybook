@@ -13,166 +13,6 @@ const meta: Meta<InputsComponent> = {
 export default meta;
 type Story = StoryObj<InputsComponent>;
 
-// export const Checkbox: Story = {
-//   args: {
-//     label: 'Type Somthing....',
-//     inputClass: 'checkbox',
-//     heading:'CheckBox',
-//   },
-//   parameters: {
-//     docs: {
-//       source: {
-//         code: `
-//      <div class="button-container">
-//         <label class="custom-checkbox custom-checkbox--vs">
-//           <input type="checkbox" />
-//           <span class="checkmark"></span>
-//         </label>
-//         <label class="custom-checkbox custom-checkbox--sm">
-//           <input type="checkbox" />
-//           <span class="checkmark"></span>
-//         </label>
-//         <label class="custom-checkbox custom-checkbox--md">
-//           <input type="checkbox" />
-//           <span class="checkmark"></span>
-//         </label>
-//         <label class="custom-checkbox custom-checkbox--lg">
-//           <input type="checkbox" />
-//           <span class="checkmark"></span>
-//         </label>
-//         <label class="custom-checkbox custom-checkbox--xl">
-//           <input type="checkbox" />
-//           <span class="checkmark"></span>
-//         </label>
-//       </div>
-
-//       <div class="button-container">
-//         <label
-//           class="custom-checkbox custom-checkbox--vs custom-checkbox--outer-circle-border"
-//         >
-//           <input type="checkbox" />
-//           <span class="checkmark checkmark--circle"></span>
-//           Add
-//         </label>
-//         <label
-//           class="custom-checkbox custom-checkbox--sm custom-checkbox--outer-circle-border"
-//         >
-//           <input type="checkbox" />
-//           <span class="checkmark checkmark--circle"></span>
-//           Add
-//         </label>
-//         <label
-//           class="custom-checkbox custom-checkbox--md custom-checkbox--outer-circle-border"
-//         >
-//           <input type="checkbox" />
-//           <span class="checkmark checkmark--circle"></span>
-//           Add
-//         </label>
-//         <label
-//           class="custom-checkbox custom-checkbox--lg custom-checkbox--outer-circle-border"
-//         >
-//           <input type="checkbox" />
-//           <span class="checkmark checkmark--circle"></span>
-//           Add
-//         </label>
-//         <label
-//           class="custom-checkbox custom-checkbox--xl custom-checkbox--outer-circle-border"
-//         >
-//           <input type="checkbox" />
-//           <span class="checkmark checkmark--circle"></span>
-//           Add
-//         </label>
-//       </div>
-
-//       <div class="button-container">
-//         <label
-//           class="custom-checkbox custom-checkbox--vs custom-checkbox--outer-rectangle-border"
-//         >
-//           <input type="checkbox" />
-//           <span class="checkmark checkmark--circle"></span>
-//           Add
-//         </label>
-//         <label
-//           class="custom-checkbox custom-checkbox--sm custom-checkbox--outer-rectangle-border"
-//         >
-//           <input type="checkbox" />
-//           <span class="checkmark checkmark--circle"></span>
-//           Add
-//         </label>
-//         <label
-//           class="custom-checkbox custom-checkbox--md custom-checkbox--outer-rectangle-border"
-//         >
-//           <input type="checkbox" />
-//           <span class="checkmark checkmark--circle"></span>
-//           Add
-//         </label>
-//         <label
-//           class="custom-checkbox custom-checkbox--lg custom-checkbox--outer-rectangle-border"
-//         >
-//           <input type="checkbox" />
-//           <span class="checkmark checkmark--circle"></span>
-//           Add
-//         </label>
-//         <label
-//           class="custom-checkbox custom-checkbox--xl custom-checkbox--outer-rectangle-border"
-//         >
-//           <input type="checkbox" />
-//           <span class="checkmark checkmark--circle"></span>
-//           Add
-//         </label>
-//       </div>
-
-//       <div class="button-container">
-//         <div class="building-container-checkbox">
-//           <span class="icon-Frame"></span>
-//           Company
-//           <label class="custom-checkbox custom-checkbox--vs">
-//             <input type="checkbox" />
-//             <span class="checkmark checkmark--circle"></span>
-//           </label>
-//         </div>
-//         <div class="building-container-checkbox">
-//           <span class="icon-Frame-1"></span>
-//           Company
-//           <label class="custom-checkbox custom-checkbox--vs">
-//             <input type="checkbox" />
-//             <span class="checkmark checkmark--circle"></span>
-//           </label>
-//         </div>
-//         <div class="building-container-checkbox">
-//           <span class="icon-Frame-2"></span>
-//           Company
-//           <label class="custom-checkbox custom-checkbox--vs">
-//             <input type="checkbox" />
-//             <span class="checkmark checkmark--circle"></span>
-//           </label>
-//         </div>
-//       </div>
-//         `.trim(),
-//         language: 'html',
-//       },
-//     },
-//   },
-// };
-
-
-// export const Radio: Story = {
-//   args: {
-//     label: 'Username',
-//     inputClass: 'radio',
-//     heading:'Radio',
-//   },
-//   parameters: {
-//     docs: {
-//       source: {
-//         code: `
-
-//         `.trim(),
-//         language: 'html',
-//       },
-//     },
-//   },
-// };
 
 
 
@@ -186,7 +26,38 @@ export const DateAndTime: Story = {
       docs: {
         source: {
           code: `
-  
+  <div class="container">
+          <div class="calendar">
+            <div class="calendar-header">
+              <p class="calendar-year">{{ currentDate.getFullYear() }}</p>
+              <h2>{{ currentDate.toLocaleString('default', { month: 'long' }) }} {{ currentDate.getFullYear() }}</h2>
+            </div>
+          
+            <div class="calendar-controls">
+              <button (click)="prevMonth()">←</button>
+              <p class="curMonth">{{ currentDate.toLocaleString('default', { month: 'long' }) }} {{ currentDate.getFullYear() }}</p>
+              <button (click)="nextMonth()">→</button>
+            </div>
+          
+            <div class="calendar-grid">
+              <div class="day-name" *ngFor="let day of ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']">{{ day }}</div>
+              <button
+                *ngFor="let day of monthDays"
+                class="calendar-day"
+                [class.selected]="selectedDate?.getDate() === day"
+                (click)="selectDate(day)"
+              >
+                {{ day }}
+              </button>
+            </div>
+          
+            <div class="calendar-actions">
+              <button>Cancel</button>
+              <button>Ok</button>
+            </div>
+          </div>
+          
+        </div>
           `.trim(),
           language: 'html',
         },
@@ -205,7 +76,7 @@ export const DateAndTime: Story = {
       docs: {
         source: {
           code: `
-  <div class="button-container">
+  <div class="container">
           <div class="switchBox">
             <label class="switch">
               <input type="checkbox" />
@@ -215,7 +86,7 @@ export const DateAndTime: Story = {
         </div>
 
 
-        <div class="button-container">
+        <div class="container">
           <div class="switchBox">
             Label
             <label class="switch">

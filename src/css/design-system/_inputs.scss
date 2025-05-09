@@ -267,63 +267,91 @@
   }
 }
 
-.datetime{
-  padding: 12px;
-  border: 1px solid #c3c6d4;
-  border-radius: 4px;
-
-  &:focus{
-    outline: none;
-    border: 1px solid #2196f3;
-  }
-}
-
-.flatpickr-calendar{
-  // font-size: 14px;
-  color: #202020;
-  // font-weight: 400;
-}
-
 
 
 
 .calendar {
-  border: 1px solid #ddd;
-  padding: 1rem;
-  width: 300px;
+  width: 310px;
+  box-shadow: 0 24px 38px 3px #00000024;
+  font-family: sans-serif;
 
   .calendar-header {
+    background:#017BBA;
+    color: white;
+    padding: 16px 24px;
+    .calendar-year{
+      font-size: 14px;
+      margin: 0;
+      font-weight: 400;
+      color: #FFFFFF8A;
+      margin-bottom: 4px;
+    }
+    h2 {
+      font-size: 32px;
+      line-height: 42px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin: 0;
+    }
+  }
+
+  .calendar-controls {
     display: flex;
     justify-content: space-between;
-    font-weight: bold;
-    margin-bottom: 0.5rem;
+    align-items: center;
+    padding: 10px;
+    height: 60px;
+    button{
+      background-color: transparent;
+      border: none;
+    }
+
+    .curMonth{
+      font-size: 16px;
+      font-weight: bold;
+      color: #202020;
+    }
   }
 
   .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    gap: 0.25rem;
-  }
-
-  .day-name {
-    font-weight: bold;
     text-align: center;
-  }
+    padding: 10px;
 
-  .calendar-day {
-    height: 40px;
-    text-align: center;
-    line-height: 40px;
-    border-radius: 4px;
-    cursor: pointer;
-
-    &.today {
-      background-color: #007bff;
-      color: white;
+    .calendar-day {
+      padding:12px 8px;
+      border: none;
+      background: none;
+      font-weight: light;
+      &.selected {
+        background-color: #007ac2;
+        color: white;
+        border-radius: 50%;
+      }
     }
 
-    &.other-month {
-      opacity: 0.4;
+    .day-name {
+      font-weight: lighter;
+      font-size: 11px;
+      line-height: 13px;
+      font-weight: bold;
+      color: #00000061;
+      margin-bottom: 4px;
+    }
+  }
+
+  .calendar-actions {
+    display: flex;
+    justify-content: end;
+    padding: 16px 20px;
+    gap: 24px;
+    button{
+      background-color: transparent;
+      border: none;
+      font-size: 14px;
+      font-weight: bold;
+      color: #017BBA;
     }
   }
 }

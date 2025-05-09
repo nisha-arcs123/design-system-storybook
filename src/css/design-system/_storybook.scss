@@ -1,4 +1,4 @@
-.button-outer-container{
+.outer-container{
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -35,7 +35,7 @@
   }
   
   
-  .button-container{
+  .container{
     border: 1px solid #D0D4E4;
     padding: 32px;
     display: flex;

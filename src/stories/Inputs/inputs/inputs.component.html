@@ -1,267 +1,60 @@
-<!--==========================================CheckBox==================================-->
-
 <div [ngSwitch]="inputClass">
-  <!-- <div *ngSwitchCase="'checkbox'" class="simple-input"> -->
-    <!-- <div class="button-outer-container">
+  <!-- ======================================= Date And Time ==================================-->
+
+  <div *ngSwitchCase="'date&time'">
+    <div class="outer-container">
       <div class="heading">
         <h1>Inputs</h1>
         <div class="line"></div>
         <h2>{{ heading }}</h2>
         <p>
-          Checkboxes allow users to select one or more items from a set of
-          options.
+          Date and time in the context of forms refers to input fields that
+          allow users to specify both a date and a time. These fields are used
+          when collecting information that requires both date and time details,
+          such as scheduling appointments, setting deadlines, or recording
+          events.
         </p>
       </div>
-      <div class="button-container">
-        <label class="custom-checkbox custom-checkbox--vs">
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
-        <label class="custom-checkbox custom-checkbox--sm">
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
-        <label class="custom-checkbox custom-checkbox--md">
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
-        <label class="custom-checkbox custom-checkbox--lg">
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
-        <label class="custom-checkbox custom-checkbox--xl">
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
-      </div>
-
-      <div class="button-container">
-        <label
-          class="custom-checkbox custom-checkbox--vs custom-checkbox--outer-circle-border"
-        >
-          <input type="checkbox" />
-          <span class="checkmark checkmark--circle"></span>
-          Add
-        </label>
-        <label
-          class="custom-checkbox custom-checkbox--sm custom-checkbox--outer-circle-border"
-        >
-          <input type="checkbox" />
-          <span class="checkmark checkmark--circle"></span>
-          Add
-        </label>
-        <label
-          class="custom-checkbox custom-checkbox--md custom-checkbox--outer-circle-border"
-        >
-          <input type="checkbox" />
-          <span class="checkmark checkmark--circle"></span>
-          Add
-        </label>
-        <label
-          class="custom-checkbox custom-checkbox--lg custom-checkbox--outer-circle-border"
-        >
-          <input type="checkbox" />
-          <span class="checkmark checkmark--circle"></span>
-          Add
-        </label>
-        <label
-          class="custom-checkbox custom-checkbox--xl custom-checkbox--outer-circle-border"
-        >
-          <input type="checkbox" />
-          <span class="checkmark checkmark--circle"></span>
-          Add
-        </label>
-      </div>
-
-      <div class="button-container">
-        <label
-          class="custom-checkbox custom-checkbox--vs custom-checkbox--outer-rectangle-border"
-        >
-          <input type="checkbox" />
-          <span class="checkmark checkmark--circle"></span>
-          Add
-        </label>
-        <label
-          class="custom-checkbox custom-checkbox--sm custom-checkbox--outer-rectangle-border"
-        >
-          <input type="checkbox" />
-          <span class="checkmark checkmark--circle"></span>
-          Add
-        </label>
-        <label
-          class="custom-checkbox custom-checkbox--md custom-checkbox--outer-rectangle-border"
-        >
-          <input type="checkbox" />
-          <span class="checkmark checkmark--circle"></span>
-          Add
-        </label>
-        <label
-          class="custom-checkbox custom-checkbox--lg custom-checkbox--outer-rectangle-border"
-        >
-          <input type="checkbox" />
-          <span class="checkmark checkmark--circle"></span>
-          Add
-        </label>
-        <label
-          class="custom-checkbox custom-checkbox--xl custom-checkbox--outer-rectangle-border"
-        >
-          <input type="checkbox" />
-          <span class="checkmark checkmark--circle"></span>
-          Add
-        </label>
-      </div>
-
-      <div class="button-container">
-        <div class="building-container-checkbox">
-          <span class="icon-Frame"></span>
-          Company
-          <label class="custom-checkbox custom-checkbox--vs">
-            <input type="checkbox" />
-            <span class="checkmark checkmark--circle"></span>
-          </label>
-        </div>
-        <div class="building-container-checkbox">
-          <span class="icon-Frame-1"></span>
-          Company
-          <label class="custom-checkbox custom-checkbox--vs">
-            <input type="checkbox" />
-            <span class="checkmark checkmark--circle"></span>
-          </label>
-        </div>
-        <div class="building-container-checkbox">
-          <span class="icon-Frame-2"></span>
-          Company
-          <label class="custom-checkbox custom-checkbox--vs">
-            <input type="checkbox" />
-            <span class="checkmark checkmark--circle"></span>
-          </label>
-        </div>
-      </div>
-    </div> -->
-    <!-- ======================================= Radio ==================================-->
-  <!-- </div> -->
-
-  <!-- <div [ngSwitch]="inputClass">
-    <div *ngSwitchCase="'radio'">
-      <div class="button-outer-container">
-        <div class="heading">
-          <h1>Inputs</h1>
-          <div class="line"></div>
-          <h2>{{ heading }}</h2>
-          <p>
-            Radio button in the context of forms refers to a type of input field
-            that allows users to select only one option from a list of
-            predefined choices. Radio buttons are often used when there is a
-            list of mutually exclusive options, meaning the user can select only
-            one option at a time.
-          </p>
-        </div>
-        
-        <div class="button-container">
-          <label class="custome-radio custome-radio--vs">
-            <input type="radio" />
-            <span class="radiomark"></span>
-          </label>
-          <label class="custome-radio custome-radio--sm">
-            <input type="radio" />
-            <span class="radiomark"></span>
-          </label>
-          <label class="custome-radio custome-radio--md">
-            <input type="radio" />
-            <span class="radiomark"></span>
-          </label>
-          <label class="custome-radio custome-radio--lg">
-            <input type="radio" />
-            <span class="radiomark"></span>
-          </label>
-          <label class="custome-radio custome-radio--xl">
-            <input type="radio" />
-            <span class="radiomark"></span>
-          </label>
-        </div>
-
-        <div class="button-container">
-          <label
-            class="custome-radio custome-radio--vs custome-radio--outer-circle-border"
-          >
-            <input type="radio" />
-            <span class="radiomark radiomark--circle"></span>
-            Radio
-          </label>
-          <label
-            class="custome-radio custome-radio--sm custome-radio--outer-circle-border"
-          >
-            <input type="radio" />
-            <span class="radiomark radiomark--circle"></span>
-            Radio
-          </label>
-          <label
-            class="custome-radio custome-radio--md custome-radio--outer-circle-border"
-          >
-            <input type="radio" />
-            <span class="radiomark radiomark--circle"></span>
-            Radio
-          </label>
-          <label
-            class="custome-radio custome-radio--lg custome-radio--outer-circle-border"
-          >
-            <input type="radio" />
-            <span class="radiomark radiomark--circle"></span>
-            Radio
-          </label>
-          <label
-            class="custome-radio custome-radio--xl custome-radio--outer-circle-border"
-          >
-            <input type="radio" />
-            <span class="radiomark radiomark--circle"></span>
-            Radio
-          </label>
-        </div>
-
-        <div class="button-container">
-          <div class="building-container-checkbox">
-            <span class="icon-Frame"></span>
-            Company
-            <label class="custome-radio custome-radio--vs">
-              <input type="radio" />
-              <span class="radiomark radiomark--circle"></span>
-            </label>
+      <div class="container">
+        <div class="calendar">
+          <div class="calendar-header">
+            <p class="calendar-year">{{ currentDate.getFullYear() }}</p>
+            <h2>
+              {{ currentDate.toLocaleString("default", { month: "long" }) }}
+              {{ currentDate.getFullYear() }}
+            </h2>
           </div>
-          <div class="building-container-checkbox">
-            <span class="icon-Frame-1"></span>
-            Company
-            <label class="custome-radio custome-radio--vs">
-              <input type="radio" />
-              <span class="radiomark radiomark--circle"></span>
-            </label>
-          </div>
-          <div class="building-container-checkbox">
-            <span class="icon-Frame-2"></span>
-            Company
-            <label class="custome-radio custome-radio--vs">
-              <input type="radio" />
-              <span class="radiomark radiomark--circle"></span>
-            </label>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!-- ======================================= Date And Time ==================================-->
 
-  <div [ngSwitch]="inputClass">
-    <div *ngSwitchCase="'date&time'">
-      <div class="button-outer-container">
-        <div class="heading">
-          <h1>Inputs</h1>
-          <div class="line"></div>
-          <h2>{{ heading }}</h2>
-          <p>
-            Date and time in the context of forms refers to input fields that allow users to specify both a date and a time. These fields are used when collecting information that requires both date and time details, such as scheduling appointments, setting deadlines, or recording events.
-          </p>
-        </div>
-        <div class="button-container">
-          <input #myDatePicker type="text" placeholder="Select Date" class="datetime" id="myDatePicker"/>
+          <div class="calendar-controls">
+            <button (click)="prevMonth()">←</button>
+            <p class="curMonth">
+              {{ currentDate.toLocaleString("default", { month: "long" }) }}
+              {{ currentDate.getFullYear() }}
+            </p>
+            <button (click)="nextMonth()">→</button>
+          </div>
+
+          <div class="calendar-grid">
+            <div
+              class="day-name"
+              *ngFor="let day of ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']"
+            >
+              {{ day }}
+            </div>
+            <button
+              *ngFor="let day of monthDays"
+              class="calendar-day"
+              [class.selected]="selectedDate?.getDate() === day"
+              (click)="selectDate(day)"
+            >
+              {{ day }}
+            </button>
+          </div>
+
+          <div class="calendar-actions">
+            <button>Cancel</button>
+            <button>Ok</button>
+          </div>
         </div>
       </div>
     </div>
@@ -269,35 +62,36 @@
 
   <!-- ======================================= Switch==================================-->
 
-  <div [ngSwitch]="inputClass">
-    <div *ngSwitchCase="'switch'">
-      <div class="button-outer-container">
-        <div class="heading">
-          <h1>Inputs</h1>
-          <div class="line"></div>
-          <h2>{{ heading }}</h2>
-          <p>
-            A "switch" in the context of forms typically refers to a graphical user interface (GUI) element that represents a binary state, allowing users to toggle between two options - usually "on" and "off". This switch is also known as a toggle switch or a toggle button.
-          </p>
-        </div>
-        <div class="button-container">
-          <div class="switchBox">
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider"></span>
-            </label>
-          </div>
-        </div>
+  <div *ngSwitchCase="'switch'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>Inputs</h1>
+        <div class="line"></div>
+        <h2>{{ heading }}</h2>
+        <p>
+          A "switch" in the context of forms typically refers to a graphical
+          user interface (GUI) element that represents a binary state, allowing
+          users to toggle between two options - usually "on" and "off". This
+          switch is also known as a toggle switch or a toggle button.
+        </p>
+      </div>
 
+      <div class="container">
+        <div class="switchBox">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
 
-        <div class="button-container">
-          <div class="switchBox">
-            Label
-            <label class="switch">
-              <input type="checkbox" />
-              <span class="slider"></span>
-            </label>
-          </div>
+      <div class="container">
+        <div class="switchBox">
+          Label
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
         </div>
       </div>
     </div>
