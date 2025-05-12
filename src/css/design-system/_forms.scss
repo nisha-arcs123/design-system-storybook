@@ -1,4 +1,4 @@
-@use './storybook';
+@use "./storybook";
 
 .d-none {
   display: none;
@@ -137,7 +137,6 @@
       box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
     }
 
-
     .custom-select {
       appearance: none;
       -webkit-appearance: none;
@@ -156,7 +155,7 @@
       background-position: right 0px center;
       background-size: 10px 6px;
 
-      option{
+      option {
         font-size: 13px;
         font-weight: 400;
         color: #676879;
@@ -164,7 +163,7 @@
         width: 100%;
         position: absolute;
       }
-      &:focus{
+      &:focus {
         outline: none;
       }
     }
@@ -185,5 +184,76 @@
     .error-message {
       display: block;
     }
+  }
+}
+
+.search-container {
+  border: 1px solid #d0d4e4;
+  padding: 32px;
+  display: flex;
+  gap: 20px;
+  border-radius: 8px;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e5e6ec;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 300px;
+  background-color: #ffffff;
+  height: 32px;
+  box-sizing: border-box;
+  &--sm {
+    height: 28px;
+  }
+  svg {
+    padding: 0 6px;
+  }
+
+  input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #949494;
+  }
+  button {
+    background-color: #eeeeef;
+    border: none;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-weight: 500;
+    color: #4d4d4d;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    &:hover {
+      background-color: #e0e0e0;
+    }
+  }
+}
+
+.search-box-app {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #c3c6d4;
+  border-radius: 4px;
+  overflow: hidden;
+  max-width: 300px;
+  background-color: #ffffff;
+  padding: 6px 12px;
+  height: 32px;
+  box-sizing: border-box;
+  input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 0;
+    font-size: 12px;
+    font-weight: 400;
+    color: #949494;
   }
 }

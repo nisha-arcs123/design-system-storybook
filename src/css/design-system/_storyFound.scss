@@ -1,6 +1,11 @@
 @use "./storybook";
 
-.container {
+.color-container {
+  border: 1px solid #d0d4e4;
+  padding: 32px;
+  display: flex;
+  gap: 20px;
+  border-radius: 8px;
   flex-direction: column;
   .color-foundation {
     display: flex;
@@ -146,69 +151,9 @@
       }
     }
   }
-
-  .margin-padding-container {
-    display: flex;
-    flex-direction: column;
-
-    .margin {
-      width: 100px;
-      background-color: #f4c3cb;
-      &--ml-1 {
-        height: 1px;
-      }
-      &--ml-2 {
-        height: 2px;
-      }
-      &--ml-4 {
-        height: 4px;
-      }
-      &--ml-8 {
-        height: 8px;
-      }
-      &--ml-12 {
-        height: 12px;
-      }
-      &--ml-16 {
-        height: 16px;
-      }
-      &--ml-20 {
-        height: 20px;
-      }
-      &--ml-24 {
-        height: 24px;
-      }
-      &--ml-32 {
-        height: 32px;
-      }
-      &--ml-40 {
-        height: 40px;
-      }
-      &--ml-46 {
-        height: 46px;
-      }
-      &--ml-48 {
-        height: 48px;
-      }
-      &--ml-64 {
-        height: 64px;
-      }
-      &--ml-80 {
-        height: 80px;
-      }
-    }
-
-    .box-txt {
-      p {
-        font-size: 14px;
-        font-weight: 400;
-        color: #676879;
-        margin: 0;
-        margin-top: 4px;
-      }
-    }
-  }
 }
+
+
 
 .second-container {
   .heading {
@@ -223,7 +168,7 @@
 }
 
 
-.outer-second-container {
+.margin-padding-outer {
   .heading {
     h2 {
       font-size: 24px;
@@ -238,8 +183,70 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: end;
+    .margin-padding-container {
+      display: flex;
+      flex-direction: column;
+
+      .margin {
+        width: 100px;
+        background-color: #f4c3cb;
+        &--ml-1 {
+          height: 1px;
+        }
+        &--ml-2 {
+          height: 2px;
+        }
+        &--ml-4 {
+          height: 4px;
+        }
+        &--ml-8 {
+          height: 8px;
+        }
+        &--ml-12 {
+          height: 12px;
+        }
+        &--ml-16 {
+          height: 16px;
+        }
+        &--ml-20 {
+          height: 20px;
+        }
+        &--ml-24 {
+          height: 24px;
+        }
+        &--ml-32 {
+          height: 32px;
+        }
+        &--ml-40 {
+          height: 40px;
+        }
+        &--ml-46 {
+          height: 46px;
+        }
+        &--ml-48 {
+          height: 48px;
+        }
+        &--ml-64 {
+          height: 64px;
+        }
+        &--ml-80 {
+          height: 80px;
+        }
+      }
+
+      .box-txt {
+        p {
+          font-size: 14px;
+          font-weight: 400;
+          color: #676879;
+          margin: 0;
+          margin-top: 4px;
+        }
+      }
+    }
   }
 }
+
 
 
 .border-container {
@@ -329,10 +336,9 @@
         margin: 0;
       }
     }
-    
   }
-
 }
+
 
 
 .tabs-container {
@@ -371,207 +377,6 @@
       align-items: start;
       padding: 24px;
 
-      //   desktop
-      .heading {
-        color: #323238;
-
-        &--h1 {
-          font-size: 32px;
-          font-weight: 800;
-        }
-        &--h2 {
-          font-size: 22px;
-          font-weight: 700;
-        }
-        &--h3 {
-          font-size: 16px;
-          font-weight: 300;
-        }
-        &--h4 {
-          font-size: 18px;
-          font-weight: 700;
-        }
-        &--h5 {
-          font-size: 16px;
-          font-weight: 700;
-        }
-        &--h6 {
-          font-size: 14px;
-          font-weight: 500;
-        }
-        &--p {
-          font-size: 13px;
-          font-weight: 400;
-        }
-        &--a {
-          font-size: 14px;
-          font-weight: 500;
-        }
-        &--btn-lg {
-          font-size: 14px;
-          font-weight: 500;
-        }
-        &--lg-lbl {
-          font-size: 14px;
-          font-weight: 500;
-        }
-        &--span {
-          font-size: 12px;
-          font-weight: 500;
-        }
-      }
-
-      //   laptop
-
-      .heading {
-        color: #323238;
-
-        &--h1-l {
-          font-size: 28px;
-          font-weight: 800;
-        }
-        &--h2-l {
-          font-size: 20px;
-          font-weight: 700;
-        }
-        &--h3-l {
-          font-size: 16px;
-          font-weight: 300;
-        }
-        &--h4-l {
-          font-size: 18px;
-          font-weight: 700;
-        }
-        &--h5-l {
-          font-size: 15px;
-          font-weight: 700;
-        }
-        &--h6-l {
-          font-size: 13px;
-          font-weight: 500;
-        }
-        &--p-l {
-          font-size: 12px;
-          font-weight: 400;
-        }
-        &--a-l {
-          font-size: 13px;
-          font-weight: 500;
-        }
-        &--btn-lg-l {
-          font-size: 14px;
-          font-weight: 500;
-        }
-        &--lg-lbl-l {
-          font-size: 13px;
-          font-weight: 500;
-        }
-        &--span-l {
-          font-size: 12px;
-          font-weight: 500;
-        }
-      }
-
-      //   tablet
-      .heading {
-        color: #323238;
-
-        &--h1-t {
-          font-size: 20px;
-          font-weight: 800;
-        }
-        &--h2-t {
-          font-size: 13px;
-          font-weight: 700;
-        }
-        &--h3-t {
-          font-size: 13px;
-          font-weight: 300;
-        }
-        &--h4-t {
-          font-size: 14px;
-          font-weight: 700;
-        }
-        &--h5-t {
-          font-size: 12px;
-          font-weight: 700;
-        }
-        &--h6-t {
-          font-size: 13px;
-          font-weight: 500;
-        }
-        &--p-t {
-          font-size: 12px;
-          font-weight: 400;
-        }
-        &--a-t {
-          font-size: 13px;
-          font-weight: 500;
-        }
-        &--btn-lg-t {
-          font-size: 14px;
-          font-weight: 500;
-        }
-        &--lg-lbl-t {
-          font-size: 13px;
-          font-weight: 500;
-        }
-        &--span-t {
-          font-size: 12px;
-          font-weight: 500;
-        }
-      }
-
-      //   mobile
-      .heading {
-        color: #323238;
-
-        &--h1-m {
-          font-size: 16px;
-          font-weight: 800;
-        }
-        &--h2-m {
-          font-size: 14px;
-          font-weight: 700;
-        }
-        &--h3-m {
-          font-size: 13px;
-          font-weight: 300;
-        }
-        &--h4-m {
-          font-size: 14px;
-          font-weight: 700;
-        }
-        &--h5-m {
-          font-size: 12px;
-          font-weight: 700;
-        }
-        &--h6-m {
-          font-size: 12px;
-          font-weight: 500;
-        }
-        &--p-m {
-          font-size: 11px;
-          font-weight: 400;
-        }
-        &--a-m {
-          font-size: 12px;
-          font-weight: 500;
-        }
-        &--btn-lg-m {
-          font-size: 13px;
-          font-weight: 500;
-        }
-        &--lg-lbl-m {
-          font-size: 12px;
-          font-weight: 500;
-        }
-        &--span-m {
-          font-size: 10px;
-          font-weight: 500;
-        }
-      }
-
       .class-name {
         font-size: 14px;
         font-weight: 400;
@@ -580,10 +385,6 @@
       }
 
       .description {
-        .heading {
-          color: #323238;
-          margin: 0;
-        }
         p {
           font-size: 14px;
           font-weight: 400;
@@ -592,5 +393,156 @@
         }
       }
     }
+
+    // laptop
+    .heading-laptop {
+      color: #323238;
+
+      .primary-heading {
+        font-size: 28px;
+        font-weight: 800;
+      }
+      .secondary-heading {
+        font-size: 20px;
+        font-weight: 700;
+      }
+      .tertiary-heading {
+        font-size: 16px;
+        font-weight: 300;
+      }
+      .fourth-heading {
+        font-size: 18px;
+        font-weight: 700;
+      }
+      .subtitle-1 {
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .subtitle-2 {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .normal-text {
+        font-size: 12px;
+        font-weight: 400;
+      }
+      .link-text {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .common-btn {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .label {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .caption {
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+
+    //   tablet
+    .heading-tablet {
+      color: #323238;
+
+      .primary-heading {
+        font-size: 20px;
+        font-weight: 800;
+      }
+      .secondary-heading {
+        font-size: 13px;
+        font-weight: 700;
+      }
+      .tertiary-heading {
+        font-size: 13px;
+        font-weight: 300;
+      }
+      .fourth-heading {
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .subtitle-1 {
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .subtitle-2 {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .normal-text {
+        font-size: 12px;
+        font-weight: 400;
+      }
+      .link-text {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .common-btn {
+        font-size: 14px;
+        font-weight: 500;
+      }
+      label {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .caption {
+        font-size: 12px;
+        font-weight: 500;
+      }
+    }
+
+    //   mobile
+    .heading-mobile {
+      color: #323238;
+
+      .primary-heading {
+        font-size: 16px;
+        font-weight: 800;
+      }
+      .secondary-heading {
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .tertiary-heading {
+        font-size: 13px;
+        font-weight: 300;
+      }
+      .fourth-heading {
+        font-size: 14px;
+        font-weight: 700;
+      }
+      .subtitle-1 {
+        font-size: 12px;
+        font-weight: 700;
+      }
+      .subtitle-2 {
+        font-size: 12px;
+        font-weight: 500;
+      }
+      .normal-text {
+        font-size: 11px;
+        font-weight: 400;
+      }
+      .link-text {
+        font-size: 12px;
+        font-weight: 500;
+      }
+      .common-btn {
+        font-size: 13px;
+        font-weight: 500;
+      }
+      .label {
+        font-size: 12px;
+        font-weight: 500;
+      }
+      .caption {
+        font-size: 10px;
+        font-weight: 500;
+      }
+    }
   }
 }
+

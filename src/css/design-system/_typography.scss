@@ -1,16 +1,16 @@
-// Font families
-@use "./colors" as *;
-@use "./mixins" as *;
+
+@use './colors' as *;
+@use './mixins'  as *;
 $font-family: "Figtree", sans-serif;
 
 // Font weights
 
 // variables
-$font-light: 300 !important;
-$font-regular: 400 !important;
-$font-medium: 500 !important;
-$font-bold: 700 !important;
-$font-extra-bold: 800 !important;
+$font-light: 300 ;
+$font-regular: 400 ;
+$font-medium: 500 ;
+$font-bold: 700 ;
+$font-extra-bold: 800 ;
 
 // classess
 $font-weight: (
@@ -29,6 +29,8 @@ $font-weight: (
 
 // Font sizes
 $fonts: (
+  "10": 10px,
+  "11": 11px,
   "12": 12px,
   "13": 13px,
   "14": 14px,
@@ -54,40 +56,41 @@ $fonts: (
 
 /**********font size**********/
 
-$fs-50: 50px !important;
-$fs-42: 42px !important;
-$fs-36: 36px !important;
-$fs-34: 34px !important;
-$fs-32: 32px !important;
-$fs-28: 28px !important;
-$fs-24: 24px !important;
-$fs-22: 22px !important;
-$fs-20: 20px !important;
-$fs-18: 18px !important;
-$fs-16: 16px !important;
-$fs-15: 15px !important;
-$fs-14: 14px !important;
-$fs-13: 13px !important;
-$fs-12: 12px !important;
-
+$fs-50: 50px;
+$fs-42: 42px;
+$fs-36: 36px;
+$fs-34: 34px;
+$fs-32: 32px;
+$fs-28: 28px;
+$fs-24: 24px;
+$fs-22: 22px;
+$fs-20: 20px;
+$fs-18: 18px;
+$fs-16: 16px;
+$fs-15: 15px;
+$fs-14: 14px;
+$fs-13: 13px;
+$fs-12: 12px;
+$fs-11: 11px;
+$fs-10: 10px;
 /****************line height*************/
-$lh-50: 50px !important;
-$lh-42: 42px !important;
-$lh-36: 36px !important;
-$lh-34: 34px !important;
-$lh-32: 32px !important;
-$lh-30: 30px !important;
-$lh-28: 28px !important;
-$lh-26: 26px !important;
-$lh-24: 24px !important;
-$lh-22: 22px !important;
-$lh-20: 20px !important;
-$lh-18: 18px !important;
-$lh-16: 16px !important;
-$lh-15: 15px !important;
-$lh-14: 14px !important;
-$lh-13: 13px !important;
-$lh-12: 12px !important;
+$lh-50: 50px;
+$lh-42: 42px;
+$lh-36: 36px;
+$lh-34: 34px;
+$lh-32: 32px;
+$lh-30: 30px;
+$lh-28: 28px;
+$lh-26: 26px;
+$lh-24: 24px;
+$lh-22: 22px;
+$lh-20: 20px;
+$lh-18: 18px;
+$lh-16: 16px;
+$lh-15: 15px;
+$lh-14: 14px;
+$lh-13: 13px;
+$lh-12: 12px;
 
 h1,
 .primary-heading {
@@ -106,100 +109,181 @@ h1,
   }
 }
 
-// h2,
-// .secondary-heading {
-//   font-size: $fs-22 !important;
-//   line-height: $lh-30;
-//   color: $primary-text-color;
-//   font-weight: $font-bold;
-//   text-transform: capitalize;
-//   @include max-width(1366px) {
-//     font-size: $fs-20;
-//   }
-//   @include max-width(768px) {
-//     font-size: $fs-20;
-//   }
-//   @include max-width(375px) {
-//     font-size: $fs-14;
-//   }
-// }
+h2,
+.secondary-heading {
+  font-size: $fs-22;
+  line-height: $lh-30;
+  color: $primary-text-color;
+  font-weight: $font-bold;
+  text-transform: capitalize;
+  @include max-width(1366px) {
+    font-size: $fs-20;
+  }
+  @include max-width(768px) {
+    font-size: $fs-13;
+  }
+  @include max-width(375px) {
+    font-size: $fs-14;
+  }
+}
 
-// h3,
-// .tertiary-heading {
-//   font-size: $fs-16 !important;
-//   line-height: $lh-30;
-//   color: $primary-text-color;
-//   font-weight: $font-light;
-//   text-transform: capitalize;
-// }
+h3,
+.tertiary-heading {
+  font-size: $fs-16;
+  line-height: $lh-30;
+  color: $primary-text-color;
+  font-weight: $font-light;
+  text-transform: capitalize;
+   @include max-width(1366px) {
+    font-size: $fs-16;
+  }
+  @include max-width(768px) {
+    font-size: $fs-13;
+  }
+  @include max-width(375px) {
+    font-size: $fs-13;
+  }
+}
 
-// h4,
-// .fourth-heading {
-//   font-size: $fs-18 !important;
-//   line-height: $lh-26;
-//   color: $primary-text-color;
-//   font-weight: $font-bold;
-//   text-transform: capitalize;
-// }
+h4,
+.fourth-heading {
+  font-size: $fs-18;
+  line-height: $lh-26;
+  color: $primary-text-color;
+  font-weight: $font-bold;
+  text-transform: capitalize;
+   @include max-width(1366px) {
+    font-size: $fs-18;
+  }
+  @include max-width(768px) {
+    font-size: $fs-14;
+  }
+  @include max-width(375px) {
+    font-size: $fs-14;
+  }
+}
 
-// h5,
-// .subtitle-1 {
-//   font-size: $fs-16 !important;
-//   line-height: $lh-24;
-//   color: $primary-text-color;
-//   font-weight: $font-bold;
-//   text-transform: capitalize;
-// }
+h5,
+.subtitle-1 {
+  font-size: $fs-16;
+  line-height: $lh-24;
+  color: $primary-text-color;
+  font-weight: $font-bold;
+  text-transform: capitalize;
+   @include max-width(1366px) {
+    font-size: $fs-15;
+  }
+  @include max-width(768px) {
+    font-size: $fs-12;
+  }
+  @include max-width(375px) {
+    font-size: $fs-12;
+  }
+}
 
-// h6,
-// .subtitle-2 {
-//   font-size: $fs-14 !important;
-//   line-height: $lh-22;
-//   color: $primary-text-color;
-//   font-weight: $font-medium;
-//   text-transform: capitalize;
-// }
+h6,
+.subtitle-2 {
+  font-size: $fs-14;
+  line-height: $lh-22;
+  color: $primary-text-color;
+  font-weight: $font-medium;
+  text-transform: capitalize;
+   @include max-width(1366px) {
+    font-size: $fs-13;
+  }
+  @include max-width(768px) {
+    font-size: $fs-13;
+  }
+  @include max-width(375px) {
+    font-size: $fs-12;
+  }
+}
 
-// p,
-// .normal-text {
-//   font-size: $fs-13;
-//   line-height: $lh-20;
-//   color: $primary-text-color;
-//   font-weight: $font-regular;
-//   text-transform: capitalize;
-// }
+p,
+.normal-text {
+  font-size: $fs-13;
+  line-height: $lh-20;
+  color: $primary-text-color;
+  font-weight: $font-regular;
+  text-transform: capitalize;
+   @include max-width(1366px) {
+    font-size: $fs-12;
+  }
+  @include max-width(768px) {
+    font-size: $fs-12;
+  }
+  @include max-width(375px) {
+    font-size: $fs-11;
+  }
+}
 
-// a,
-// .link-text {
-//   font-size: $fs-14;
-//   line-height: $lh-22;
-//   color: $primary-text-color;
-//   font-weight: $font-medium;
-//   text-transform: capitalize;
-// }
+a,
+.link-text {
+  font-size: $fs-14;
+  line-height: $lh-22;
+  color: $primary-text-color;
+  font-weight: $font-medium;
+  text-transform: capitalize;
+    @include max-width(1366px) {
+    font-size: $fs-13;
+  }
+  @include max-width(768px) {
+    font-size: $fs-13;
+  }
+  @include max-width(375px) {
+    font-size: $fs-12;
+  }
+}
 
-// .common-btn .large {
-//   font-size: $fs-14;
-//   line-height: $lh-22;
-//   color: $primary-text-color;
-//   font-weight: $font-medium;
-//   text-transform: capitalize;
-// }
+.common-btn, .large {
+  font-size: $fs-14;
+  line-height: $lh-22;
+  color: $primary-text-color;
+  font-weight: $font-medium;
+  text-transform: capitalize;
+    @include max-width(1366px) {
+    font-size: $fs-14;
+  }
+  @include max-width(768px) {
+    font-size: $fs-14;
+  }
+  @include max-width(375px) {
+    font-size: $fs-13;
+  }
+}
 
-// label,
-// .label {
-//   font-size: $fs-14;
-//   line-height: $lh-22;
-//   color: $primary-text-color;
-//   font-weight: $font-medium;
-//   text-transform: capitalize;
-// }
+label,
+.label {
+  font-size: $fs-14;
+  line-height: $lh-22;
+  color: $primary-text-color;
+  font-weight: $font-medium;
+  text-transform: capitalize;
+    @include max-width(1366px) {
+    font-size: $fs-13;
+  }
+  @include max-width(768px) {
+    font-size: $fs-13;
+  }
+  @include max-width(375px) {
+    font-size: $fs-12;
+  }
+}
 
-// .caption,
-// .caption-medium {
-//   font-size: $fs-12;
-//   line-height: $lh-20;
-//   color: $primary-text-color;
-//   font-weight: $font-medium;
-//   text-transform: capitalize;
-// }
+.caption,
+.caption-medium {
+  font-size: $fs-12;
+  line-height: $lh-20;
+  color: $primary-text-color;
+  font-weight: $font-medium;
+  text-transform: capitalize;
+    @include max-width(1366px) {
+    font-size: $fs-12;
+  }
+  @include max-width(768px) {
+    font-size: $fs-12;
+  }
+  @include max-width(375px) {
+    font-size: $fs-10;
+  }
+}

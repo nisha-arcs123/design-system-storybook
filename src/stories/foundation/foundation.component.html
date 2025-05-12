@@ -14,7 +14,7 @@
         </p>
       </div>
 
-      <div class="container">
+      <div class="color-container">
         <div class="color-foundation">
           <div class="color color--primary"></div>
           <div class="color-text">
@@ -253,7 +253,7 @@
           <h2>Background colors</h2>
         </div>
 
-        <div class="container">
+        <div class="color-container">
           <div class="color-foundation">
             <div class="color color--primary-background"></div>
             <div class="color-text">
@@ -310,7 +310,7 @@
           <h2>Text colors</h2>
         </div>
 
-        <div class="container">
+        <div class="color-container">
           <div class="color-foundation">
             <div class="color color--primary-text"></div>
             <div class="color-text">
@@ -402,7 +402,7 @@
           <h2>Border colors</h2>
         </div>
 
-        <div class="container">
+        <div class="color-container">
           <div class="color-foundation">
             <div class="color color--ui-border"></div>
             <div class="color-text">
@@ -573,7 +573,7 @@
         </p>
       </div>
 
-      <div class="outer-second-container">
+      <div class="margin-padding-outer">
         <div class="heading">
           <h2>Margin-Left, Margin-Top, Margin-Right, Margin-Bottom</h2>
         </div>
@@ -696,7 +696,7 @@
         </p>
       </div>
 
-      <div class="outer-second-container">
+      <div class="margin-padding-outer">
         <div class="heading">
           <h2>Padding-Left, Padding-Top, Padding-Right, Padding-Bottom</h2>
         </div>
@@ -850,13 +850,13 @@
 
         <div class="tab-content">
           <ng-container [ngSwitch]="selectedTab">
-            <div *ngSwitchCase="'desktop'">
+            <div *ngSwitchCase="'desktop'" class="heading-desktop">
               <div class="typography-grid">
-                <div class="heading heading--h1">H1</div>
+                <div class="primary-heading">H1</div>
                 <div class="class-name">.primary-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h1">
+                  <div class="primary-heading">
                     Primary Heading medium(Roboto 32px extrabold)
                   </div>
                   <p>Use as main header on a page</p>
@@ -864,11 +864,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h2">H2</div>
+                <div class="secondary-heading">H2</div>
                 <div class="class-name">.secondary-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h2">
+                  <div class="secondary-heading">
                     Secondary Heading Large (Roboto 22px bold)
                   </div>
                   <p>Use as secondary header on a page</p>
@@ -876,11 +876,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h3">H3</div>
+                <div class="tertiary-heading">H3</div>
                 <div class="class-name">.tertiary-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h3">
+                  <div class="tertiary-heading">
                     Tertiary Heading Small (Roboto 16px light)
                   </div>
                   <p>Use after heading, profile page headings</p>
@@ -888,11 +888,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h4">H4</div>
+                <div class="fourth-heading">H4</div>
                 <div class="class-name">.fourth-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h4">
+                  <div class="fourth-heading">
                     Fourth Heading Large (Roboto 18px bold)
                   </div>
                   <p>Use after heading, profile page headings</p>
@@ -900,11 +900,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h5">H5</div>
+                <div class="subtitle-1">H5</div>
                 <div class="class-name">.subtitle-1</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h5">
+                  <div class="subtitle-1">
                     Subtitle-1-large (Roboto 16px bold)
                   </div>
                   <p>Use as subtitles for paragraphs</p>
@@ -912,11 +912,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h6">H6</div>
+                <div class="subtitle-2">H6</div>
                 <div class="class-name">.subtitle-2</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h6">
+                  <div class="subtitle-2">
                     Subtitle-2-large (Roboto 14px medium)
                   </div>
                   <p>Use for item name, text in update</p>
@@ -924,11 +924,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--p">p</div>
+                <div class="normal-text">p</div>
                 <div class="class-name">.normal-text</div>
                 <div class="class-name">Sentence</div>
                 <div class="description">
-                  <div class="heading heading--p">
+                  <div class="normal-text">
                     Normal Text Medium (Roboto 13px normal)
                   </div>
                   <p>Use for general text or labels</p>
@@ -936,11 +936,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--a">a</div>
+                <div class="link-text">a</div>
                 <div class="class-name">.link-text</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--a">
+                  <div class="link-text">
                     Link Text Large (Roboto 14px medium)
                   </div>
                   <p>Use for links</p>
@@ -948,11 +948,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--btn-lg">button large</div>
+                <div class="common-btn">button large</div>
                 <div class="class-name">.common-btn .large</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--btn-lg">
+                  <div class="common-btn">
                     Button Large (Roboto 14px medium)
                   </div>
                   <p>Use for large button</p>
@@ -960,11 +960,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--lg-lbl">label large</div>
+                <div class="label">label large</div>
                 <div class="class-name">.label</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--lg-lbl">
+                  <div class="label">
                     Label Large (Roboto 14px medium)
                   </div>
                   <p>Use for item name, text in update</p>
@@ -972,11 +972,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--span">span</div>
+                <div class="caption">span</div>
                 <div class="class-name">.caption .medium</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--span">
+                  <div class="caption">
                     Caption (Roboto 12px medium)
                   </div>
                   <p>Use for item name, text in update</p>
@@ -984,13 +984,13 @@
               </div>
             </div>
 
-            <div *ngSwitchCase="'laptop'">
+            <div *ngSwitchCase="'laptop'" class="heading-laptop">
               <div class="typography-grid">
-                <div class="heading heading--h1-l">H1</div>
+                <div class="primary-heading">H1</div>
                 <div class="class-name">.primary-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h1-l">
+                  <div class="primary-heading">
                     Primary Heading medium(Roboto 28px extrabold)
                   </div>
                   <p>Use as main header on a page</p>
@@ -998,11 +998,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h2-l">H2</div>
+                <div class="secondary-heading">H2</div>
                 <div class="class-name">.secondary-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h2-l">
+                  <div class="secondary-heading">
                     Secondary Heading Large (Roboto 20px bold)
                   </div>
                   <p>Use as secondary header on a page</p>
@@ -1010,11 +1010,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h3-l">H3</div>
+                <div class="tertiary-heading">H3</div>
                 <div class="class-name">.tertiary-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h3-l">
+                  <div class="tertiary-heading">
                     Tertiary Heading Small (Roboto 16px light)
                   </div>
                   <p>Use after heading, profile page headings</p>
@@ -1022,11 +1022,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h4-l">H4</div>
+                <div class="fourth-heading">H4</div>
                 <div class="class-name">.fourth-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h4-l">
+                  <div class="fourth-heading">
                     Fourth Heading Large (Roboto 18px bold)
                   </div>
                   <p>Use after heading, profile page headings</p>
@@ -1034,11 +1034,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h5-l">H5</div>
+                <div class="subtitle-1">H5</div>
                 <div class="class-name">.subtitle-1</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h5-l">
+                  <div class="subtitle-1">
                     Subtitle-1-large (Roboto 15px bold)
                   </div>
                   <p>Use as subtitles for paragraphs</p>
@@ -1046,11 +1046,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h6-l">H6</div>
+                <div class="subtitle-2">H6</div>
                 <div class="class-name">.subtitle-2</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h6-l">
+                  <div class="subtitle-2">
                     Subtitle-2-large (Roboto 13px medium)
                   </div>
                   <p>Use for item name, text in update</p>
@@ -1058,11 +1058,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--p-l">p</div>
+                <div class="normal-text">p</div>
                 <div class="class-name">.normal-text</div>
                 <div class="class-name">Sentence</div>
                 <div class="description">
-                  <div class="heading heading--p-l">
+                  <div class="normal-text">
                     Normal Text Medium (Roboto 12px normal)
                   </div>
                   <p>Use for general text or labels</p>
@@ -1070,11 +1070,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--a-l">a</div>
+                <div class="link-text">a</div>
                 <div class="class-name">.link-text</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--a-l">
+                  <div class="link-text">
                     Link Text Large (Roboto 13px medium)
                   </div>
                   <p>Use for links</p>
@@ -1082,11 +1082,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--btn-lg-l">button large</div>
+                <div class="common-btn">button large</div>
                 <div class="class-name">.common-btn .large</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--btn-lg-l">
+                  <div class="common-btn">
                     Button Large (Roboto 14px medium)
                   </div>
                   <p>Use for large button</p>
@@ -1094,11 +1094,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--lg-lbl-l">label large</div>
+                <div class="label">label large</div>
                 <div class="class-name">.label</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--lg-lbl-l">
+                  <div class="label">
                     Label Large (Roboto 13px medium)
                   </div>
                   <p>Use for item name, text in update</p>
@@ -1106,11 +1106,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--span-l">span</div>
+                <div class="caption">span</div>
                 <div class="class-name">.caption .medium</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--span-l">
+                  <div class="caption">
                     Caption (Roboto 12px medium)
                   </div>
                   <p>Use for item name, text in update</p>
@@ -1118,13 +1118,13 @@
               </div>
             </div>
 
-            <div *ngSwitchCase="'tablet'">
+            <div *ngSwitchCase="'tablet'" class="heading-tablet">
               <div class="typography-grid">
-                <div class="heading heading--h1-t">H1</div>
+                <div class="primary-heading">H1</div>
                 <div class="class-name">.primary-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h1-t">
+                  <div class="primary-heading">
                     Primary Heading medium(Roboto 20px extrabold)
                   </div>
                   <p>Use as main header on a page</p>
@@ -1132,11 +1132,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h2-t">H2</div>
+                <div class="secondary-heading">H2</div>
                 <div class="class-name">.secondary-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h2-t">
+                  <div class="secondary-heading">
                     Secondary Heading Large (Roboto 13px bold)
                   </div>
                   <p>Use as secondary header on a page</p>
@@ -1144,11 +1144,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h3-t">H3</div>
+                <div class="tertiary-heading">H3</div>
                 <div class="class-name">.tertiary-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h3-t">
+                  <div class="tertiary-heading">
                     Tertiary Heading Small (Roboto 13px light)
                   </div>
                   <p>Use after heading, profile page headings</p>
@@ -1156,11 +1156,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h4-t">H4</div>
+                <div class="fourth-heading">H4</div>
                 <div class="class-name">.fourth-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h4-t">
+                  <div class="fourth-heading">
                     Fourth Heading Large (Roboto 14px bold)
                   </div>
                   <p>Use after heading, profile page headings</p>
@@ -1168,11 +1168,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h5-t">H5</div>
+                <div class="subtitle-1">H5</div>
                 <div class="class-name">.subtitle-1</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h5-t">
+                  <div class="subtitle-1">
                     Subtitle-1-large (Roboto 12px bold)
                   </div>
                   <p>Use as subtitles for paragraphs</p>
@@ -1180,11 +1180,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h6-t">H6</div>
+                <div class="subtitle-2">H6</div>
                 <div class="class-name">.subtitle-2</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h6-t">
+                  <div class="subtitle-2">
                     Subtitle-2-large (Roboto 13px medium)
                   </div>
                   <p>Use for item name, text in update</p>
@@ -1192,11 +1192,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--p-t">p</div>
+                <div class="normal-text">p</div>
                 <div class="class-name">.normal-text</div>
                 <div class="class-name">Sentence</div>
                 <div class="description">
-                  <div class="heading heading--p-t">
+                  <div class="normal-text">
                     Normal Text Medium (Roboto 12px normal)
                   </div>
                   <p>Use for general text or labels</p>
@@ -1204,11 +1204,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--a-t">a</div>
+                <div class="link-text">a</div>
                 <div class="class-name">.link-text</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--a-t">
+                  <div class="link-text">
                     Link Text Large (Roboto 13px medium)
                   </div>
                   <p>Use for links</p>
@@ -1216,11 +1216,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--btn-lg-t">button large</div>
+                <div class="common-btn">button large</div>
                 <div class="class-name">.common-btn .large</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--btn-lg-t">
+                  <div class="common-btn">
                     Button Large (Roboto 14px medium)
                   </div>
                   <p>Use for large button</p>
@@ -1228,11 +1228,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--lg-lbl-t">label medium</div>
+                <div class="label">label medium</div>
                 <div class="class-name">.label</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--lg-lbl-t">
+                  <div class="label">
                     Label Large (Roboto 13px medium)
                   </div>
                   <p>Use for item name, text in update</p>
@@ -1240,11 +1240,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--span-t">span</div>
+                <div class="caption">span</div>
                 <div class="class-name">.caption .medium</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--span-t">
+                  <div class="caption">
                     Caption (Roboto 12px medium)
                   </div>
                   <p>Use for item name, text in update</p>
@@ -1252,13 +1252,13 @@
               </div>
             </div>
 
-            <div *ngSwitchCase="'mobile'">
+            <div *ngSwitchCase="'mobile'" class="heading-mobile">
               <div class="typography-grid">
-                <div class="heading heading--h1-m">H1</div>
+                <div class="primary-heading">H1</div>
                 <div class="class-name">.primary-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h1-m">
+                  <div class="primary-heading">
                     Primary Heading medium(Roboto 16px extrabold)
                   </div>
                   <p>Use as main header on a page</p>
@@ -1266,11 +1266,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h2-m">H2</div>
+                <div class="secondary-heading">H2</div>
                 <div class="class-name">.secondary-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h2-m">
+                  <div class="secondary-heading">
                     Secondary Heading Large (Roboto 14px bold)
                   </div>
                   <p>Use as secondary header on a page</p>
@@ -1278,11 +1278,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h3-m">H3</div>
+                <div class="tertiary-heading">H3</div>
                 <div class="class-name">.tertiary-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h3-m">
+                  <div class="tertiary-heading">
                     Tertiary Heading Small (Roboto 13px light)
                   </div>
                   <p>Use after heading, profile page headings</p>
@@ -1290,11 +1290,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h4-m">H4</div>
+                <div class="fourth-heading">H4</div>
                 <div class="class-name">.fourth-heading</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h4-m">
+                  <div class="fourth-heading">
                     Fourth Heading Large (Roboto 14px bold)
                   </div>
                   <p>Use after heading, profile page headings</p>
@@ -1302,11 +1302,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h5-m">H5</div>
+                <div class="subtitle-1">H5</div>
                 <div class="class-name">.subtitle-1</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h5-m">
+                  <div class="subtitle-1">
                     Subtitle-1-large (Roboto 12px bold)
                   </div>
                   <p>Use as subtitles for paragraphs</p>
@@ -1314,11 +1314,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--h6-m">H6</div>
+                <div class="subtitle-2">H6</div>
                 <div class="class-name">.subtitle-2</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--h6-m">
+                  <div class="subtitle-2">
                     Subtitle-2-large (Roboto 12px medium)
                   </div>
                   <p>Use for item name, text in update</p>
@@ -1326,11 +1326,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--p-m">p</div>
+                <div class="normal-text">p</div>
                 <div class="class-name">.normal-text</div>
                 <div class="class-name">Sentence</div>
                 <div class="description">
-                  <div class="heading heading--p-m">
+                  <div class="normal-text">
                     Normal Text Medium (Roboto 11px normal)
                   </div>
                   <p>Use for general text or labels</p>
@@ -1338,11 +1338,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--a-m">a</div>
+                <div class="link-text">a</div>
                 <div class="class-name">.link-text</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--a-m">
+                  <div class="link-text">
                     Link Text Large (Roboto 12px medium)
                   </div>
                   <p>Use for links</p>
@@ -1350,11 +1350,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--btn-lg-m">button large</div>
+                <div class="common-btn">button large</div>
                 <div class="class-name">.common-btn .large</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--btn-lg-m">
+                  <div class="common-btn">
                     Button Large (Roboto 13px medium)
                   </div>
                   <p>Use for large button</p>
@@ -1362,11 +1362,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--lg-lbl-m">label medium</div>
+                <div class="label">label medium</div>
                 <div class="class-name">.label</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--lg-lbl-m">
+                  <div class="label">
                     Label Large (Roboto 12px medium)
                   </div>
                   <p>Use for item name, text in update</p>
@@ -1374,11 +1374,11 @@
               </div>
 
               <div class="typography-grid">
-                <div class="heading heading--span-m">span</div>
+                <div class="caption ">span</div>
                 <div class="class-name">.caption .medium</div>
                 <div class="class-name">Capitalize</div>
                 <div class="description">
-                  <div class="heading heading--span-m">
+                  <div class="caption ">
                     Caption (Roboto 10px medium)
                   </div>
                   <p>Use for item name, text in update</p>

@@ -1,0 +1,23 @@
+<div [ngSwitch]="inputClass">
+  <div *ngSwitchCase="'table'">
+    <table class="table-container">
+      <thead>
+        <tr>
+          <th>
+            <label class="custom-checkbox custom-checkbox--vs">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+            Sub Process
+          </th>
+          <th>Activity</th>
+          <th>Risk</th>
+          <th>Severity</th>
+          <th>Control</th>
+          <th>Automatable</th>
+          <th>Checkpoint</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+</div>

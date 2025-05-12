@@ -1,0 +1,28 @@
+.navbar-container {
+  width: 48px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 4px;
+  // background-color: aqua;
+  .upper-icons {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .icon-div {
+    width: 38px;
+    height: 38px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    &:hover {
+      background-color: #cce5ff;
+    }
+  }
+}
