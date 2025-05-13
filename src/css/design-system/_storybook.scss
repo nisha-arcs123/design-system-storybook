@@ -1,44 +1,35 @@
-.outer-container{
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
+@use "./mixins" as *;
+
+.outer-container {
+  @include flex-box(column, "", "", "", 48);
+}
+
+.heading {
+  h1 {
+    margin: 0;
+    @include typography(28, 42, 800, #323238);
   }
-  .heading{
-    h1{
-      font-size: 28px;
-      line-height: 42px;
-      font-weight: 800;
-      color: #323238;
-      margin: 0;
-    }
-    .line{
-      height: 2px;
-      background-color: #D0D4E4;
-      width: 100%;
-    }
-    h2{
-      margin: 0;
-      font-size: 24px;
-      font-weight: 300;
-      line-height: 30px;
-      color: #323238;
-      margin-top: 32px;
-    }
-    p{
-      font-size: 16px !important;
-      line-height: 24px;
-      font-weight: 400;
-      color: #676879;
-      margin: 0;
-      margin-top: 12px;
-    }
+  .line {
+    height: 2px;
+    background-color: #d0d4e4;
+    width: 100%;
   }
-  
-  
-  .container{
-    border: 1px solid #D0D4E4;
-    padding: 32px;
-    display: flex;
-    gap: 20px;
-    border-radius: 8px;
+  h2 {
+    margin: 0;
+    margin-top: 32px;
+    @include typography(24, 30, 300, #323238);
   }
+  p {
+    margin: 0;
+    margin-top: 12px;
+    @include typography(16, 24, 400, #676879);
+  }
+}
+
+.container {
+  border: 1px solid #d0d4e4;
+  padding: 32px;
+  display: flex;
+  gap: 20px;
+  border-radius: 8px;
+}

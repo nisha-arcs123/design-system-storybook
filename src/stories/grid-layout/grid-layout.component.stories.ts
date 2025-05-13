@@ -20,32 +20,5 @@ export const Table: Story ={
         inputClass :'table',
         heading : 'Table',
     },
-    parameters: {
-    docs: {
-      source: {
-        code: `
-
-          `.trim(),
-        language: 'html',
-      },
-    },
-  },
+   
 }
-
-// export const Footer: Story ={
-//     args:{
-//         inputClass :'footer',
-//         heading : 'Footer',
-//     }
-//     ,
-//     parameters: {
-//     docs: {
-//       source: {
-//         code: `
-  
-//           `.trim(),
-//         language: 'html',
-//       },
-//     },
-//   },
-// }

@@ -1,19 +1,15 @@
 @use "./storybook";
+@use "./mixins" as *;
 
 .color-container {
   border: 1px solid #d0d4e4;
   padding: 32px;
-  display: flex;
-  gap: 20px;
   border-radius: 8px;
-  flex-direction: column;
+  @include flex-box(column, "", "", "", 20);
   .color-foundation {
-    display: flex;
-    gap: 14px;
+    @include flex-box("", "", "", "", 14);
     .color {
-      width: 40px;
-      height: 40px;
-
+      @include dimensions(40, 40);
       &--primary {
         background-color: #017bba;
       }
@@ -134,59 +130,43 @@
 
     .color-text {
       h5 {
-        font-size: 20px;
-        font-weight: 500;
-        color: #323238;
         margin: 0;
+        @include typography(20, "", 500, #323238);
       }
       p {
-        font-size: 14px;
-        color: #676879;
-        font-weight: 400;
         margin: 0;
+        @include typography(14, "", 400, #676879);
         span {
-          font-weight: 500;
-          color: #323238;
+          @include typography(14, "", 500, #323238);
         }
       }
     }
   }
 }
 
-
-
 .second-container {
   .heading {
     h2 {
-      font-size: 24px;
-      font-weight: 300;
-      color: #323238;
       margin: 0;
       margin-bottom: 30px;
+      @include typography(24, "", 300, #323238);
     }
   }
 }
 
-
 .margin-padding-outer {
   .heading {
     h2 {
-      font-size: 24px;
-      font-weight: 300;
-      color: #323238;
       margin: 0;
       margin-bottom: 30px;
+      @include typography(24, "", 300, #323238);
     }
   }
 
   .container {
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: end;
+    @include flex-box(row, "", end, wrap, "");
     .margin-padding-container {
-      display: flex;
-      flex-direction: column;
-
+      @include flex-box(column, "", "", "", "");
       .margin {
         width: 100px;
         background-color: #f4c3cb;
@@ -236,39 +216,26 @@
 
       .box-txt {
         p {
-          font-size: 14px;
-          font-weight: 400;
-          color: #676879;
           margin: 0;
           margin-top: 4px;
+          @include typography(14, "", 400, #676879);
         }
       }
     }
   }
 }
 
-
-
 .border-container {
-  display: flex;
-  gap: 60px;
-
+  @include flex-box("", "", "", "", 60);
   .border-div {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    @include flex-box(column, "", "", "", 12);
     .border {
       border: 2px solid #d83a52;
       background-color: transparent;
-      width: 200px;
-      height: 200px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 18px;
-      font-weight: 700;
-      color: #323238;
       box-sizing: border-box;
+      @include dimensions(200, 200);
+      @include flex-box("", center, center, "", "");
+      @include typography(18, "", 700, #323238);
       &--small {
         border-radius: 4px;
       }
@@ -281,33 +248,29 @@
     }
 
     .shadow {
-      width: 200px;
-      height: 200px;
+      @include dimensions(200, 200);
       box-sizing: border-box;
       padding: 43px 34px;
       border-radius: 4px;
 
       .shadow-header {
-        font-size: 12px;
-        font-weight: 500;
-        color: #202020;
         border-bottom: 1px solid #dddede;
         padding-bottom: 4px;
+        @include typography(12, "", 500, #202020);
       }
 
       .x-axis {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
         margin-top: 12px;
         margin-bottom: 16px;
+        @include flex-box("", space-between, center, "", "");
         p {
           margin: 0;
           font-size: 12px;
           font-weight: 400;
           color: #4d4d4d;
+          @include typography(12, "", 400, #4d4d4d);
           span {
-            color: #202020;
+            @include typography(12, "", 400, #202020);
           }
         }
       }
@@ -325,41 +288,31 @@
 
     .border-text {
       span {
-        font-size: 14px;
-        font-weight: 500;
-        color: #323238;
+        @include typography(14, "", 500, #323238);
       }
       p {
-        font-size: 14px;
-        font-weight: 400;
-        color: #676879;
         margin: 0;
+        @include typography(14, "", 400, #676879);
       }
     }
   }
 }
 
-
-
 .tabs-container {
   .tab-buttons {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 46px;
+    @include flex-box("", space-between, "", "", "");
     button {
       padding: 14px 141px;
       border: none;
       background: transparent;
       cursor: pointer;
-      font-weight: 400;
       text-wrap: nowrap;
-      font-size: 18px;
-      color: #676879;
       border-bottom: 3px solid #d9d9d9;
+      @include typography(18, "", 400, #676879);
       &.active {
         border-bottom: 3px solid #017bba;
-        color: #323238;
-        font-weight: 600;
+        @include typography(18, "", 600, #323238);
       }
     }
   }
@@ -378,18 +331,14 @@
       padding: 24px;
 
       .class-name {
-        font-size: 14px;
-        font-weight: 400;
-        color: #676879;
         padding: 0 30px;
+        @include typography(14, "", 400, #676879);
       }
 
       .description {
         p {
-          font-size: 14px;
-          font-weight: 400;
           margin: 0;
-          color: #676879;
+          @include typography(14, "", 400, #676879);
         }
       }
     }
@@ -399,48 +348,37 @@
       color: #323238;
 
       .primary-heading {
-        font-size: 28px;
-        font-weight: 800;
+        @include typography(28, "", 800, "");
       }
       .secondary-heading {
-        font-size: 20px;
-        font-weight: 700;
+        @include typography(20, "", 700, "");
       }
       .tertiary-heading {
-        font-size: 16px;
-        font-weight: 300;
+        @include typography(16, "", 300, "");
       }
       .fourth-heading {
-        font-size: 18px;
-        font-weight: 700;
+        @include typography(18, "", 700, "");
       }
       .subtitle-1 {
-        font-size: 15px;
-        font-weight: 700;
+        @include typography(15, "", 700, "");
       }
       .subtitle-2 {
-        font-size: 13px;
-        font-weight: 500;
+        @include typography(13, "", 500, "");
       }
       .normal-text {
-        font-size: 12px;
-        font-weight: 400;
+        @include typography(12, "", 400, "");
       }
       .link-text {
-        font-size: 13px;
-        font-weight: 500;
+        @include typography(13, "", 500, "");
       }
       .common-btn {
-        font-size: 14px;
-        font-weight: 500;
+        @include typography(14, "", 500, "");
       }
       .label {
-        font-size: 13px;
-        font-weight: 500;
+        @include typography(13, "", 500, "");
       }
       .caption {
-        font-size: 12px;
-        font-weight: 500;
+        @include typography(12, "", 500, "");
       }
     }
 
@@ -449,48 +387,37 @@
       color: #323238;
 
       .primary-heading {
-        font-size: 20px;
-        font-weight: 800;
+        @include typography(20, "", 800, "");
       }
       .secondary-heading {
-        font-size: 13px;
-        font-weight: 700;
+        @include typography(13, "", 700, "");
       }
       .tertiary-heading {
-        font-size: 13px;
-        font-weight: 300;
+        @include typography(13, "", 300, "");
       }
       .fourth-heading {
-        font-size: 14px;
-        font-weight: 700;
+        @include typography(14, "", 700, "");
       }
       .subtitle-1 {
-        font-size: 12px;
-        font-weight: 700;
+        @include typography(12, "", 700, "");
       }
       .subtitle-2 {
-        font-size: 13px;
-        font-weight: 500;
+        @include typography(13, "", 500, "");
       }
       .normal-text {
-        font-size: 12px;
-        font-weight: 400;
+        @include typography(12, "", 400, "");
       }
       .link-text {
-        font-size: 13px;
-        font-weight: 500;
+        @include typography(13, "", 500, "");
       }
       .common-btn {
-        font-size: 14px;
-        font-weight: 500;
+        @include typography(14, "", 500, "");
       }
       label {
-        font-size: 13px;
-        font-weight: 500;
+        @include typography(13, "", 500, "");
       }
       .caption {
-        font-size: 12px;
-        font-weight: 500;
+        @include typography(12, "", 500, "");
       }
     }
 
@@ -499,50 +426,38 @@
       color: #323238;
 
       .primary-heading {
-        font-size: 16px;
-        font-weight: 800;
+        @include typography(16, "", 800, "");
       }
       .secondary-heading {
-        font-size: 14px;
-        font-weight: 700;
+        @include typography(14, "", 700, "");
       }
       .tertiary-heading {
-        font-size: 13px;
-        font-weight: 300;
+        @include typography(13, "", 300, "");
       }
       .fourth-heading {
-        font-size: 14px;
-        font-weight: 700;
+        @include typography(14, "", 700, "");
       }
       .subtitle-1 {
-        font-size: 12px;
-        font-weight: 700;
+        @include typography(12, "", 700, "");
       }
       .subtitle-2 {
-        font-size: 12px;
-        font-weight: 500;
+        @include typography(12, "", 500, "");
       }
       .normal-text {
-        font-size: 11px;
-        font-weight: 400;
+        @include typography(11, "", 400, "");
       }
       .link-text {
-        font-size: 12px;
-        font-weight: 500;
+        @include typography(12, "", 500, "");
       }
       .common-btn {
-        font-size: 13px;
-        font-weight: 500;
+        @include typography(13, "", 500, "");
       }
       .label {
-        font-size: 12px;
-        font-weight: 500;
+        @include typography(12, "", 500, "");
       }
       .caption {
-        font-size: 10px;
-        font-weight: 500;
+        @include typography(10, "", 500, "");
       }
     }
   }
 }
-

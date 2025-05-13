@@ -25,34 +25,34 @@ $icon-color:#363636;
 $fixed-dark-color:#1A1A1A;
 
 .pmc{
-    color: $shareable-color !important;
+    color: $shareable-color;
 }
 
 
 //=======================background-colors==================//
 
-$primary-background-color:#FFFFFF !important;
-$secondary-background-color:#F2F3F5 !important;
-$primary-background-hover-color:#E6F2F8 !important;
-$inverted-color-background:#060606 !important;
-$grey-background-color:#EEEEEF !important;
+$primary-background-color:#FFFFFF;
+$secondary-background-color:#F2F3F5;
+$primary-background-hover-color:#E6F2F8;
+$inverted-color-background:#060606;
+$grey-background-color:#EEEEEF;
 
 
 
 // =======================text colors ========================//
-$primary-text-color:#323238;
-// $primary-text-color:#202020 !important;
-$secondary-text-color:#4D4D4D !important;
-$secondary-text-on-secondary-color:#FFFFFF !important;
-$text-color-on-inverted:#FFFFFF !important;
-$text-color-on-primary:#FFFFFF !important;
-$disabled-text-color:#989B9D !important;
-$placeholder-color:#CBCDCE !important;
-$link-color:#1A8ABE !important;
+// $primary-text-color:#323238;
+$primary-text-color:#202020;
+$secondary-text-color:#4D4D4D;
+$secondary-text-on-secondary-color:#FFFFFF;
+$text-color-on-inverted:#FFFFFF;
+$text-color-on-primary:#FFFFFF;
+$disabled-text-color:#989B9D;
+$placeholder-color:#CBCDCE;
+$link-color:#1A8ABE;
 
 
 
 // ==================border colors =======================//
 
-$ui-border-color:#DDDEDE !important;
-$layout-border-color:#CBCDCE !important;
+$ui-border-color:#DDDEDE;
+$layout-border-color:#CBCDCE;

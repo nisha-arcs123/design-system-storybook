@@ -18,7 +18,8 @@
         gap: #{$gap}px;
     }
 }
- 
+
+
 @mixin dimensions($height, $width) {
     @if $width != "na" {
         @if type-of($width) == number and unitless($width) {
@@ -132,22 +133,21 @@
     height: $size;
   
     &::after {
-      top: $size * 0.0 !important;
-      left: $size * 0.25 !important;
-      width: $size * 0.4 !important;
-      height: $size * 0.7 !important;
+      top: $size * 0.0 ;
+      left: $size * 0.25 ;
+      width: $size * 0.4 ;
+      height: $size * 0.7 ;
     }
   }
-
 
   @mixin radio-size($size) {
     width: $size;
     height: $size;
   
     &::after {
-      top: $size * 0.2 !important;
-      left: $size * 0.20 !important;
-      width: $size * 0.6 !important;
-      height: $size * 0.6 !important;
+      top: $size * 0.2;
+      left: $size * 0.20;
+      width: $size * 0.6;
+      height: $size * 0.6;
     }
   }

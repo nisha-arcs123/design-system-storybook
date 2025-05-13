@@ -50,7 +50,7 @@ $fonts: (
 
 @each $key, $value in $fonts {
   .fs-#{$key} {
-    font-size: $value !important;
+    font-size: $value;
   }
 }
 
@@ -206,6 +206,7 @@ p,
   color: $primary-text-color;
   font-weight: $font-regular;
   text-transform: capitalize;
+  margin: 0;
    @include max-width(1366px) {
     font-size: $fs-12;
   }

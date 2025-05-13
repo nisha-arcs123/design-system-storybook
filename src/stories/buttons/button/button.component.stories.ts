@@ -37,6 +37,13 @@ export const ButtonKinds: Story = {
         <button class="d-btn d-btn-tertiary md">Tertiary</button>
         <button class="d-btn d-btn-link md">Link</button>
       </div>
+
+
+      <div class="container">
+        <button class="d-btn-small d-btn-small--danger">High</button>
+        <button class="d-btn-small d-btn-small--warning">Medium</button>
+        <button class="d-btn-small d-btn-small--success">Low</button>
+      </div>
      `.trim(),
         language: 'html',
       },

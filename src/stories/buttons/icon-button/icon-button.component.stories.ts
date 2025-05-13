@@ -517,6 +517,15 @@ export const AddButton: Story = {
       </div>
 
 
+
+      <div class="container">
+        <button class="d-btn--circle light-bg--danger vs">AI</button>
+
+        <button class="d-btn--circle light-bg--success vs">IA</button>
+
+        <button class="d-btn--circle light-bg--purple vs">IT</button>
+      </div>
+
          `.trim(),
         language: 'html',
       },

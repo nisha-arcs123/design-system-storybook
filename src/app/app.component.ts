@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../stories/buttons/button/button.component';
+import { GridLayoutComponent } from '../stories/grid-layout/grid-layout.component';
+// import { ButtonComponent } from '../stories/buttons/button/button.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, ButtonComponent],
+  imports: [CommonModule, GridLayoutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
