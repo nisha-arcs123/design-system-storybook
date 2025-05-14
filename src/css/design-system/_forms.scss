@@ -259,6 +259,7 @@
   width: 100%;
   .drop-zone {
     @include flex-box(column, "", "", "", 8);
+    cursor: pointer;
     .upload-area {
       border: 2px dotted #c3c6d4;
       border-radius: 8px;
@@ -266,16 +267,16 @@
       @include flex-box(column, center, center, "", 8);
       position: relative;
       input[type="file"] {
-        display: none;
+        // display: none;
         width: 100%;
         height: 100%;
         @include absolute(0, 0, 0, 0);
+        opacity: 0;
       }
       p {
         @include typography(13, "", 500, #202020);
         span {
           color: #017bba;
-          cursor: pointer;
         }
       }
     }

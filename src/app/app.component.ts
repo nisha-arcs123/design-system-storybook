@@ -5,7 +5,7 @@ import { GridLayoutComponent } from '../stories/grid-layout/grid-layout.componen
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, GridLayoutComponent],
+  imports: [CommonModule,GridLayoutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
