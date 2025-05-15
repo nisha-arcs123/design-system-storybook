@@ -31,7 +31,7 @@ export const CircleCloseButton: Story = {
     docs: {
       source: {
         code: `
-    <div class="container">
+    <div class="containers">
         <button class="d-btn d-btn--tertiary vs">
           <span class="icon-Vector-7 icon--vs"></span>
         </button>
@@ -68,7 +68,7 @@ export const CircleMoreButton: Story = {
     docs: {
       source: {
         code: `
-     <div class="container">
+     <div class="containers">
         <button class="d-btn d-btn--tertiary vs">
           <span class="icon-dots-horizontal-5 icon--vs"></span>
         </button>
@@ -105,7 +105,7 @@ export const CircleBackButton: Story = {
     docs: {
       source: {
         code: `
-    <div class="container">
+    <div class="containers">
         <button class="d-btn d-btn--tertiary vs">
           <span class="icon-Vector-6 icon--vs"></span>
         </button>
@@ -142,7 +142,7 @@ export const CircleSearchButton: Story = {
     docs: {
       source: {
         code: `
-   <div class="container">
+   <div class="containers">
         <button class="d-btn d-btn--tertiary vs">
           <span class="icon-Vector-3 icon--vs"></span>
         </button>
@@ -179,7 +179,7 @@ export const EditButtonCircleTertiary: Story = {
     docs: {
       source: {
         code: `
-        <div class="container">
+        <div class="containers">
         <button class="d-btn d-btn--tertiary vs">
           <span class="icon-Vector-1 icon--vs"></span>Edit
         </button>
@@ -200,7 +200,7 @@ export const EditButtonCircleTertiary: Story = {
         </button>
       </div>
 
-     <div class="container">
+     <div class="containers">
         <button class="d-btn d-btn--tertiary vs">
           <span class="icon-Vector-1 icon--vs"></span>
         </button>
@@ -238,7 +238,7 @@ export const DeleteButtonCircleTertiary: Story = {
     docs: {
       source: {
         code: `
-      <div class="container">
+      <div class="containers">
         <button class="d-btn d-btn--tertiary vs">
           <span class="icon-Vector icon--vs"></span>
           Delete
@@ -264,7 +264,7 @@ export const DeleteButtonCircleTertiary: Story = {
           Delete
         </button>
       </div>
-     <div class="container">
+     <div class="containers">
         <button class="d-btn d-btn--tertiary vs">
           <span class="icon-Vector icon--vs"></span>
         </button>
@@ -302,7 +302,7 @@ export const IconRight: Story = {
     docs: {
       source: {
         code: `
-          <div class="container">
+          <div class="containers">
         <button class="d-btn d-btn--primary vs">
           Very Small
           <span class="icon-Vector-5 add--vs"></span>
@@ -345,7 +345,7 @@ export const IconLeft: Story = {
     docs: {
       source: {
         code: `
-      <div class="container">
+      <div class="containers">
         <button class="d-btn d-btn--primary vs">
           <span class="icon-Vector-5 add--vs"></span>
           Very Small
@@ -389,7 +389,7 @@ export const AddButton: Story = {
     docs: {
       source: {
         code: `
-      <div class="container">
+      <div class="containers">
         <button class="d-btn d-btn--secondary-dotted vs">
           <span class="icon-Vector-4 add--vs"></span>
           Add
@@ -418,7 +418,7 @@ export const AddButton: Story = {
 
 
 
-      <div class="container">
+      <div class="containers">
         <button class="d-btn d-btn--secondary vs">
           <span class="icon-Vector-4 add--vs"></span>
           Add
@@ -447,7 +447,7 @@ export const AddButton: Story = {
 
 
 
-      <div class="container">
+      <div class="containers">
         <button class="d-btn--circle dotted-circle vs">
           <span class="icon-Vector-4 add--vs"></span>
         </button>
@@ -471,7 +471,7 @@ export const AddButton: Story = {
 
 
 
-      <div class="container">
+      <div class="containers">
         <button class="d-btn--circle solid-circle vs">
           <span class="icon-Vector-4 add--vs"></span>
         </button>
@@ -495,7 +495,7 @@ export const AddButton: Story = {
 
 
 
-      <div class="container">
+      <div class="containers">
         <button class="d-btn--circle primary-bg-circle vs">
           <span class="icon-Vector-5 add--vs"></span>
         </button>
@@ -518,7 +518,7 @@ export const AddButton: Story = {
 
 
 
-      <div class="container">
+      <div class="containers">
         <button class="d-btn--circle light-bg--danger vs">AI</button>
 
         <button class="d-btn--circle light-bg--success vs">IA</button>

@@ -163,7 +163,7 @@
     }
   }
 
-  .container {
+  .containers {
     @include flex-box(row, "", end, wrap, "");
     .margin-padding-container {
       @include flex-box(column, "", "", "", "");

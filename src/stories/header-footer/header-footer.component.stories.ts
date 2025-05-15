@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/angular';
 import { HeaderFooterComponent } from './header-footer.component';
 
-
 const meta: Meta<HeaderFooterComponent> = {
   title: 'Header-Footer',
   component: HeaderFooterComponent,
@@ -14,26 +13,313 @@ const meta: Meta<HeaderFooterComponent> = {
 export default meta;
 type Story = StoryObj<HeaderFooterComponent>;
 
+export const Header: Story = {
+  args: {
+    inputClass: 'header',
+    heading: 'Heading',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+    <div class="header-container">
+      <div class="switch-tab">
+        <p>Switch To Report BI</p>
+        <div class="switchBox">
+          <label class="switch">
+            <input type="checkbox" />
+            <span class="slider"></span>
+          </label>
+        </div>
+      </div>
 
-export const Header: Story ={
-    args:{
-        inputClass :'header',
-        heading : 'Heading',
-    }
-}
+      <div class="more-icon">
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 20 20"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M7.79447 17.5003C8.38206 18.019 9.15398 18.3337 9.99931 18.3337C10.8447 18.3337 11.6166 18.019 12.2041 17.5003M14.9993 6.66699C14.9993 5.34091 14.4726 4.06914 13.5349 3.13146C12.5971 2.19378 11.3254 1.66699 9.99931 1.66699C8.67323 1.66699 7.40148 2.19378 6.46379 3.13146C5.52611 4.06914 4.99933 5.34091 4.99933 6.66699C4.99933 9.24216 4.34972 11.0053 3.62404 12.1715C3.01194 13.1552 2.70588 13.6471 2.71709 13.7843C2.72953 13.9362 2.76171 13.9942 2.88414 14.085C2.99471 14.167 3.49315 14.167 4.49004 14.167H15.5086C16.5055 14.167 17.004 14.167 17.1145 14.085C17.237 13.9942 17.2691 13.9362 17.2816 13.7843C17.2928 13.6471 16.9867 13.1552 16.3746 12.1715C15.6489 11.0053 14.9993 9.24216 14.9993 6.66699Z"
+            stroke="#344563"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
 
+      <button class="d-btn--circle danger-bg-cicle sm">OS</button>
+    </div>
+        `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};
 
-export const SubHeader: Story ={
-    args:{
-        inputClass :'subheader',
-        heading : 'Sub Header',
-    }
-}
+export const SubHeader: Story = {
+  args: {
+    inputClass: 'subheader',
+    heading: 'Sub Header',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+       <div class="subheader-container">
+      <div class="top-container">
+        <div class="left">Payout</div>
 
-export const Footer: Story ={
-    args:{
-        inputClass :'footer',
-        heading : 'Footer',
-    }
-   
-}
+        <div class="right">
+          <div class="search-box-app desktop">
+            <input type="text" placeholder="Search here..." />
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M14.75 14.75L11.4875 11.4875M13.25 7.25C13.25 10.5637 10.5637 13.25 7.25 13.25C3.93629 13.25 1.25 10.5637 1.25 7.25C1.25 3.93629 3.93629 1.25 7.25 1.25C10.5637 1.25 13.25 3.93629 13.25 7.25Z"
+                stroke="#676879"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </div>
+          <div class="d-btn d-btn--tertiary sm">
+            <svg
+              width="16"
+              height="14"
+              viewBox="0 0 16 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 2.06667C1 1.6933 1 1.50661 1.07266 1.36401C1.13658 1.23856 1.23856 1.13658 1.36401 1.07266C1.50661 1 1.6933 1 2.06667 1H13.2667C13.64 1 13.8267 1 13.9693 1.07266C14.0948 1.13658 14.1968 1.23856 14.2607 1.36401C14.3333 1.50661 14.3333 1.6933 14.3333 2.06667V2.51293C14.3333 2.69213 14.3333 2.78173 14.3114 2.86504C14.292 2.93887 14.2601 3.00882 14.217 3.07184C14.1684 3.14295 14.1007 3.20164 13.9653 3.319L9.70141 7.01434C9.56599 7.1317 9.49828 7.19038 9.44966 7.26149C9.40658 7.32451 9.37463 7.39446 9.35523 7.46829C9.33333 7.55161 9.33333 7.64121 9.33333 7.8204V11.3056C9.33333 11.436 9.33333 11.5011 9.31231 11.5575C9.29373 11.6073 9.26351 11.6519 9.22417 11.6877C9.17965 11.7281 9.11912 11.7524 8.99807 11.8008L6.73141 12.7074C6.48638 12.8054 6.36386 12.8545 6.26551 12.834C6.17951 12.8161 6.10404 12.765 6.0555 12.6918C6 12.6081 6 12.4762 6 12.2122V7.8204C6 7.64121 6 7.55161 5.9781 7.46829C5.9587 7.39446 5.92676 7.32451 5.88367 7.26149C5.83505 7.19038 5.76734 7.1317 5.63193 7.01434L1.36807 3.319C1.23266 3.20164 1.16495 3.14295 1.11633 3.07184C1.07324 3.00882 1.0413 2.93887 1.0219 2.86504C1 2.78173 1 2.69213 1 2.51293V2.06667Z"
+                stroke="#344563"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <p>Filter</p>
+            <div class="tooltip-text">Filter</div>
+          </div>
+          <div class="d-btn d-btn--tertiary sm">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 1V7.8C1 8.92013 1 9.48013 1.21799 9.908C1.40973 10.2843 1.71569 10.5903 2.09202 10.782C2.51984 11 3.07989 11 4.2 11H9M9 11C9 12.1046 9.8954 13 11 13C12.1046 13 13 12.1046 13 11C13 9.8954 12.1046 9 11 9C9.8954 9 9 9.8954 9 11ZM1 4.33333H9M9 4.33333C9 5.43791 9.8954 6.33333 11 6.33333C12.1046 6.33333 13 5.4379 13 4.33333C13 3.22877 12.1046 2.33333 11 2.33333C9.8954 2.33333 9 3.22877 9 4.33333Z"
+                stroke="#344563"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>RCM</p>
+            <div class="tooltip-text">RCM</div>
+          </div>
+          <div class="d-btn d-btn--tertiary sm">
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 9V9.8C13 10.9201 13 11.4801 12.782 11.908C12.5903 12.2843 12.2843 12.5903 11.908 12.782C11.4801 13 10.9201 13 9.8 13H4.2C3.07989 13 2.51984 13 2.09202 12.782C1.71569 12.5903 1.40973 12.2843 1.21799 11.908C1 11.4801 1 10.9201 1 9.8V9M10.3333 4.33333L7 1M7 1L3.66667 4.33333M7 1V9"
+                stroke="#344563"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p>Upload</p>
+            <div class="tooltip-text">Upload</div>
+          </div>
+          <div class="d-btn d-btn--tertiary sm">
+            <p>Download</p>
+            <div class="tooltip-text">Download</div>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.66667 9.64583C6.55556 9.64583 6.45139 9.62847 6.35417 9.59375C6.25694 9.55903 6.16667 9.5 6.08333 9.41667L3.08333 6.41667C2.91667 6.25 2.83681 6.05556 2.84375 5.83333C2.85069 5.61111 2.93056 5.41667 3.08333 5.25C3.25 5.08333 3.44792 4.99653 3.67708 4.98958C3.90625 4.98264 4.10417 5.0625 4.27083 5.22917L5.83333 6.79167V0.833333C5.83333 0.597222 5.91319 0.399306 6.07292 0.239583C6.23264 0.0798611 6.43056 0 6.66667 0C6.90278 0 7.10069 0.0798611 7.26042 0.239583C7.42014 0.399306 7.5 0.597222 7.5 0.833333V6.79167L9.0625 5.22917C9.22917 5.0625 9.42708 4.98264 9.65625 4.98958C9.88542 4.99653 10.0833 5.08333 10.25 5.25C10.4028 5.41667 10.4826 5.61111 10.4896 5.83333C10.4965 6.05556 10.4167 6.25 10.25 6.41667L7.25 9.41667C7.16667 9.5 7.07639 9.55903 6.97917 9.59375C6.88194 9.62847 6.77778 9.64583 6.66667 9.64583ZM1.66667 13.3333C1.20833 13.3333 0.815972 13.1701 0.489583 12.8437C0.163194 12.5174 0 12.125 0 11.6667V10C0 9.76389 0.0798611 9.56597 0.239583 9.40625C0.399306 9.24653 0.597222 9.16667 0.833333 9.16667C1.06944 9.16667 1.26736 9.24653 1.42708 9.40625C1.58681 9.56597 1.66667 9.76389 1.66667 10V11.6667H11.6667V10C11.6667 9.76389 11.7465 9.56597 11.9062 9.40625C12.066 9.24653 12.2639 9.16667 12.5 9.16667C12.7361 9.16667 12.934 9.24653 13.0937 9.40625C13.2535 9.56597 13.3333 9.76389 13.3333 10V11.6667C13.3333 12.125 13.1701 12.5174 12.8437 12.8437C12.5174 13.1701 12.125 13.3333 11.6667 13.3333H1.66667Z"
+                fill="#344563"
+              />
+            </svg>
+          </div>
+          <button class="d-btn d-btn--tertiary sm">
+            <span class="icon-dots-horizontal-5 icon--sm more-icon"></span>
+            <div class="tooltip-text">More</div>
+          </button>
+          <button class="d-btn d-btn--primary sm desktop">
+            <svg
+              width="12"
+              height="12"
+              viewBox="0 0 12 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.00065 1.33301V10.6663M1.33398 5.99967H10.6673"
+                stroke="white"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <p class="add">Add Mannual Checklist</p>
+            <div class="tooltip-text">Add Mannual Checklist</div>
+          </button>
+        </div>
+      </div>
+      <div class="mobile-right">
+        <div class="search-box-app mobile">
+          <input type="text" placeholder="Search here..." />
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.75 14.75L11.4875 11.4875M13.25 7.25C13.25 10.5637 10.5637 13.25 7.25 13.25C3.93629 13.25 1.25 10.5637 1.25 7.25C1.25 3.93629 3.93629 1.25 7.25 1.25C10.5637 1.25 13.25 3.93629 13.25 7.25Z"
+              stroke="#676879"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <button class="d-btn d-btn--primary sm mobile">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 12 12"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M6.00065 1.33301V10.6663M1.33398 5.99967H10.6673"
+              stroke="white"
+              stroke-width="1.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <p class="add">Add Mannual Checklist</p>
+        </button>
+      </div>
+    </div>
+        `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};
+
+export const Footer: Story = {
+  args: {
+    inputClass: 'footer',
+    heading: 'Footer',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+    <div class="pagination">
+      <p class="text">Rows per page</p>
+      <div class="d-btn d-btn--tertiary vs">
+        <span>12</span>
+        <svg
+          width="10"
+          height="7"
+          viewBox="0 0 10 7"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.175 0L5 3.81667L8.825 0L10 1.175L5 6.175L0 1.175L1.175 0Z"
+            fill="#676879"
+          />
+        </svg>
+      </div>
+      <p class="text">1-9 0f 100</p>
+
+      <div class="pagination-svg">
+        <svg
+          width="11"
+          height="11"
+          viewBox="0 0 11 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 0H1.83333V11H0V0ZM3.20833 5.5L11 11V0L3.20833 5.5ZM9.16667 7.46167L6.38917 5.5L9.16667 3.53833V7.46167Z"
+            fill="#676879"
+          />
+        </svg>
+
+        <svg
+          width="7"
+          height="11"
+          viewBox="0 0 7 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M5.50047 11L6.79297 9.7075L2.59464 5.5L6.79297 1.2925L5.50047 -3.51413e-07L0.000468349 5.5L5.50047 11Z"
+            fill="#676879"
+          />
+        </svg>
+
+        <svg
+          width="7"
+          height="11"
+          viewBox="0 0 7 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.2925 0L0 1.2925L4.19833 5.5L0 9.7075L1.2925 11L6.7925 5.5L1.2925 0Z"
+            fill="#676879"
+          />
+        </svg>
+        <svg
+          width="11"
+          height="11"
+          viewBox="0 0 11 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M11 11L9.16667 11L9.16667 -3.98694e-07L11 -2.38419e-07L11 11ZM7.79167 5.5L7.23232e-07 -1.20007e-06L-2.38419e-07 11L7.79167 5.5ZM1.83333 3.53833L4.61083 5.5L1.83333 7.46167L1.83333 3.53833Z"
+            fill="#676879"
+          />
+        </svg>
+      </div>
+    </div>     `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};

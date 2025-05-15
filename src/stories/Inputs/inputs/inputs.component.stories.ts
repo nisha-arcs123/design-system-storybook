@@ -26,7 +26,7 @@ export const DateAndTime: Story = {
       docs: {
         source: {
           code: `
-  <div class="container">
+  <div class="containers">
           <div class="calendar">
             <div class="calendar-header">
               <p class="calendar-year">{{ currentDate.getFullYear() }}</p>
@@ -76,7 +76,7 @@ export const DateAndTime: Story = {
       docs: {
         source: {
           code: `
-  <div class="container">
+  <div class="containers">
           <div class="switchBox">
             <label class="switch">
               <input type="checkbox" />
@@ -86,7 +86,7 @@ export const DateAndTime: Story = {
         </div>
 
 
-        <div class="container">
+        <div class="containers">
           <div class="switchBox">
             Label
             <label class="switch">

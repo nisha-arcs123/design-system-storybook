@@ -1,19 +1,24 @@
-@use "./mixins" as  *;
+@use "./mixins" as *;
 
 .navbar-container {
   width: 48px;
   height: 100vh;
   padding: 8px 4px;
-  @include flex-box(column,space-between,center,"","");
+  @include flex-box(column, space-between, center, "", "");
+  border-right: 1px solid #d0d4e4;
   .upper-icons {
-    @include flex-box(column,"","","",4);
+    @include flex-box(column, "", "", "", 4);
   }
   .icon-div {
     border-radius: 8px;
-    @include dimensions(38,38);
-    @include flex-box("",center,center,"",8);
-    &:hover {
+    @include dimensions(38, 38);
+    @include flex-box("", center, center, "", 8);
+    background-color: #ffffff;
+    &:active {
       background-color: #cce5ff;
+    }
+    &:hover {
+      background-color: #dcdfec;
     }
   }
 }

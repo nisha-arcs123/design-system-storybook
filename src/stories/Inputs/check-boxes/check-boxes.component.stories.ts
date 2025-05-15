@@ -23,7 +23,7 @@ export const SimpleCheckbox: Story = {
     docs: {
       source: {
         code: `
-   <div class="container">
+   <div class="containers">
         <label class="custom-checkbox custom-checkbox--vs">
           <input type="checkbox" />
           <span class="checkmark"></span>
@@ -62,7 +62,7 @@ export const RoundedBorderCheckbox: Story = {
     docs: {
       source: {
         code: `
-        <div class="container">
+        <div class="containers">
             <label class="custom-checkbox custom-checkbox--vs custom-checkbox--outer-circle-border" >
             <input type="checkbox" />
             <span class="checkmark checkmark--circle"></span>
@@ -106,7 +106,7 @@ export const SquareBorderCheckbox: Story = {
     docs: {
       source: {
         code: `
-        <div class="container">
+        <div class="containers">
             <label class="custom-checkbox custom-checkbox--vs custom-checkbox--outer-rectangle-border">
             <input type="checkbox" />
             <span class="checkmark checkmark--circle"></span>
@@ -150,7 +150,7 @@ export const BuildingCheckbox: Story = {
     docs: {
       source: {
         code: `
-        <div class="container">
+        <div class="containers">
 
             <div class="building-container-checkbox">
                 <span class="icon-Frame"></span>

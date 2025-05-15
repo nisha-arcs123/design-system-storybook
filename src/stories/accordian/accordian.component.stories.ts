@@ -18,13 +18,13 @@ type Story = StoryObj<AccordianComponent>;
 export const Medium: Story = {
   args: {
     inputClass: 'medium',
-    heading: 'Medium',
+    heading: 'Accordion',
   },
 };
 
 export const Large: Story = {
   args: {
     inputClass: 'large',
-    heading: 'Large',
+    heading: 'Accordion',
   },
 };

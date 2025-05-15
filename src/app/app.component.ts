@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { GridLayoutComponent } from '../stories/grid-layout/grid-layout.component';
-// import { ButtonComponent } from '../stories/buttons/button/button.component';
+// import { HeaderFooterComponent } from '../stories/header-footer/header-footer.component';
+// import { GridLayoutComponent } from '../stories/grid-layout/grid-layout.component';
+// import { ButtonComponent } from '../stories/buttons/button/button.component';head
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule,GridLayoutComponent],
+  imports: [CommonModule],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

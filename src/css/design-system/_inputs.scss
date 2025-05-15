@@ -19,6 +19,7 @@
     border-radius: 4px;
   }
 
+
   input[type="checkbox"] {
     display: none; // hide default checkbox
   }
@@ -33,6 +34,11 @@
     &--circle {
       border-radius: 100px;
     }
+
+  &:hover {
+    background-color: #dcdfec;
+  }
+    
   }
 
   input:checked + .checkmark {
@@ -306,11 +312,11 @@
 
   .calendar-actions {
     padding: 16px 20px;
-    @include flex-box("",end,"","",24);
+    @include flex-box("", end, "", "", 24);
     button {
       background-color: transparent;
       border: none;
-       @include typography(14, "", 700, #017bba);
+      @include typography(14, "", 700, #017bba);
     }
   }
 }

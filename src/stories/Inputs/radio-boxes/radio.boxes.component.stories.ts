@@ -23,7 +23,7 @@ export const SimpleRadio: Story = {
     docs: {
       source: {
         code: `
-        <div class="container">
+        <div class="containers">
           <label class="custome-radio custome-radio--vs">
             <input type="radio" />
             <span class="radiomark"></span>
@@ -62,7 +62,7 @@ export const RoundedBorderRadio: Story = {
     docs: {
       source: {
         code: `
-        <div class="container">
+        <div class="containers">
           <label class="custome-radio custome-radio--vs custome-radio--outer-circle-border" >
             <input type="radio" />
             <span class="radiomark radiomark--circle"></span>
@@ -107,7 +107,7 @@ export const BuildingRadio: Story = {
     docs: {
       source: {
         code: `
-         <div class="container">
+         <div class="containers">
             <div class="building-container-checkbox">
             <span class="icon-Frame"></span>
             Company

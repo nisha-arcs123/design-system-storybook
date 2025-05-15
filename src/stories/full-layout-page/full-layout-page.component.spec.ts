@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FullLayoutComponent } from './full-layout.component';
+import { FullLayoutComponent } from './full-layout-page.component';
 
 describe('FullLayoutComponent', () => {
   let component: FullLayoutComponent;

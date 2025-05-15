@@ -5,6 +5,7 @@
   border-collapse: collapse;
   border-radius: 8px;
   overflow-x: auto;
+  // margin: 0 16px;
   //   background-color: #f1f2f4;
   thead {
     width: 100%;
@@ -62,6 +63,21 @@
         &.first-row {
           text-wrap: nowrap;
           @include flex-box("", "", center, "", 8);
+        }
+
+        .more-icon {
+          width: 28px;
+          height: 28px;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          &:hover {
+            background-color: #dcdfec;
+          }
+        }
+        &:hover {
+          color: #172b4d;
         }
       }
     }

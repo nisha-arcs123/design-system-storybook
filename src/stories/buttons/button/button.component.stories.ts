@@ -31,7 +31,7 @@ export const ButtonKinds: Story = {
     docs: {
       source: {
         code: `
-      <div class="container">
+      <div class="containers">
         <button class="d-btn d-btn-primary md">Primary</button>
         <button class="d-btn d-btn-secondary md">Secondary</button>
         <button class="d-btn d-btn-tertiary md">Tertiary</button>
@@ -39,7 +39,7 @@ export const ButtonKinds: Story = {
       </div>
 
 
-      <div class="container">
+      <div class="containers">
         <button class="d-btn-small d-btn-small--danger">High</button>
         <button class="d-btn-small d-btn-small--warning">Medium</button>
         <button class="d-btn-small d-btn-small--success">Low</button>
@@ -61,7 +61,7 @@ export const PrimaryButtonSize: Story = {
         docs: {
           source: {
             code: `
-      <div class="container">
+      <div class="containers">
         <button class="d-btn d-btn-primary vs">Primary</button>
         <button class="d-btn d-btn-primary sm">Primary</button>
         <button class="d-btn d-btn-primary md">Primary</button>
@@ -87,7 +87,7 @@ export const SecondaryButtonSize: Story = {
     docs: {
       source: {
         code: `
-      <div class="container">
+      <div class="containers">
         <button class="d-btn d-btn-secondary vs">Secondary</button>
         <button class="d-btn d-btn-secondary sm">Secondary</button>
         <button class="d-btn d-btn-secondary md">Secondary</button>
@@ -112,7 +112,7 @@ export const TertiaryButtonSize: Story = {
     docs: {
       source: {
         code: `
-      <div class="container">
+      <div class="containers">
         <button class="d-btn d-btn-tertiary vs">Tertiary</button>
         <button class="d-btn d-btn-tertiary sm">Tertiary</button>
         <button class="d-btn d-btn-tertiary md">Tertiary</button>
@@ -123,7 +123,7 @@ export const TertiaryButtonSize: Story = {
 
 
 
-       <div class="container">
+       <div class="containers">
         <button class="squr-btn">
           <svg
             width="18"
@@ -476,7 +476,7 @@ export const LinkButtonSize: Story = {
         docs: {
           source: {
             code: `
-          <div class="container">
+          <div class="containers">
             <button class="d-btn d-btn-link vs">Link</button>
             <button class="d-btn d-btn-link sm">Link</button>
             <button class="d-btn d-btn-link md">Link</button>
@@ -503,7 +503,7 @@ export const LinkButtonSize: Story = {
         docs: {
           source: {
             code: `
-     <div class="container">
+     <div class="containers">
         <button class="d-btn loading-button loader-vs">
         </button>
         <button class="d-btn loading-button loader-sm">
@@ -535,7 +535,7 @@ export const LinkButtonSize: Story = {
         docs: {
           source: {
             code: `
-          <div class="container">
+          <div class="containers">
             <button class="d-btn d-btn-primary-disable md"> Disabled </button>
             <button class="d-btn d-btn-secondary-disable md"> Disabled </button>
             <button class="d-btn d-btn-tertiary-disable md"> Disabled </button>
@@ -558,7 +558,7 @@ export const LinkButtonSize: Story = {
         docs: {
           source: {
             code: `
-        <div class="container">
+        <div class="containers">
           <button class="d-btn d-btn-success md"> Success </button>
           <button class="d-btn d-btn-danger md"> Danger </button>
         </div>

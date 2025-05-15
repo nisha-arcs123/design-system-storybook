@@ -1,0 +1,15 @@
+.page-layout{
+    display: flex;
+    flex-direction: column;
+
+    .main-content{
+        display: flex;
+        .content{
+            width: 100%;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            background-color: #F1F2F4;
+        }
+    }
+}
