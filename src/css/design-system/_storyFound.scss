@@ -1,7 +1,7 @@
 @use "./storybook";
 @use "./mixins" as *;
 
-.color-container {
+.inner-container {
   border: 1px solid #d0d4e4;
   padding: 32px;
   border-radius: 8px;
@@ -460,4 +460,16 @@
       }
     }
   }
+}
+
+.label {
+  border-radius: 4px;
+  padding: 4px;
+  background-color: #eeeeef;
+  font-size: 13px;
+  font-weight: 500;
+  color: #4d4d4d;
+  height: 23px;
+  display: flex;
+  align-items: center;
 }

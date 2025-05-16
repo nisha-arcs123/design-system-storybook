@@ -11,10 +11,10 @@
   border-radius: 4px;
   @include flex-box(na, na, center, nowrap, 10);
   border: 1px solid transparent;
-  background-color: transparent;
+  // background-color: transparent;
   font-family: "Figtree", sans-serif;
   box-sizing: border-box;
-  color: #ffffff;
+  // color: #ffffff;
   &.vs {
     font-size: 12px;
     padding: 7px 12px;
@@ -76,7 +76,7 @@
 
   &--link {
     background-color: #ffffff;
-    color: #017bba;
+    color: #017bba ;
     cursor: pointer;
     &:hover {
       color: #3397c5;

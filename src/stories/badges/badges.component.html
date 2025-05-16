@@ -1,0 +1,26 @@
+<div [ngSwitch]="inputClass">
+  <div *ngSwitchCase="'badges'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          Badges are graphical elements or indicators used to highlight,
+          display, or signify specific information or status within a user
+          interface. They are typically small in size and often appear as visual
+          elements overlaid on top of other UI components, such as icons,
+          buttons, or avatars.
+        </p>
+      </div>
+
+      <div class="containers">
+        <span class="badge sm">6</span>
+        <span class="badge md">7</span>
+        <span class="badge badge--success md">8</span>
+        <!-- <span class="badge badge--warning">9</span>
+        <span class="badge badge--danger">0</span> -->
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.chips{
+    border-radius: 4px;
+    background-color: #F2F3F5;
+    padding: 6px 8px;
+    display: inline-flex;
+    width: auto;
+    align-items: center;
+    gap: 8px;
+    &--sm{
+        height: 28px;
+    }
+    &--vs{
+        height: 22px;
+    }
+    p{
+        font-size: 14px;
+        color: #4D4D4D;
+    }
+}

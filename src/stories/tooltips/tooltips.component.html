@@ -1,0 +1,86 @@
+<div [ngSwitch]="inputClass">
+  <div *ngSwitchCase="'small-width'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A tooltip is a user interface element that provides additional
+          information or context about an item when users hover over or interact
+          with it. Tooltips typically appear as small pop-up windows or text
+          boxes near the item being hovered over, offering brief explanations,
+          descriptions, or labels.
+        </p>
+      </div>
+      <div class="second-container">
+        <div class="heading">
+          <h2>Small Content</h2>
+        </div>
+
+        <div class="inner-container">
+          <div class="tooltip-container">
+            <div class="tooltip-content">No direction</div>
+            <div class="tooltip">My Tooltip</div>
+          </div>
+
+          <div class="tooltip-container">
+            <div class="tooltip-content">Arrow down</div>
+            <div class="tooltip tooltip--arrow-bottom">My Tooltip</div>
+          </div>
+
+          <div class="tooltip-container">
+            <div class="tooltip-content">Arrow up</div>
+            <div class="tooltip tooltip--arrow-top">My Tooltip</div>
+          </div>
+
+          <div class="tooltip-container">
+            <div class="tooltip-content">Arrow right</div>
+            <div class="tooltip tooltip--arrow-right">My Tooltip</div>
+          </div>
+
+          <div class="tooltip-container">
+            <div class="tooltip-content">Arrow left</div>
+            <div class="tooltip tooltip--arrow-left">My Tooltip</div>
+          </div>
+        </div>
+      </div>
+
+
+       <div class="second-container">
+        <div class="heading">
+          <h2>Max Width</h2>
+        </div>
+
+        <div class="inner-container">
+          <div class="tooltip-container">
+            <div class="tooltip-content">No direction</div>
+            <div class="tooltip">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
+          </div>
+
+          <div class="tooltip-container">
+            <div class="tooltip-content">Arrow down</div>
+            <div class="tooltip tooltip--arrow-bottom">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
+          </div>
+
+          <div class="tooltip-container">
+            <div class="tooltip-content">Arrow up</div>
+            <div class="tooltip tooltip--arrow-top">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
+          </div>
+
+          <div class="tooltip-container">
+            <div class="tooltip-content">Arrow right</div>
+            <div class="tooltip tooltip--arrow-right">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
+          </div>
+
+          <div class="tooltip-container">
+            <div class="tooltip-content">Arrow left</div>
+            <div class="tooltip tooltip--arrow-left">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- style is in storyFound -->

@@ -1,0 +1,47 @@
+
+<div [ngSwitch]="inputClass">
+  <div *ngSwitchCase="'avatar'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          Badges are graphical elements or indicators used to highlight,
+          display, or signify specific information or status within a user
+          interface. They are typically small in size and often appear as visual
+          elements overlaid on top of other UI components, such as icons,
+          buttons, or avatars.
+        </p>
+      </div>
+
+
+
+      <div class="containers">
+        <button class="d-btn--circle light-bg--primary xl">CS</button>
+        <button class="d-btn--circle light-bg--primary xxl">CS</button>
+        <button class="d-btn--circle light-bg--primary xxxl">CS</button>
+      </div>
+
+      <div class="containers">
+        <button class="d-btn--circle danger-bg-cicle sm">OS</button>
+        <button class="d-btn--circle danger-bg-cicle md">OS</button>
+        <button class="d-btn--circle danger-bg-cicle lg">OS</button>
+        <button class="d-btn--circle danger-bg-cicle xl">OS</button>
+      </div>
+
+      <div class="containers">
+        <button class="d-btn--circle light-bg--danger vs">AI</button>
+        <button class="d-btn--circle light-bg--success sm">IA</button>
+        <button class="d-btn--circle light-bg--purple md">IT</button>
+        <button class="d-btn--circle light-bg--danger lg">AI</button>
+        <button class="d-btn--circle light-bg--success xl">IA</button>
+        <button class="d-btn--circle light-bg--purple xxl">IT</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- style is in iconbutton.scss -->

@@ -1,0 +1,54 @@
+<div [ngSwitch]="inputClass">
+  <div *ngSwitchCase="'steps'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          An accordion is a user interface (UI) pattern or component commonly
+          used in web design to organize and display content in a collapsible
+          and expandable manner. It's named after the musical instrument, as it
+          metaphorically behaves like the folds of an accordion, expanding and
+          collapsing as needed.
+        </p>
+      </div>
+      <div class="containers mt-4">
+        <div class="stepper">
+          <ng-container *ngFor="let step of steps; let i = index">
+            <div class="step text-center">
+              <div
+                class="circle"
+                [class.active]="i === currentStep"
+                [class.completed]="i < currentStep"
+              >
+                {{ i + 1 }}
+              </div>
+              <div class="label mt-2">{{ step }}</div>
+            </div>
+            <div
+              *ngIf="i < steps.length - 1"
+              class="line flex-grow-1 mx-2"
+            ></div>
+          </ng-container>
+        </div>
+      </div>
+      <div class="mt-4 d-flex justify-content-between">
+        <button
+          class="btn btn-outline-secondary"
+          (click)="prevStep()"
+          [disabled]="currentStep === 0"
+        >
+          Back
+        </button>
+        <button
+          class="btn btn-primary"
+          (click)="nextStep()"
+          [disabled]="currentStep === steps.length - 1"
+        >
+          Next
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

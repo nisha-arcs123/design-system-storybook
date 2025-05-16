@@ -1,0 +1,36 @@
+// base badge style
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1;
+  color: #ffffff;
+  border-radius: 100px;
+  background-color: #017bba;
+  &.sm {
+    width: 18px;
+    height: 18px;
+  }
+  &.md {
+    width: 24px;
+    height: 24px;
+  }
+
+  &--success {
+    background-color: #28a745;
+  }
+
+  &--warning {
+    background-color: #ffc107;
+    color: black;
+  }
+
+  &--danger {
+    background-color: #dc3545;
+  }
+}
+
+// modifier classes for different badge types
