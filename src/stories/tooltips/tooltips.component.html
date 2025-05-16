@@ -1,5 +1,5 @@
 <div [ngSwitch]="inputClass">
-  <div *ngSwitchCase="'small-width'">
+  <div *ngSwitchCase="'small-content'">
     <div class="outer-container">
       <div class="heading">
         <h1>{{ heading }}</h1>
@@ -13,7 +13,9 @@
           descriptions, or labels.
         </p>
       </div>
-      <div class="second-container">
+      <!-- <div class="second-container">
+
+
         <div class="heading">
           <h2>Small Content</h2>
         </div>
@@ -78,6 +80,98 @@
             <div class="tooltip tooltip--arrow-left">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
           </div>
         </div>
+      </div> -->
+
+      <div class="second-container">
+        <div class="heading">
+          <h2>Small Content</h2>
+        </div>
+
+        <div class="inner-container">
+          <button
+            type="button"
+            class="d-btn d-btn--tertiary tooltip-btn"
+            placement="top"
+            ngbTooltip="Tooltip on top"
+          >
+            Arrow up
+          </button>
+          <button
+            type="button"
+            class="d-btn d-btn--tertiary tooltip-btn"
+            placement="end"
+            ngbTooltip="Tooltip on right"
+          >
+            Arrow right
+          </button>
+          <button
+            type="button"
+            class="d-btn d-btn--tertiary tooltip-btn"
+            placement="bottom"
+            ngbTooltip="Tooltip on bottom"
+          >
+            Arrow bottom
+          </button>
+          <button
+            type="button"
+            class="d-btn d-btn--tertiary tooltip-btn"
+            placement="start"
+            ngbTooltip="Tooltip on left"
+          >
+            Arrow left
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'max-content'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A tooltip is a user interface element that provides additional
+          information or context about an item when users hover over or interact
+          with it. Tooltips typically appear as small pop-up windows or text
+          boxes near the item being hovered over, offering brief explanations,
+          descriptions, or labels.
+        </p>
+      </div>
+      <div class="inner-container">
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn"
+          placement="top"
+          ngbTooltip="Tooltip on top"
+        >
+          Arrow top
+        </button>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn"
+          placement="end"
+          ngbTooltip="Tooltip on right"
+        >
+          Arrow right
+        </button>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn"
+          placement="bottom"
+          ngbTooltip="Tooltip on bottom"
+        >
+          Arrow bottom
+        </button>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn"
+          placement="start"
+          ngbTooltip="Tooltip on left"
+        >
+          Arrow left
+        </button>
       </div>
     </div>
   </div>

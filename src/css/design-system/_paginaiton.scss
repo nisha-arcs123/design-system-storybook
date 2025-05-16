@@ -1,0 +1,73 @@
+@use "./mixins" as *;
+
+.pagination-wrapper {
+  // border: 1px solid #53585B;
+  border-radius: 4px;
+  background-color: #f1f2f4;
+  height: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+
+  .left-pgtn {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    p {
+      font-size: 14px;
+      font-weight: 500;
+      color: #53585b;
+    }
+  }
+  .pagination {
+    .d-btn {
+      span {
+        font-size: 12px;
+        font-weight: 500;
+        color: #53585b;
+      }
+    }
+    .text {
+      font-size: 12px;
+      font-weight: 500;
+      color: #53585b;
+    }
+  }
+}
+
+.pagination {
+  @include flex-box("", "", center, "", 8);
+  height: 28px;
+  // margin: 12px 16px;
+  // background-color: #f1f2f4;
+  // margin-top: 12px;
+  .d-btn {
+    border: 1px solid #c3c6d4;
+    gap: 8px;
+    span {
+      font-size: 13px;
+      font-weight: 500;
+      color: #676879;
+    }
+  }
+  .text {
+    color: #676879;
+  }
+
+  .pagination-svg {
+    @include flex-box("", center, center, "", 12);
+    .page-svg {
+      @include dimensions(22, 22);
+      @include flex-box("", center, center, "", "");
+      @include typography(12, "", 600, #53585b);
+      &.active {
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #007db7;
+        color: #ffffff;
+      }
+    }
+  }
+}
