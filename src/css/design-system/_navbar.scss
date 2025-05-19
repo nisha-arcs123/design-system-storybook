@@ -19,6 +19,14 @@
     }
     &:hover {
       background-color: #dcdfec;
+      span{
+        color: #323238;
+      }
+    }
+
+    span{
+      font-size: 22px;
+      color: #344563;
     }
   }
 }

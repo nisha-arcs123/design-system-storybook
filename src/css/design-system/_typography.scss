@@ -1,16 +1,15 @@
-
-@use './colors' as *;
-@use './mixins'  as *;
+@use "./colors" as *;
+@use "./mixins" as *;
 $font-family: "Figtree", sans-serif;
 
 // Font weights
 
 // variables
-$font-light: 300 ;
-$font-regular: 400 ;
-$font-medium: 500 ;
-$font-bold: 700 ;
-$font-extra-bold: 800 ;
+$font-light: 300;
+$font-regular: 400;
+$font-medium: 500;
+$font-bold: 700;
+$font-extra-bold: 800;
 
 // classess
 $font-weight: (
@@ -97,7 +96,6 @@ h1,
   font-size: $fs-32;
   color: $primary-text-color;
   font-weight: $font-extra-bold;
-  text-transform: capitalize;
   @include max-width(1366px) {
     font-size: $fs-28;
   }
@@ -115,12 +113,11 @@ h2,
   line-height: $lh-30;
   color: $primary-text-color;
   font-weight: $font-bold;
-  text-transform: capitalize;
   @include max-width(1366px) {
     font-size: $fs-20;
   }
   @include max-width(768px) {
-    font-size: $fs-13;
+    font-size: $fs-16;
   }
   @include max-width(375px) {
     font-size: $fs-14;
@@ -133,12 +130,11 @@ h3,
   line-height: $lh-30;
   color: $primary-text-color;
   font-weight: $font-light;
-  text-transform: capitalize;
-   @include max-width(1366px) {
+  @include max-width(1366px) {
     font-size: $fs-16;
   }
   @include max-width(768px) {
-    font-size: $fs-13;
+    font-size: $fs-14;
   }
   @include max-width(375px) {
     font-size: $fs-13;
@@ -151,12 +147,11 @@ h4,
   line-height: $lh-26;
   color: $primary-text-color;
   font-weight: $font-bold;
-  text-transform: capitalize;
-   @include max-width(1366px) {
+  @include max-width(1366px) {
     font-size: $fs-18;
   }
   @include max-width(768px) {
-    font-size: $fs-14;
+    font-size: $fs-13;
   }
   @include max-width(375px) {
     font-size: $fs-14;
@@ -169,8 +164,7 @@ h5,
   line-height: $lh-24;
   color: $primary-text-color;
   font-weight: $font-bold;
-  text-transform: capitalize;
-   @include max-width(1366px) {
+  @include max-width(1366px) {
     font-size: $fs-15;
   }
   @include max-width(768px) {
@@ -187,8 +181,7 @@ h6,
   line-height: $lh-22;
   color: $primary-text-color;
   font-weight: $font-medium;
-  text-transform: capitalize;
-   @include max-width(1366px) {
+  @include max-width(1366px) {
     font-size: $fs-13;
   }
   @include max-width(768px) {
@@ -205,27 +198,42 @@ p,
   line-height: $lh-20;
   color: $primary-text-color;
   font-weight: $font-regular;
-  text-transform: capitalize;
   margin: 0;
-   @include max-width(1366px) {
-    font-size: $fs-12;
+  @include max-width(1366px) {
+    font-size: $fs-13;
   }
   @include max-width(768px) {
-    font-size: $fs-12;
+    font-size: $fs-13;
   }
   @include max-width(375px) {
-    font-size: $fs-11;
+    font-size: $fs-13;
   }
 }
-
+.normal-text {
+  &.small {
+    font-size: $fs-13;
+    line-height: $lh-20;
+    color: $primary-text-color;
+    font-weight: $font-regular;
+    margin: 0;
+    @include max-width(1366px) {
+      font-size: $fs-12;
+    }
+    @include max-width(768px) {
+      font-size: $fs-12;
+    }
+    @include max-width(375px) {
+      font-size: $fs-11;
+    }
+  }
+}
 a,
 .link-text {
   font-size: $fs-14;
   line-height: $lh-22;
   color: $primary-text-color;
   font-weight: $font-medium;
-  text-transform: capitalize;
-    @include max-width(1366px) {
+  @include max-width(1366px) {
     font-size: $fs-13;
   }
   @include max-width(768px) {
@@ -236,13 +244,13 @@ a,
   }
 }
 
-.common-btn, .large {
+.common-btn,
+.large {
   font-size: $fs-14;
   line-height: $lh-22;
   color: $primary-text-color;
   font-weight: $font-medium;
-  text-transform: capitalize;
-    @include max-width(1366px) {
+  @include max-width(1366px) {
     font-size: $fs-14;
   }
   @include max-width(768px) {
@@ -259,8 +267,8 @@ label,
   line-height: $lh-22;
   color: $primary-text-color;
   font-weight: $font-medium;
-  text-transform: capitalize;
-    @include max-width(1366px) {
+  background-color: transparent !important;
+  @include max-width(1366px) {
     font-size: $fs-13;
   }
   @include max-width(768px) {
@@ -277,8 +285,7 @@ label,
   line-height: $lh-20;
   color: $primary-text-color;
   font-weight: $font-medium;
-  text-transform: capitalize;
-    @include max-width(1366px) {
+  @include max-width(1366px) {
     font-size: $fs-12;
   }
   @include max-width(768px) {

@@ -229,7 +229,7 @@
   @include flex-box("", "", "", "", 60);
   .border-div {
     @include flex-box(column, "", "", "", 12);
-    .border {
+    .borders {
       border: 2px solid #d83a52;
       background-color: transparent;
       box-sizing: border-box;
@@ -247,7 +247,7 @@
       }
     }
 
-    .shadow {
+    .box-shadow {
       @include dimensions(200, 200);
       box-sizing: border-box;
       padding: 43px 34px;
@@ -342,7 +342,6 @@
         }
       }
     }
-
     // laptop
     .heading-laptop {
       color: #323238;
@@ -366,7 +365,12 @@
         @include typography(13, "", 500, "");
       }
       .normal-text {
+        @include typography(13, "", 400, "");
+      }
+      .normal-text{
+        &.small{
         @include typography(12, "", 400, "");
+        }
       }
       .link-text {
         @include typography(13, "", 500, "");
@@ -390,13 +394,13 @@
         @include typography(20, "", 800, "");
       }
       .secondary-heading {
-        @include typography(13, "", 700, "");
+        @include typography(16, "", 600, "");
       }
       .tertiary-heading {
-        @include typography(13, "", 300, "");
+        @include typography(14, "", 500, "");
       }
       .fourth-heading {
-        @include typography(14, "", 700, "");
+        @include typography(13, "", 500, "");
       }
       .subtitle-1 {
         @include typography(12, "", 700, "");
@@ -405,7 +409,12 @@
         @include typography(13, "", 500, "");
       }
       .normal-text {
+        @include typography(13, "", 400, "");
+      }
+      .normal-text{
+        &.small{
         @include typography(12, "", 400, "");
+        }
       }
       .link-text {
         @include typography(13, "", 500, "");
@@ -444,7 +453,12 @@
         @include typography(12, "", 500, "");
       }
       .normal-text {
+        @include typography(13, "", 400, "");
+      }
+      .normal-text{
+        &.small{
         @include typography(11, "", 400, "");
+        }
       }
       .link-text {
         @include typography(12, "", 500, "");
@@ -462,7 +476,7 @@
   }
 }
 
-.label {
+.labels {
   border-radius: 4px;
   padding: 4px;
   background-color: #eeeeef;

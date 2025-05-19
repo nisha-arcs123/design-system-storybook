@@ -26,12 +26,12 @@
           </div>
 
           <div class="calendar-controls">
-            <button (click)="prevMonth()">←</button>
+            <button (click)="prevMonth()"><span class="icon-Vector-5"></span></button>
             <p class="curMonth">
               {{ currentDate.toLocaleString("default", { month: "long" }) }}
               {{ currentDate.getFullYear() }}
             </p>
-            <button (click)="nextMonth()">→</button>
+            <button (click)="nextMonth()"><span class="icon-Vector-31"></span></button>
           </div>
 
           <div class="calendar-grid">

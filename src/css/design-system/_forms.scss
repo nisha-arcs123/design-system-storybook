@@ -70,7 +70,7 @@
       .icon-2 {
         order: 1;
         margin-left: 8px;
-        font-size: 20px;
+        font-size: 13px;
         display: flex;
         align-items: center;
         svg {
@@ -100,7 +100,7 @@
       .icon-2 {
         order: 3;
         margin-left: 8px;
-        font-size: 20px;
+        font-size: 13px;
         display: flex;
         align-items: center;
         svg {
@@ -115,6 +115,7 @@
     }
     .icon {
       display: none;
+      font-size: 20px;
     }
 
     input {
@@ -207,7 +208,7 @@
   &--sm {
     height: 28px;
   }
-  svg {
+  span {
     padding: 0 6px;
   }
 
@@ -215,7 +216,7 @@
     border: none;
     outline: none;
     flex: 1;
-    padding: 10px 0;
+    // padding: 10px 0;
     font-size: 12px;
     font-weight: 400;
     color: #949494;
@@ -279,6 +280,10 @@
           color: #017bba;
         }
       }
+
+      .icon-Frame-2609432{
+        font-size: 48px;
+      }
     }
 
     .support-format {
@@ -320,7 +325,7 @@
 
     .pending-progress {
       @include flex-box(column, "", "", "", 4);
-      .progress {
+      .progresses {
         @include flex-box("", space-between, center, "", "");
 
         .right {

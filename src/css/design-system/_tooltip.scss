@@ -1,91 +1,35 @@
-// .tooltip-container {
-//   display: flex;
-//   align-items: center;
-//   justify-content: space-between;
-//   margin-bottom: 20px;
-//   max-width:700px;
-//   .tooltip-content {
-//     font-size: 14px;
-//     font-weight: 400;
-//     color: #676879;
-//     margin-right: 200px;
-//   }
+.tooltip-container {
+  border: 1px solid #d0d4e4;
+  border-radius: 8px;
+  padding: 32px;
+  padding-left: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 
-//   .tooltip {
-//     position: relative;
-//     background-color: #323238; // Dark background
-//     color: #ffffff;
-//     padding: 6px 8px;
-//     font-size: 12px;
-//     border-radius: 4px;
-//     display: inline-block;
-//     font-weight: 500;
-//     opacity: 1;
-//     max-width: 300px;
-//     &::after {
-//       content: "";
-//       position: absolute;
-//       width: 10px;
-//       height: 5px;
-//     }
+  .tooltip-btn {
+    width: max-content;
+    font-size: 14px;
+    font-weight: 400;
+    color: #676879;
+  }
+  .tooltip-inner {
+    padding: 8px;
+    border-radius: 4px;
+    background-color: #323238;
+    font-size: 12px;
+    font-weight: 500;
+    color: #ffffff;
+    min-width: 78px;
+    max-width: 300px;
+    text-align: start;
+  }
 
-//     &--arrow-bottom::after {
-//       top: 100%;
-//       left: 50%;
-//       transform: translateX(-50%);
-//       border-width: 8px 8px 0 8px;
-//       border-color: #323238 transparent transparent transparent;
-//       border-style: solid;
-//     }
+  .tooltip-arrow {
+    color: #323238;
+  }
 
-//     &--arrow-top::after {
-//       bottom: 100%;
-//       left: 50%;
-//       transform: translateX(-50%);
-//       border-width: 0 8px 8px 8px;
-//       border-color: transparent transparent #323238 transparent;
-//       border-style: solid;
-//     }
-
-//     &--arrow-left::after {
-//       top: 50%;
-//       right: 100%;
-//       transform: translateY(-50%);
-//       border-width: 8px 8px 8px 0;
-//       border-color: transparent #323238 transparent transparent;
-//       border-style: solid;
-//     }
-
-//     &--arrow-right::after {
-//       top: 50%;
-//       left: 100%;
-//       transform: translateY(-50%);
-//       border-width: 8px 0 8px 8px;
-//       border-color: transparent transparent transparent #323238;
-//       border-style: solid;
-//     }
-//   }
-// }
-
-
-
-
-
-.tooltip-btn{
-  width: max-content;
-  font-size: 14px;
-  font-weight: 400;
-  color: #676879;
-}
-.tooltip-inner{
-  padding: 6px 8px;
-  border-radius: 4px;
-  background-color: #323238;
-  font-size: 12px;
-  font-weight: 500;
-  color: #FFFFFF;
-}
-
-.tooltip-arrow{
-  color: #323238;
+  .no-arrow + .tooltip .tooltip-arrow {
+    display: none !important;
+  }
 }

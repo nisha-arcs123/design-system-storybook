@@ -51,7 +51,7 @@ $spacing-values: 0, 1, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44,46, 48, 52, 5
 @each $class, $property in $spacing-properties {
   @each $value in $spacing-values {
     .#{$class}-#{$value} {
-      #{$property}: #{$value}px !important;
+      #{$property}: #{$value}px;
     }
   }
 }
@@ -59,59 +59,59 @@ $spacing-values: 0, 1, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44,46, 48, 52, 5
 
 /*************border-radius***********/
 
-$border-radius-small: 4px !important;
-$border-radius-medium: 8px !important;
-$border-radius-large: 16px !important;
+$border-radius-small: 4px;
+$border-radius-medium: 8px;
+$border-radius-large: 16px;
 
 
 /************************* border-radius *************************/
 
 .br-4{
-  border-radius: 4px !important;
+  border-radius: 4px;
 }
  
 .br-8{
-  border-radius: 8px !important;
+  border-radius: 8px;
 }
 .br-16{
-  border-radius: 16px !important;
+  border-radius: 16px;
 }
 
 /********** box shadow *************/
 
-$box-shadow-small: 0px 3px 8px 0 #00000033 !important;
-$box-shadow-medium: 0px 6px 20px 0 #0000004D !important;
-$box-shadow-large: 0px 15px 50px 0 #0000004D !important;
+$box-shadow-small: 0px 3px 8px 0 #00000033  ;
+$box-shadow-medium: 0px 6px 20px 0 #00000033  ;
+$box-shadow-large: 0px 15px 50px 0 #0000004D  ;
 
 .bss {
-  box-shadow: $box-shadow-small !important;
+  box-shadow: $box-shadow-small;
 }
 
 .bsm {
-  box-shadow: $box-shadow-medium !important;
+  box-shadow: $box-shadow-medium;
 }
 
 .bsl {
-  box-shadow: $box-shadow-large !important;
+  box-shadow: $box-shadow-large;
 }
 
 
 /************************** displays ***************************/
  
 .d-n{
-  display: none !important;
+  display: none;
 }
  
 .d-i{
-  display: inline !important;
+  display: inline;
 }
  
 .d-b{
-  display: block !important;
+  display: block;
 }
  
 .d-ib{
-  display: inline-block !important;
+  display: inline-block;
 }
 
 
@@ -119,51 +119,51 @@ $box-shadow-large: 0px 15px 50px 0 #0000004D !important;
 /***********************text alignment******************/
  
 .tx-center{
-  text-align: center !important;
+  text-align: center;
 }
  
 .tx-end{
-  text-align: end !important;
+  text-align: end;
 }
  
 .tx-left{
-  text-align: left !important;
+  text-align: left;
 }
  
 .tx-start{
-  text-align: start !important;
+  text-align: start;
 }
  
 .full-vh{
-  height: 100vh !important;
+  height: 100vh;
 }
  
 .h-auto{
-  height: auto !important;
+  height: auto;
 }
  
 .bx-border-box{
-  box-sizing: border-box !important;
+  box-sizing: border-box;
 }
  
 .h-full{
-  height: 100% !important;
+  height: 100%;
 }
  
 .w-full{
-  width: 100% !important;
+  width: 100%;
 }
  
 .w-fc{
-  width: fit-content !important;
+  width: fit-content;
 }
  
 .cp{
-  cursor: pointer !important;
+  cursor: pointer;
 }
  
 .tx-dec-none{
-  text-decoration: none !important;
+  text-decoration: none;
 }
  
 
@@ -171,23 +171,23 @@ $box-shadow-large: 0px 15px 50px 0 #0000004D !important;
 /*********************** position-classes *********************/
  
 .p-rel {
-  position: relative !important;
+  position: relative;
 }
  
 .p-abs {
-  position: absolute !important;
+  position: absolute;
 }
  
 .p-st {
-  position: static !important;
+  position: static;
 }
  
 .p-fx {
-  position: fixed !important;
+  position: fixed;
 }
  
 .p-sty {
-  position: sticky !important;
+  position: sticky;
 }
  
 
@@ -228,7 +228,7 @@ $overflow-properties: (
 @each $dim-short, $dim-full in $overflow-dimensions {
   @each $prop-short, $prop-full in $overflow-properties {
     .#{$dim-short}-#{$prop-short} {
-      #{$dim-full}: #{$prop-full} !important;
+      #{$dim-full}: #{$prop-full};
     }
   }
 }

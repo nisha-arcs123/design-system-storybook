@@ -1,11 +1,11 @@
 .chips{
     border-radius: 4px;
     background-color: #F2F3F5;
-    padding: 6px 8px;
+    padding:2px 3px;
     display: inline-flex;
     width: auto;
     align-items: center;
-    gap: 8px;
+    gap: 4px;
     &--sm{
         height: 28px;
     }
@@ -15,5 +15,21 @@
     p{
         font-size: 14px;
         color: #4D4D4D;
+    }
+
+    .cross-sign{
+        width: 18px;
+        height: 18px;
+        border-radius: 4px;
+        padding: 4.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #EEEEEF;
+        span{
+            width: fit-content;
+            box-sizing: content-box;
+            font-size: 9px;
+        }
     }
 }

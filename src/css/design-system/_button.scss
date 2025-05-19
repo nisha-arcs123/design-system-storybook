@@ -22,7 +22,6 @@
   }
   &.sm {
     font-size: 13px;
-    padding: 8px 16px;
     height: 32px;
   }
   &.md {
@@ -68,15 +67,19 @@
 
   &--tertiary {
     background-color: #ffffff;
-    color: #4d4d4d;
+    padding: 8px;
+    gap: 8px;
+    p{
+      @include typography(13,"",500,#444444);
+    }
     &:hover {
-      background-color: #f2f3f5;
+      background-color: #dcdfec;
     }
   }
 
   &--link {
     background-color: #ffffff;
-    color: #017bba ;
+    color: #017bba;
     cursor: pointer;
     &:hover {
       color: #3397c5;
@@ -122,7 +125,7 @@
     padding: 12px 24px;
     position: relative;
     display: inline-flex;
-    @include flex-box(na, center,center,na,na);
+    @include flex-box(na, center, center, na, na);
     &::after {
       content: "";
       width: 16px;
@@ -225,5 +228,70 @@
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+.dropdown {
+  .dropdown-menu.show {
+    box-shadow: 0 12px 26px 0 #0000001f;
+    border-radius: 8px;
+    border: 0;
+    padding: 0;
+    width: 200px;
+    ul {
+      margin: 0;
+      padding: 8px;
+      @include typography(13,"",600,#172b4d);
+      li {
+        list-style-type: none;
+        .dropdown-item {
+          padding: 8px;
+          @include flex-box("",space-between,center,"","");
+          p {
+            @include typography(13,"",500,#444444);
+          }
+          .checkmark {
+            border-radius: 8px;
+            background-color: #0073ea;
+            position: relative;
+            @include dimensions(16,16);
+            &::after {
+              content: "";
+              border: solid white;
+              border-width: 0 1px 1px 0;
+              transform: rotate(45deg);
+              @include dimensions(9,5);
+              @include absolute(2,2,2,6);
+            }
+          }
+          &:hover {
+            background-color: #dcdfec;
+            border-radius: 4px;
+          }
+        }
+      }
+    }
+    hr {
+      margin: 8px;
+      border: 1px solid #d0d4e4;
+    }
+  }
+
+  .dropdown-toggle {
+    &::after {
+      content: "\e916"; // ← This is your Unicode from IcoMoon
+      font-family: "IcoMoon"; // ← Must match the font-family defined in your CSS
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+      display: inline-block;
+      text-decoration: inherit;
+      text-align: center;
+      border: 0;
+    }
+
+    p{
+      @include typography(13,"",500,#444444);
+    }
   }
 }

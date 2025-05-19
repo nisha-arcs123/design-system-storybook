@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { Component,Input } from '@angular/core';
-import { NgbPaginationModule } from '@ng-bootstrap/ng-bootstrap';
+
 @Component({
   selector: 'app-pagination',
   standalone: true,
-  imports: [CommonModule,NgbPaginationModule],
+  imports: [CommonModule],
   templateUrl: './pagination.component.html',
   styleUrl: './pagination.component.scss'
 })

@@ -20,202 +20,79 @@ export const SmallSize: Story = {
     docs: {
       source: {
         code: `
-      <div class="chips chips--sm">
+       <div class="chips chips--sm">
             <p>Application</p>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.5 1.5L10.5 10.5M1.5 10.5L10.5 1.5"
-                stroke="#363636"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+
+            <div class="cross-sign">
+              <span class="icon-Icon-Stroke1"></span>
+            </div>
           </div>
 
           <div class="chips chips--sm">
             <p>Predefined</p>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.5 1.5L10.5 10.5M1.5 10.5L10.5 1.5"
-                stroke="#363636"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <div class="cross-sign">
+              <span class="icon-Icon-Stroke1"></span>
+            </div>
           </div>
 
           <div class="chips chips--sm">
             <p>Variations</p>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.5 1.5L10.5 10.5M1.5 10.5L10.5 1.5"
-                stroke="#363636"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <div class="cross-sign">
+              <span class="icon-Icon-Stroke1"></span>
+            </div>
           </div>
 
           <div class="chips chips--sm">
             <p>Database</p>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.5 1.5L10.5 10.5M1.5 10.5L10.5 1.5"
-                stroke="#363636"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <div class="cross-sign">
+              <span class="icon-Icon-Stroke1"></span>
+            </div>
           </div>
 
           <div class="chips chips--sm">
             <p>Passages</p>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.5 1.5L10.5 10.5M1.5 10.5L10.5 1.5"
-                stroke="#363636"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <div class="cross-sign">
+              <span class="icon-Icon-Stroke1"></span>
+            </div>
           </div>
 
 
 
 
-        <div class="chips chips--vs">
+       <div class="chips chips--vs">
             <p>Application</p>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.5 1.5L10.5 10.5M1.5 10.5L10.5 1.5"
-                stroke="#363636"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <div class="cross-sign">
+              <span class="icon-Icon-Stroke1"></span>
+            </div>
           </div>
 
           <div class="chips chips--vs">
             <p>Predefined</p>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.5 1.5L10.5 10.5M1.5 10.5L10.5 1.5"
-                stroke="#363636"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <div class="cross-sign">
+              <span class="icon-Icon-Stroke1"></span>
+            </div>
           </div>
 
           <div class="chips chips--vs">
             <p>Variations</p>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.5 1.5L10.5 10.5M1.5 10.5L10.5 1.5"
-                stroke="#363636"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <div class="cross-sign">
+              <span class="icon-Icon-Stroke1"></span>
+            </div>
           </div>
 
           <div class="chips chips--vs">
             <p>Database</p>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.5 1.5L10.5 10.5M1.5 10.5L10.5 1.5"
-                stroke="#363636"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <div class="cross-sign">
+              <span class="icon-Icon-Stroke1"></span>
+            </div>
           </div>
 
           <div class="chips chips--vs">
             <p>Passages</p>
-            <svg
-              width="12"
-              height="12"
-              viewBox="0 0 12 12"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M1.5 1.5L10.5 10.5M1.5 10.5L10.5 1.5"
-                stroke="#363636"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
+            <div class="cross-sign">
+              <span class="icon-Icon-Stroke1"></span>
+            </div>
           </div>
-
-
-
-
         `.trim(),
         language: 'html',
       },

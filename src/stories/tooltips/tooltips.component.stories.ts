@@ -19,69 +19,52 @@ export const SmallContent: Story = {
     docs: {
       source: {
         code: `
-        <div class="tooltip-container">
-            <div class="tooltip-content">No direction</div>
-            <div class="tooltip">My Tooltip</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow down</div>
-            <div class="tooltip tooltip--arrow-bottom">My Tooltip</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow up</div>
-            <div class="tooltip tooltip--arrow-top">My Tooltip</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow right</div>
-            <div class="tooltip tooltip--arrow-right">My Tooltip</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow left</div>
-            <div class="tooltip tooltip--arrow-left">My Tooltip</div>
-          </div>
-
-
-
-
-
-
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">No direction</div>
-            <div class="tooltip">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow down</div>
-            <div class="tooltip tooltip--arrow-bottom">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow up</div>
-            <div class="tooltip tooltip--arrow-top">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow right</div>
-            <div class="tooltip tooltip--arrow-right">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow left</div>
-            <div class="tooltip tooltip--arrow-left">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
-          </div>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn no-arrow"
+          placement="top"
+          ngbTooltip="No Direction"
+        >
+          No direction
+        </button>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn"
+          placement="top"
+          ngbTooltip="Tooltip on top"
+        >
+          Arrow top
+        </button>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn"
+          placement="end"
+          ngbTooltip="Tooltip on right"
+        >
+          Arrow right
+        </button>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn"
+          placement="bottom"
+          ngbTooltip="Tooltip on bottom"
+        >
+          Arrow bottom
+        </button>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn"
+          placement="start"
+          ngbTooltip="Tooltip on left"
+        >
+          Arrow left
+        </button>
         `.trim(),
         language: 'html',
       },
     },
   },
 };
-
-
 
 export const MaxContent: Story = {
   args: {
@@ -92,61 +75,46 @@ export const MaxContent: Story = {
     docs: {
       source: {
         code: `
-        <div class="tooltip-container">
-            <div class="tooltip-content">No direction</div>
-            <div class="tooltip">My Tooltip</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow down</div>
-            <div class="tooltip tooltip--arrow-bottom">My Tooltip</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow up</div>
-            <div class="tooltip tooltip--arrow-top">My Tooltip</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow right</div>
-            <div class="tooltip tooltip--arrow-right">My Tooltip</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow left</div>
-            <div class="tooltip tooltip--arrow-left">My Tooltip</div>
-          </div>
-
-
-
-
-
-
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">No direction</div>
-            <div class="tooltip">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow down</div>
-            <div class="tooltip tooltip--arrow-bottom">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow up</div>
-            <div class="tooltip tooltip--arrow-top">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow right</div>
-            <div class="tooltip tooltip--arrow-right">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
-          </div>
-
-          <div class="tooltip-container">
-            <div class="tooltip-content">Arrow left</div>
-            <div class="tooltip tooltip--arrow-left">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration</div>
-          </div>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn no-arrow"
+          placement="top"
+          ngbTooltip="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration"
+        >
+          No direction
+        </button>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn"
+          placement="top"
+          ngbTooltip="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration"
+        >
+          Arrow top
+        </button>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn"
+          placement="end"
+          ngbTooltip="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration"
+        >
+          Arrow right
+        </button>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn"
+          placement="bottom"
+          ngbTooltip="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration"
+        >
+          Arrow bottom
+        </button>
+        <button
+          type="button"
+          class="d-btn d-btn--tertiary tooltip-btn"
+          placement="start"
+          ngbTooltip="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration"
+        >
+          Arrow left
+        </button>
         `.trim(),
         language: 'html',
       },

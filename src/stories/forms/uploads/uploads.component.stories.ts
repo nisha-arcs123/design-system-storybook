@@ -1,10 +1,14 @@
-import type { Meta, StoryObj } from '@storybook/angular';
+import { moduleMetadata, type Meta, type StoryObj } from '@storybook/angular';
 import { UploadsComponent } from './uploads.component';
-
 const meta: Meta<UploadsComponent> = {
   title: 'Forms',
   tags: ['autodocs'],
   component: UploadsComponent,
+  decorators: [
+    moduleMetadata({
+      imports: [],
+    }),
+  ],
 };
 
 export default meta;
