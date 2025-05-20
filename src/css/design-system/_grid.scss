@@ -16,6 +16,9 @@
         text-align: start;
         padding: 11px 8px;
         @include typography(13, "", 600, #172b4d);
+        span{
+          font-size: 18px;
+        }
       }
       .head {
         display: flex;

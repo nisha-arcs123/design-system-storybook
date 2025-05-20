@@ -15,6 +15,7 @@
   font-family: "Figtree", sans-serif;
   box-sizing: border-box;
   // color: #ffffff;
+
   &.vs {
     font-size: 12px;
     padding: 7px 12px;
@@ -69,11 +70,19 @@
     background-color: #ffffff;
     padding: 8px;
     gap: 8px;
-    p{
-      @include typography(13,"",500,#444444);
+    p {
+      @include typography(13, "", 500, #444444);
+    }
+    .header-icon {
+      font-size: 16px;
     }
     &:hover {
       background-color: #dcdfec;
+      .header-icon {
+        &::before{
+          color: #676879;
+        }
+      }
     }
   }
 
@@ -241,27 +250,27 @@
     ul {
       margin: 0;
       padding: 8px;
-      @include typography(13,"",600,#172b4d);
+      @include typography(13, "", 600, #172b4d);
       li {
         list-style-type: none;
         .dropdown-item {
           padding: 8px;
-          @include flex-box("",space-between,center,"","");
+          @include flex-box("", space-between, center, "", "");
           p {
-            @include typography(13,"",500,#444444);
+            @include typography(13, "", 500, #444444);
           }
           .checkmark {
             border-radius: 8px;
             background-color: #0073ea;
             position: relative;
-            @include dimensions(16,16);
+            @include dimensions(16, 16);
             &::after {
               content: "";
               border: solid white;
               border-width: 0 1px 1px 0;
               transform: rotate(45deg);
-              @include dimensions(9,5);
-              @include absolute(2,2,2,6);
+              @include dimensions(9, 5);
+              @include absolute(2, 2, 2, 6);
             }
           }
           &:hover {
@@ -279,7 +288,7 @@
 
   .dropdown-toggle {
     &::after {
-      content: "\e916"; // ← This is your Unicode from IcoMoon
+      content: "\e944"; // ← This is your Unicode from IcoMoon
       font-family: "IcoMoon"; // ← Must match the font-family defined in your CSS
       font-style: normal;
       font-weight: normal;
@@ -288,10 +297,15 @@
       text-decoration: inherit;
       text-align: center;
       border: 0;
+      color: #a3adba;
+      font-size: 16px;
+    }
+    &:hover::after{
+      color: #676879;
     }
 
-    p{
-      @include typography(13,"",500,#444444);
+    p {
+      @include typography(13, "", 500, #444444);
     }
   }
 }

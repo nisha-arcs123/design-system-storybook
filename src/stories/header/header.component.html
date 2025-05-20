@@ -1,111 +1,138 @@
 <div [ngSwitch]="inputClass">
   <div *ngSwitchCase="'header'">
-    <div class="header-container">
-      <div class="switch-tab">
-        <p>Switch To Report BI</p>
-        <div class="switchBox">
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider"></span>
-          </label>
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A tooltip is a user interface element that provides additional
+          information or context about an item when users hover over or interact
+          with it. Tooltips typically appear as small pop-up windows or text
+          boxes near the item being hovered over, offering brief explanations,
+          descriptions, or labels.
+        </p>
+      </div>
+      <div class="header-container">
+        <div class="switch-tab">
+          <p>Switch To Report BI</p>
+          <div class="switchBox">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider"></span>
+            </label>
+          </div>
         </div>
-      </div>
 
-      <div class="more-icon">
-        <span class="icon-Vector-Stroke2"></span>
-      </div>
+        <div class="more-icon">
+          <span class="icon-Vector-Stroke2 icon--vs"></span>
+        </div>
 
-      <button class="d-btn--circle danger-bg-cicle sm">OS</button>
+        <button class="d-btn--circle danger-bg-cicle sm">OS</button>
+      </div>
     </div>
   </div>
 
   <div *ngSwitchCase="'subheader'">
-    <div class="subheader-container">
-      <div class="top-container">
-        <div class="left">Payout</div>
-
-        <div class="right">
-          <div class="search-box-app desktop">
-            <input type="text" placeholder="Search here..." />
-            <span class="icon-Vector-12"></span>
-          </div>
-          <div class="d-btn d-btn--tertiary sm">
-            <span class="icon-Icon-Stroke-10"></span>
-
-            <p>Filter</p>
-            <div class="tooltip-text">Filter</div>
-          </div>
-          <div class="d-btn d-btn--tertiary sm">
-            <span class="icon-Vector-Stroke-2"></span>
-            <p>RCM</p>
-            <div class="tooltip-text">RCM</div>
-          </div>
-          <div class="d-btn d-btn--tertiary sm">
-            <span class="icon-Vector-Stroke-1"></span>
-            <p>Upload</p>
-            <div class="tooltip-text">Upload</div>
-          </div>
-          <div class="d-btn d-btn--tertiary sm">
-            <span class="icon-microsoft-excel-icon1-1"
-              ><span class="path1"></span><span class="path2"></span
-              ><span class="path3"></span><span class="path4"></span
-              ><span class="path5"></span><span class="path6"></span
-              ><span class="path7"></span><span class="path8"></span
-              ><span class="path9"></span><span class="path10"></span
-              ><span class="path11"></span
-            ></span>
-            <p>Export as Excel</p>
-            <div class="tooltip-text">Export as Excel</div>
-            <span class="icon-Vector"></span>
-          </div>
-          <button class="d-btn d-btn--tertiary sm">
-            <span class="icon-Icon-Stroke-1"></span>
-            <div class="tooltip-text">More</div>
-          </button>
-          <button class="d-btn d-btn--primary sm desktop">
-            <span class="icon-Icon-Stroke-2 vs"></span>
-            <p class="add">Add Mannual Checklist</p>
-            <div class="tooltip-text">Add Mannual Checklist</div>
-          </button>
-        </div>
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A tooltip is a user interface element that provides additional
+          information or context about an item when users hover over or interact
+          with it. Tooltips typically appear as small pop-up windows or text
+          boxes near the item being hovered over, offering brief explanations,
+          descriptions, or labels.
+        </p>
       </div>
-      <div class="mobile-right">
-        <div class="search-box-app mobile">
-          <input type="text" placeholder="Search here..." />
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 16 16"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M14.75 14.75L11.4875 11.4875M13.25 7.25C13.25 10.5637 10.5637 13.25 7.25 13.25C3.93629 13.25 1.25 10.5637 1.25 7.25C1.25 3.93629 3.93629 1.25 7.25 1.25C10.5637 1.25 13.25 3.93629 13.25 7.25Z"
-              stroke="#676879"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
+      <div class="subheader-container">
+        <div class="top-container">
+          <div class="left">Payout</div>
+
+          <div class="right">
+            <div class="search-box-app desktop">
+              <input type="text" placeholder="Search here..." />
+              <span class="icon-Vector-12"></span>
+            </div>
+
+            <button
+              class="d-btn d-btn--tertiary tooltip-btn sm"
+              placement="top"
+              [ngbTooltip]="!showTooltip ? 'Filter' : null"
+            >
+              <span class="icon-Icon-Stroke-10"></span>
+              <p>Filter</p>
+          </button>
+            <div
+              class="d-btn d-btn--tertiary tooltip-btn sm"
+              placement="top"
+             [ngbTooltip]="!showTooltip ? 'RCM' : null"
+            >
+              <span class="icon-Vector-Stroke-2"></span>
+              <p>RCM</p>
+            </div>
+            <div
+              class="d-btn d-btn--tertiary tooltip-btn sm"
+              placement="top"
+              [ngbTooltip]="!showTooltip ? 'Upload' : null"
+            >
+              <span class="icon-Vector-Stroke-1"></span>
+              <p>Upload</p>
+            </div>
+
+            <div
+              class="d-btn d-btn--tertiary tooltip-btn sm"
+              placement="top"
+             [ngbTooltip]="!showTooltip ? 'Export as Excel' : null"
+            >
+              <div class="excel">
+                <span class="icon-microsoft-excel-icon1-1"
+                  ><span class="path1"></span><span class="path2"></span
+                  ><span class="path3"></span><span class="path4"></span
+                  ><span class="path5"></span><span class="path6"></span
+                  ><span class="path7"></span><span class="path8"></span
+                  ><span class="path9"></span><span class="path10"></span
+                  ><span class="path11"></span
+                ></span>
+                <p>Export as Excel</p>
+              </div>
+              <span class="icon-Vector"></span>
+            </div>
+
+            <button
+              class="d-btn d-btn--tertiary tooltip-btn sm"
+              placement="top"
+              [ngbTooltip]="!showTooltip ? 'More' : null"
+            >
+              <span class="icon-Icon-Stroke-1 icon--more-vs"></span>
+            </button>
+
+            <button
+              class="d-btn d-btn--primary tooltip-btn desktop sm"
+              placement="top"
+             [ngbTooltip]="!showTooltip ? 'Add Mannual Checklist' : null"
+            >
+              <span class="icon-Icon-Stroke-2 vs"></span>
+              <p class="add">Add Mannual Checklist</p>
+            </button>
+          </div>
         </div>
-        <button class="d-btn d-btn--primary sm mobile">
-          <svg
-            width="12"
-            height="12"
-            viewBox="0 0 12 12"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M6.00065 1.33301V10.6663M1.33398 5.99967H10.6673"
-              stroke="white"
-              stroke-width="1.5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-          </svg>
-          <p class="add">Add Mannual Checklist</p>
-        </button>
+        <div class="mobile-right">
+          <div class="search-box-app mobile">
+            <input type="text" placeholder="Search here..." />
+           <span class="icon-Vector-12"></span>
+          </div>
+          <button
+              class="d-btn d-btn--primary tooltip-btn sm"
+              placement="top"
+             [ngbTooltip]="!showTooltip ? 'Add Mannual Checklist' : null"
+            >
+              <span class="icon-Icon-Stroke-2 vs"></span>
+              <p class="add">Add Mannual Checklist</p>
+          </button>
+        </div>
       </div>
     </div>
   </div>

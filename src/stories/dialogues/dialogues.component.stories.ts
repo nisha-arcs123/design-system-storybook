@@ -1,8 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/angular';
+import { Component, inject, Input } from '@angular/core';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { DialoguesComponent } from './dialogues.component';
 
 const meta: Meta<DialoguesComponent> = {
-  title: 'Dialogues',
+  title: 'Modal/Dialogues',
   component: DialoguesComponent,
   tags: ['autodocs'],
 };

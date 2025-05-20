@@ -124,68 +124,181 @@
   }
 
   .icon {
-    &--vs {
-      font-size: 13px;
-      width: 12px;
+    &--cross-vs {
+      font-size: 9px;
     }
-    &--sm {
+    &--cross-sm {
+      font-size: 10px;
+    }
+    &--cross-md {
+      font-size: 12px;
+    }
+    &--cross-lg {
+      font-size: 13.15px;
+    }
+    &--cross-xl {
+      font-size: 13.15px;
+    }
+    &--cross-xxl {
       font-size: 15px;
-      width: 13px;
     }
-    &--md {
-      width: 15px;
-      font-size: 16px;
-    }
-    &--lg {
-      font-size: 18px;
-      width: 16px;
-    }
-    &--xl {
-      font-size: 18px;
-      width: 16px;
-    }
-    &--xxl {
-      font-size: 21px;
-      width: 19px;
-    }
-    &--mvs {
-      font-size: 2.5px;
-    }
-    &--msm {
+
+    &--more-vs {
       font-size: 3px;
     }
-    &--mmd {
+    &--more-sm {
+      font-size: 3px;
+    }
+    &--more-md {
+      font-size: 3px;
+    }
+    &--more-lg {
+      font-size: 3px;
+    }
+    &--more-xl {
+      font-size: 3px;
+    }
+    &--more-xxl {
       font-size: 4px;
     }
-    &--mlg {
-      font-size: 5px;
+
+    &--back-vs {
+      font-size: 10px;
     }
-    &--mxl {
-      font-size: 6px;
+    &--back-sm {
+      font-size: 11px;
     }
-    &--mxxl {
-      font-size: 7px;
+    &--back-md {
+      font-size: 12px;
+    }
+    &--back-lg {
+      font-size: 13px;
+    }
+    &--back-xl {
+      font-size: 14px;
+    }
+    &--back-xxl {
+      font-size: 15px;
+    }
+
+    &--search-vs {
+      font-size: 13px;
+    }
+    &--search-sm {
+      font-size: 14px;
+    }
+    &--search-md {
+      font-size: 15px;
+    }
+    &--search-lg {
+      font-size: 16px;
+    }
+    &--search-xl {
+      font-size: 17px;
+    }
+    &--search-xxl {
+      font-size: 18px;
+    }
+
+
+    &--edit-vs {
+      font-size: 14px;
+    }
+    &--edit-sm {
+      font-size: 14px;
+    }
+    &--edit-md {
+      font-size: 15px;
+    }
+    &--edit-lg {
+      font-size: 16px;
+    }
+    &--edit-xl {
+      font-size: 19px;
+    }
+    &--edit-xxl {
+      font-size: 20px;
+    }
+
+
+    &--edit-vvs {
+      font-size: 17px;
+    }
+    &--edit-ssm {
+      font-size: 19px;
+    }
+    &--edit-mmd {
+      font-size: 20px;
+    }
+    &--edit-llg {
+      font-size: 22px;
+    }
+    &--edit-xll {
+      font-size: 23px;
+    }
+    &--edit-xxll {
+      font-size: 24px;
+    }
+
+
+    &--delete-vs {
+      font-size: 14px;
+    }
+    &--delete-sm {
+      font-size: 14px;
+    }
+    &--delete-md {
+      font-size: 15px;
+    }
+    &--delete-lg {
+      font-size: 16px;
+    }
+    &--delete-xl {
+      font-size: 19px;
+    }
+    &--delete-xxl {
+      font-size: 20px;
+    }
+
+
+    &--delete-vvs {
+      font-size: 17px;
+    }
+    &--delete-ssm {
+      font-size: 19px;
+    }
+    &--delete-mmd {
+      font-size: 20px;
+    }
+    &--delete-llg {
+      font-size: 22px;
+    }
+    &--delete-xll {
+      font-size: 23px;
+    }
+    &--delete-xxll {
+      font-size: 24px;
     }
   }
 }
 
 .add {
   &--vs {
-    font-size: 14px;
+    font-size: 13px;
   }
   &--sm {
-    font-size: 16px;
+    font-size: 15px;
   }
   &--md {
-    font-size: 16px;
+    font-size: 15px;
   }
   &--lg {
-    font-size: 16px;
+    font-size: 15px;
   }
   &--xl {
-    font-size: 18px;
+    font-size: 16px;
   }
   &--xxl {
-    font-size: 18px;
+    font-size: 17px;
   }
 }

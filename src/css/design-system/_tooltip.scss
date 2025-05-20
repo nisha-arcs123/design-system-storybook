@@ -16,7 +16,7 @@
   .tooltip-inner {
     padding: 8px;
     border-radius: 4px;
-    background-color: #323238;
+    // background-color: #323238;
     font-size: 12px;
     font-weight: 500;
     color: #ffffff;
@@ -25,9 +25,9 @@
     text-align: start;
   }
 
-  .tooltip-arrow {
-    color: #323238;
-  }
+  // .tooltip-arrow {
+  //   // color: #323238 !important;
+  // }
 
   .no-arrow + .tooltip .tooltip-arrow {
     display: none !important;

@@ -21,20 +21,23 @@
       color: #53585b;
     }
   }
-  .pagination {
-    .d-btn {
-      span {
-        font-size: 12px;
-        font-weight: 500;
-        color: #53585b;
-      }
-    }
-    .text {
-      font-size: 12px;
-      font-weight: 500;
-      color: #53585b;
-    }
-  }
+  // .pagination {
+  //   .d-btn {
+  //     p {
+  //       font-size: 13px;
+  //       font-weight: 500;
+  //       color: #676879;
+  //     }
+  //     span {
+  //       font-size: 2px;
+  //     }
+  //   }
+  //   .text {
+  //     font-size: 12px;
+  //     font-weight: 500;
+  //     color: #53585b;
+  //   }
+  // }
 }
 
 .pagination {
@@ -46,28 +49,40 @@
   .d-btn {
     border: 1px solid #c3c6d4;
     gap: 8px;
-    span {
+    p {
       font-size: 13px;
       font-weight: 500;
       color: #676879;
     }
+    span {
+      font-size: 8px;
+    }
   }
   .text {
-    color: #676879;
+    // color: #676879;
+    font-size: 12px;
+    font-weight: 500;
+    color: #53585b;
   }
 
   .pagination-svg {
     @include flex-box("", center, center, "", 12);
-    .page-svg {
-      @include dimensions(22, 22);
-      @include flex-box("", center, center, "", "");
+    .page {
       @include typography(12, "", 600, #53585b);
+      @include dimensions(26, 26);
+      @include flex-box("", center, center, "", "");
+
       &.active {
         padding: 10px;
         border-radius: 4px;
         background-color: #007db7;
         color: #ffffff;
       }
+    }
+    .page-svg {
+      @include dimensions(18, 18);
+      font-size: 11px;
+      @include flex-box("", center, center, "", "");
     }
   }
 }
