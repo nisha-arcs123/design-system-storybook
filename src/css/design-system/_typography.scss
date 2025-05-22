@@ -1,95 +1,8 @@
-@use "./colors" as *;
-@use "./mixins" as *;
-$font-family: "Figtree", sans-serif;
+@use './theme/blue-theme' as *;
+@use './mixins' as *;
+@use './fonts/medium' as *;
 
-// Font weights
-
-// variables
-$font-light: 300;
-$font-regular: 400;
-$font-medium: 500;
-$font-bold: 700;
-$font-extra-bold: 800;
-
-// classess
-$font-weight: (
-  "300": 300,
-  "400": 400,
-  "500": 500,
-  "700": 700,
-  "800": 800,
-);
-
-@each $key, $value in $font-weight {
-  .fw-#{$key} {
-    font-weight: $value;
-  }
-}
-
-// Font sizes
-$fonts: (
-  "10": 10px,
-  "11": 11px,
-  "12": 12px,
-  "13": 13px,
-  "14": 14px,
-  "15": 15px,
-  "16": 16px,
-  "18": 18px,
-  "20": 20px,
-  "22": 22px,
-  "24": 24px,
-  "28": 28px,
-  "32": 32px,
-  "34": 34px,
-  "36": 36px,
-  "42": 42px,
-  "50": 50px,
-);
-
-@each $key, $value in $fonts {
-  .fs-#{$key} {
-    font-size: $value;
-  }
-}
-
-/**********font size**********/
-
-$fs-50: 50px;
-$fs-42: 42px;
-$fs-36: 36px;
-$fs-34: 34px;
-$fs-32: 32px;
-$fs-28: 28px;
-$fs-24: 24px;
-$fs-22: 22px;
-$fs-20: 20px;
-$fs-18: 18px;
-$fs-16: 16px;
-$fs-15: 15px;
-$fs-14: 14px;
-$fs-13: 13px;
-$fs-12: 12px;
-$fs-11: 11px;
-$fs-10: 10px;
-/****************line height*************/
-$lh-50: 50px;
-$lh-42: 42px;
-$lh-36: 36px;
-$lh-34: 34px;
-$lh-32: 32px;
-$lh-30: 30px;
-$lh-28: 28px;
-$lh-26: 26px;
-$lh-24: 24px;
-$lh-22: 22px;
-$lh-20: 20px;
-$lh-18: 18px;
-$lh-16: 16px;
-$lh-15: 15px;
-$lh-14: 14px;
-$lh-13: 13px;
-$lh-12: 12px;
+//same media query font size remove
 
 h1,
 .primary-heading {
@@ -107,12 +20,13 @@ h1,
   }
 }
 
+
 h2,
 .secondary-heading {
   font-size: $fs-22;
   line-height: $lh-30;
   color: $primary-text-color;
-  font-weight: $font-bold;
+  font-weight: $font-bolder;
   @include max-width(1366px) {
     font-size: $fs-20;
   }
@@ -124,56 +38,33 @@ h2,
   }
 }
 
+
 h3,
 .tertiary-heading {
   font-size: $fs-16;
   line-height: $lh-30;
   color: $primary-text-color;
   font-weight: $font-light;
-  @include max-width(1366px) {
-    font-size: $fs-16;
-  }
-  @include max-width(768px) {
-    font-size: $fs-14;
-  }
-  @include max-width(375px) {
-    font-size: $fs-13;
-  }
 }
+
 
 h4,
 .fourth-heading {
   font-size: $fs-18;
   line-height: $lh-26;
   color: $primary-text-color;
-  font-weight: $font-bold;
-  @include max-width(1366px) {
-    font-size: $fs-18;
-  }
-  @include max-width(768px) {
-    font-size: $fs-13;
-  }
-  @include max-width(375px) {
-    font-size: $fs-14;
-  }
+  font-weight: $font-bolder;
 }
+
 
 h5,
 .subtitle-1 {
   font-size: $fs-16;
   line-height: $lh-24;
   color: $primary-text-color;
-  font-weight: $font-bold;
-  @include max-width(1366px) {
-    font-size: $fs-15;
-  }
-  @include max-width(768px) {
-    font-size: $fs-12;
-  }
-  @include max-width(375px) {
-    font-size: $fs-12;
-  }
+  font-weight: $font-bolder;
 }
+
 
 h6,
 .subtitle-2 {
@@ -181,117 +72,112 @@ h6,
   line-height: $lh-22;
   color: $primary-text-color;
   font-weight: $font-medium;
-  @include max-width(1366px) {
-    font-size: $fs-13;
-  }
-  @include max-width(768px) {
-    font-size: $fs-13;
-  }
-  @include max-width(375px) {
-    font-size: $fs-12;
-  }
 }
+
 
 p,
 .normal-text {
-  font-size: $fs-13;
-  line-height: $lh-20;
   color: $primary-text-color;
   font-weight: $font-regular;
   margin: 0;
-  @include max-width(1366px) {
-    font-size: $fs-13;
+  &.xl {
+    font-size: $fs-16;
+    line-height: $lh-24;
   }
-  @include max-width(768px) {
-    font-size: $fs-13;
+
+  &.large {
+    font-size: $fs-14;
+    line-height: $lh-22;
   }
-  @include max-width(375px) {
-    font-size: $fs-13;
-  }
-}
-.normal-text {
+
   &.small {
-    font-size: $fs-13;
-    line-height: $lh-20;
-    color: $primary-text-color;
-    font-weight: $font-regular;
-    margin: 0;
-    @include max-width(1366px) {
-      font-size: $fs-12;
-    }
-    @include max-width(768px) {
-      font-size: $fs-12;
-    }
-    @include max-width(375px) {
-      font-size: $fs-11;
-    }
-  }
-}
-a,
-.link-text {
-  font-size: $fs-14;
-  line-height: $lh-22;
-  color: $primary-text-color;
-  font-weight: $font-medium;
-  @include max-width(1366px) {
-    font-size: $fs-13;
-  }
-  @include max-width(768px) {
-    font-size: $fs-13;
-  }
-  @include max-width(375px) {
     font-size: $fs-12;
   }
 }
 
-.common-btn,
-.large {
-  font-size: $fs-14;
+
+a,
+.link-text {
   line-height: $lh-22;
   color: $primary-text-color;
   font-weight: $font-medium;
-  @include max-width(1366px) {
+  &.large {
     font-size: $fs-14;
   }
-  @include max-width(768px) {
-    font-size: $fs-14;
-  }
-  @include max-width(375px) {
+  &.small {
     font-size: $fs-13;
   }
 }
+
+
+button,
+.common-btn {
+  font-size: $fs-13;
+  line-height: $lh-22;
+  color: $primary-text-color;
+  font-weight: $font-medium;
+
+  &.small {
+    font-size: $fs-12;
+  }
+
+  &.large {
+    font-size: $fs-14;
+    @include max-width(375px) {
+      font-size: $fs-13;
+    }
+  }
+
+  &.x-large {
+    font-size: $fs-16;
+    line-height: $lh-24;
+  }
+}
+
 
 label,
 .label {
-  font-size: $fs-14;
   line-height: $lh-22;
   color: $primary-text-color;
   font-weight: $font-medium;
-  background-color: transparent !important;
-  @include max-width(1366px) {
-    font-size: $fs-13;
+  &.x-large {
+    font-size: $fs-16;
+    @include max-width(1366px) {
+      font-size: $fs-14;
+    }
   }
-  @include max-width(768px) {
-    font-size: $fs-13;
+
+  &.large {
+    font-size: $fs-14;
+    @include max-width(1366px) {
+      font-size: $fs-13;
+    }
   }
-  @include max-width(375px) {
-    font-size: $fs-12;
+
+  &.small {
+    font-size: $fs-13;
+    @include max-width(1366px) {
+      font-size: $fs-12;
+    }
   }
 }
 
-.caption,
-.caption-medium {
-  font-size: $fs-12;
+
+span,
+.caption {
   line-height: $lh-20;
   color: $primary-text-color;
-  font-weight: $font-medium;
-  @include max-width(1366px) {
+  &.caption-medium {
     font-size: $fs-12;
+    font-weight: $font-medium;
   }
-  @include max-width(768px) {
+
+  &.caption-bold {
     font-size: $fs-12;
-  }
-  @include max-width(375px) {
-    font-size: $fs-10;
+    font-weight: $font-bolder;
+    @include max-width(1366px) {
+      font-size: $fs-12;
+      font-weight: $font-bold;
+    }
   }
 }

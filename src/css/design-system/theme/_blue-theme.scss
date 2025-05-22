@@ -1,0 +1,58 @@
+// blue theme 
+
+// ==================semantic colors ==================//
+
+$primary-color :#017BBA;
+$primary-hover-color:#3397C5;
+$primary-selected-color:#B3D8E9;
+$primary-selected-hover-color:#80BEDB;
+$positive-color:#219C4B;
+$positive-color-hover:#089137;
+$positive-color-selected:#84C89B;
+$positive-color-selected-hover:#B5DEC3;
+$negative-color:#D72300;
+$negative-color-hover:#C22000;
+$negative-color-selected:#F3BDB3;
+$negative-color-selected-hover:#EFA799;
+$warning-color:#FFCB00;
+$warning-color-hover:#EAAA15;
+$warning-color-selected:#FEE6B9;
+$warning-color-selected-hover:#FDDEA1;
+$private-color:#F65F7C;
+$shareable-color:#8F5B8B;
+$inverted-color-background:#060606;
+$icon-color:#363636;
+$fixed-dark-color:#1A1A1A;
+
+.pmc{
+    color: $shareable-color;
+}
+
+
+//=======================background-colors==================//
+
+$primary-background-color:#FFFFFF;
+$secondary-background-color:#F2F3F5;
+$primary-background-hover-color:#E6F2F8;
+$inverted-color-background:#060606;
+$grey-background-color:#EEEEEF;
+
+
+
+// =======================text colors ========================//
+// $primary-text-color:#323238;
+$primary-text-color:#202020;
+$secondary-text-color:#4D4D4D;
+$secondary-text-on-secondary-color:#FFFFFF;
+$text-color-on-inverted:#FFFFFF;
+$text-color-on-primary:#FFFFFF;
+$disabled-text-color:#989B9D;
+$placeholder-color:#CBCDCE;
+$link-color:#1A8ABE;
+
+
+
+// ==================border colors =======================//
+
+$ui-border-color:#DDDEDE;
+$layout-border-color:#CBCDCE;

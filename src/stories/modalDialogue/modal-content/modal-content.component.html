@@ -1,0 +1,36 @@
+<div class="outer-container">
+  <div class="dialogue-container">
+    <div class="modal-header">
+      <h5 class="modal-title">Add Life Cycle</h5>
+      <button
+        type="button"
+        class="btn-close"
+        aria-label="Close"
+        (click)="activeModal.dismiss('Cross click')"
+      ></button>
+    </div>
+
+    <div class="modal-body">
+      <p class="text-muted">
+        Fields marked with <span class="text-danger">*</span> are required.
+      </p>
+
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" class="form-control" />
+      </div>
+
+      <div class="mb-3">
+        <textarea
+          class="form-control"
+          rows="4"
+          placeholder="Description"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="modal-footer w-100">
+      <button class="btn btn-primary w-100">Save</button>
+    </div>
+  </div>
+</div>

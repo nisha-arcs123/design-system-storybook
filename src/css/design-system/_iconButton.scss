@@ -1,7 +1,6 @@
-@use "./mixins" as *;
-@use "./colors" as *;
-@use "./foundation" as *;
-@use "./typography" as *;
+@use './theme/blue-theme' as *;
+@use './mixins' as *;
+@use './fonts/medium' as *;;
 @use "./storybook";
 
 .d-btn {
@@ -70,6 +69,11 @@
     &.danger-bg-cicle {
       background-color: #f65f7c;
     }
+    &.tertiary-circle{
+      &:hover{
+        background-color: #dcdfec;
+      }
+    }
     &.light-bg {
       font-weight: 600;
       &--danger {
@@ -124,80 +128,95 @@
   }
 
   .icon {
+    &--vs{
+      font-size: 18px;
+    }
+    &--sm{
+      font-size: 20px;
+    }
+    &--md{
+      font-size: 22px;
+    }
+    &--lg{
+      font-size: 32px;
+    }
+    &--xl{
+      font-size: 28px;
+    }
     &--cross-vs {
-      font-size: 9px;
+      font-size: 18px;
     }
     &--cross-sm {
-      font-size: 10px;
+      font-size: 20px;
     }
     &--cross-md {
-      font-size: 12px;
+      font-size: 22px;
     }
     &--cross-lg {
-      font-size: 13.15px;
+      font-size: 24px;
     }
     &--cross-xl {
-      font-size: 13.15px;
+      font-size: 24px;
     }
     &--cross-xxl {
-      font-size: 15px;
+      font-size: 28px;
     }
 
     &--more-vs {
-      font-size: 3px;
+      font-size: 18px;
     }
     &--more-sm {
-      font-size: 3px;
+      font-size: 20px;
     }
     &--more-md {
-      font-size: 3px;
+      font-size: 22px;
     }
     &--more-lg {
-      font-size: 3px;
+      font-size: 24px;
     }
     &--more-xl {
-      font-size: 3px;
+      font-size: 24px;
     }
     &--more-xxl {
-      font-size: 4px;
+      font-size: 28px;
     }
 
     &--back-vs {
-      font-size: 10px;
+      font-size: 18px;
     }
     &--back-sm {
-      font-size: 11px;
+      font-size: 20px;
     }
     &--back-md {
-      font-size: 12px;
+      font-size: 22px;
     }
     &--back-lg {
-      font-size: 13px;
+      font-size: 24px;
     }
     &--back-xl {
-      font-size: 14px;
+      font-size: 24px;
     }
     &--back-xxl {
-      font-size: 15px;
+      font-size: 28px;
     }
 
     &--search-vs {
-      font-size: 13px;
+      font-size: 18px;
     }
     &--search-sm {
-      font-size: 14px;
+      font-size: 18px;
     }
     &--search-md {
-      font-size: 15px;
+      font-size: 22px;
     }
     &--search-lg {
-      font-size: 16px;
+      font-size: 24px;
     }
     &--search-xl {
-      font-size: 17px;
+      font-size: 24px;
     }
     &--search-xxl {
-      font-size: 18px;
+      font-size: 28px;
     }
 
 
@@ -222,22 +241,22 @@
 
 
     &--edit-vvs {
-      font-size: 17px;
+      font-size: 18px;
     }
     &--edit-ssm {
-      font-size: 19px;
-    }
-    &--edit-mmd {
       font-size: 20px;
     }
+    &--edit-mmd {
+      font-size: 24px;
+    }
     &--edit-llg {
-      font-size: 22px;
+      font-size: 24px;
     }
     &--edit-xll {
-      font-size: 23px;
+      font-size: 24px;
     }
     &--edit-xxll {
-      font-size: 24px;
+      font-size: 28px;
     }
 
 
@@ -262,43 +281,43 @@
 
 
     &--delete-vvs {
-      font-size: 17px;
+      font-size: 18px;
     }
     &--delete-ssm {
-      font-size: 19px;
-    }
-    &--delete-mmd {
       font-size: 20px;
     }
+    &--delete-mmd {
+      font-size: 24px;
+    }
     &--delete-llg {
-      font-size: 22px;
+      font-size: 24px;
     }
     &--delete-xll {
-      font-size: 23px;
+      font-size: 24px;
     }
     &--delete-xxll {
-      font-size: 24px;
+      font-size: 28px;
     }
   }
 }
 
 .add {
   &--vs {
-    font-size: 13px;
+    font-size: 14px;
   }
   &--sm {
-    font-size: 15px;
-  }
-  &--md {
-    font-size: 15px;
-  }
-  &--lg {
-    font-size: 15px;
-  }
-  &--xl {
     font-size: 16px;
   }
+  &--md {
+    font-size: 16px;
+  }
+  &--lg {
+    font-size: 16px;
+  }
+  &--xl {
+    font-size: 18px;
+  }
   &--xxl {
-    font-size: 17px;
+    font-size: 18px;
   }
 }

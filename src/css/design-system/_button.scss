@@ -1,7 +1,6 @@
-@use "./mixins" as *;
-@use "./colors" as *;
-@use "./foundation" as *;
-@use "./typography" as *;
+@use './theme/blue-theme' as *;
+@use './mixins' as *;
+@use './fonts/medium' as *;
 @use "./storybook.scss";
 
 .d-btn {
@@ -14,7 +13,6 @@
   // background-color: transparent;
   font-family: "Figtree", sans-serif;
   box-sizing: border-box;
-  // color: #ffffff;
 
   &.vs {
     font-size: 12px;

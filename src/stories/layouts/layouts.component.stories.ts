@@ -40,3 +40,36 @@ export const Page2: Story = {
     },
   },
 };
+
+
+export const Page3: Story = {
+  args: {
+    inputClass: 'page3',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+  `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};
+
+
+
+export const Page4: Story = {
+  args: {
+    inputClass: 'page4',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+  `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};

@@ -35,7 +35,7 @@
   .top-container {
     // padding: 16px;
     padding-bottom: 16px;
-    @include flex-box("", space-between, center, "", 40);
+    @include flex-box("", space-between, center, na, 40);
     // background-color: #f1f2f4;
     @include max-width(580) {
       align-items: start;

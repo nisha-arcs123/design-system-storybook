@@ -16,6 +16,9 @@
     background-color: #ffffff;
     &:active {
       background-color: #cce5ff;
+      .icon{
+        fill: blue;
+      }
     }
     &:hover {
       background-color: #dcdfec;
