@@ -5,9 +5,9 @@
   border: 1px solid #d0d4e4;
   padding: 32px;
   border-radius: 8px;
-  @include flex-box(column, "", "", "", 20);
+  @include flex-box(column, na, na, na, 20);
   .color-foundation {
-    @include flex-box("", "", "", "", 14);
+    @include flex-box(na, na, na, na, 14);
     .color {
       @include dimensions(40, 40);
       &--primary {
@@ -131,13 +131,13 @@
     .color-text {
       h5 {
         margin: 0;
-        @include typography(20, "", 500, #323238);
+        @include typography(20, na, 500, #323238);
       }
       p {
         margin: 0;
-        @include typography(14, "", 400, #676879);
+        @include typography(14, na, 400, #676879);
         span {
-          @include typography(14, "", 500, #323238);
+          @include typography(14, na, 500, #323238);
         }
       }
     }
@@ -149,7 +149,7 @@
     h2 {
       margin: 0;
       margin-bottom: 30px;
-      @include typography(24, "", 300, #323238);
+      @include typography(24, na, 300, #323238);
     }
   }
 }
@@ -159,14 +159,14 @@
     h2 {
       margin: 0;
       margin-bottom: 30px;
-      @include typography(24, "", 300, #323238);
+      @include typography(24, na, 300, #323238);
     }
   }
 
   .containers {
-    @include flex-box(row, "", end, wrap, "");
+    @include flex-box(row, na, end, wrap, na);
     .margin-padding-container {
-      @include flex-box(column, "", "", "", "");
+      @include flex-box(column, na, na, na, na);
       .margin {
         width: 100px;
         background-color: #f4c3cb;
@@ -218,7 +218,7 @@
         p {
           margin: 0;
           margin-top: 4px;
-          @include typography(14, "", 400, #676879);
+          @include typography(14, na, 400, #676879);
         }
       }
     }
@@ -226,16 +226,16 @@
 }
 
 .border-container {
-  @include flex-box("", "", "", "", 60);
+  @include flex-box(na, na, na, na, 60);
   .border-div {
-    @include flex-box(column, "", "", "", 12);
+    @include flex-box(column, na, na, na, 12);
     .borders {
       border: 2px solid #d83a52;
       background-color: transparent;
       box-sizing: border-box;
       @include dimensions(200, 200);
-      @include flex-box("", center, center, "", "");
-      @include typography(18, "", 700, #323238);
+      @include flex-box(na, center, center, na, na);
+      @include typography(18, na, 700, #323238);
       &--small {
         border-radius: 4px;
       }
@@ -256,21 +256,21 @@
       .shadow-header {
         border-bottom: 1px solid #dddede;
         padding-bottom: 4px;
-        @include typography(12, "", 500, #202020);
+        @include typography(12, na, 500, #202020);
       }
 
       .x-axis {
         margin-top: 12px;
         margin-bottom: 16px;
-        @include flex-box("", space-between, center, "", "");
+        @include flex-box(na, space-between, center, na, na);
         p {
           margin: 0;
           font-size: 12px;
           font-weight: 400;
           color: #4d4d4d;
-          @include typography(12, "", 400, #4d4d4d);
+          @include typography(12, na, 400, #4d4d4d);
           span {
-            @include typography(12, "", 400, #202020);
+            @include typography(12, na, 400, #202020);
           }
         }
       }
@@ -288,11 +288,11 @@
 
     .border-text {
       span {
-        @include typography(14, "", 500, #323238);
+        @include typography(14, na, 500, #323238);
       }
       p {
         margin: 0;
-        @include typography(14, "", 400, #676879);
+        @include typography(14, na, 400, #676879);
       }
     }
   }
@@ -301,7 +301,7 @@
 .tabs-container {
   .tab-buttons {
     margin-bottom: 46px;
-    @include flex-box("", space-between, "", "", "");
+    @include flex-box(na, space-between, na, na, na);
     button {
       padding: 14px 141px;
       border: none;
@@ -309,10 +309,10 @@
       cursor: pointer;
       text-wrap: nowrap;
       border-bottom: 3px solid #d9d9d9;
-      @include typography(18, "", 400, #676879);
+      @include typography(18, na, 400, #676879);
       &.active {
         border-bottom: 3px solid #017bba;
-        @include typography(18, "", 600, #323238);
+        @include typography(18, na, 600, #323238);
       }
     }
   }
@@ -332,13 +332,13 @@
 
       .class-name {
         padding: 0 30px;
-        @include typography(14, "", 400, #676879);
+        @include typography(14, na, 400, #676879);
       }
 
       .description {
         p {
           margin: 0;
-          @include typography(14, "", 400, #676879);
+          @include typography(14, na, 400, #676879);
         }
       }
     }
@@ -347,42 +347,42 @@
       color: #323238;
 
       .primary-heading {
-        @include typography(28, "", 800, "");
+        @include typography(28, na, 800, na);
       }
       .secondary-heading {
-        @include typography(20, "", 700, "");
+        @include typography(20, na, 700, na);
       }
       .tertiary-heading {
-        @include typography(16, "", 300, "");
+        @include typography(16, na, 300, na);
       }
       .fourth-heading {
-        @include typography(18, "", 700, "");
+        @include typography(18, na, 700, na);
       }
       .subtitle-1 {
-        @include typography(15, "", 700, "");
+        @include typography(15, na, 700, na);
       }
       .subtitle-2 {
-        @include typography(13, "", 500, "");
+        @include typography(13, na, 500, na);
       }
       .normal-text {
-        @include typography(13, "", 400, "");
+        @include typography(13, na, 400, na);
       }
       .normal-text{
         &.small{
-        @include typography(12, "", 400, "");
+        @include typography(12, na, 400, na);
         }
       }
       .link-text {
-        @include typography(13, "", 500, "");
+        @include typography(13, na, 500, na);
       }
       .common-btn {
-        @include typography(14, "", 500, "");
+        @include typography(14, na, 500, na);
       }
       .label {
-        @include typography(13, "", 500, "");
+        @include typography(13, na, 500, na);
       }
       .caption {
-        @include typography(12, "", 500, "");
+        @include typography(12, na, 500, na);
       }
     }
 
@@ -391,42 +391,42 @@
       color: #323238;
 
       .primary-heading {
-        @include typography(20, "", 800, "");
+        @include typography(20, na, 800, na);
       }
       .secondary-heading {
-        @include typography(16, "", 600, "");
+        @include typography(16, na, 600, na);
       }
       .tertiary-heading {
-        @include typography(14, "", 500, "");
+        @include typography(14, na, 500, na);
       }
       .fourth-heading {
-        @include typography(13, "", 500, "");
+        @include typography(13, na, 500, na);
       }
       .subtitle-1 {
-        @include typography(12, "", 700, "");
+        @include typography(12, na, 700, na);
       }
       .subtitle-2 {
-        @include typography(13, "", 500, "");
+        @include typography(13, na, 500, na);
       }
       .normal-text {
-        @include typography(13, "", 400, "");
+        @include typography(13, na, 400, na);
       }
       .normal-text{
         &.small{
-        @include typography(12, "", 400, "");
+        @include typography(12, na, 400, na);
         }
       }
       .link-text {
-        @include typography(13, "", 500, "");
+        @include typography(13, na, 500, na);
       }
       .common-btn {
-        @include typography(14, "", 500, "");
+        @include typography(14, na, 500, na);
       }
       label {
-        @include typography(13, "", 500, "");
+        @include typography(13, na, 500, na);
       }
       .caption {
-        @include typography(12, "", 500, "");
+        @include typography(12, na, 500, na);
       }
     }
 
@@ -435,42 +435,42 @@
       color: #323238;
 
       .primary-heading {
-        @include typography(16, "", 800, "");
+        @include typography(16, na, 800, na);
       }
       .secondary-heading {
-        @include typography(14, "", 700, "");
+        @include typography(14, na, 700, na);
       }
       .tertiary-heading {
-        @include typography(13, "", 300, "");
+        @include typography(13, na, 300, na);
       }
       .fourth-heading {
-        @include typography(14, "", 700, "");
+        @include typography(14, na, 700, na);
       }
       .subtitle-1 {
-        @include typography(12, "", 700, "");
+        @include typography(12, na, 700, na);
       }
       .subtitle-2 {
-        @include typography(12, "", 500, "");
+        @include typography(12, na, 500, na);
       }
       .normal-text {
-        @include typography(13, "", 400, "");
+        @include typography(13, na, 400, na);
       }
       .normal-text{
         &.small{
-        @include typography(11, "", 400, "");
+        @include typography(11, na, 400, na);
         }
       }
       .link-text {
-        @include typography(12, "", 500, "");
+        @include typography(12, na, 500, na);
       }
       .common-btn {
-        @include typography(13, "", 500, "");
+        @include typography(13, na, 500, na);
       }
       .label {
-        @include typography(12, "", 500, "");
+        @include typography(12, na, 500, na);
       }
       .caption {
-        @include typography(10, "", 500, "");
+        @include typography(10, na, 500, na);
       }
     }
   }

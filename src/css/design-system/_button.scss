@@ -8,7 +8,7 @@
   font-size: 14px;
   font-weight: 500;
   border-radius: 4px;
-  @include flex-box(na, na, center, nowrap, 10);
+  @include flex-box(na, center, center, nowrap, 10);
   border: 1px solid transparent;
   // background-color: transparent;
   font-family: "Figtree", sans-serif;
@@ -69,7 +69,7 @@
     padding: 8px;
     gap: 8px;
     p {
-      @include typography(13, "", 500, #444444);
+      @include typography(13, na, 500, #444444);
     }
     .header-icon {
       font-size: 16px;
@@ -248,14 +248,14 @@
     ul {
       margin: 0;
       padding: 8px;
-      @include typography(13, "", 600, #172b4d);
+      @include typography(13, na, 600, #172b4d);
       li {
         list-style-type: none;
         .dropdown-item {
           padding: 8px;
-          @include flex-box("", space-between, center, "", "");
+          @include flex-box(na, space-between, center, na, na);
           p {
-            @include typography(13, "", 500, #444444);
+            @include typography(13, na, 500, #444444);
           }
           .checkmark {
             border-radius: 8px;
@@ -263,7 +263,7 @@
             position: relative;
             @include dimensions(16, 16);
             &::after {
-              content: "";
+              content:"";
               border: solid white;
               border-width: 0 1px 1px 0;
               transform: rotate(45deg);
@@ -303,7 +303,7 @@
     }
 
     p {
-      @include typography(13, "", 500, #444444);
+      @include typography(13, na, 500, #444444);
     }
   }
 }

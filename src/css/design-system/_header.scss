@@ -5,13 +5,13 @@
   height: 44px;
   background-color: #ffffff;
   padding: 6px 12px;
-  @include flex-box("", end, center, "", 8);
+  @include flex-box(na, end, center, na, 8);
   border-bottom: 1px solid #d0d4e4;
   .switch-tab {
-    @include flex-box("", "", center, "", 4);
+    @include flex-box(na, na, center, na, 4);
     p {
       margin: 0;
-      @include typography(13, "", 500, #172b4d);
+      @include typography(13, na, 500, #172b4d);
     }
   }
   .more-icon {
@@ -24,18 +24,18 @@
     &:hover {
       background-color: #dcdfec;
     }
-    span{
+    span {
       font-size: 20px;
     }
   }
 }
 
 .subheader-container {
-  @include flex-box(column, "", "", "", "");
+  @include flex-box(column, na, na, na, na);
   .top-container {
     // padding: 16px;
     padding-bottom: 16px;
-    @include flex-box("", space-between, center, na, 40);
+    @include flex-box(na, space-between, center, na, 40);
     // background-color: #f1f2f4;
     @include max-width(580) {
       align-items: start;
@@ -49,6 +49,7 @@
     .right {
       display: flex;
       align-items: center;
+      gap: 4px;
       .search-box-app {
         &.desktop {
           @include max-width(580) {
@@ -57,25 +58,8 @@
         }
       }
       .d-btn {
-        padding: 8px 12px;
-        gap: 5px;
-        height: 32px;
-        box-sizing: border-box;
-        background-color: transparent;
-        position: relative;
-        cursor: pointer;
-        .more-icon {
-          width: 28px;
-          height: 28px;
-          border-radius: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          &:hover {
-            background-color: #dcdfec;
-          }
-        }
-        p,.excel {
+        p,
+        .excel {
           color: #676879;
           font-weight: 500;
           display: flex;
@@ -92,6 +76,10 @@
               display: none;
             }
           }
+
+          &:hover {
+            background-color: #3397c5;
+          }
           .add {
             color: #ffffff;
             display: flex;
@@ -100,7 +88,15 @@
             }
           }
         }
-      
+
+        &--tertiary {
+          padding: 8px 12px;
+          gap: 5px;
+          height: 32px;
+          &:hover {
+            background-color: #dcdfec;
+          }
+        }
       }
     }
   }
@@ -138,4 +134,3 @@
     }
   }
 }
-

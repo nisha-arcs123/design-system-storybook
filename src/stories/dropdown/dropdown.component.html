@@ -1,0 +1,93 @@
+<div [ngSwitch]="inputClass">
+  <div *ngSwitchCase="'normal-drop-down'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          An accordion is a user interface (UI) pattern or component commonly
+          used in web design to organize and display content in a collapsible
+          and expandable manner. It's named after the musical instrument, as it
+          metaphorically behaves like the folds of an accordion, expanding and
+          collapsing as needed.
+        </p>
+      </div>
+      <div class="containers">
+        <div ngbDropdown class="d-inline-block">
+          <button
+            type="button"
+            class="d-btn d-btn--tertiary sm"
+            id="dropdownBasic1"
+            ngbDropdownToggle
+          >
+            <p>Item Count</p>
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <ul>
+              <li>
+                <button ngbDropdownItem>
+                  <p>02 Cards</p>
+                  <span class="checkmark"></span>
+                </button>
+              </li>
+              <li>
+                <button ngbDropdownItem>
+                  <p>04 Cards</p>
+                  <span class="checkmark"></span>
+                </button>
+              </li>
+              <li>
+                <button ngbDropdownItem>
+                  <p>06 Cards</p>
+                  <span class="checkmark"></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngSwitchCase="'drop-down-with-chips'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          An accordion is a user interface (UI) pattern or component commonly
+          used in web design to organize and display content in a collapsible
+          and expandable manner. It's named after the musical instrument, as it
+          metaphorically behaves like the folds of an accordion, expanding and
+          collapsing as needed.
+        </p>
+      </div>
+      <div class="containers">
+        <div ngbDropdown class="dropdown d-inline-block">
+          <label for="" class="toplabel-input">Hosting Location</label>
+          <input
+            class="dropdown-toggle form-control"
+            [value]="selectedItem"
+            placeholder="Select Item"
+            ngbDropdownToggle
+          />
+
+          <div ngbDropdownMenu>
+            <button ngbDropdownItem (click)="selectItem('Exelixis Controlled')">
+              Exelixis Controlled
+            </button>
+            <button ngbDropdownItem (click)="selectItem('Vendor Controlled')">
+              Vendor Controlled
+            </button>
+            <button ngbDropdownItem (click)="selectItem('Hybrid')">
+              Hybrid
+            </button>
+          </div>
+        </div>
+
+        <!-- Input reflecting the selected value -->
+      </div>
+    </div>
+  </div>
+</div>

@@ -15,7 +15,7 @@
       th {
         text-align: start;
         padding: 11px 8px;
-        @include typography(13, "", 600, #172b4d);
+        @include typography(13, na, 600, #172b4d);
         span{
           font-size: 18px;
         }
@@ -65,7 +65,7 @@
         text-wrap: nowrap;
         &.first-row {
           text-wrap: nowrap;
-          @include flex-box("", "", center, "", 8);
+          @include flex-box(na, na, center, na, 8);
         }
 
         .more-icon {

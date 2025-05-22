@@ -8,7 +8,7 @@
   cursor: pointer;
   user-select: none;
   padding: 0 8px;
-  @include typography(13, "", 500, #676879);
+  @include typography(13, na, 500, #676879);
 
   &--outer-circle-border {
     border: 1px solid #c3c6d4;
@@ -105,8 +105,8 @@
   position: relative;
   padding: 28px;
   width: 274px;
-  @include flex-box("", "", center, "", 12);
-  @include typography(14, "", 600, #676879);
+  @include flex-box(na, na, center, na, 12);
+  @include typography(14, na, 600, #676879);
   span {
     font-size: 44px;
   }
@@ -129,7 +129,7 @@
   cursor: pointer;
   user-select: none;
   padding: 0 8px;
-  @include typography(13, "", 500, #676879);
+  @include typography(13, na, 500, #676879);
 
   &--outer-circle-border {
     border: 1px solid #c3c6d4;
@@ -159,17 +159,9 @@
   input:checked + .radiomark::after {
     content: "";
     position: absolute;
-    // left: 25%;
-    // top: 2%;
-    // width: 40%;
-    // height: 70%;
-    // border: 2px solid white;
-    width: 5px;
-    height: 5px;
+    border: 2px solid white;
     border-radius: 50%;
     background-color: #007bff;
-    // border-width: 0 2px 2px 0;
-    // transform: rotate(45deg);
   }
 
   &--vs {
@@ -214,8 +206,8 @@
 }
 
 .switchBox {
-  @include flex-box("", "", center, "", 4);
-  @include typography(13, "", 500, #676879);
+  @include flex-box(na, na, center, na, 4);
+  @include typography(13, na, 500, #676879);
   .switch {
     position: relative;
     display: inline-block;
@@ -233,12 +225,12 @@
       border-radius: 100px;
       @include absolute(0, 0, 0, 0);
       &::before {
-        content: "";
+        content:"";
         background-color: white;
         transition: 0.4s;
         border-radius: 100px;
         @include dimensions(10, 10);
-        @include absolute("", "", 2, 2);
+        @include absolute(na, na, 2, 2);
       }
     }
 
@@ -264,7 +256,7 @@
     .calendar-year {
       margin: 0;
       margin-bottom: 4px;
-      @include typography(14, "", 400, #ffffff8a);
+      @include typography(14, na, 400, #ffffff8a);
     }
     h2 {
       margin: 0;
@@ -275,14 +267,14 @@
   .calendar-controls {
     padding: 10px;
     height: 60px;
-    @include flex-box("", space-between, center, "", "");
+    @include flex-box(na, space-between, center, na, na);
     button {
       background-color: transparent;
       border: none;
     }
 
     .curMonth {
-      @include typography(16, "", 700, #202020);
+      @include typography(16, na, 700, #202020);
     }
   }
 
@@ -312,11 +304,11 @@
 
   .calendar-actions {
     padding: 16px 20px;
-    @include flex-box("", end, "", "", 24);
+    @include flex-box(na, end, na, na, 24);
     button {
       background-color: transparent;
       border: none;
-      @include typography(14, "", 700, #017bba);
+      @include typography(14, na, 700, #017bba);
     }
   }
 }

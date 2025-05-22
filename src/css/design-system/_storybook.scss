@@ -1,7 +1,7 @@
 @use "./mixins" as *;
 
 .outer-container {
-  @include flex-box(column, "", "", "", 48);
+  @include flex-box(column, na, na, na, 48);
 }
 
 .heading {

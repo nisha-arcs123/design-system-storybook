@@ -7,7 +7,7 @@
   padding: 8px 16px;
   border-radius: 4px;
   @include flex-box(na, na, center, nowrap, 10);
-  @include typography(14, "", 500, na);
+  @include typography(14, na, 500, na);
   border: 1px solid transparent;
   // background-color: transparent;
   font-family: "Figtree", sans-serif;
@@ -54,8 +54,8 @@
     background-color: transparent;
     outline: none;
     border: none;
-    @include flex-box(na, center, center, "", "");
-    @include typography(12, "", 500, #ffffff);
+    @include flex-box(na, center, center, na, na);
+    @include typography(12, na, 500, #ffffff);
     &.dotted-circle {
       border: 2px dotted #017bba;
     }
