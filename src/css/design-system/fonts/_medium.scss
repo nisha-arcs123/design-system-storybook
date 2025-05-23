@@ -2,6 +2,22 @@
 
 // 1920 typography pr jitne bhi font-size hai unhe yha likhna hai
 
+
+
+// Token Name	Value	Suggested Use
+// --fs-display	32px	Display or hero headlines
+// --fs-heading-xl	28px	Page titles
+// --fs-heading-lg	22px	Section titles / prominent subheads
+// --fs-heading-md	20px	Subtitles or larger body headings
+// --fs-body-lg	18px	Large body text
+// --fs-body-md	16px	Regular body text
+// --fs-body-sm	14px	Secondary text / captions
+// --fs-caption	13px	Fine print / small labels
+// --fs-micro	12px	Hints, helper text, micro labels
+
+
+
+
 //font size variabless
 $fs-32 :32px;
 $fs-28 :28px;
@@ -13,25 +29,6 @@ $fs-14 :14px;
 $fs-13 :13px;
 $fs-12 :12px;
 
-//font size classess
-$fonts: (
-  "12": 12px,
-  "13": 13px,
-  "14": 14px,
-  "16": 16px,
-  "18": 18px,
-  "20": 20px,
-  "22": 22px,
-  "28": 28px,
-  "32": 32px,
-);
-@each $key, $value in $fonts {
-  .fs-#{$key} {
-    font-size: $value;
-  }
-}
-
-
 
 /****************line height variables*************/
 $lh-42: 42px;
@@ -40,37 +37,6 @@ $lh-26: 26px;
 $lh-24: 24px;
 $lh-22: 22px;
 $lh-20: 20px;
-
-/*******************line height classes**************/
-$line-height: (
-    "42":42px,
-    "30":30px,
-    "26":26px,
-    "24":24px,
-    "22":22px,
-    "20":20px,
-);
-@each $key, $value in $line-height {
-  .lh-#{$key} {
-    line-height: $value;
-  }
-}
-
-
-/***************** font-weight classess***********/
-$font-weight: (
-  "300": 300,
-  "400": 400,
-  "500": 500,
-  "700": 700,
-  "800": 800,
-);
-
-@each $key, $value in $font-weight {
-  .fw-#{$key} {
-    font-weight: $value;
-  }
-}
 
 
 /**************font weight variables **************/

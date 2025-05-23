@@ -14,36 +14,22 @@
         </p>
       </div>
       <div class="containers">
-        <div ngbDropdown class="d-inline-block">
-          <button
-            type="button"
-            class="d-btn d-btn--tertiary sm"
-            id="dropdownBasic1"
-            ngbDropdownToggle
-          >
-            <p>Item Count</p>
+        <div ngbDropdown class="dropdown d-inline-block">
+          <label for="" class="toplabel-input">Hosting Location</label>
+          <button class="form-control" ngbDropdownToggle>
+            {{ selectedItem || "Select Item" }}
           </button>
-          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-            <ul>
-              <li>
-                <button ngbDropdownItem>
-                  <p>02 Cards</p>
-                  <span class="checkmark"></span>
-                </button>
-              </li>
-              <li>
-                <button ngbDropdownItem>
-                  <p>04 Cards</p>
-                  <span class="checkmark"></span>
-                </button>
-              </li>
-              <li>
-                <button ngbDropdownItem>
-                  <p>06 Cards</p>
-                  <span class="checkmark"></span>
-                </button>
-              </li>
-            </ul>
+
+          <div ngbDropdownMenu>
+            <button ngbDropdownItem (click)="selectItem('Exelixis Controlled')">
+              Exelixis Controlled
+            </button>
+            <button ngbDropdownItem (click)="selectItem('Vendor Controlled')">
+              Vendor Controlled
+            </button>
+            <button ngbDropdownItem (click)="selectItem('Hybrid')">
+              Hybrid
+            </button>
           </div>
         </div>
       </div>
@@ -66,12 +52,14 @@
       <div class="containers">
         <div ngbDropdown class="dropdown d-inline-block">
           <label for="" class="toplabel-input">Hosting Location</label>
-          <input
-            class="dropdown-toggle form-control"
-            [value]="selectedItem"
-            placeholder="Select Item"
-            ngbDropdownToggle
-          />
+          <button class="form-control" ngbDropdownToggle>
+            <div class="chips chips--vs">
+              <p>{{ selectedItem || "Select Item" }}</p>
+              <div class="cross-sign">
+                <span class="icon-Icon-Stroke1"></span>
+              </div>
+            </div>
+          </button>
 
           <div ngbDropdownMenu>
             <button ngbDropdownItem (click)="selectItem('Exelixis Controlled')">
