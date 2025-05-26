@@ -1,45 +1,30 @@
-
-
 // 1920 typography pr jitne bhi font-size hai unhe yha likhna hai
 
-
-
-// Token Name	Value	Suggested Use
-// --fs-display	32px	Display or hero headlines
-// --fs-heading-xl	28px	Page titles
-// --fs-heading-lg	22px	Section titles / prominent subheads
-// --fs-heading-md	20px	Subtitles or larger body headings
-// --fs-body-lg	18px	Large body text
-// --fs-body-md	16px	Regular body text
-// --fs-body-sm	14px	Secondary text / captions
-// --fs-caption	13px	Fine print / small labels
-// --fs-micro	12px	Hints, helper text, micro labels
-
-
-
-
 //font size variabless
-$fs-32 :32px;
-$fs-28 :28px;
-$fs-22 :22px;
-$fs-20 :20px;
-$fs-18 :18px;
-$fs-16 :16px;
-$fs-14 :14px;
-$fs-13 :13px;
-$fs-12 :12px;
+
+$fs-primary: 32px;
+$fs-secondary: 28px;
+$fs-tertiary: 22px;
+$fs-forth: 20px;
+$fs-xxl: 18px;
+$fs-xl: 16px;
+$fs-large: 14px;
+$fs-medium: 13px;
+$fs-small: 12px;
 
 
 /****************line height variables*************/
-$lh-42: 42px;
-$lh-30: 30px;
-$lh-26: 26px;
-$lh-24: 24px;
-$lh-22: 22px;
-$lh-20: 20px;
 
+$lh-primary: 42px;
+$lh-secondary: 30px;
+$lh-tertiary: 26px;
+$lh-forth: 24px;
+$lh-xxl: 22px;
+$lh-xl: 20px;
 
 /**************font weight variables **************/
+
+
 $font-light: 300;
 $font-regular: 400;
 $font-medium: 500;

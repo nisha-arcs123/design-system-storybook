@@ -6,43 +6,43 @@
 
 h1,
 .primary-heading {
-  font-size: $fs-32;
+  font-size: $fs-primary;
   color: $primary-text-color;
   font-weight: $font-extra-bold;
   @include max-width(1366px) {
-    font-size: $fs-28;
+    font-size: $fs-secondary;
   }
   @include max-width(768px) {
-    font-size: $fs-20;
+    font-size: $fs-forth;
   }
   @include max-width(375px) {
-    font-size: $fs-16;
+    font-size:$fs-xl;
   }
 }
 
 
 h2,
 .secondary-heading {
-  font-size: $fs-22;
-  line-height: $lh-30;
+  font-size: $fs-tertiary;
+  line-height: $lh-secondary;
   color: $primary-text-color;
   font-weight: $font-bolder;
   @include max-width(1366px) {
-    font-size: $fs-20;
+    font-size: $fs-forth;
   }
   @include max-width(768px) {
-    font-size: $fs-16;
+    font-size:$fs-xl;
   }
   @include max-width(375px) {
-    font-size: $fs-14;
+    font-size: $fs-large;
   }
 }
 
 
 h3,
 .tertiary-heading {
-  font-size: $fs-16;
-  line-height: $lh-30;
+  font-size:$fs-xl;
+  line-height: $lh-secondary;
   color: $primary-text-color;
   font-weight: $font-light;
 }
@@ -50,8 +50,8 @@ h3,
 
 h4,
 .fourth-heading {
-  font-size: $fs-18;
-  line-height: $lh-26;
+  font-size: $fs-xxl;
+  line-height: $lh-tertiary;
   color: $primary-text-color;
   font-weight: $font-bolder;
 }
@@ -59,8 +59,8 @@ h4,
 
 h5,
 .subtitle-1 {
-  font-size: $fs-16;
-  line-height: $lh-24;
+  font-size:$fs-xl;
+  line-height: $lh-forth;
   color: $primary-text-color;
   font-weight: $font-bolder;
 }
@@ -68,8 +68,8 @@ h5,
 
 h6,
 .subtitle-2 {
-  font-size: $fs-14;
-  line-height: $lh-22;
+  font-size: $fs-large;
+  line-height: $lh-xxl;
   color: $primary-text-color;
   font-weight: $font-medium;
 }
@@ -81,83 +81,84 @@ p,
   font-weight: $font-regular;
   margin: 0;
   &.xl {
-    font-size: $fs-16;
-    line-height: $lh-24;
+    font-size:$fs-xl;
+    line-height: $lh-forth;
   }
 
   &.large {
-    font-size: $fs-14;
-    line-height: $lh-22;
+    font-size: $fs-large;
+    line-height: $lh-xxl;
   }
 
   &.small {
-    font-size: $fs-12;
+    font-size: $fs-small;
   }
 }
 
 
 a,
 .link-text {
-  line-height: $lh-22;
+  line-height: $lh-xxl;
   color: $primary-text-color;
   font-weight: $font-medium;
   &.large {
-    font-size: $fs-14;
+    font-size: $fs-large;
   }
   &.small {
-    font-size: $fs-13;
+    font-size: $fs-medium;
   }
 }
 
 
 button,
 .common-btn {
-  font-size: $fs-13;
-  line-height: $lh-22;
+  font-size: $fs-medium;
+  line-height: $lh-xxl;
   color: $primary-text-color;
   font-weight: $font-medium;
 
   &.small {
-    font-size: $fs-12;
+    font-size: $fs-small;
   }
 
   &.large {
-    font-size: $fs-14;
+    font-size: $fs-large;
     @include max-width(375px) {
-      font-size: $fs-13;
+      font-size: $fs-medium;
     }
   }
 
   &.x-large {
-    font-size: $fs-16;
-    line-height: $lh-24;
+    font-size:$fs-xl;
+    line-height: $lh-forth;
+    font-weight: $font-bolder;
   }
 }
 
 
 label,
 .label {
-  line-height: $lh-22;
+  line-height: $lh-xxl;
   color: $primary-text-color;
   font-weight: $font-medium;
   &.x-large {
-    font-size: $fs-16;
+    font-size:$fs-xl;
     @include max-width(1366px) {
-      font-size: $fs-14;
+      font-size: $fs-large;
     }
   }
 
   &.large {
-    font-size: $fs-14;
+    font-size: $fs-large;
     @include max-width(1366px) {
-      font-size: $fs-13;
+      font-size: $fs-medium;
     }
   }
 
-  &.small {
-    font-size: $fs-13;
+  &.medium {
+    font-size: $fs-medium;
     @include max-width(1366px) {
-      font-size: $fs-12;
+      font-size: $fs-small;
     }
   }
 }
@@ -165,18 +166,18 @@ label,
 
 span,
 .caption {
-  line-height: $lh-20;
+  line-height: $lh-xl;
   color: $primary-text-color;
-  &.caption-medium {
-    font-size: $fs-12;
+  &.medium {
+    font-size: $fs-small;
     font-weight: $font-medium;
   }
 
-  &.caption-bold {
-    font-size: $fs-12;
+  &.bold {
+    font-size: $fs-small;
     font-weight: $font-bolder;
     @include max-width(1366px) {
-      font-size: $fs-12;
+      font-size: $fs-small;
       font-weight: $font-bold;
     }
   }

@@ -1,4 +1,7 @@
 @use "./mixins" as *;
+@use './fonts/medium' as *;
+
+
 
 .header-container {
   width: 100%;
@@ -10,22 +13,18 @@
   .switch-tab {
     @include flex-box(na, na, center, na, 4);
     p {
-      margin: 0;
       @include typography(13, na, 500, #172b4d);
     }
   }
   .more-icon {
-    width: 28px;
-    height: 28px;
+    @include dimensions(28, 28);
     border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-box(na, center, center, na, na);
     &:hover {
       background-color: #dcdfec;
     }
     span {
-      font-size: 20px;
+      font-size: $fs-forth;
     }
   }
 }
@@ -42,14 +41,12 @@
       padding: 10px;
     }
     .left {
-      font-size: 20px;
-      font-weight: 700;
+      font-size: $fs-forth;
+      font-weight: $font-bolder;
       color: #172b4d;
     }
     .right {
-      display: flex;
-      align-items: center;
-      gap: 4px;
+      @include flex-box(na, na, center, na, 4);
       .search-box-app {
         &.desktop {
           @include max-width(580) {

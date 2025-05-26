@@ -1,22 +1,18 @@
 @use "./theme/blue-theme" as *;
-@use "./mixins" as *;
 @use "./fonts/medium" as *;
+@use "./mixins" as *;
+@use "./foundation" as *;
 
 .dropdown {
   .form-control {
-    border-radius: 4px;
+    border-radius: $border-radius-small;
     border: 1px solid #dddede;
     position: relative;
-    height: 54px;
-    width: 344px;
     padding: 0 12px;
-    font-size: 13px;
-    font-weight: 500;
-    color: #4d4d4d;
     background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include typography(13, na, 500, #4d4d4d);
+    @include flex-box(flex, space-between, center, na, na);
+    @include dimensions(54, 344);
     &::after {
       width: 0;
       height: 0;
@@ -35,12 +31,9 @@
     }
   }
   .toplabel-input {
-    border-radius: 4px;
+    border-radius: $border-radius-small;
     background-color: #f2f3f5;
-    font-size: 13px;
-    font-weight: 500;
     padding: 3px 8px;
-    color: #4d4d4d;
     height: 18px;
     display: inline-flex;
     align-items: center;
@@ -48,11 +41,12 @@
     left: 12px;
     top: -8px;
     z-index: 1;
+     @include typography(13, na, 500, #4d4d4d);
   }
 
   .dropdown-menu.show {
     box-shadow: 0 12px 26px 0 #0000001f;
-    border-radius: 4px;
+    border-radius: $border-radius-small;
     border: 1px solid #dddede;
     padding: 0;
     width: 344px;
@@ -65,7 +59,7 @@
 
       &:hover {
         background-color: #e6f2f8;
-        border-radius: 4px;
+        border-radius: $border-radius-small;
       }
     }
   }

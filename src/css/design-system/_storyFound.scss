@@ -1,5 +1,8 @@
-@use "./storybook";
+@use "./storybook" ;
 @use "./mixins" as *;
+@use "./theme/blue-theme" as *;
+@use "./fonts/medium" as *;
+
 
 .inner-container {
   border: 1px solid #d0d4e4;
@@ -265,8 +268,8 @@
         @include flex-box(na, space-between, center, na, na);
         p {
           margin: 0;
-          font-size: 12px;
-          font-weight: 400;
+          font-size: $fs-small;;
+          font-weight: $font-regular;
           color: #4d4d4d;
           @include typography(12, na, 400, #4d4d4d);
           span {
@@ -299,6 +302,7 @@
 }
 
 .tabs-container {
+
   .tab-buttons {
     margin-bottom: 46px;
     @include flex-box(na, space-between, na, na, na);
@@ -345,132 +349,386 @@
     // laptop
     .heading-laptop {
       color: #323238;
-
       .primary-heading {
-        @include typography(28, na, 800, na);
+        font-size: $fs-secondary;
+        color: $primary-text-color;
+        font-weight:$font-extra-bold;
       }
+
       .secondary-heading {
-        @include typography(20, na, 700, na);
+        font-size: $fs-forth;
+        line-height: $lh-secondary;
+        color: $primary-text-color;
+        font-weight:$font-bolder;
       }
+
       .tertiary-heading {
-        @include typography(16, na, 300, na);
+        font-size: $fs-xl;
+        line-height: $lh-secondary;
+        color: $primary-text-color;
+        font-weight:$font-light;
       }
+
       .fourth-heading {
-        @include typography(18, na, 700, na);
+        font-size: $fs-xxl;;
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-bolder;
       }
+
       .subtitle-1 {
-        @include typography(15, na, 700, na);
+        font-size: $fs-xl;
+        line-height: $lh-xl;
+        color: $primary-text-color;
+        font-weight:$font-bolder;
       }
+
       .subtitle-2 {
-        @include typography(13, na, 500, na);
+        font-size: $fs-large;
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-medium;
       }
+
       .normal-text {
-        @include typography(13, na, 400, na);
-      }
-      .normal-text{
-        &.small{
-        @include typography(12, na, 400, na);
+        color: $primary-text-color;
+        font-weight: $font-regular;
+        margin: 0;
+        &.xl {
+          font-size: $fs-xl;
+          line-height: $lh-xl;
+        }
+
+        &.large {
+          font-size: $fs-medium;
+          line-height: $lh-xxl;
+        }
+
+        &.small {
+          font-size: $fs-small;;
         }
       }
+
       .link-text {
-        @include typography(13, na, 500, na);
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-medium;
+        &.large {
+          font-size: $fs-large;
+        }
+        &.small {
+          font-size: $fs-medium;
+        }
       }
       .common-btn {
-        @include typography(14, na, 500, na);
+        font-size: $fs-medium;
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-medium;
+
+        &.small {
+          font-size: $fs-small;;
+        }
+
+        &.large {
+          font-size: $fs-large;
+        }
+
+        &.x-large {
+          font-size: $fs-xl;
+          line-height: $lh-xl;
+          font-weight:$font-bolder;
+        }
       }
+
       .label {
-        @include typography(13, na, 500, na);
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-medium;
+        &.x-large {
+            font-size: $fs-large;
+          }
+        
+
+        &.large {
+          font-size: $fs-medium;
+        }
+
+        &.medium {
+            font-size: $fs-small;;
+          }
+        
       }
+
       .caption {
-        @include typography(12, na, 500, na);
+        line-height: $lh-xl;
+        color: $primary-text-color;
+        &.medium {
+          font-size: $fs-small;;
+          font-weight:$font-medium;
+        }
+
+        &.bold {
+            font-size: $fs-small;;
+            font-weight:$font-bold;
+        }
       }
     }
 
     //   tablet
     .heading-tablet {
       color: #323238;
-
       .primary-heading {
-        @include typography(20, na, 800, na);
+        font-size: 20px;
+        color: $primary-text-color;
+        font-weight:$font-extra-bold;
       }
+
       .secondary-heading {
-        @include typography(16, na, 600, na);
+        font-size: $fs-xl;
+        line-height: $lh-secondary;
+        color: $primary-text-color;
+        font-weight:$font-bolder;
       }
+
       .tertiary-heading {
-        @include typography(14, na, 500, na);
+        font-size: $fs-xl;
+        line-height: $lh-secondary;
+        color: $primary-text-color;
+        font-weight:$font-light;
       }
+
       .fourth-heading {
-        @include typography(13, na, 500, na);
+        font-size: $fs-xxl;;
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-bolder;
       }
+
       .subtitle-1 {
-        @include typography(12, na, 700, na);
+        font-size: $fs-xl;
+        line-height: $lh-xl;
+        color: $primary-text-color;
+        font-weight:$font-bolder;
       }
+
       .subtitle-2 {
-        @include typography(13, na, 500, na);
+        font-size: $fs-large;
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-medium;
       }
+
       .normal-text {
-        @include typography(13, na, 400, na);
-      }
-      .normal-text{
-        &.small{
-        @include typography(12, na, 400, na);
+        color: $primary-text-color;
+        font-weight: $font-regular;
+        margin: 0;
+        &.xl {
+          font-size: $fs-xl;
+          line-height: $lh-xl;
+        }
+
+        &.large {
+          font-size: $fs-medium;
+          line-height: $lh-xxl;
+        }
+
+        &.small {
+          font-size: $fs-small;;
         }
       }
+
       .link-text {
-        @include typography(13, na, 500, na);
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-medium;
+        &.large {
+          font-size: $fs-large;
+        }
+        &.small {
+          font-size: $fs-medium;
+        }
       }
       .common-btn {
-        @include typography(14, na, 500, na);
+        font-size: $fs-medium;
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-medium;
+
+        &.small {
+          font-size: $fs-small;;
+        }
+
+        &.large {
+          font-size: $fs-large;
+        }
+
+        &.x-large {
+          font-size: $fs-xl;
+          line-height: $lh-xl;
+          font-weight:$font-bolder;
+        }
       }
-      label {
-        @include typography(13, na, 500, na);
+
+      .label {
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-medium;
+        &.x-large {
+            font-size: $fs-large;
+          }
+        
+
+        &.large {
+          font-size: $fs-medium;
+        }
+
+        &.medium {
+            font-size: $fs-small;;
+          }
+        
       }
+
       .caption {
-        @include typography(12, na, 500, na);
+        line-height: $lh-xl;
+        color: $primary-text-color;
+        &.medium {
+          font-size: $fs-small;;
+          font-weight:$font-medium;
+        }
+
+        &.bold {
+            font-size: $fs-small;;
+            font-weight:$font-bold;
+        }
       }
     }
-
     //   mobile
     .heading-mobile {
       color: #323238;
-
       .primary-heading {
-        @include typography(16, na, 800, na);
+        font-size: $fs-xl;
+        color: $primary-text-color;
+        font-weight:$font-extra-bold;
       }
+
       .secondary-heading {
-        @include typography(14, na, 700, na);
+        font-size: $fs-large;
+        line-height: $lh-secondary;
+        color: $primary-text-color;
+        font-weight:$font-bolder;
       }
+
       .tertiary-heading {
-        @include typography(13, na, 300, na);
+        font-size: $fs-xl;
+        line-height: $lh-secondary;
+        color: $primary-text-color;
+        font-weight:$font-light;
       }
+
       .fourth-heading {
-        @include typography(14, na, 700, na);
+        font-size: $fs-xxl;;
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-bolder;
       }
+
       .subtitle-1 {
-        @include typography(12, na, 700, na);
+        font-size: $fs-xl;
+        line-height: $lh-xl;
+        color: $primary-text-color;
+        font-weight:$font-bolder;
       }
+
       .subtitle-2 {
-        @include typography(12, na, 500, na);
+        font-size: $fs-large;
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-medium;
       }
+
       .normal-text {
-        @include typography(13, na, 400, na);
-      }
-      .normal-text{
-        &.small{
-        @include typography(11, na, 400, na);
+        color: $primary-text-color;
+        font-weight: $font-regular;
+        margin: 0;
+        &.xl {
+          font-size: $fs-xl;
+          line-height: $lh-xl;
+        }
+
+        &.large {
+          font-size: $fs-medium;
+          line-height: $lh-xxl;
+        }
+
+        &.small {
+          font-size: $fs-small;;
         }
       }
+
       .link-text {
-        @include typography(12, na, 500, na);
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-medium;
+        &.large {
+          font-size: $fs-large;
+        }
+        &.small {
+          font-size: $fs-medium;
+        }
       }
       .common-btn {
-        @include typography(13, na, 500, na);
+        font-size: $fs-medium;
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-medium;
+
+        &.small {
+          font-size: $fs-small;;
+        }
+
+        &.large {
+          font-size: $fs-large;
+        }
+
+        &.x-large {
+          font-size: $fs-xl;
+          line-height: $lh-xl;
+          font-weight:$font-bolder;
+        }
       }
+
       .label {
-        @include typography(12, na, 500, na);
+        line-height: $lh-xxl;
+        color: $primary-text-color;
+        font-weight:$font-medium;
+        &.x-large {
+            font-size: $fs-large;
+          }
+        
+
+        &.large {
+          font-size: $fs-medium;
+        }
+
+        &.medium {
+            font-size: $fs-small;;
+          }
+        
       }
+
       .caption {
-        @include typography(10, na, 500, na);
+        line-height: $lh-xl;
+        color: $primary-text-color;
+        &.medium {
+          font-size: $fs-small;;
+          font-weight:$font-medium;
+        }
+
+        &.bold {
+            font-size: $fs-small;;
+            font-weight:$font-bold;
+        }
       }
     }
   }
@@ -480,8 +738,8 @@
   border-radius: 4px;
   padding: 4px;
   background-color: #eeeeef;
-  font-size: 13px;
-  font-weight: 500;
+  font-size: $fs-medium;
+  font-weight:$font-medium;
   color: #4d4d4d;
   height: 23px;
   display: flex;

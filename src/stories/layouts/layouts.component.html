@@ -187,42 +187,116 @@
   </div>
 
   <div *ngSwitchCase="'page4'">
-
-
-
     <div class="recent-container">
       <div class="overley-colored-container"></div>
-        <div class="recent-upper-container">
-          <div class="txt-div">
-            <h4>Welcome Back, Jack</h4>
+      <div class="recent-upper-container">
+        <div class="txt-div">
+          <h4>Welcome Back, Jack</h4>
+          <p>
+            Explore your data insights in real time with Tableau. Our platform
+            gives you easy access to your personalized dashboards, ensuring you
+            stay informed and make data-driven decisions quickly.
+          </p>
+        </div>
+
+        <button class="d-btn d-btn--circle tertiary-circle vs close-btn">
+          <span class="icon-x icon--sm"></span>
+        </button>
+      </div>
+
+      <div class="recent-bottom-container">
+        <div class="img-txt-container">
+          <div class="img">
+            <img src="#" alt="" />
+          </div>
+          <div class="text">
+            <h4>Nothing Here Yet</h4>
             <p>
-              Explore your data insights in real time with Tableau. Our platform
-              gives you easy access to your personalized dashboards, ensuring
-              you stay informed and make data-driven decisions quickly.
+              This might be because the content hasn’t been added yet or the
+              section you're looking for is currently unavailable.
             </p>
+            <button class="d-btn d-btn--primary md"><p>Go To Home</p></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'page5'">
+    <div class="reports-container">
+      <div class="upper-report show">
+        <div class="breadcrumb-section">
+          <div class="breadcumb">
+            <div class="bread">
+              <span class="icon-Vector-Stroke-3"></span>
+              <p>Home</p>
+            </div>
+            <div class="vertical-line"></div>
+            <div class="bread">
+              <span class="icon-Vector-Stroke-4"></span>
+              <p>My Reports</p>
+            </div>
           </div>
 
-          <button class="d-btn d-btn--circle tertiary-circle vs close-btn">
-            <span class="icon-x icon--sm"></span>
+          <div class="arrow">
+            <button
+              type="button"
+              class="d-btn d-btn--circle white-bg-circle sm tooltip-btn"
+              placement="start"
+              ngbTooltip="Hide"
+            >
+              <span class="icon-chevron-left add--md up-down"></span>
+            </button>
+          </div>
+        </div>
+        <div class="reports-section">
+          <button
+            class="d-btn d-btn--circle white-bg-circle sm tooltip-btn"
+            placement="end"
+            ngbTooltip="Back"
+          >
+            <span class="icon-leftarrow add--md"></span>
+          </button>
+
+          <p class="report-heading">Reports</p>
+        </div>
+      </div>
+
+      <div class="overview-section">
+        <div class="overview-left">
+          <button
+            class="d-btn d-btn--circle brown-bg-circle sm tooltip-btn ml-16 mr-16"
+            placement="end"
+            ngbTooltip="Back"
+          >
+            <span class="icon-leftarrow add--md"></span>
+          </button>
+          <div class="overview">
+            <p class="overview-text">Overview</p>
+            <button class="d-btn d-btn--tertiary md cross-iconHover">
+              <span class="icon-x icon--cross-md"></span>
+            </button>
+          </div>
+        </div>
+
+        <div class="overview-right">
+          <button
+            type="button"
+            class="d-btn d-btn--circle brown-bg-circle sm tooltip-btn mr-16"
+            placement="start"
+            ngbTooltip="Show"
+          >
+            <span class="icon-chevron-left add--md up-down"></span>
           </button>
         </div>
+      </div>
 
-        <div class="recent-bottom-container">
-          <div class="img-txt-container">
-            <div class="img">
-              <img src="#" alt="">
-            </div>
-            <div class="text">
-              <h4>Nothing Here Yet</h4>
-              <p>
-                This might be because the content hasn’t been added yet or the
-                section you're looking for is currently unavailable.
-              </p>
-              <button class="d-btn d-btn--primary md"><p>Go To Home</p></button>
-            </div>
-          </div>
+
+      <div class="executive-container">
+        <div class="img-container">
+          <img src="#" alt="" />
         </div>
+      </div>
     </div>
-
   </div>
 </div>

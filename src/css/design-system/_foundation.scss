@@ -1,6 +1,6 @@
 @use "sass:math";
 @use './mixins.scss' as *;
- 
+
 
 .m-auto{
   margin-right: auto;
@@ -55,6 +55,7 @@ $spacing-values: 0, 1, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44,46, 48, 52, 5
     }
   }
 }
+
 
 
 /*************border-radius***********/
@@ -190,7 +191,6 @@ $box-shadow-large: 0px 15px 50px 0 #0000004D  ;
   position: sticky;
 }
  
-
  
 /*********************** z-index-classes ***********************/
  

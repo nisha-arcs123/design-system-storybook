@@ -1,6 +1,6 @@
-@use './theme/blue-theme' as *;
-@use './mixins' as *;
-@use './fonts/medium' as *;;
+@use "./theme/blue-theme" as *;
+@use "./mixins" as *;
+@use "./fonts/medium" as *;
 @use "./storybook";
 
 .d-btn {
@@ -9,7 +9,6 @@
   @include flex-box(na, na, center, nowrap, 10);
   @include typography(14, na, 500, na);
   border: 1px solid transparent;
-  // background-color: transparent;
   font-family: "Figtree", sans-serif;
   box-sizing: border-box;
   &--primary {
@@ -42,11 +41,15 @@
     }
   }
 
-  // icon button css
   &--secondary-dotted {
     border: 2px dotted #017bba;
     color: #017bba;
     background-color: #ffffff;
+     &:hover {
+      background-color: #3397c5;
+      color: #ffffff;
+      border: 2px dotted #3397c5;
+    }
   }
 
   &--circle {
@@ -54,23 +57,52 @@
     background-color: transparent;
     outline: none;
     border: none;
+    padding: 0;
     @include flex-box(na, center, center, na, na);
     @include typography(12, na, 500, #ffffff);
+
     &.dotted-circle {
       border: 2px dotted #017bba;
+      &:hover {
+        background-color: #3397c5;
+        color: #ffffff;
+        border: 1px solid #3397c5;
+      }
     }
     &.solid-circle {
       border: 1px solid #017bba;
+      &:hover {
+        background-color: #3397c5;
+        color: #ffffff;
+        border: 1px solid #3397c5;
+      }
     }
     &.primary-bg-circle {
       background-color: #017bba;
       border: 2px solid #017bba;
+      &:hover {
+        background-color: #3397c5;
+        color: #ffffff;
+        border: 1px solid #3397c5;
+      }
     }
     &.danger-bg-cicle {
       background-color: #f65f7c;
     }
-    &.tertiary-circle{
-      &:hover{
+    &.tertiary-circle {
+      &:hover {
+        background-color: #dcdfec;
+      }
+    }
+    &.white-bg-circle {
+      background-color: #ffffff;
+      &:hover {
+        background-color: #dcdfec;
+      }
+    }
+    &.brown-bg-circle {
+      background-color: #f1f2f4;
+      &:hover {
         background-color: #dcdfec;
       }
     }
@@ -96,7 +128,6 @@
         font-weight: 700;
       }
     }
-
     &.vs {
       width: 28px;
       height: 28px;
@@ -128,21 +159,22 @@
   }
 
   .icon {
-    &--vs{
+    &--vs {
       font-size: 18px;
     }
-    &--sm{
+    &--sm {
       font-size: 20px;
     }
-    &--md{
+    &--md {
       font-size: 22px;
     }
-    &--lg{
-      font-size: 32px;
-    }
-    &--xl{
+    &--lg {
       font-size: 28px;
     }
+    &--xl {
+      font-size: 32px;
+    }
+
     &--cross-vs {
       font-size: 18px;
     }
@@ -219,7 +251,6 @@
       font-size: 28px;
     }
 
-
     &--edit-vs {
       font-size: 14px;
     }
@@ -238,7 +269,6 @@
     &--edit-xxl {
       font-size: 20px;
     }
-
 
     &--edit-vvs {
       font-size: 18px;
@@ -259,7 +289,6 @@
       font-size: 28px;
     }
 
-
     &--delete-vs {
       font-size: 14px;
     }
@@ -278,7 +307,6 @@
     &--delete-xxl {
       font-size: 20px;
     }
-
 
     &--delete-vvs {
       font-size: 18px;

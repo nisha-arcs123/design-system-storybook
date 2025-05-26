@@ -73,3 +73,20 @@ export const Page4: Story = {
     },
   },
 };
+
+
+
+export const Page5: Story = {
+  args: {
+    inputClass: 'page5',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+  `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};
