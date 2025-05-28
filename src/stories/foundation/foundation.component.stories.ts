@@ -2,7 +2,7 @@ import type { Meta, StoryObj,moduleMetadata } from '@storybook/angular';
 import { FoundationComponent } from './foundation.component';
 
 const meta: Meta<FoundationComponent> = {
-  title: 'Foundation',
+  title: 'Foundations',
   component: FoundationComponent,
   tags: ['autodocs'],
  

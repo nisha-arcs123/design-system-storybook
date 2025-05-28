@@ -4,11 +4,13 @@
 .custom-checkbox {
   display: flex;
   align-items: center;
+  gap: 8px;
   cursor: pointer;
   font-size: 13px;
   font-weight: 500;
   color: #676879;
   padding: 6px 8px;
+  margin-right: 8px;
   input[type="checkbox"] {
     display: none;
   }
@@ -26,25 +28,27 @@
     height: 16px;
     border: 1px solid #c3c6d4;
     border-radius: 4px; // Rounded square, change to 0 for sharp corners
-    margin-right: 8px;
+    // margin-right: 8px;
     padding-bottom: 3px;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: border-color 0.3s ease, background-color 0.3s ease;
 
-    &--cicle-checkbox{
+    &--cicle-checkbox {
       border-radius: 50%;
     }
   }
 
-  .checkmark {
-    width: 6px;
-    height: 12px;
-    border-right: 2px solid #ffffff;
-    border-bottom: 2px solid #ffffff;
-    transition: transform 0.2s ease;
-    transform: rotate(0) scale(0);
+  .checkbox-box {
+    .checkmark {
+      width: 6px;
+      height: 12px;
+      border-right: 2px solid #ffffff;
+      border-bottom: 2px solid #ffffff;
+      transition: transform 0.2s ease;
+      transform: rotate(0) scale(0);
+    }
   }
 
   input[type="checkbox"]:checked ~ .checkbox-box {
@@ -54,6 +58,41 @@
 
   input[type="checkbox"]:checked ~ .checkbox-box .checkmark {
     transform: rotate(45deg) scale(1);
+  }
+
+  &.checkbox-green {
+    input[type="checkbox"]:checked ~ .checkbox-box {
+      background-color: #1b5e20;
+      border-color: #1b5e20;
+    }
+  }
+
+  &.checkbox-yellow {
+    input[type="checkbox"]:checked ~ .checkbox-box {
+      background-color: #febe07;
+      border-color: #febe07;
+    }
+  }
+
+  &.checkbox-red {
+    input[type="checkbox"]:checked ~ .checkbox-box {
+      background-color: #b71c1c;
+      border-color: #b71c1c;
+    }
+  }
+
+  &.checkbox-indigo {
+    input[type="checkbox"]:checked ~ .checkbox-box {
+      background-color: #4a148c;
+      border-color: #4a148c;
+    }
+  }
+
+  &.checkbox-murrey {
+    input[type="checkbox"]:checked ~ .checkbox-box {
+      background-color: #880e4f;
+      border-color: #880e4f;
+    }
   }
 
   &.checkbox-vs {

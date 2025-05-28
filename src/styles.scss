@@ -32,7 +32,46 @@ body {
 }
 
 
-
+.icon-Paper:before {
+  content: "\e952";
+  color: #089137;
+}
+.icon-Close-Square:before {
+  content: "\e953";
+  color: #d72300;
+}
+.icon-timers:before {
+  content: "\e954";
+  color: #fbad15;
+}
+.icon-Time-Circle:before {
+  content: "\e955";
+  color: #007db7;
+}
+.icon-Vector-Stroke-15:before {
+  content: "\e94b";
+  color: #676879;
+}
+.icon-Vector-Stroke1:before {
+  content: "\e94d";
+  color: #676879;
+}
+.icon-bothdirarr:before {
+  content: "\e94e";
+  color: #676879;
+}
+.icon-moon:before {
+  content: "\e950";
+  color: #344563;
+}
+.icon-Vector-9:before {
+  content: "\e94f";
+  color: #676879;
+}
+.icon-sun2:before {
+  content: "\e951";
+  color: #344563;
+}
 .icon-print:before {
   content: "\e907";
   color: #a3adba;

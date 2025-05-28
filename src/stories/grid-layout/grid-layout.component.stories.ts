@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/angular';
 import { GridLayoutComponent } from './grid-layout.component';
 
 const meta: Meta<GridLayoutComponent> = {
-  title: 'Grid Layout',
+  title: 'Table',
   component: GridLayoutComponent,
   tags: ['autodocs'],
   argTypes: {

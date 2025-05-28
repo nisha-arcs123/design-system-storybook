@@ -1,28 +1,27 @@
 import type { StorybookConfig } from '@storybook/angular';
 
 const config: StorybookConfig = {
-  "stories": [
-    "../src/**/*.mdx",
-    "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)",
+  stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
+
+  addons: [
+    '@storybook/addon-essentials',
+    '@storybook/addon-onboarding',
+    '@storybook/addon-interactions',
+    '@storybook/addon-mdx-gfm',
+    '@chromatic-com/storybook',
   ],
 
-  "addons": [
-    "@storybook/addon-essentials",
-    "@storybook/addon-onboarding",
-    "@storybook/addon-interactions",
-    "@storybook/addon-mdx-gfm",
-    "@chromatic-com/storybook"
-  ],
-
-  "framework": {
-    "name": "@storybook/angular",
-    "options": {}
+  framework: {
+    name: '@storybook/angular',
+    options: {},
   },
-
-  "staticDirs": ['../src/assets'],
+  core: {
+    builder: 'webpack5',
+  },
+  staticDirs: ['../src/assets'],
 
   docs: {
-    autodocs: true
-  }
+    autodocs: true,
+  },
 };
 export default config;

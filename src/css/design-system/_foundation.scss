@@ -43,10 +43,11 @@ $spacing-properties: (
   pt: padding-top,
   pr: padding-right,
   pb: padding-bottom,
-  pl: padding-left
+  pl: padding-left,
+  br: border-radius,
 );
 
-$spacing-values: 0, 1, 2, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44,46, 48, 52, 56, 60, 64, 68, 72, 75, 80, 84, 90, 96, 100;
+$spacing-values: 0, 1, 4, 8, 12, 16, 20, 24, 32, 40, 48;
 
 @each $class, $property in $spacing-properties {
   @each $value in $spacing-values {
@@ -259,3 +260,28 @@ $breakpoints: 1720px, 1440px, 1200px, 992px, 768px , 576px;
     box-sizing: border-box;
   }
 }
+
+// margin 
+$tiny-m :1px;
+$vvvs-m  :4px;
+$vvs-m :8px;
+$vs-m :12px;
+$small-m  :16px;
+$medium-m :20px;
+$large-m :24px;
+$xl-m :32px;
+$xxl-m :40px;
+$xxxl-m :48px;
+
+
+// padding
+$tiny-p :1px;
+$vvvs-p  :4px;
+$vvs-p :8px;
+$vs-p :12px;
+$small-p :16px;
+$medium-p :20px;
+$large-p :24px;
+$xl-p :32px;
+$xxl-p :40px;
+$xxxl-p:48px;
