@@ -1,0 +1,83 @@
+// @use "../../css/design-system/fonts/medium" as *;
+// @use "../../css/design-system/mixins" as *;
+// @use "../../css/design-system/foundation" as *;
+
+// .dropdown {
+//   .form-control {
+//     border-radius: $border-radius-small;
+//     border: 1px solid #dddede;
+//     position: relative;
+//     padding: 0 12px;
+//     background-color: #ffffff;
+//     @include typography(13, na, 500, #4d4d4d);
+//     @include flex-box(flex, space-between, center, na, na);
+//     @include dimensions(54, 344);
+//     &::after {
+//       width: 0;
+//       height: 0;
+//       border-top: 6px solid #333;
+//       border-left: 6px solid transparent;
+//       border-right: 6px solid transparent;
+//     }
+//     &:focus {
+//       box-shadow: none;
+//       border: 1px solid #363636;
+//       &::after {
+//         transform: rotate(0deg);
+//         border-top: 0;
+//         border-bottom: 6px solid #333;
+//       }
+//     }
+//   }
+//   .toplabel-input {
+//     border-radius: $border-radius-small;
+//     background-color: #f2f3f5;
+//     padding: 3px 8px;
+//     height: 18px;
+//     display: inline-flex;
+//     align-items: center;
+//     position: absolute;
+//     left: 12px;
+//     top: -8px;
+//     z-index: 1;
+//     @include typography(13, na, 500, #4d4d4d);
+//   }
+
+//   .dropdown-menu.show {
+//     box-shadow: 0 12px 26px 0 #0000001f;
+//     border-radius: $border-radius-small;
+//     border: 1px solid #dddede;
+//     padding: 0;
+//     width: 344px !important;
+//     padding: 6px;
+//     .dropdown-item {
+//       height: 43px;
+//       padding: 0 16px;
+//       @include flex-box(na, space-between, center, na, na);
+//       @include typography(14, na, 600, #323238);
+
+//       &:hover {
+//         background-color: #e6f2f8;
+//         border-radius: $border-radius-small;
+//       }
+//     }
+//   }
+
+//   .dropdown-toggle {
+//     &::after {
+//       width: 0;
+//       height: 0;
+//       border-top: 6px solid #333;
+//       border-left: 6px solid transparent;
+//       border-right: 6px solid transparent;
+//       // border-bottom: 6px solid #333; /* color of the arrow */
+//     }
+//     &:hover::after {
+//       color: #676879;
+//     }
+
+//     p {
+//       @include typography(13, na, 500, #444444);
+//     }
+//   }
+// }

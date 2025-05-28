@@ -1,34 +1,26 @@
+@use "./fonts/medium" as *;
+@use "./foundation" as *;
+@use "./mixins" as *;
+
+
 .tooltip-container {
   border: 1px solid #d0d4e4;
-  border-radius: 8px;
-  padding: 32px;
+  border-radius: $vvs-m;
+  padding: $xl-p;
   padding-left: 350px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
+  @include flex-box(column,na,na,na,20);
   .tooltip-btn {
     width: max-content;
-    font-size: 14px;
-    font-weight: 400;
-    color: #676879;
+    @include typography(14,na,400,#676879);
   }
   .tooltip-inner {
-    padding: 8px;
-    border-radius: 4px;
-    // background-color: #323238;
-    font-size: 12px;
-    font-weight: 500;
-    color: #ffffff;
+    padding: $vvs-p;
+    border-radius: $border-radius-small;
     min-width: 78px;
     max-width: 300px;
     text-align: start;
+    @include typography(12,na,500,#ffffff);
   }
-
-  // .tooltip-arrow {
-  //   // color: #323238 !important;
-  // }
-
   .no-arrow + .tooltip .tooltip-arrow {
     display: none !important;
   }
