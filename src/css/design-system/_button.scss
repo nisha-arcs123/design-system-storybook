@@ -5,47 +5,47 @@
 @use './foundation' as *;
 
 .d-btn {
-  padding: 8px 16px;
+  padding: $vvs-p $small-p;
   border-radius: $border-radius-small;
-  @include typography(14,na,500,na);
+  @include typography($fs-large,na,$font-medium,na);
   @include flex-box(na, center, center, nowrap, 10);
   border: 1px solid transparent;
-  font-family: "Figtree", sans-serif;
   box-sizing: border-box;
   margin: 0;
+
   &.vs {
-    font-size: 12px;
-    padding: 7px 12px;
-    height: 28px;
+    font-size: $fs-small;
+    padding: $zero-p $vs-p;
+    @include dimensions($btn-vs-size,na);
   }
   &.sm {
-    font-size: 13px;
-    height: 32px;
+    font-size: $fs-medium;
+    padding: 0 $small-p;
+    @include dimensions($btn-sm-size,na);
   }
   &.md {
-    font-size: 14px;
-    padding: 11px 16px;
-    height: 38px;
+    font-size: $fs-large;
+    padding: $zero-p $small-p;
+    @include dimensions($btn-md-size,na);
   }
   &.lg {
-    font-size: 14px;
-    padding: 10px 20px;
-    height: 42px;
+    font-size: $fs-large;
+    padding: $zero-p $medium-p;
+    @include dimensions($btn-lg-size,na);
   }
   &.xl {
-    font-size: 15px;
-    padding: 13px 20px;
-    height: 48px;
+    font-size: $fs-large;
+    padding: $zero-p $medium-p;
+    @include dimensions($btn-xl-size,na);
   }
   &.xxl {
-    font-size: 16px;
-    font-weight: 700;
-    padding: 15px 20px;
-    height: 54px;
+    padding: $zero-p $medium-p;
+    @include typography($fs-xl,na,$font-bolder,na);
+    @include dimensions($btn-xxl-size,na);
   }
 
   &--primary {
-    background-color: #017bba;
+    background-color: $primary-color;
     color: #ffffff;
     &:hover {
       background-color: #3397c5;
@@ -53,9 +53,9 @@
   }
 
   &--secondary {
-    border: 1px solid #017bba;
+    border: 1px solid $primary-color;
     background-color: #ffffff;
-    color: #017bba;
+    color: $primary-color;
     &:hover {
       background-color: #3397c5;
       color: #ffffff;
@@ -65,14 +65,15 @@
 
   &--tertiary {
     background-color: #ffffff;
-    padding: 8px;
+    padding: $vvs-p;
     gap: 8px;
     p {
-      @include typography(13, na, 500, #444444);
+      @include typography($fs-medium, na, $font-medium, #444444);
     }
     .header-icon {
-      font-size: 16px;
+      font-size:$fs-xl;
     }
+
     &:hover {
       background-color: #dcdfec;
       .header-icon {
@@ -85,7 +86,7 @@
 
   &--link {
     background-color: #ffffff;
-    color: #017bba;
+    color: $primary-color;
     cursor: pointer;
     &:hover {
       color: #3397c5;
@@ -103,7 +104,7 @@
   }
 
   &--primary-disable {
-    background-color: #017bba;
+    background-color: $primary-color;
     color: #ffffff;
     opacity: 0.5;
     cursor: not-allowed;
@@ -125,17 +126,13 @@
   }
 
   &.loader {
-    background-color: #017bba;
+    background-color: $primary-color;
     border: none;
-    border-radius: 4px;
-    padding: 12px 24px;
-    position: relative;
-    display: inline-flex;
+    border-radius: $border-radius-small;
+    padding: $vs-p $large-p;
     @include flex-box(na, center, center, na, na);
     .loading {
-      content: "";
-      width: 16px;
-      height: 16px;
+      @include dimensions(16,16);
       border: 3px solid #d3d3d3;
       border-top: 3px solid white;
       border-radius: 50%;
@@ -149,62 +146,56 @@
 
     &--vs {
       padding: 6px 43px;
-      height: 28px;
+      height: $btn-vs-size;
       .loading {
-        width: 16px;
-        height: 16px;
+        @include dimensions(16,16);
       }
     }
     &--sm {
       padding: 8px 37px;
-      height: 32px;
+      height: $btn-sm-size;
       .loading {
-        width: 18px;
-        height: 18px;
+        @include dimensions(18,18);
       }
     }
     &--md {
       padding: 9px 46px;
-      height: 38px;
+      height: $btn-md-size;
       .loading {
-        width: 20px;
-        height: 20px;
+        @include dimensions(20,20);
       }
     }
     &--lg {
       padding: 9px 42px;
-      height: 42px;
+      height:$btn-lg-size;
      .loading{
-        width: 24px;
-        height: 24px;
+        @include dimensions(24,24);
       }
     }
     &--xl {
       padding: 10px 60px;
-      height: 48px;
+      height: $btn-xl-size;
       .loading {
-        width: 28px;
-        height: 28px;
+        @include dimensions(28,28);
       }
     }
     &--xxl {
       padding: 11px 57px;
-      height: 54px;
+      height:$btn-xxl-size;
       .loading {
-        width: 32px;
-        height: 32px;
+        @include dimensions(32,32);
       }
     }
   }
 }
 
 .d-btn-small {
-  font-size: 12px;
-  font-weight: 500;
-  padding: 3px 8px;
+  font-size: $fs-small;
+  font-weight: $font-medium;
+  padding: 3px $vvs-p;
   outline: none;
   border: none;
-  border-radius: 4px;
+  border-radius: $border-radius-small;
   &--danger {
     color: #e2445c;
     background-color: #f9dade;
@@ -220,8 +211,7 @@
 }
 
 .squr-btn {
-  padding: 8px;
-  // width: 100px;
+  padding: $vvs-p;
   border: none;
   outline: none;
   background-color: #ffffff;
@@ -240,24 +230,24 @@
 .dropdown {
   .dropdown-menu.show {
     box-shadow: 0 12px 26px 0 #0000001f;
-    border-radius: 8px;
+    border-radius: $border-radius-medium;
     border: 0;
-    padding: 0;
-    width: 200px;
+    padding: $zero-p;
+    @include dimensions(na,200);
     ul {
       margin: 0;
-      padding: 8px;
-      @include typography(13, na, 600, #172b4d);
+      padding: $vvs-p;
+      @include typography($fs-medium, na,$font-bold, #172b4d);
       li {
         list-style-type: none;
         .dropdown-item {
-          padding: 8px;
+          padding: $vvs-p;
           @include flex-box(na, space-between, center, na, na);
           p {
-            @include typography(13, na, 500, #444444);
+            @include typography($fs-medium, na, $font-medium, #444444);
           }
           .checkmark {
-            border-radius: 8px;
+            border-radius: $border-radius-medium;
             background-color: #0073ea;
             position: relative;
             @include dimensions(16, 16);
@@ -272,37 +262,37 @@
           }
           &:hover {
             background-color: #dcdfec;
-            border-radius: 4px;
+            border-radius:$border-radius-small;
           }
         }
       }
     }
     hr {
-      margin: 8px;
+      margin: $vvs-m;
       border: 1px solid #d0d4e4;
     }
   }
 
   .dropdown-toggle {
     &::after {
-      // content: "\e944"; // ← This is your Unicode from IcoMoon
-      // font-family: "IcoMoon"; // ← Must match the font-family defined in your CSS
-      // font-style: normal;
-      // font-weight: normal;
-      // speak: none;
-      // display: inline-block;
-      // text-decoration: inherit;
-      // text-align: center;
-      // border: 0;
-      // color: #a3adba;
-      // font-size: 16px;
+      content: "\e944"; // ← This is your Unicode from IcoMoon
+      font-family: "IcoMoon"; // ← Must match the font-family defined in your CSS
+      font-style: normal;
+      font-weight: normal;
+      speak: none;
+      display: inline-block;
+      text-decoration: inherit;
+      text-align: center;
+      border: 0;
+      color: #a3adba;
+      font-size:$fs-xl;
     }
     &:hover::after{
       color: #676879;
     }
 
     p {
-      @include typography(13, na, 500, #444444);
+      @include typography($fs-medium, na, $font-medium, #444444);
     }
   }
 }

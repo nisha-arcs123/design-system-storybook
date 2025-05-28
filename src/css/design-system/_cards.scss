@@ -2,42 +2,41 @@
 @use "./foundation" as *;
 @use "./mixins" as *;
 
-.cards-container{
-    padding: 5px;
+.cards-container {
+  padding: $vvvs-p;
+  border-radius: $border-radius-medium;
+  @include dimensions(44, 262);
+  @include flex-box(na, na, na, na, 10);
+
+  &.negative-color {
+    background-color: $negative-color-selected;
+  }
+  &.warning-color{
+    background-color: $warning-color-selected;
+  }
+  &.primary-color{
+    background-color: $primary-selected-color;
+  }
+
+  &.positive-color{
+    background-color: $positive-color-selected;
+  }
+  .card-img-div {
+    @include dimensions(36, 36);
     border-radius: $border-radius-medium;
-    background-color: #FFEFF2;
-    // display: flex;
-    // gap: 10px;
-    // width: 262px;
-    // height: 45px;
-    @include dimensions(45,262);
-    @include flex-box(na,na,na,na,10);
-    .card-img-div{
-        width: 35px;
-        height: 35px;
-        border-radius: $border-radius-medium;
-        background-color: #FFFFFF;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    background-color: $primary-background-color;
+    @include flex-box(na, center, center, na, na);
+  }
+
+  .card-text-div {
+    @include flex-box(column, na, na, na, na);
+    .text1 {
+      margin: 0;
+      @include typography(12, na, 500, #202020);
     }
 
-    .card-text-div{
-        display: flex;
-        flex-direction: column;
-
-        .text1{
-            font-size: 12px;
-            font-weight: 500;
-            color: #202020;
-            margin: 0;
-        }
-
-        .text2{
-            font-size: 16px;
-            font-weight: 600;
-            color: #53585B;
-            line-height: 18px;
-        }
+    .text2 {
+      @include typography(16, 18, 600, #53585b);
     }
+  }
 }

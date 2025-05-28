@@ -1,42 +1,31 @@
+@use "./mixins" as *;
+@use "./foundation" as *;
+
+
 .stepper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  // width: 100%;
+  @include flex-box(na,space-between,center,na,na);
   .step {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // height: 78px;
-    justify-content: space-between;
+    @include flex-box(column,space-between,center,na,na);
     .circle {
-      width: 38px;
-      height: 38px;
       border-radius: 100px;
       border: 1px solid #D0D4E4;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       background-color: white;
-      font-size: 16px;
-      font-weight: 700;
-      color: #676879;
       transition: all 0.3s ease;
-      margin-top: 8px;
-      // margin-bottom: 16px;
+      margin-top: $vvs-m;
+      @include dimensions(38,38);
+      @include flex-box(na,center,center,na,na);
+      @include typography(16,na,700,#676879);
+     
       &.active {
-        width: 54px;
-        height: 54px;
         background-color: #007bff;
         color: white;
-        // margin-bottom: 8px;
         position: relative;
         margin-top: 0;
+         @include dimensions(54,54);
         &::before{
           content:"";
           border: 5px solid white;
-          width: 48px;
-          height: 48px;
+           @include dimensions(48,48);
           border-radius: 100px;
           position: absolute;
         }
@@ -50,9 +39,7 @@
     }
 
     .label {
-      font-size: 13px;
-      font-weight: 500;
-      color: #676879;
+      @include typography(13,na,500,#676879);
       background-color: #ffffff;
       margin-top: 8px;
     }

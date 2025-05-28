@@ -261,7 +261,9 @@ $breakpoints: 1720px, 1440px, 1200px, 992px, 768px , 576px;
   }
 }
 
+
 // margin 
+$zero-m:0;
 $tiny-m :1px;
 $vvvs-m  :4px;
 $vvs-m :8px;
@@ -275,6 +277,7 @@ $xxxl-m :48px;
 
 
 // padding
+$zero-p:0;
 $tiny-p :1px;
 $vvvs-p  :4px;
 $vvs-p :8px;
@@ -285,3 +288,14 @@ $large-p :24px;
 $xl-p :32px;
 $xxl-p :40px;
 $xxxl-p:48px;
+
+
+// d-btn size
+
+
+$btn-vs-size: 28px;
+$btn-sm-size: 32px;
+$btn-md-size: 38px;
+$btn-lg-size: 42px;
+$btn-xl-size: 48px;
+$btn-xxl-size: 54px;

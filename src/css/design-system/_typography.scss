@@ -1,6 +1,6 @@
-@use './theme/blue-theme' as *;
-@use './mixins' as *;
-@use './fonts/medium' as *;
+@use "./theme/blue-theme" as *;
+@use "./mixins" as *;
+@use "./fonts/medium" as *;
 
 //same media query font size remove
 
@@ -9,6 +9,7 @@ h1,
   font-size: $fs-primary;
   color: $primary-text-color;
   font-weight: $font-extra-bold;
+  text-transform: capitalize;
   @include max-width(1366px) {
     font-size: $fs-secondary;
   }
@@ -16,10 +17,9 @@ h1,
     font-size: $fs-forth;
   }
   @include max-width(375px) {
-    font-size:$fs-xl;
+    font-size: $fs-xl;
   }
 }
-
 
 h2,
 .secondary-heading {
@@ -27,26 +27,27 @@ h2,
   line-height: $lh-secondary;
   color: $primary-text-color;
   font-weight: $font-bolder;
+  text-transform: capitalize;
+
   @include max-width(1366px) {
     font-size: $fs-forth;
   }
   @include max-width(768px) {
-    font-size:$fs-xl;
+    font-size: $fs-xl;
   }
   @include max-width(375px) {
     font-size: $fs-large;
   }
 }
 
-
 h3,
 .tertiary-heading {
-  font-size:$fs-xl;
+  font-size: $fs-xl;
   line-height: $lh-secondary;
   color: $primary-text-color;
   font-weight: $font-light;
+  text-transform: capitalize;
 }
-
 
 h4,
 .fourth-heading {
@@ -54,17 +55,17 @@ h4,
   line-height: $lh-tertiary;
   color: $primary-text-color;
   font-weight: $font-bolder;
+  text-transform: capitalize;
 }
-
 
 h5,
 .subtitle-1 {
-  font-size:$fs-xl;
+  font-size: $fs-xl;
   line-height: $lh-forth;
   color: $primary-text-color;
   font-weight: $font-bolder;
+  text-transform: capitalize;
 }
-
 
 h6,
 .subtitle-2 {
@@ -72,8 +73,8 @@ h6,
   line-height: $lh-xxl;
   color: $primary-text-color;
   font-weight: $font-medium;
+  text-transform: capitalize;
 }
-
 
 p,
 .normal-text {
@@ -81,13 +82,23 @@ p,
   font-weight: $font-regular;
   margin: 0;
   &.xl {
-    font-size:$fs-xl;
+    font-size: $fs-xl;
     line-height: $lh-forth;
   }
 
   &.large {
     font-size: $fs-large;
     line-height: $lh-xxl;
+    @include max-width(1366px) {
+      font-size: $fs-medium;
+    }
+    @include max-width(768px) {
+      font-size: $fs-medium;
+    }
+
+    @include max-width(375px) {
+      font-size: $fs-medium;
+    }
   }
 
   &.small {
@@ -95,12 +106,13 @@ p,
   }
 }
 
-
 a,
 .link-text {
   line-height: $lh-xxl;
   color: $primary-text-color;
   font-weight: $font-medium;
+  text-transform: capitalize;
+
   &.large {
     font-size: $fs-large;
   }
@@ -109,13 +121,12 @@ a,
   }
 }
 
-
 button,
 .common-btn {
   font-size: $fs-medium;
-  line-height: $lh-xxl;
   color: $primary-text-color;
   font-weight: $font-medium;
+  text-transform: capitalize;
 
   &.small {
     font-size: $fs-small;
@@ -129,20 +140,21 @@ button,
   }
 
   &.x-large {
-    font-size:$fs-xl;
+    font-size: $fs-xl;
     line-height: $lh-forth;
     font-weight: $font-bolder;
   }
 }
-
 
 label,
 .label {
   line-height: $lh-xxl;
   color: $primary-text-color;
   font-weight: $font-medium;
+  text-transform: capitalize;
+
   &.x-large {
-    font-size:$fs-xl;
+    font-size: $fs-xl;
     @include max-width(1366px) {
       font-size: $fs-large;
     }
@@ -163,11 +175,12 @@ label,
   }
 }
 
-
 span,
 .caption {
   line-height: $lh-xl;
   color: $primary-text-color;
+  text-transform: capitalize;
+
   &.medium {
     font-size: $fs-small;
     font-weight: $font-medium;

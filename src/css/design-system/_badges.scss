@@ -1,0 +1,35 @@
+// base badge style
+@use "./mixins" as *;
+@use './fonts/medium' as *;
+@use "./foundation" as *;
+@use "./theme/blue-theme" as *;
+
+
+.badge {
+  padding: $vvs-p;
+  border-radius: 100px;
+  background-color: $primary-color;
+  @include typography(13,1,500,#ffffff);
+  @include flex-box(na,center,center,na,na);
+  &.sm {
+    @include dimensions(18,18);
+  }
+  &.md {
+    @include dimensions(24,24);
+  }
+
+  &--success {
+    background-color: #28a745;
+  }
+
+  &--warning {
+    background-color: #ffc107;
+    color: black;
+  }
+
+  &--danger {
+    background-color: #dc3545;
+  }
+}
+
+// modifier classes for different badge types
