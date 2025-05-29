@@ -1,13 +1,13 @@
-@use "./storybook" ;
+@use "./storybook";
 @use "./mixins" as *;
 @use "./theme/blue-theme" as *;
 @use "./fonts/medium" as *;
-
+@use "./foundation" as *;
 
 .inner-container {
   border: 1px solid #d0d4e4;
   padding: 32px;
-  border-radius: 8px;
+  border-radius: $border-radius-medium;
   @include flex-box(column, na, na, na, 20);
   .color-foundation {
     @include flex-box(na, na, na, na, 14);
@@ -134,13 +134,13 @@
     .color-text {
       h5 {
         margin: 0;
-        @include typography(20, na, 500, #323238);
+        @include typography($fs-forth, na, $font-medium, #323238);
       }
       p {
         margin: 0;
-        @include typography(14, na, 400, #676879);
+        @include typography($fs-large, na, $font-regular, #676879);
         span {
-          @include typography(14, na, 500, #323238);
+          @include typography($fs-large, na, $font-medium, #323238);
         }
       }
     }
@@ -152,7 +152,7 @@
     h2 {
       margin: 0;
       margin-bottom: 30px;
-      @include typography(24, na, 300, #323238);
+      @include typography(24, na, $font-light, #323238);
     }
   }
 }
@@ -162,7 +162,7 @@
     h2 {
       margin: 0;
       margin-bottom: 30px;
-      @include typography(24, na, 300, #323238);
+      @include typography(24, na, $font-light, #323238);
     }
   }
 
@@ -221,7 +221,7 @@
         p {
           margin: 0;
           margin-top: 4px;
-          @include typography(14, na, 400, #676879);
+          @include typography($fs-large, na, $font-regular, #676879);
         }
       }
     }
@@ -238,15 +238,15 @@
       box-sizing: border-box;
       @include dimensions(200, 200);
       @include flex-box(na, center, center, na, na);
-      @include typography(18, na, 700, #323238);
+      @include typography($fs-xxl, na, $font-bolder, #323238);
       &--small {
-        border-radius: 4px;
+        border-radius: $border-radius-small;
       }
       &--medium {
-        border-radius: 8px;
+        border-radius: $border-radius-medium;
       }
       &--large {
-        border-radius: 16px;
+        border-radius: $border-radius-large;
       }
     }
 
@@ -254,12 +254,12 @@
       @include dimensions(200, 200);
       box-sizing: border-box;
       padding: 43px 34px;
-      border-radius: 4px;
+      border-radius: $border-radius-small;
 
       .shadow-header {
         border-bottom: 1px solid #dddede;
         padding-bottom: 4px;
-        @include typography(12, na, 500, #202020);
+        @include typography($fs-small, na, $font-medium, #202020);
       }
 
       .x-axis {
@@ -268,12 +268,12 @@
         @include flex-box(na, space-between, center, na, na);
         p {
           margin: 0;
-          font-size: $fs-small;;
+          font-size: $fs-small;
           font-weight: $font-regular;
           color: #4d4d4d;
-          @include typography(12, na, 400, #4d4d4d);
+          @include typography($fs-small, na, $font-regular, #4d4d4d);
           span {
-            @include typography(12, na, 400, #202020);
+            @include typography($fs-small, na, $font-regular, #202020);
           }
         }
       }
@@ -291,18 +291,17 @@
 
     .border-text {
       span {
-        @include typography(14, na, 500, #323238);
+        @include typography($fs-large, na, $font-medium, #323238);
       }
       p {
         margin: 0;
-        @include typography(14, na, 400, #676879);
+        @include typography($fs-large, na, $font-regular, #676879);
       }
     }
   }
 }
 
 .tabs-container {
-
   .tab-buttons {
     margin-bottom: 46px;
     @include flex-box(na, space-between, na, na, na);
@@ -313,10 +312,10 @@
       cursor: pointer;
       text-wrap: nowrap;
       border-bottom: 3px solid #d9d9d9;
-      @include typography(18, na, 400, #676879);
+      @include typography($fs-xxl, na, $font-regular, #676879);
       &.active {
         border-bottom: 3px solid #017bba;
-        @include typography(18, na, 600, #323238);
+        @include typography($fs-xxl, na, $font-bold, #323238);
       }
     }
   }
@@ -325,7 +324,7 @@
     padding: 28px;
     border: 1px solid #d0d4e4;
     background: #ffffff;
-    border-radius: 16px;
+    border-radius: $border-radius-large;
 
     .typography-grid {
       display: grid;
@@ -336,13 +335,13 @@
 
       .class-name {
         padding: 0 30px;
-        @include typography(14, na, 400, #676879);
+        @include typography($fs-large, na, $font-regular, #676879);
       }
 
       .description {
         p {
           margin: 0;
-          @include typography(14, na, 400, #676879);
+          @include typography($fs-large, na, $font-regular, #676879);
         }
       }
     }
@@ -350,69 +349,87 @@
     .heading-laptop {
       color: #323238;
       .primary-heading {
-        font-size: $fs-secondary;
-        color: $primary-text-color;
-        font-weight:$font-extra-bold;
+        @include typography(
+          $fs-secondary,
+          na,
+          $font-extra-bold,
+          $primary-text-color
+        );
       }
 
       .secondary-heading {
-        font-size: $fs-forth;
-        line-height: $lh-secondary;
-        color: $primary-text-color;
-        font-weight:$font-bolder;
+        @include typography(
+          $fs-forth,
+          $lh-secondary,
+          $font-bolder,
+          $primary-text-color
+        );
       }
 
       .tertiary-heading {
-        font-size: $fs-xl;
-        line-height: $lh-secondary;
-        color: $primary-text-color;
-        font-weight:$font-light;
+        @include typography(
+          $fs-xl,
+          $lh-secondary,
+          $font-light,
+          $primary-text-color
+        );
       }
 
       .fourth-heading {
-        font-size: $fs-xxl;;
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-bolder;
+        @include typography(
+          $fs-xxl,
+          $lh-xxl,
+          $font-bolder,
+          $primary-text-color
+        );
       }
 
       .subtitle-1 {
-        font-size: $fs-xl;
-        line-height: $lh-xl;
-        color: $primary-text-color;
-        font-weight:$font-bolder;
+        @include typography($fs-xl, $lh-xl, $font-bolder, $primary-text-color);
       }
 
       .subtitle-2 {
-        font-size: $fs-large;
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-medium;
+        @include typography(
+          $fs-large,
+          $lh-xxl,
+          $font-medium,
+          $primary-text-color
+        );
       }
 
       .normal-text {
-        color: $primary-text-color;
-        font-weight: $font-regular;
+        @include typography(na, na, $font-regular, $primary-text-color);
         margin: 0;
         &.xl {
-          font-size: $fs-xl;
-          line-height: $lh-xl;
+          @include typography(
+            $fs-xl,
+            $lh-xl,
+            $font-regular,
+            $primary-text-color
+          );
         }
 
         &.large {
-          font-size: $fs-medium;
-          line-height: $lh-xxl;
+          @include typography(
+            $fs-medium,
+            $lh-xxl,
+            $font-regular,
+            $primary-text-color
+          );
         }
 
         &.small {
-          font-size: $fs-small;;
+          @include typography(
+            $fs-small,
+            $lh-xxl,
+            $font-regular,
+            $primary-text-color
+          );
         }
       }
 
       .link-text {
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-medium;
+        @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
         &.large {
           font-size: $fs-large;
         }
@@ -421,13 +438,14 @@
         }
       }
       .common-btn {
-        font-size: $fs-medium;
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-medium;
-
+        @include typography(
+          $fs-medium,
+          $lh-xxl,
+          $font-medium,
+          $primary-text-color
+        );
         &.small {
-          font-size: $fs-small;;
+          font-size: $fs-small;
         }
 
         &.large {
@@ -435,42 +453,46 @@
         }
 
         &.x-large {
-          font-size: $fs-xl;
-          line-height: $lh-xl;
-          font-weight:$font-bolder;
+          @include typography(
+            $fs-xl,
+            $lh-xl,
+            $font-bolder,
+            $primary-text-color
+          );
         }
       }
 
       .label {
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-medium;
+        @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
         &.x-large {
-            font-size: $fs-large;
-          }
-        
+          font-size: $fs-large;
+        }
 
         &.large {
           font-size: $fs-medium;
         }
 
         &.medium {
-            font-size: $fs-small;;
-          }
-        
+          font-size: $fs-small;
+        }
       }
 
       .caption {
         line-height: $lh-xl;
         color: $primary-text-color;
+        @include typography(na, $lh-xl, na, $primary-text-color);
         &.medium {
-          font-size: $fs-small;;
-          font-weight:$font-medium;
+          @include typography(
+            $fs-small,
+            $lh-xl,
+            $font-medium,
+            $primary-text-color
+          );
         }
 
         &.bold {
-            font-size: $fs-small;;
-            font-weight:$font-bold;
+          font-size: $fs-small;
+          font-weight: $font-bold;
         }
       }
     }
@@ -479,69 +501,83 @@
     .heading-tablet {
       color: #323238;
       .primary-heading {
-        font-size: 20px;
-        color: $primary-text-color;
-        font-weight:$font-extra-bold;
+        @include typography(
+          $fs-forth,
+          na,
+          $font-extra-bold,
+          $primary-text-color
+        );
       }
 
       .secondary-heading {
-        font-size: $fs-xl;
-        line-height: $lh-secondary;
-        color: $primary-text-color;
-        font-weight:$font-bolder;
+        @include typography(
+          $fs-xl,
+          $lh-secondary,
+          $font-bolder,
+          $primary-text-color
+        );
       }
 
       .tertiary-heading {
-        font-size: $fs-xl;
-        line-height: $lh-secondary;
-        color: $primary-text-color;
-        font-weight:$font-light;
+        @include typography(
+          $fs-xl,
+          $lh-secondary,
+          $font-light,
+          $primary-text-color
+        );
       }
 
       .fourth-heading {
-        font-size: $fs-xxl;;
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-bolder;
+        @include typography(
+          $fs-xxl,
+          $lh-xxl,
+          $font-bolder,
+          $primary-text-color
+        );
       }
 
       .subtitle-1 {
-        font-size: $fs-xl;
-        line-height: $lh-xl;
-        color: $primary-text-color;
-        font-weight:$font-bolder;
+        @include typography($fs-xl, $lh-xl, $font-bolder, $primary-text-color);
       }
 
       .subtitle-2 {
-        font-size: $fs-large;
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-medium;
+        @include typography(
+          $fs-large,
+          $lh-xxl,
+          $font-medium,
+          $primary-text-color
+        );
       }
 
       .normal-text {
-        color: $primary-text-color;
-        font-weight: $font-regular;
+        @include typography(na, na, $font-regular, $primary-text-color);
+
         margin: 0;
         &.xl {
-          font-size: $fs-xl;
-          line-height: $lh-xl;
+          @include typography(
+            $fs-xl,
+            $lh-xl,
+            $font-regular,
+            $primary-text-color
+          );
         }
 
         &.large {
-          font-size: $fs-medium;
-          line-height: $lh-xxl;
+          @include typography(
+            $fs-medium,
+            $lh-xxl,
+            $font-regular,
+            $primary-text-color
+          );
         }
 
         &.small {
-          font-size: $fs-small;;
+          font-size: $fs-small;
         }
       }
 
       .link-text {
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-medium;
+        @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
         &.large {
           font-size: $fs-large;
         }
@@ -550,13 +586,14 @@
         }
       }
       .common-btn {
-        font-size: $fs-medium;
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-medium;
-
+        @include typography(
+          $fs-medium,
+          $lh-xxl,
+          $font-medium,
+          $primary-text-color
+        );
         &.small {
-          font-size: $fs-small;;
+          font-size: $fs-small;
         }
 
         &.large {
@@ -564,42 +601,48 @@
         }
 
         &.x-large {
-          font-size: $fs-xl;
-          line-height: $lh-xl;
-          font-weight:$font-bolder;
+          @include typography(
+            $fs-xl,
+            $lh-xl,
+            $font-bolder,
+            $primary-text-color
+          );
         }
       }
 
       .label {
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-medium;
+        @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
         &.x-large {
-            font-size: $fs-large;
-          }
-        
+          font-size: $fs-large;
+        }
 
         &.large {
           font-size: $fs-medium;
         }
 
         &.medium {
-            font-size: $fs-small;;
-          }
-        
+          font-size: $fs-small;
+        }
       }
 
       .caption {
-        line-height: $lh-xl;
-        color: $primary-text-color;
+        @include typography(na, $lh-xl, na, $primary-text-color);
         &.medium {
-          font-size: $fs-small;;
-          font-weight:$font-medium;
+          @include typography(
+            $fs-small,
+            $lh-xl,
+            $font-medium,
+            $primary-text-color
+          );
         }
 
         &.bold {
-            font-size: $fs-small;;
-            font-weight:$font-bold;
+          @include typography(
+            $fs-small,
+            $lh-xl,
+            $font-bold,
+            $primary-text-color
+          );
         }
       }
     }
@@ -607,69 +650,83 @@
     .heading-mobile {
       color: #323238;
       .primary-heading {
-        font-size: $fs-xl;
-        color: $primary-text-color;
-        font-weight:$font-extra-bold;
+        @include typography($fs-xl, na, $font-extra-bold, $primary-text-color);
       }
 
       .secondary-heading {
-        font-size: $fs-large;
-        line-height: $lh-secondary;
-        color: $primary-text-color;
-        font-weight:$font-bolder;
+        @include typography(
+          $fs-large,
+          $lh-secondary,
+          $font-bolder,
+          $primary-text-color
+        );
       }
 
       .tertiary-heading {
-        font-size: $fs-xl;
-        line-height: $lh-secondary;
-        color: $primary-text-color;
-        font-weight:$font-light;
+        @include typography(
+          $fs-xl,
+          $lh-secondary,
+          $font-light,
+          $primary-text-color
+        );
       }
 
       .fourth-heading {
-        font-size: $fs-xxl;;
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-bolder;
+        @include typography(
+          $fs-xxl,
+          $lh-xxl,
+          $font-bolder,
+          $primary-text-color
+        );
       }
 
       .subtitle-1 {
-        font-size: $fs-xl;
-        line-height: $lh-xl;
-        color: $primary-text-color;
-        font-weight:$font-bolder;
+        @include typography($fs-xl, $lh-xl, $font-bolder, $primary-text-color);
       }
 
       .subtitle-2 {
-        font-size: $fs-large;
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-medium;
+        @include typography(
+          $fs-large,
+          $lh-xxl,
+          $font-medium,
+          $primary-text-color
+        );
       }
 
       .normal-text {
-        color: $primary-text-color;
-        font-weight: $font-regular;
         margin: 0;
+        @include typography(na, na, $font-regular, $primary-text-color);
         &.xl {
-          font-size: $fs-xl;
-          line-height: $lh-xl;
+          @include typography(
+            $fs-xl,
+            $lh-xl,
+            $font-regular,
+            $primary-text-color
+          );
         }
 
         &.large {
-          font-size: $fs-medium;
-          line-height: $lh-xxl;
+          @include typography(
+            $fs-medium,
+            $lh-xxl,
+            $font-regular,
+            $primary-text-color
+          );
         }
 
         &.small {
-          font-size: $fs-small;;
+          @include typography(
+            $fs-small,
+            $lh-xxl,
+            $font-regular,
+            $primary-text-color
+          );
         }
       }
 
       .link-text {
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-medium;
+        @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
+
         &.large {
           font-size: $fs-large;
         }
@@ -678,13 +735,15 @@
         }
       }
       .common-btn {
-        font-size: $fs-medium;
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-medium;
+        @include typography(
+          $fs-medium,
+          $lh-xxl,
+          $font-medium,
+          $primary-text-color
+        );
 
         &.small {
-          font-size: $fs-small;;
+          font-size: $fs-small;
         }
 
         &.large {
@@ -692,42 +751,50 @@
         }
 
         &.x-large {
-          font-size: $fs-xl;
-          line-height: $lh-xl;
-          font-weight:$font-bolder;
+          @include typography(
+            $fs-xl,
+            $lh-xl,
+            $font-bolder,
+            $primary-text-color
+          );
         }
       }
 
       .label {
-        line-height: $lh-xxl;
-        color: $primary-text-color;
-        font-weight:$font-medium;
+        @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
+
         &.x-large {
-            font-size: $fs-large;
-          }
-        
+          font-size: $fs-large;
+        }
 
         &.large {
           font-size: $fs-medium;
         }
 
         &.medium {
-            font-size: $fs-small;;
-          }
-        
+          font-size: $fs-small;
+        }
       }
 
       .caption {
-        line-height: $lh-xl;
-        color: $primary-text-color;
+        @include typography(na, $lh-xl, na, $primary-text-color);
+
         &.medium {
-          font-size: $fs-small;;
-          font-weight:$font-medium;
+          @include typography(
+            $fs-small,
+            $lh-xl,
+            $font-medium,
+            $primary-text-color
+          );
         }
 
         &.bold {
-            font-size: $fs-small;;
-            font-weight:$font-bold;
+          @include typography(
+            $fs-small,
+            $lh-xl,
+            $font-bold,
+            $primary-text-color
+          );
         }
       }
     }
@@ -735,13 +802,10 @@
 }
 
 .labels {
-  border-radius: 4px;
+  border-radius: $border-radius-small;
   padding: 4px;
   background-color: #eeeeef;
-  font-size: $fs-medium;
-  font-weight:$font-medium;
-  color: #4d4d4d;
   height: 23px;
-  display: flex;
-  align-items: center;
+  @include typography($fs-medium, na, $font-medium, #4d4d4d);
+  @include flex-box(na, na, center, na, na);
 }

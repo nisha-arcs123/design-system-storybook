@@ -1,6 +1,6 @@
 @use "./mixins" as *;
 @use "./foundation" as *;
-
+@use "./fonts/medium" as *;
 
 .stepper {
   @include flex-box(na,space-between,center,na,na);
@@ -39,7 +39,7 @@
     }
 
     .label {
-      @include typography(13,na,500,#676879);
+      @include typography(13,na,$font-medium,#676879);
       background-color: #ffffff;
       margin-top: 8px;
     }

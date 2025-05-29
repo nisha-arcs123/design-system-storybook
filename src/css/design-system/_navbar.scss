@@ -1,5 +1,6 @@
 @use "./mixins" as *;
-
+@use "./foundation" as *;
+@use "./fonts/medium" as *;
 .navbar-container {
   width: 48px;
   height: 100vh;
@@ -10,7 +11,7 @@
     @include flex-box(column, na, na, na, 4);
   }
   .icon-div {
-    border-radius: 8px;
+    border-radius: $border-radius-medium;
     @include dimensions(38, 38);
     @include flex-box(na, center, center, na, 8);
     background-color: #ffffff;
@@ -28,7 +29,7 @@
     }
 
     span{
-      font-size: 22px;
+      font-size: $fs-tertiary;
       color: #344563;
     }
   }

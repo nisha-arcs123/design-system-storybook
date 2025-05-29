@@ -85,7 +85,7 @@
     position: relative;
     padding: 0 12px;
     background-color: #ffffff;
-    @include typography(13, na, 500, #4d4d4d);
+    @include typography(13, na, $font-medium, #4d4d4d);
     @include flex-box(flex, space-between, center, na, na);
     @include dimensions(54, 344);
     &::after {
@@ -116,7 +116,7 @@
     left: 12px;
     top: -8px;
     z-index: 1;
-    @include typography(13, na, 500, #4d4d4d);
+    @include typography(13, na, $font-medium, #4d4d4d);
   }
 
   .dropdown-menu.show {
@@ -130,7 +130,7 @@
       height: 43px;
       padding: 0 16px;
       @include flex-box(na, space-between, center, na, na);
-      @include typography(14, na, 600, #323238);
+      @include typography($fs-large, na, $font-bold, #323238);
 
       &:hover {
         background-color: #e6f2f8;
@@ -153,7 +153,7 @@
   //   }
 
   //   p {
-  //     @include typography(13, na, 500, #444444);
+  //     @include typography(13, na, $font-medium, #444444);
   //   }
   // }
 }

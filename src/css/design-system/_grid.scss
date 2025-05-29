@@ -1,12 +1,13 @@
 @use "./mixins" as *;
+@use "./fonts/medium" as *;
+@use "./foundation" as *;
+
 
 .table-container {
   width: 100%;
   border-collapse: collapse;
   border-radius: 8px;
   overflow-x: auto;
-  // margin: 0 16px;
-  //   background-color: #f1f2f4;
   thead {
     width: 100%;
     background-color: transparent;
@@ -15,15 +16,13 @@
       th {
         text-align: start;
         padding: 11px 8px;
-        @include typography(13, na, 600, #172b4d);
+        @include typography($fs-medium, na, $font-bold, #172b4d);
         span{
-          font-size: 18px;
+          font-size: $fs-xxl;
         }
       }
       .head {
-        display: flex;
-        align-items: center;
-        gap: 8px;
+        @include flex-box(na,na,center,na,8);
       }
     }
   }
@@ -57,24 +56,19 @@
       }
 
       td {
-        font-size: 13px;
-        font-weight: 500;
-        color: #676879;
         padding: 5px 8px;
         border-top: 1px solid #d0d4e4;
         text-wrap: nowrap;
+        @include typography($fs-medium,na,$font-medium,#676879);
         &.first-row {
           text-wrap: nowrap;
           @include flex-box(na, na, center, na, 8);
         }
 
         .more-icon {
-          width: 28px;
-          height: 28px;
           border-radius: 50px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
+          @include dimensions(28,28);
+          @include flex-box(na,center,center,na,na);
           &:hover {
             background-color: #dcdfec;
           }

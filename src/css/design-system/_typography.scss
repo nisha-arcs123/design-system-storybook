@@ -6,10 +6,8 @@
 
 h1,
 .primary-heading {
-  font-size: $fs-primary;
-  color: $primary-text-color;
-  font-weight: $font-extra-bold;
   text-transform: capitalize;
+  @include typography($fs-primary, na, $font-extra-bold, $primary-text-color);
   @include max-width(1366px) {
     font-size: $fs-secondary;
   }
@@ -23,12 +21,13 @@ h1,
 
 h2,
 .secondary-heading {
-  font-size: $fs-tertiary;
-  line-height: $lh-secondary;
-  color: $primary-text-color;
-  font-weight: $font-bolder;
   text-transform: capitalize;
-
+  @include typography(
+    $fs-tertiary,
+    $lh-secondary,
+    $font-bolder,
+    $primary-text-color
+  );
   @include max-width(1366px) {
     font-size: $fs-forth;
   }
@@ -42,53 +41,39 @@ h2,
 
 h3,
 .tertiary-heading {
-  font-size: $fs-xl;
-  line-height: $lh-secondary;
-  color: $primary-text-color;
-  font-weight: $font-light;
   text-transform: capitalize;
+  @include typography($fs-xl, $lh-secondary, $font-light, $primary-text-color);
 }
 
 h4,
 .fourth-heading {
-  font-size: $fs-xxl;
-  line-height: $lh-tertiary;
-  color: $primary-text-color;
-  font-weight: $font-bolder;
   text-transform: capitalize;
+  @include typography($fs-xxl, $lh-tertiary, $font-bolder, $primary-text-color);
 }
 
 h5,
 .subtitle-1 {
-  font-size: $fs-xl;
-  line-height: $lh-forth;
-  color: $primary-text-color;
-  font-weight: $font-bolder;
   text-transform: capitalize;
+  @include typography($fs-xl, $lh-forth, $font-bolder, $primary-text-color);
 }
 
 h6,
 .subtitle-2 {
-  font-size: $fs-large;
-  line-height: $lh-xxl;
-  color: $primary-text-color;
-  font-weight: $font-medium;
   text-transform: capitalize;
+  @include typography($fs-large, $lh-xxl, $font-medium, $primary-text-color);
 }
 
 p,
 .normal-text {
-  color: $primary-text-color;
-  font-weight: $font-regular;
+  @include typography(na, na, $font-regular, $primary-text-color);
   margin: 0;
+
   &.xl {
-    font-size: $fs-xl;
-    line-height: $lh-forth;
+    @include typography($fs-xl, $lh-forth, $font-regular, $primary-text-color);
   }
 
   &.large {
-    font-size: $fs-large;
-    line-height: $lh-xxl;
+    @include typography($fs-large, $lh-xxl, $font-regular, $primary-text-color);
     @include max-width(1366px) {
       font-size: $fs-medium;
     }
@@ -108,10 +93,8 @@ p,
 
 a,
 .link-text {
-  line-height: $lh-xxl;
-  color: $primary-text-color;
-  font-weight: $font-medium;
   text-transform: capitalize;
+  @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
 
   &.large {
     font-size: $fs-large;
@@ -123,10 +106,8 @@ a,
 
 button,
 .common-btn {
-  font-size: $fs-medium;
-  color: $primary-text-color;
-  font-weight: $font-medium;
   text-transform: capitalize;
+  @include typography($fs-medium, na, $font-medium, $primary-text-color);
 
   &.small {
     font-size: $fs-small;
@@ -140,18 +121,14 @@ button,
   }
 
   &.x-large {
-    font-size: $fs-xl;
-    line-height: $lh-forth;
-    font-weight: $font-bolder;
+    @include typography($fs-xl, $lh-forth, $font-bolder, $primary-text-color);
   }
 }
 
 label,
 .label {
-  line-height: $lh-xxl;
-  color: $primary-text-color;
-  font-weight: $font-medium;
   text-transform: capitalize;
+  @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
 
   &.x-large {
     font-size: $fs-xl;
@@ -177,21 +154,17 @@ label,
 
 span,
 .caption {
-  line-height: $lh-xl;
-  color: $primary-text-color;
   text-transform: capitalize;
+  @include typography(na, $lh-xl, na, $primary-text-color);
 
   &.medium {
-    font-size: $fs-small;
-    font-weight: $font-medium;
+    @include typography($fs-small, $lh-xl, $font-medium, $primary-text-color);
   }
 
   &.bold {
-    font-size: $fs-small;
-    font-weight: $font-bolder;
+    @include typography($fs-small, $lh-xl, $font-bolder, $primary-text-color);
     @include max-width(1366px) {
-      font-size: $fs-small;
-      font-weight: $font-bold;
+      @include typography($fs-small, $lh-xl, $font-bold, $primary-text-color);
     }
   }
 }

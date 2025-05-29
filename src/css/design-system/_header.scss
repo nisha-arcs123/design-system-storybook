@@ -39,9 +39,7 @@
       padding: 10px;
     }
     .left {
-      font-size: $fs-forth;
-      font-weight: $font-bolder;
-      color: #172b4d;
+      @include typography($fs-forth,na,$font-bolder,#172b4d);
     }
     .right {
       @include flex-box(na, na, center, na, 4);
@@ -55,11 +53,8 @@
       .d-btn {
         p,
         .excel {
-          color: #676879;
-          font-weight: 500;
-          display: flex;
-          align-items: center;
-          gap: 8px;
+          @include typography(na,na,$font-medium,#676879);
+          @include flex-box(na,na,center,na,8);
           @include max-width(1096) {
             display: none;
           }
@@ -120,7 +115,8 @@
           color: #ffffff;
           display: flex;
           color: #676879;
-          font-weight: 500;
+          font-weight: $font-medium;
+          
           @include max-width(768) {
             display: none;
           }

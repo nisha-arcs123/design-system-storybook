@@ -11,7 +11,7 @@
   @include flex-box(column,na,na,na,20);
   .tooltip-btn {
     width: max-content;
-    @include typography(14,na,400,#676879);
+    @include typography($fs-large,na,$font-regular,#676879);
   }
   .tooltip-inner {
     padding: $vvs-p;
@@ -19,7 +19,7 @@
     min-width: 78px;
     max-width: 300px;
     text-align: start;
-    @include typography(12,na,500,#ffffff);
+    @include typography($fs-small,na,$font-medium,#ffffff);
   }
   .no-arrow + .tooltip .tooltip-arrow {
     display: none !important;

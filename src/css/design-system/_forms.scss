@@ -13,7 +13,7 @@
   @include flex-box(column, na, na, na, na);
   label {
     margin-bottom: $vvs-m;
-    @include typography(13, na, 500, #323238);
+    @include typography($fs-medium, na, $font-medium, #323238);
     &.d-none {
       display: none;
     }
@@ -104,7 +104,7 @@
       border: none;
       outline: none;
       flex: 1;
-      @include typography(13, 20, 400, na);
+      @include typography($fs-medium, 20, $font-regular, na);
       background: transparent;
 
       &::placeholder {
@@ -131,12 +131,12 @@
       background-repeat: no-repeat;
       background-position: right 0px center;
       background-size: 10px 6px;
-      @include typography(13, na, 400, #676879);
+      @include typography($fs-medium, na, $font-regular, #676879);
       option {
         padding: 12px;
         width: 100%;
         position: absolute;
-        @include typography(13, na, 400, #676879);
+        @include typography($fs-medium, na, $font-regular, #676879);
       }
       &:focus {
         outline: none;
@@ -145,7 +145,7 @@
   }
 
   .error-message {
-    @include typography(12, na, na, #e53935);
+    @include typography($fs-small, na, na, #e53935);
     margin-top: 4px;
   }
 
@@ -189,13 +189,13 @@
     border: none;
     outline: none;
     flex: 1;
-    @include typography(12, na, 400, #949494);
+    @include typography($fs-small, na, $font-regular, #949494);
   }
   button {
     background-color: #eeeeef;
     border: none;
     padding: 10px 15px;
-    @include typography(12, na, 500, #4d4d4d);
+    @include typography($fs-small, na, $font-medium, #4d4d4d);
     cursor: pointer;
     transition: background-color 0.2s;
     &:hover {
@@ -220,7 +220,7 @@
     flex: 1;
     padding: 0;
     &::placeholder {
-      @include typography(12, na, 400, #949494);
+      @include typography($fs-small, na, $font-regular, #949494);
     }
   }
 }
@@ -244,7 +244,7 @@
     flex: 1;
     padding: 0;
     &::placeholder {
-      @include typography(13, na, 500, #676879);
+      @include typography($fs-medium, na, $font-medium, #676879);
     }
   }
 }
@@ -269,7 +269,7 @@
         opacity: 0;
       }
       p {
-        @include typography(13, na, 500, #202020);
+        @include typography($fs-medium, na, $font-medium, #202020);
         span {
           color: #017bba;
         }
@@ -283,7 +283,7 @@
     .support-format {
       @include flex-box(na, space-between, center, na, na);
       p {
-        @include typography(12, na, 400, #676879);
+        @include typography($fs-small, na, $font-regular, #676879);
       }
     }
   }
@@ -308,10 +308,10 @@
         .file-text {
           @include flex-box(column, na, na, na, 2);
           .name {
-            @include typography(13, na, 500, #323238);
+            @include typography($fs-medium, na, $font-medium, #323238);
           }
           .size {
-            @include typography(12, na, 400, #676879);
+            @include typography($fs-small, na, $font-regular, #676879);
           }
         }
       }

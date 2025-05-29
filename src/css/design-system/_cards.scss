@@ -1,6 +1,7 @@
-@use "./theme/blue-theme" as *;
-@use "./foundation" as *;
 @use "./mixins" as *;
+@use "./foundation" as *;
+@use "./theme/blue-theme" as *;
+@use "./fonts/medium" as *;
 
 .cards-container {
   padding: $vvvs-p;
@@ -32,11 +33,11 @@
     @include flex-box(column, na, na, na, na);
     .text1 {
       margin: 0;
-      @include typography(12, na, 500, #202020);
+      @include typography($fs-small, na, $font-medium, #202020);
     }
 
     .text2 {
-      @include typography(16, 18, 600, #53585b);
+      @include typography($fs-xl, 18, $font-bold, #53585b);
     }
   }
 }
