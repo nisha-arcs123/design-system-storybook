@@ -1,0 +1,50 @@
+<div [ngSwitch]="inputClass">
+  <div *ngSwitchCase="'primary-tabs'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A list is a basic data structure used to organize and manage a
+          collection of items. In user interfaces, lists are often displayed
+          visually to present information in an ordered or unordered format.
+          Lists are fundamental components in both web and application design,
+          used for various purposes such as navigation, data display, or options
+          selection.
+        </p>
+      </div>
+      <!-- <div class="second-container">
+        <div class="heading">
+          <h2>Primary</h2>
+        </div>
+        <div class="containers">
+          <div class="tabs-container">
+            <div class="tab-buttons">
+              <button
+                [class.active]="selectedTab === 'desktop'"
+                (click)="selectTab('desktop')"
+              >
+                Auditor
+              </button>
+              <button
+                [class.active]="selectedTab === 'laptop'"
+                (click)="selectTab('laptop')"
+              >
+                Auditee
+              </button>
+            </div>
+
+            <div class="tab-content">
+              <ng-container [ngSwitch]="selectedTab">
+                <div *ngSwitchCase="'auditor'">Auditor</div>
+
+                <div *ngSwitchCase="'auditee'">Auditee</div>
+              </ng-container>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    </div>
+  </div>
+</div>

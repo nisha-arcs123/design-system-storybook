@@ -1,0 +1,55 @@
+@use "./foundation" as *;
+@use "./mixins" as *;
+
+.unordered-list {
+  background-color: #ffffff;
+  box-shadow: 0 6px 20px 0 #00000033;
+  border-radius: $border-radius-small;
+  padding: 0;
+  margin: 0;
+
+  &.search-list {
+    padding: 8px;
+    .list-item {
+      padding: 6px 4px;
+      height: 28px;
+      &:not(:last-child) {
+        border-bottom: 0;
+      }
+    }
+  }
+  .list-item {
+    &:not(:last-child) {
+      border-bottom: 1px solid #e4e5eb;
+    }
+    @include dimensions(38,230);
+    padding: 11px 15px;
+    list-style-type: none;
+    @include flex-box(na, na, na, na, 8);
+    p {
+      @include typography(13, na, 500, #4d4d4d);
+    }
+
+    .message-notify-container {
+      @include flex-box(na, space-between, center, na, 8);
+      width: 130px;
+      p {
+        @include typography(13, na, 400, #4d4d4d);
+      }
+      .d-btn {
+        &--sm {
+          @include dimensions(26, 26);
+          // @include typography(12, na, 500, #4d4d4d);
+        }
+      }
+    }
+
+    .custom-checkbox {
+      padding: 0;
+      margin: 0;
+      &.checkbox-vs {
+        height: auto;
+      }
+    }
+  }
+}

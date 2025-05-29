@@ -1,18 +1,18 @@
 import type { Meta, StoryObj } from '@storybook/angular';
-import { ListComponent } from './list.component';
+import { TabsComponent } from './tabs.component';
 
-const meta: Meta<ListComponent> = {
-  title: 'List',
-  component: ListComponent,
+const meta: Meta<TabsComponent> = {
+  title: 'Tab',
+  component: TabsComponent,
   tags: ['autodocs'],
 };
 
 export default meta;
-type Story = StoryObj<ListComponent>;
+type Story = StoryObj<TabsComponent>;
 
 export const SimpleList: Story = {
   args: {
-    inputClass: 'simple-list',
+    inputClass: 'primary-tabs',
     heading: 'Simple List',
   },
   parameters: {
