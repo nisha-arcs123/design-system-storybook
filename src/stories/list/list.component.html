@@ -1,0 +1,34 @@
+<div [ngSwitch]="inputClass">
+  <div *ngSwitchCase="'simple-list'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          Chips are a user interface component used to represent small pieces of
+          information or interactive elements in a compact and visually
+          appealing way. They are often used to display tags, contacts, or
+          selections in a list format.
+        </p>
+      </div>
+      <div class="second-container">
+        <div class="heading">
+          <h2>Primary</h2>
+        </div>
+
+        <div class="containers">
+          <div class="cards-container negative-color">
+            <div class="card-img-div">
+              <span class="icon-Close-Square"></span>
+            </div>
+            <div class="card-text-div">
+              <p class="text1">Invaild</p>
+              <p class="text2">55</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
