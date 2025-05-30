@@ -1,7 +1,7 @@
 @use './css/main.scss';
 
 body {
-  font-family: "Figtree", sans-serif;
+  font-family: "Figtree", sans-serif !important;
 }
 
 @font-face {
@@ -31,7 +31,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-
+.icon-start-vector:before {
+  content: "\e956";
+  color: #a3adba;
+}
+.icon-home1:before {
+  content: "\e957";
+  color: #a3adba;
+}
+.icon-userpng:before {
+  content: "\e958";
+  color: #a3adba;
+}
 .icon-Paper:before {
   content: "\e952";
   color: #089137;
@@ -74,6 +85,10 @@ body {
 }
 .icon-print:before {
   content: "\e907";
+  color: #a3adba;
+}
+.icon-watch:before {
+  content: "\e959";
   color: #a3adba;
 }
 .icon-x:before {

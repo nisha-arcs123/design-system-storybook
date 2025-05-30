@@ -31,3 +31,22 @@ export const RightSideBarOne: Story = {
     },
   },
 };
+
+
+
+export const RightSideBarTwo: Story = {
+  args: {
+    inputClass: 'second-sidebar',
+    heading: 'Second Sidebar',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `       
+     
+      `.trim(),
+        language: `html`,
+      },
+    },
+  },
+};

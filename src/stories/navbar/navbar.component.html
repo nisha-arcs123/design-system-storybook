@@ -1,36 +1,46 @@
 <div [ngSwitch]="inputClass">
   <div *ngSwitchCase="'left-side-navbar'">
-    <div class="navbar-container">
-      <div class="upper-icons">
-        <div class="icon-div">
-          <span class="icon-home"></span>
+    <div class="containers">
+      <div class="navbar-container small-sidebar">
+        <div class="upper-icons">
+          <div class="icon-div">
+            <span class="icon-watch"></span>
+          </div>
+          <div class="icon-div">
+            <span class="icon-start-vector"></span>
+          </div>
+          <div class="icon-div">
+            <span class="icon-userpng"></span>
+          </div>
+          <div class="icon-div active">
+            <span class="icon-Vector-Stroke-9"></span>
+          </div>
         </div>
-        <div class="icon-div">
-          <span class="icon-Vector-Stroke-9"></span>
-        </div>
-        <div class="icon-div">
-          <span class="icon-circle"></span>
-        </div>
-        <div class="icon-div">
-          <span class="icon-Vector-Stroke-4"></span>
-        </div>
-        <div class="icon-div">
-          <span class="icon-Vector-Stroke-10"></span>
-        </div>
-        <div class="icon-div">
-          <span class="icon-Vector-Stroke-5"></span>
-        </div>
-        <div class="icon-div">
-          <span class="icon-Vector-Stroke-11"></span>
-        </div>
-        <div class="icon-div">
-          <span class="icon-Vector-Stroke-6"></span>
+
+        <div class="down-icons">
+          <!-- <div class="icon-div">
+          <span class="icon-Vector-Stroke-12"></span>
+        </div> -->
         </div>
       </div>
 
-      <div class="down-icons">
-        <div class="icon-div">
+      <div class="navbar-container large-sidebar">
+        <div class="upper-icons">
+          <div class="icon-div">
+            <span class="icon-Vector-Stroke-9"></span> <p>Sales</p>
+          </div>
+          <div class="icon-div">
+            <span class="icon-Vector-Stroke-9"></span> <p>Customers</p>
+          </div>
+          <div class="icon-div active">
+            <span class="icon-Vector-Stroke-9"></span> <p>Expenses</p>
+          </div>
+        </div>
+
+        <div class="down-icons">
+          <!-- <div class="icon-div">
           <span class="icon-Vector-Stroke-12"></span>
+        </div> -->
         </div>
       </div>
     </div>

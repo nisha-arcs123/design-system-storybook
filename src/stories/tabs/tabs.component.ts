@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './tabs.component.scss',
 })
 export class TabsComponent {
-  @Input() inputClass: 'primary-tabs' = 'primary-tabs';
+  @Input() inputClass: 'primary-tabs' | 'secondary-tabs' | 'tertiary-tabs' = 'primary-tabs';
   @Input() heading = 'Default heading';
   selectedTab: string = 'desktop';
 

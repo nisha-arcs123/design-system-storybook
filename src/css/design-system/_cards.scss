@@ -10,17 +10,17 @@
   @include flex-box(na, na, na, na, 10);
 
   &.negative-color {
-    background-color: $negative-color-selected;
+    background-color: $negative-selected-color;
   }
   &.warning-color{
-    background-color: $warning-color-selected;
+    background-color: $warning-selected-color;
   }
   &.primary-color{
     background-color: $primary-selected-color;
   }
 
   &.positive-color{
-    background-color: $positive-color-selected;
+    background-color: $positive-selected-color;
   }
   .card-img-div {
     @include dimensions(36, 36);

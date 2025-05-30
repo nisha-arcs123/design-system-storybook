@@ -4,6 +4,7 @@
 @use "./fonts/medium" as *;
 @use "./foundation" as *;
 
+
 .inner-container {
   border: 1px solid #d0d4e4;
   padding: 32px;
@@ -14,120 +15,157 @@
     .color {
       @include dimensions(40, 40);
       &--primary {
-        background-color: #017bba;
+        background-color: $primary-color;
       }
       &--primary-hover {
-        background-color: #3397c5;
+        background-color: $primary-hover-color;
       }
       &--primary-selected {
-        background-color: #b3d8e9;
+        background-color: $primary-selected-color;
       }
       &--primary-selected-hover {
-        background-color: #80bedb;
+        background-color: $primary-selected-hover-color;
+      }
+      &--primary-highlighted{
+        background-color: $primary-highlighted-color;
       }
       &--positive {
-        background-color: #219c4b;
+        background-color: $positive-color;
       }
       &--positive-hover {
-        background-color: #089137;
+        background-color: $positive-hover-color;
       }
       &--positive-selected {
-        background-color: #84c89b;
+        background-color: $positive-selected-color;
       }
       &--positive-selected-hover {
-        background-color: #b5dec3;
+        background-color: $positive-selected-hover-color;
       }
       &--negative {
-        background-color: #d72300;
+        background-color: $negative-color;
       }
       &--negative-hover {
-        background-color: #c22000;
+        background-color: $negative-hover-color;
       }
       &--negative-selected {
-        background-color: #f3bdb3;
+        background-color: $negative-selected-color;
       }
       &--negative-selected-hover {
-        background-color: #efa799;
+        background-color: $negative-selected-hover-color;
       }
       &--warning {
-        background-color: #ffcb00;
+        background-color: $warning-color;
       }
       &--warning-hover {
-        background-color: #eaaa15;
+        background-color: $warning-hover-color;
       }
       &--warning-selected {
-        background-color: #fee6b9;
+        background-color: $warning-selected-color;
       }
       &--warning-selected-hover {
-        background-color: #fddea1;
+        background-color: $warning-selected-hover-color;
       }
       &--private {
-        background-color: #f65f7c;
+        background-color: $private-color;
       }
       &--shareable {
-        background-color: #8f5b8b;
+        background-color: $shareable-color;
       }
       &--inverted-background {
-        background-color: #060606;
+        background-color: $inverted-background-color;
       }
       &--icon {
-        background-color: #363636;
+        background-color: $icon-color;
+      }
+      &--icon-active{
+        background-color: $icon-active-color;
+      }
+      &--icon-secondary{
+        background-color: $icon-color-secondary;
+      }
+      &--icon-dark-bg{
+        background-color: $icon-color-on-dark-bg;
+      }
+      &--icon-fixed-light{
+        background-color: $fixed-light-color;
+        border: 1px solid #c3c6d4;
       }
       &--fixed-dark {
-        background-color: #1a1a1a;
+        background-color: $fixed-dark-color;
       }
       &--primary-background {
-        background-color: #ffffff;
+        background-color: $primary-background-color;
         border: 1px solid #c3c6d4;
       }
       &--secondary-background {
-        background-color: #f2f3f5;
+        background-color: $secondary-background-color;
       }
       &--primary-background-hover {
-        background-color: #e6f2f8;
+        background-color: $primary-background-hover-color;
       }
       &--inverted-background {
-        background-color: #060606;
+        background-color: $inverted-background-color;
       }
       &--grey-background {
-        background-color: #eeeeef;
+        background-color: $grey-background-color;
       }
+      &--light-background{
+        background-color: $light-background-color;
+      }
+      &--dark-gray-background{
+        background-color: $dark-grey-background;
+      }
+      &--dark-background{
+        background-color: $dark-background;
+      }
+      &--dark-hover-background{
+        background-color: $dark-background-hover;
+      }
+
       &--primary-text {
-        background-color: #202020;
+        background-color: $primary-text-color;
       }
       &--secondary-text {
-        background-color: #4d4d4d;
+        background-color: $secondary-text-color;
       }
       &--secondary-text-on-secondary {
-        background-color: #ffffff;
+        background-color: $secondary-text-on-secondary-color;
         border: 1px solid #c3c6d4;
       }
       &--text-color-on-inverted {
-        background-color: #ffffff;
+        background-color: $text-color-on-inverted;
         border: 1px solid #c3c6d4;
       }
       &--text-color-on-primary {
-        background-color: #ffffff;
+        background-color: $text-color-on-primary;
         border: 1px solid #c3c6d4;
       }
       &--disabled-text {
-        background-color: #989b9d;
+        background-color: $disabled-text-color;
       }
 
       &--placeholder {
-        background-color: #cbcdce;
+        background-color: $placeholder-color;
       }
 
       &--link {
-        background-color: #1a8abe;
+        background-color: $link-color;
       }
 
       &--ui-border {
-        background-color: #dddede;
+        background-color: $ui-border-color;
       }
 
       &--layout-border {
-        background-color: #cbcdce;
+        background-color: $layout-border-color;
+      }
+
+      &--light-border{
+        background-color: $light-border;
+      }
+
+      &--input-border{
+        background-color: $input-hover-color;
       }
     }
 
@@ -140,6 +178,7 @@
         margin: 0;
         @include typography($fs-large, na, $font-regular, #676879);
         span {
+          text-transform: lowercase;
           @include typography($fs-large, na, $font-medium, #323238);
         }
       }

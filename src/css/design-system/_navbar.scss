@@ -2,33 +2,65 @@
 @use "./foundation" as *;
 @use "./fonts/medium" as *;
 .navbar-container {
-  width: 48px;
   height: 100vh;
-  padding: 8px 4px;
   @include flex-box(column, space-between, center, na, na);
-  border-right: 1px solid #d0d4e4;
+  border: 1px solid #d0d4e4;
+
+  &.small-sidebar {
+    width: 48px;
+    padding: 4px;
+  }
+
+  &.large-sidebar {
+    width: 221px;
+    box-shadow: 16px 0 26px 0 #0000000f;
+    padding: 8px;
+
+    .upper-icons {
+    @include flex-box(column, start, center, na, 1);
+
+      .icon-div {
+        @include dimensions(32, 204);
+        @include flex-box(na, start, center, na, 11);
+        padding: 7px;
+        p {
+          @include typography(13, na, 500, #797979);
+        }
+
+        &.active {
+          background-color: #e6f1fd;
+          p {
+            @include typography(13, na, 500, #007db8);
+          }
+        }
+      }
+    }
+  }
+
   .upper-icons {
-    @include flex-box(column, na, na, na, 4);
+    @include flex-box(column, start, center, na, 4);
   }
   .icon-div {
-    border-radius: $border-radius-medium;
-    @include dimensions(38, 38);
+    border-radius: $border-radius-small;
+    @include dimensions(38, 40);
     @include flex-box(na, center, center, na, 8);
     background-color: #ffffff;
-    &:active {
-      background-color: #cce5ff;
-      .icon{
-        fill: blue;
+    &.active {
+      background-color: #e6f1fd;
+      p {
+        @include typography(13, na, 500, #007db8);
       }
     }
     &:hover {
-      background-color: #dcdfec;
-      span{
-        color: #323238;
+      background-color: #e6f1fd;
+      span {
+        &::before {
+          color: #323238;
+        }
       }
     }
 
-    span{
+    span {
       font-size: $fs-tertiary;
       color: #344563;
     }
