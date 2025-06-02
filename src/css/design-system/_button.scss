@@ -212,16 +212,28 @@
   }
 }
 
-// .squr-btn {
-//   padding: $vvs-p;
-//   border: none;
-//   outline: none;
-//   background-color: #ffffff;
-//   img {
-//     width: 100%;
-//     height: 100%;
-//   }
-// }
+.squr-btn {
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #ffffff;
+  @include dimensions(35, 35);
+  border-radius: 4px;
+  span {
+    @include dimensions(13, 13);
+    &::before{
+        color: #E9E9E9;
+      }
+  }
+  &:hover{
+    background-color: #F2F3F5;
+    span{
+      &::before{
+        color: #878A8C;
+      }
+    }
+  }
+}
 
 @keyframes spin {
   to {

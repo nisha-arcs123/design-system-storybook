@@ -17,12 +17,18 @@
     padding: 8px;
 
     .upper-icons {
-    @include flex-box(column, start, center, na, 1);
+      @include flex-box(column, start, center, na, 1);
 
       .icon-div {
         @include dimensions(32, 204);
         @include flex-box(na, start, center, na, 11);
         padding: 7px;
+
+        .tooltip-btn {
+          padding: 0;
+          margin: 0;
+          background-color: transparent;
+        }
         p {
           @include typography(13, na, 500, #797979);
         }
@@ -50,6 +56,11 @@
       p {
         @include typography(13, na, 500, #007db8);
       }
+    }
+    .tooltip-btn {
+      padding: 0;
+      margin: 0;
+      background-color: transparent;
     }
     &:hover {
       background-color: #e6f1fd;

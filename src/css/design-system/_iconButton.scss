@@ -40,6 +40,11 @@
     gap: 8px;
     &:hover {
       background-color: #dcdfec;
+      .header-icon {
+        &::before{
+          color: #676879;
+        }
+      }
     }
   }
 

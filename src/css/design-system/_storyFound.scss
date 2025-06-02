@@ -4,7 +4,6 @@
 @use "./fonts/medium" as *;
 @use "./foundation" as *;
 
-
 .inner-container {
   border: 1px solid #d0d4e4;
   padding: 32px;
@@ -26,7 +25,7 @@
       &--primary-selected-hover {
         background-color: $primary-selected-hover-color;
       }
-      &--primary-highlighted{
+      &--primary-highlighted {
         background-color: $primary-highlighted-color;
       }
       &--positive {
@@ -77,16 +76,16 @@
       &--icon {
         background-color: $icon-color;
       }
-      &--icon-active{
+      &--icon-active {
         background-color: $icon-active-color;
       }
-      &--icon-secondary{
+      &--icon-secondary {
         background-color: $icon-color-secondary;
       }
-      &--icon-dark-bg{
+      &--icon-dark-bg {
         background-color: $icon-color-on-dark-bg;
       }
-      &--icon-fixed-light{
+      &--icon-fixed-light {
         background-color: $fixed-light-color;
         border: 1px solid #c3c6d4;
       }
@@ -109,16 +108,16 @@
       &--grey-background {
         background-color: $grey-background-color;
       }
-      &--light-background{
+      &--light-background {
         background-color: $light-background-color;
       }
-      &--dark-gray-background{
+      &--dark-gray-background {
         background-color: $dark-grey-background;
       }
-      &--dark-background{
+      &--dark-background {
         background-color: $dark-background;
       }
-      &--dark-hover-background{
+      &--dark-hover-background {
         background-color: $dark-background-hover;
       }
 
@@ -160,11 +159,11 @@
         background-color: $layout-border-color;
       }
 
-      &--light-border{
+      &--light-border {
         background-color: $light-border;
       }
 
-      &--input-border{
+      &--input-border {
         background-color: $input-hover-color;
       }
     }
@@ -212,50 +211,97 @@
       .margin {
         width: 100px;
         background-color: #f4c3cb;
-        &--ml-1 {
+        &--my-1 {
           height: 1px;
         }
-        &--ml-2 {
+        &--my-2 {
           height: 2px;
         }
-        &--ml-4 {
+        &--my-4 {
           height: 4px;
         }
-        &--ml-8 {
+        &--my-8 {
           height: 8px;
         }
-        &--ml-12 {
+        &--my-12 {
           height: 12px;
         }
-        &--ml-16 {
+        &--my-16 {
           height: 16px;
         }
-        &--ml-20 {
+        &--my-20 {
           height: 20px;
         }
-        &--ml-24 {
+        &--my-24 {
           height: 24px;
         }
-        &--ml-32 {
+        &--my-32 {
           height: 32px;
         }
-        &--ml-40 {
+        &--my-40 {
           height: 40px;
         }
-        &--ml-46 {
+        &--my-46 {
           height: 46px;
         }
-        &--ml-48 {
+        &--my-48 {
           height: 48px;
         }
-        &--ml-64 {
+        &--my-64 {
           height: 64px;
         }
-        &--ml-80 {
+        &--my-80 {
           height: 80px;
         }
       }
 
+      .marginx {
+        height: 100px;
+        background-color: #f4c3cb;
+
+        &--mx-1 {
+          width: 1px;
+        }
+        &--mx-2 {
+          width: 2px;
+        }
+        &--mx-4 {
+          width: 4px;
+        }
+        &--mx-8 {
+          width: 8px;
+        }
+        &--mx-12 {
+          width: 12px;
+        }
+        &--mx-16 {
+          width: 16px;
+        }
+        &--mx-20 {
+          width: 20px;
+        }
+        &--mx-24 {
+          width: 24px;
+        }
+        &--mx-32 {
+          width: 32px;
+        }
+        &--mx-40 {
+          width: 40px;
+        }
+        &--mx-46 {
+          width: 46px;
+        }
+        &--mx-48 {
+          width: 48px;
+        }
+        &--mx-64 {
+          width: 64px;
+        }
+        &--mx-80 {
+          width: 80px;
+        }
+      }
       .box-txt {
         p {
           margin: 0;

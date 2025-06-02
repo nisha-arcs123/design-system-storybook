@@ -31,6 +31,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-left:before {
+  content: "\e95a";
+  color: #878a8c;
+}
+.icon-right:before {
+  content: "\e95b";
+  color: #e9e9e9;
+}
 .icon-start-vector:before {
   content: "\e956";
   color: #a3adba;
