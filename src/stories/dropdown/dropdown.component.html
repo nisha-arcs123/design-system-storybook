@@ -14,9 +14,18 @@
         </p>
       </div>
       <div class="containers">
-        <div ngbDropdown class="dropdown d-inline-block">
-          <label for="" class="toplabel-input">Hosting Location</label>
-          <button class="form-control" ngbDropdownToggle>
+        <div
+          ngbDropdown
+          class="d-inline-block dropdown-container"
+          #dropdown="ngbDropdown"
+        >
+          <label class="toplabel-input">Hosting Location</label>
+
+          <button
+            class="form-control"
+            ngbDropdownToggle
+            [attr.aria-expanded]="dropdown.isOpen()"
+          >
             {{ selectedItem || "Select Item" }}
           </button>
 
@@ -35,6 +44,7 @@
       </div>
     </div>
   </div>
+
   <div *ngSwitchCase="'drop-down-with-chips'">
     <div class="outer-container">
       <div class="heading">
@@ -50,7 +60,7 @@
         </p>
       </div>
       <div class="containers">
-        <div ngbDropdown class="dropdown d-inline-block">
+        <div ngbDropdown class="dropdown d-inline-block dropdown-container">
           <label for="" class="toplabel-input">Hosting Location</label>
           <button class="form-control" ngbDropdownToggle>
             <div class="chips chips--vs">
@@ -70,6 +80,68 @@
             </button>
             <button ngbDropdownItem (click)="selectItem('Hybrid')">
               Hybrid
+            </button>
+          </div>
+        </div>
+
+        <!-- Input reflecting the selected value -->
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'multiple-badges-chips'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          An accordion is a user interface (UI) pattern or component commonly
+          used in web design to organize and display content in a collapsible
+          and expandable manner. It's named after the musical instrument, as it
+          metaphorically behaves like the folds of an accordion, expanding and
+          collapsing as needed.
+        </p>
+      </div>
+      <div class="containers">
+        <div
+          ngbDropdown
+          class="d-inline-block multiple-dropdown-container"
+          #dropdown="ngbDropdown"
+        >
+          <label class="toplabel-input">Hosting Location</label>
+
+          <button
+            class="form-control d-flex align-items-center justify-content-between"
+            ngbDropdownToggle
+            [attr.aria-expanded]="dropdown.isOpen()"
+          >
+            <span class="d-flex flex-wrap">
+              <ng-container *ngIf="selectedItems.length; else placeholder">
+                <span
+                  *ngFor="let item of selectedItems"
+                  class="badge me-1"
+                >
+                 
+                <p> {{ item }}</p>
+                  <span class="icon-x cursor-pointer" (click)="removeItem(item)"
+                    ></span
+                  >
+                </span>
+              </ng-container>
+              <ng-template #placeholder>Select Items</ng-template>
+            </span>
+            <span class="arrow-icon ms-auto"></span>
+          </button>
+
+          <div ngbDropdownMenu>
+            <button
+              ngbDropdownItem
+              *ngFor="let item of items"
+              (click)="toggleItem(item)"
+              [class.active]="selectedItems.includes(item)"
+            >
+              {{ item }}
             </button>
           </div>
         </div>

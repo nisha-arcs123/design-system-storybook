@@ -48,3 +48,24 @@ export const DropDownWithChips:Story = {
     },
   },
 }
+
+
+
+
+export const MultipleBadges:Story={
+  args:{
+    inputClass:'multiple-badges-chips',
+    heading:'Multiple Bages',
+  },
+
+
+  parameters:{
+    docs:{
+      source:{
+        code:`
+        `.trim(),
+        language:'html',
+      }
+    }
+  }
+}

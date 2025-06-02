@@ -15,7 +15,7 @@ export default meta;
 type Story = StoryObj<SidebarsComponent>;
 
 
-export const RightSideBarOne: Story = {
+export const BlankSideBar: Story = {
   args: {
     inputClass: 'first-sidebar',
     heading: 'First Sidebar',
@@ -34,7 +34,7 @@ export const RightSideBarOne: Story = {
 
 
 
-export const RightSideBarTwo: Story = {
+export const FilledSidebar: Story = {
   args: {
     inputClass: 'second-sidebar',
     heading: 'Second Sidebar',

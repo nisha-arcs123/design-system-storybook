@@ -37,7 +37,7 @@ export class ButtonComponent {
   /** Optional click handler */
   @Output()
   onClick = new EventEmitter<Event>();
-
+isOpen = false;
   public get classes(): string[] {
     return [
       'storybook-button',
