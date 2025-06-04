@@ -118,15 +118,12 @@
           >
             <span class="d-flex flex-wrap">
               <ng-container *ngIf="selectedItems.length; else placeholder">
-                <span
-                  *ngFor="let item of selectedItems"
-                  class="badge me-1"
-                >
-                 
-                <p> {{ item }}</p>
-                  <span class="icon-x cursor-pointer" (click)="removeItem(item)"
-                    ></span
-                  >
+                <span *ngFor="let item of selectedItems" class="badge me-1">
+                  <p>{{ item }}</p>
+
+                  <div class="cross-sign cursor-pointer" (click)="removeItem(item)">
+                    <span class="icon-Icon-Stroke1"></span>
+                  </div>
                 </span>
               </ng-container>
               <ng-template #placeholder>Select Items</ng-template>

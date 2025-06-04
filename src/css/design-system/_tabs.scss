@@ -1,0 +1,48 @@
+@use "./mixins" as *;
+
+.nav {
+  &.nav-tabs {
+    gap: 12px;
+    .nav-item {
+      .nav-link {
+        padding: 8px;
+        @include typography(13, 22, 500, #676879);
+        &:hover {
+          border-color: transparent;
+        }
+        &.active {
+          border-color: transparent;
+          color: #323238;
+          border-bottom-color: #007db8;
+          border-bottom-width: 2px;
+        }
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  &.nav-button-tabs {
+    border-bottom: none;
+    gap: 0;
+    .nav-item-button {
+      .nav-link {
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        @include typography(13, 22, 500, #797979);
+        &.active {
+          border-color: transparent;
+          border-bottom-color: transparent;
+          @include typography(13, 22, 500, #007db8);
+          border-bottom-width: 0;
+          border-radius: 8px;
+          background-color: #e6f2f8;
+        }
+      }
+    }
+  }
+}

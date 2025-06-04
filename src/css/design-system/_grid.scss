@@ -2,7 +2,6 @@
 @use "./fonts/medium" as *;
 @use "./foundation" as *;
 
-
 .table-container {
   width: 100%;
   border-collapse: collapse;
@@ -17,12 +16,12 @@
         text-align: start;
         padding: 11px 8px;
         @include typography($fs-medium, na, $font-bold, #172b4d);
-        span{
+        span {
           font-size: $fs-xxl;
         }
       }
       .head {
-        @include flex-box(na,na,center,na,8);
+        @include flex-box(na, na, center, na, 8);
       }
     }
   }
@@ -59,7 +58,7 @@
         padding: 5px 8px;
         border-top: 1px solid #d0d4e4;
         text-wrap: nowrap;
-        @include typography($fs-medium,na,$font-medium,#676879);
+        @include typography($fs-medium, na, $font-medium, #676879);
         &.first-row {
           text-wrap: nowrap;
           @include flex-box(na, na, center, na, 8);
@@ -67,14 +66,91 @@
 
         .more-icon {
           border-radius: 50px;
-          @include dimensions(28,28);
-          @include flex-box(na,center,center,na,na);
+          @include dimensions(28, 28);
+          @include flex-box(na, center, center, na, na);
           &:hover {
             background-color: #dcdfec;
           }
         }
         &:hover {
           color: #172b4d;
+        }
+      }
+    }
+  }
+
+  &.ssp-table {
+    border: 1px solid #e5e6ec;
+    border-collapse: separate; // IMPORTANT!
+    border-spacing: 0;
+    border-radius: 4px;
+    overflow: hidden; // ensures rounded corners visually clip contents (like background)
+
+    thead {
+      background-color: #f2f3f5;
+      height: 37px;
+
+      tr {
+        th {
+          padding: 0;
+          @include typography(12, na, 600, #202020);
+
+          span {
+            padding-left: 8px;
+          }
+        }
+
+        .head {
+          display: block;
+          height: 37px;
+          padding: 10px 15px;
+        }
+
+        &:first-child {
+          th:first-child {
+            border-top-left-radius: 4px;
+          }
+          th:last-child {
+            border-top-right-radius: 4px;
+          }
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        height: 40px;
+
+        th {
+          @include typography(12, na, 500, #53585b);
+        }
+
+        td {
+          padding: 0;
+          border-radius: 0;
+
+          &.first-row {
+            height: 40px;
+            padding-left: 15px;
+          }
+        }
+
+        &:first-child {
+          td:first-child {
+            border-radius: 0;
+          }
+          td:last-child {
+            border-radius: 0;
+          }
+        }
+
+        &:last-child {
+          td:first-child {
+            border-bottom-left-radius: 4px;
+          }
+          td:last-child {
+            border-bottom-right-radius: 4px;
+          }
         }
       }
     }

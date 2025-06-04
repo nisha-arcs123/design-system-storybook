@@ -1,0 +1,33 @@
+<div [ngSwitch]="inputClass">
+  <div *ngSwitchCase="'alert'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A breadcrumb is a navigational aid commonly used in user interfaces,
+          particularly in websites and applications with hierarchical content
+          structures. It provides users with a trail of links, typically
+          displayed horizontally at the top of a page, showing the path from the
+          homepage to the current page or location within the site.
+        </p>
+      </div>
+
+      <div class="containers">
+        <div class="alert-list"> 
+          @for (alert of alerts; track alert) {
+            <ngb-alert
+              [type]="alert.type"
+              (closed)="close(alert)"
+              [dismissible]="true"
+            >
+              {{ alert.message }}
+            </ngb-alert>
+          } 
+          <button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

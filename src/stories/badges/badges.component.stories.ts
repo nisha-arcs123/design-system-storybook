@@ -27,6 +27,8 @@ export const SimpleBadges: Story ={
                     <span class="badge sm">6</span>
                     <span class="badge md">7</span>
                     <span class="badge badge--success md">8</span>
+                    <span class="badge badge--warning">9</span>
+                    <span class="badge badge--danger">0</span>
                 </div>
                 `.trim(),
                 language:`html`,

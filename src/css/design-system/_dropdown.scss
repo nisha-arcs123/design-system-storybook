@@ -198,10 +198,10 @@
       padding: 4px;
       background-color: #f6f7fb;
       border-radius: $border-radius-small;
-      // gap: 4px;
       height: 22px;
-      // max-width: 90px; /* adjust as needed */
       overflow: hidden;
+      position: relative;
+
       p {
         @include typography(14, na, $font-medium, #676879);
         width: 100%;
@@ -209,27 +209,41 @@
         display: flex;
         align-items: center;
       }
-      span {
-        background-color: #ffffff;
+
+      .cross-sign {
         border-radius: 4px;
-        display: none;
+        padding: 4.5px;
+        width: 18px;
+        height: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        opacity: 0;
+        position: absolute;
+        right: 4px;
+        span {
+          font-size: 9px;
+
+          &:hover {
+            transform: rotate(90deg);
+            cursor: pointer;
+          }
+        }
       }
 
       &:hover {
         background-color: #dcdfec;
 
         p {
-          flex: 1 1 auto;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
-          padding-right: 0.5rem;
+          padding: 0 0.5rem 0 0;
         }
-        span {
-          display: flex;
-          transition: display 0.2s ease-in;
-          flex-shrink: 0;
-          cursor: pointer;
+
+        .cross-sign {
+          opacity: 1;
         }
       }
     }

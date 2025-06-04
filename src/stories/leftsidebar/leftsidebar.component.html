@@ -1,0 +1,107 @@
+<div [ngSwitch]="inputClass">
+  <div *ngSwitchCase="'left-side-bar-small'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A list is a basic data structure used to organize and manage a
+          collection of items. In user interfaces, lists are often displayed
+          visually to present information in an ordered or unordered format.
+          Lists are fundamental components in both web and application design,
+          used for various purposes such as navigation, data display, or options
+          selection.
+        </p>
+      </div>
+      <div class="containers">
+        <div class="leftsidebar-container small-sidebar">
+          <div class="upper-icons">
+            <div class="icon-div">
+              <button
+                type="button"
+                class="d-btn tooltip-btn"
+                placement="end"
+                ngbTooltip="Tooltip on end"
+              >
+                <span class="icon-watch"></span>
+              </button>
+            </div>
+            <div class="icon-div">
+              <button
+                type="button"
+                class="d-btn tooltip-btn"
+                placement="end"
+                ngbTooltip="Tooltip on end"
+              >
+                <span class="icon-start-vector"></span>
+              </button>
+            </div>
+            <div class="icon-div">
+              <button
+                type="button"
+                class="d-btn tooltip-btn"
+                placement="end"
+                ngbTooltip="Tooltip on end"
+              >
+                <span class="icon-userpng"></span>
+              </button>
+            </div>
+            <div class="icon-div active">
+              <button
+                type="button"
+                class="d-btn tooltip-btn"
+                placement="end"
+                ngbTooltip="Tooltip on end"
+              >
+                <span class="icon-Vector-Stroke-9"></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="down-icons">
+            <!-- <div class="icon-div">
+          <span class="icon-Vector-Stroke-12"></span>
+        </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'left-side-bar-large'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A list is a basic data structure used to organize and manage a
+          collection of items. In user interfaces, lists are often displayed
+          visually to present information in an ordered or unordered format.
+          Lists are fundamental components in both web and application design,
+          used for various purposes such as navigation, data display, or options
+          selection.
+        </p>
+      </div>
+      <div class="containers">
+        <div class="leftsidebar-container large-sidebar">
+          <div class="upper-icons">
+            <div class="icon-div">
+              <span class="icon-Vector-Stroke-21 icon--vs"></span>
+              <p>Sales</p>
+            </div>
+            <div class="icon-div">
+              <span class="icon-Vector-Stroke-21 icon--vs"></span>
+              <p>Customers</p>
+            </div>
+            <div class="icon-div active">
+              <span class="icon-Vector-Stroke-21 icon--vs"></span>
+              <p>Expenses</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,144 @@
+<div [ngSwitch]="inputClass">
+  <div *ngSwitchCase="'without-icon'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A breadcrumb is a navigational aid commonly used in user interfaces,
+          particularly in websites and applications with hierarchical content
+          structures. It provides users with a trail of links, typically
+          displayed horizontally at the top of a page, showing the path from the
+          homepage to the current page or location within the site.
+        </p>
+      </div>
+
+      <div class="containers">
+        <nav aria-label="breadcrumb" class="breadcrumb">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item">
+              <span class="back-slash">/</span><a href="#">Library</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <span class="back-slash">/</span>Data
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="containers">
+        <nav aria-label="breadcrumb" class="breadcrumb">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item">
+              <span class="icon-rightarrow"></span><a href="#">Library</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <span class="icon-rightarrow"></span>Data
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'with-icon'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A breadcrumb is a navigational aid commonly used in user interfaces,
+          particularly in websites and applications with hierarchical content
+          structures. It provides users with a trail of links, typically
+          displayed horizontally at the top of a page, showing the path from the
+          homepage to the current page or location within the site.
+        </p>
+      </div>
+
+      <div class="containers">
+        <nav aria-label="breadcrumb" class="breadcrumb">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+              <div class="star-bread">
+                <span class="icon-Vector-9 star"></span><a href="#">Home</a>
+              </div>
+            </li>
+            <li class="breadcrumb-item">
+              <span class="back-slash">/</span>
+              <div class="star-bread">
+                <span class="icon-Vector-9 star"></span> <a href="#">Library</a>
+              </div>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <span class="back-slash">/</span>
+              <div class="star-bread">
+                <span class="icon-Vector-9 star"></span>Data
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+      <div class="containers">
+        <nav aria-label="breadcrumb" class="breadcrumb">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+              <div class="star-bread">
+                <span class="icon-Vector-9 star"></span><a href="#">Home</a>
+              </div>
+            </li>
+            <li class="breadcrumb-item">
+              <span class="icon-rightarrow"></span>
+              <div class="star-bread">
+                <span class="icon-Vector-9 star"></span><a href="#">Library</a>
+              </div>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <span class="icon-rightarrow"></span>
+              <div class="star-bread">
+                <span class="icon-Vector-9 star"></span>Data
+              </div>
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'morebutton-icon'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A breadcrumb is a navigational aid commonly used in user interfaces,
+          particularly in websites and applications with hierarchical content
+          structures. It provides users with a trail of links, typically
+          displayed horizontally at the top of a page, showing the path from the
+          homepage to the current page or location within the site.
+        </p>
+      </div>
+
+      <div class="containers">
+        <nav aria-label="breadcrumb" class="breadcrumb">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item">
+              <button class="d-btn d-btn--circle white-bg-circle vs">
+                <span class="icon-threedots icon--more-vs"></span>
+              </button>
+              <a href="#" class="ml-12">Library</a>
+            </li>
+            <li class="breadcrumb-item active" aria-current="page">
+              <button class="d-btn d-btn--circle white-bg-circle vs">
+                <span class="icon-rightarrow icon--back-vs"></span></button
+              >Data
+            </li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+@use "./mixins" as *;
+
+.breadcrumb {
+  @include flex-box(na, na, center, na, na);
+  margin: 0;
+  .breadcrumb-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    @include flex-box(na, na, center, na, na);
+
+    .breadcrumb-item {
+      @include flex-box(na, na, center, na, na);
+
+      a {
+        text-decoration: none;
+        @include typography(14, 22, 400, #676879);
+      }
+
+      span {
+        float: left;
+        padding: 0 10px;
+        color: #676879;
+        &::before {
+          font-size: 18px;
+        }
+      }
+
+      .star-bread {
+        @include flex-box(na,na,center,na,na);
+        .star {
+          padding: 0;
+          padding-right: 5px;
+          padding-bottom: 5px;
+          &::before {
+            font-size: 16px;
+          }
+        }
+      }
+      &.active {
+        @include typography(14, 22, 400, #323238);
+      }
+      &::before {
+        content: none;
+        display: none;
+      }
+    }
+    .breadcrumb-item + .breadcrumb-item {
+      padding: 0;
+    }
+  }
+}

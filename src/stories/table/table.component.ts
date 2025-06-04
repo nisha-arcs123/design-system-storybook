@@ -9,5 +9,5 @@ import { Component,Input } from '@angular/core';
 })
 export class GridLayoutComponent {
  @Input() heading: string = 'Default Heading';
-  @Input() inputClass: 'table'  = 'table';
+  @Input() inputClass: 'table' | 'table-two' = 'table';
 }

@@ -1,0 +1,19 @@
+@use './mixins' as *;
+
+
+.alert{
+    box-shadow: 0 6px 20px 0 #0000002E;
+    border: 0;
+    border-radius: 4px;
+    padding: 14px;
+    margin-bottom: 36px;
+    @include typography(16,12,600,#FFFFFF);
+
+    &.fade{
+        opacity: 1;
+    }
+    &.alert-success{
+        background-color: #219C4B;
+        
+    }
+}

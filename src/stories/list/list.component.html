@@ -14,199 +14,252 @@
           selection.
         </p>
       </div>
-      <div class="second-container">
-        <div class="heading">
-          <h2>Simple List</h2>
-        </div>
-        <div class="containers">
-          <ul class="unordered-list">
-            <li class="list-item"><p>New List</p></li>
-            <li class="list-item"><p>Last Edit</p></li>
-          </ul>
-        </div>
+      <div class="containers">
+        <ul class="unordered-list">
+          <li class="list-item"><p>New List</p></li>
+          <li class="list-item"><p>Last Edit</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'icon-list'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A list is a basic data structure used to organize and manage a
+          collection of items. In user interfaces, lists are often displayed
+          visually to present information in an ordered or unordered format.
+          Lists are fundamental components in both web and application design,
+          used for various purposes such as navigation, data display, or options
+          selection.
+        </p>
       </div>
 
-      <div class="second-container">
-        <div class="heading">
-          <h2>Icon List</h2>
-        </div>
-        <div class="containers">
-          <ul class="unordered-list">
-            <li class="list-item">
-              <span class="icon-bothdirarr"></span>
-              <p>Single</p>
-            </li>
-            <li class="list-item">
-              <span class="icon-bothdirarr"></span>
-              <p>Double</p>
-            </li>
-            <li class="list-item">
-              <span class="icon-bothdirarr"></span>
-              <p>Triple</p>
-            </li>
-          </ul>
-        </div>
+      <div class="containers">
+        <ul class="unordered-list">
+          <li class="list-item">
+            <span class="icon-bothdirarr"></span>
+            <p>Single</p>
+          </li>
+          <li class="list-item">
+            <span class="icon-bothdirarr"></span>
+            <p>Double</p>
+          </li>
+          <li class="list-item">
+            <span class="icon-bothdirarr"></span>
+            <p>Triple</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'initials'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A list is a basic data structure used to organize and manage a
+          collection of items. In user interfaces, lists are often displayed
+          visually to present information in an ordered or unordered format.
+          Lists are fundamental components in both web and application design,
+          used for various purposes such as navigation, data display, or options
+          selection.
+        </p>
       </div>
 
-      <div class="second-container">
-        <div class="heading">
-          <h2>Initials</h2>
-        </div>
-        <div class="containers">
-          <ul class="unordered-list">
-            <li class="list-item">
+      <div class="containers">
+        <ul class="unordered-list">
+          <li class="list-item">
+            <div class="message-notify-container justify-content-start">
+              <button class="d-btn--circle dark-bg--purple vvs">S</button>
               <p>100660</p>
-            </li>
-            <li class="list-item">
-              <p>CW003479</p>
-            </li>
-            <li class="list-item">
-              <p>A21006875</p>
-            </li>
-            <li class="list-item">
-              <p>Z21006875</p>
-            </li>
-            <li class="list-item">
-              <p>EW003479</p>
-            </li>
-            <li class="list-item">
-              <p>100670</p>
-            </li>
-          </ul>
-
-          <ul class="unordered-list">
-            <li class="list-item">
-              <div class="message-notify-container">
-                <p>Erin O'leary</p>
-                <button class="d-btn d-btn--circle gray-bg-circle vs">
-                  2+
-                </button>
-              </div>
-            </li>
-            <li class="list-item">
-              <div class="message-notify-container">
-                <p>Will Ng</p>
-                <button class="d-btn d-btn--circle gray-bg-circle vs">
-                  2+
-                </button>
-              </div>
-            </li>
-            <li class="list-item">
-              <div class="message-notify-container">
-                <p>Kevin Atkin</p>
-                <button class="d-btn d-btn--circle gray-bg-circle vs">
-                  vs
-                </button>
-              </div>
-            </li>
-            <li class="list-item">
-              <div class="message-notify-container">
-                <p>Murali Kolli</p>
-                <button class="d-btn d-btn--circle gray-bg-circle vs">
-                  2+
-                </button>
-              </div>
-            </li>
-            <li class="list-item">
-              <div class="message-notify-container">
-                <p>Kanwar Singh</p>
-                <button class="d-btn d-btn--circle gray-bg-circle vs">
-                  2+
-                </button>
-              </div>
-            </li>
-            <li class="list-item">
-              <div class="message-notify-container">
-                <p>Sumit Debnath</p>
-                <button class="d-btn d-btn--circle gray-bg-circle vs">
-                  2+
-                </button>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div class="second-container">
-        <div class="heading">
-          <h2>Multi Select</h2>
-        </div>
-        <div class="containers">
-          <ul class="unordered-list search-list">
-            <div class="search-bar">
-              <span class="icon-Vector-12"></span>
-              <input type="text" placeholder="Search here..." />
             </div>
-            <li class="list-item">
-              <label class="custom-checkbox checkbox-vs">
-                <input type="checkbox" name="check1" />
-                <div class="checkbox-box">
-                  <div class="checkmark"></div>
-                </div>
-              </label>
-              <p>Name</p>
-            </li>
-            <li class="list-item">
-              <label class="custom-checkbox checkbox-vs">
-                <input type="checkbox" name="check1" />
-                <div class="checkbox-box">
-                  <div class="checkmark"></div>
-                </div>
-              </label>
-              <p>Aliases</p>
-            </li>
-            <li class="list-item">
-              <label class="custom-checkbox checkbox-vs">
-                <input type="checkbox" name="check1" />
-                <div class="checkbox-box">
-                  <div class="checkmark"></div>
-                </div>
-              </label>
-              <p>Life Cycle</p>
-            </li>
-            <li class="list-item">
-              <label class="custom-checkbox checkbox-vs">
-                <input type="checkbox" name="check1" />
-                <div class="checkbox-box">
-                  <div class="checkmark"></div>
-                </div>
-              </label>
-              <p>Description</p>
-            </li>
-            <li class="list-item">
-              <label class="custom-checkbox checkbox-vs">
-                <input type="checkbox" name="check1" />
-                <div class="checkbox-box">
-                  <div class="checkmark"></div>
-                </div>
-              </label>
-              <p>Product Manager(s)</p>
-            </li>
-            <li class="list-item">
-              <label class="custom-checkbox checkbox-vs">
-                <input type="checkbox" name="check1" />
-                <div class="checkbox-box">
-                  <div class="checkmark"></div>
-                </div>
-              </label>
-              <p>System Owner(s)</p>
-            </li>
-          </ul>
-        </div>
+          </li>
+          <li class="list-item">
+            <div class="message-notify-container justify-content-start">
+              <button class="d-btn--circle dark-bg--purple vvs">S</button>
+              <p>CW003479</p>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="message-notify-container justify-content-start">
+              <button class="d-btn--circle dark-bg--green vvs">A</button>
+              <p>A21006875</p>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="message-notify-container justify-content-start">
+              <button class="d-btn--circle dark-bg--red vvs">Z</button>
+              <p>Z21006875</p>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="message-notify-container justify-content-start">
+              <button class="d-btn--circle dark-bg--orange vvs">E</button>
+              <p>EW003479</p>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="message-notify-container justify-content-start">
+              <button class="d-btn--circle dark-bg--blue vvs">O</button>
+              <p>100670</p>
+            </div>
+          </li>
+        </ul>
+
+        <ul class="unordered-list">
+          <li class="list-item">
+            <div class="message-notify-container">
+              <p>Erin O'leary</p>
+              <button class="d-btn d-btn--circle gray-bg-circle vs">2+</button>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="message-notify-container">
+              <p>Will Ng</p>
+              <button class="d-btn d-btn--circle gray-bg-circle vs">2+</button>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="message-notify-container">
+              <p>Kevin Atkin</p>
+              <button class="d-btn d-btn--circle gray-bg-circle vs">vs</button>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="message-notify-container">
+              <p>Murali Kolli</p>
+              <button class="d-btn d-btn--circle gray-bg-circle vs">2+</button>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="message-notify-container">
+              <p>Kanwar Singh</p>
+              <button class="d-btn d-btn--circle gray-bg-circle vs">2+</button>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="message-notify-container">
+              <p>Sumit Debnath</p>
+              <button class="d-btn d-btn--circle gray-bg-circle vs">2+</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'multiselect'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A list is a basic data structure used to organize and manage a
+          collection of items. In user interfaces, lists are often displayed
+          visually to present information in an ordered or unordered format.
+          Lists are fundamental components in both web and application design,
+          used for various purposes such as navigation, data display, or options
+          selection.
+        </p>
       </div>
 
-      <div class="second-container">
-        <div class="heading">
-          <h2>Download</h2>
-        </div>
-        <div class="containers">
-          <ul class="unordered-list">
-           <li class="list-item">
-              <span class="icon-Vector"></span>
-              <p>Download </p>
-            </li>
-          </ul>
-        </div>
+      <div class="containers">
+        <ul class="unordered-list search-list">
+          <div class="search-bar">
+            <span class="icon-Vector-12"></span>
+            <input type="text" placeholder="Search here..." />
+          </div>
+          <li class="list-item">
+            <label class="custom-checkbox checkbox-vs">
+              <input type="checkbox" name="check1" />
+              <div class="checkbox-box">
+                <div class="checkmark"></div>
+              </div>
+            </label>
+            <p>Name</p>
+          </li>
+          <li class="list-item">
+            <label class="custom-checkbox checkbox-vs">
+              <input type="checkbox" name="check1" />
+              <div class="checkbox-box">
+                <div class="checkmark"></div>
+              </div>
+            </label>
+            <p>Aliases</p>
+          </li>
+          <li class="list-item">
+            <label class="custom-checkbox checkbox-vs">
+              <input type="checkbox" name="check1" />
+              <div class="checkbox-box">
+                <div class="checkmark"></div>
+              </div>
+            </label>
+            <p>Life Cycle</p>
+          </li>
+          <li class="list-item">
+            <label class="custom-checkbox checkbox-vs">
+              <input type="checkbox" name="check1" />
+              <div class="checkbox-box">
+                <div class="checkmark"></div>
+              </div>
+            </label>
+            <p>Description</p>
+          </li>
+          <li class="list-item">
+            <label class="custom-checkbox checkbox-vs">
+              <input type="checkbox" name="check1" />
+              <div class="checkbox-box">
+                <div class="checkmark"></div>
+              </div>
+            </label>
+            <p>Product Manager(s)</p>
+          </li>
+          <li class="list-item">
+            <label class="custom-checkbox checkbox-vs">
+              <input type="checkbox" name="check1" />
+              <div class="checkbox-box">
+                <div class="checkmark"></div>
+              </div>
+            </label>
+            <p>System Owner(s)</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'download'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A list is a basic data structure used to organize and manage a
+          collection of items. In user interfaces, lists are often displayed
+          visually to present information in an ordered or unordered format.
+          Lists are fundamental components in both web and application design,
+          used for various purposes such as navigation, data display, or options
+          selection.
+        </p>
+      </div>
+
+      <div class="containers">
+        <ul class="unordered-list">
+          <li class="list-item">
+            <span class="icon-Vector"></span>
+            <p>Download</p>
+          </li>
+        </ul>
       </div>
     </div>
   </div>

@@ -549,3 +549,252 @@ export const Table: Story = {
     },
   },
 };
+
+
+
+export const TableTwo: Story = {
+  args: {
+    inputClass: 'table-two',
+    heading: 'Table',
+  },
+
+  parameters: {
+    docs: {
+      source: {
+        code: `
+    <table class="table-container ssp-table">
+      <thead>
+        <tr>
+          <th class="head">Name</th>
+          <th>Aliases</th>
+          <th>Life Cycle</th>
+          <th>Description</th>
+          <th>Product Owner(s)</th>
+          <th>Product Manager(s)</th>
+          <th>System Owner(s)</th>
+          <th>
+            <span class="icon-Icon-Stroke-3 icon--more-sm"></span>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td class="first-row">
+            <button class="d-btn--circle dark-bg--purple vs">S</button>
+            SSPTEST10
+          </td>
+          <td>ssp</td>
+          <td>Decommissioned</td>
+          <td>desc</td>
+          <td>Aaliyah Mumin</td>
+          <td>N / A</td>
+          <td class="first-row p-0">Hiep Luong</td>
+          <td>
+            <button class="d-btn d-btn--circle white-bg-circle sm">
+              <span class="icon-threedots icon--more-sm"></span>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="first-row">
+            <button class="d-btn--circle dark-bg--red vs">A</button>
+            Audit Utopla
+          </td>
+          <td>na</td>
+          <td>real-time-inspection manag...</td>
+          <td>N / A</td>
+          <td>N / A</td>
+          <td>N / A</td>
+          <td class="first-row p-0">Joan Pritchett</td>
+          <td>
+            <button class="d-btn d-btn--circle white-bg-circle sm">
+              <span class="icon-threedots icon--more-sm"></span>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="first-row">
+            <button class="d-btn--circle dark-bg--green vs">W</button>
+            WDH Test 1
+          </td>
+          <td>wdh</td>
+          <td>Decommissioned</td>
+          <td>Description</td>
+          <td class="first-row p-0">
+            Aaliyah Mumin<button class="d-btn--circle light-bg--purple vs">
+              +1
+            </button>
+          </td>
+          <td>N / A</td>
+          <td>Ravi Kumar</td>
+          <td>
+            <button class="d-btn d-btn--circle white-bg-circle sm">
+              <span class="icon-threedots icon--more-sm"></span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row">
+            <button class="d-btn--circle dark-bg--orange vs">T</button>
+            Test application
+          </td>
+          <td>Test application</td>
+          <td>Decommissioned</td>
+          <td>Description</td>
+          <td>N / A</td>
+          <td>N / A</td>
+          <td class="first-row p-0">Aaliyah Bansal</td>
+          <td>
+            <button class="d-btn d-btn--circle white-bg-circle sm">
+              <span class="icon-threedots icon--more-sm"></span>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="first-row">
+            <button class="d-btn--circle dark-bg--brown vs">N</button>
+            New App
+          </td>
+          <td>N /A</td>
+          <td>Decommissioned</td>
+          <td>New app description</td>
+          <td>Arron Van Etten</td>
+          <td>N / A</td>
+          <td class="first-row p-0">
+            Aarohi Bhatt
+            <button class="d-btn--circle light-bg--purple vs">+2</button>
+          </td>
+          <td>
+            <button class="d-btn d-btn--circle white-bg-circle sm">
+              <span class="icon-threedots icon--more-sm"></span>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="first-row">
+            <button class="d-btn--circle dark-bg--green vs">I</button>
+            IAPP Test
+          </td>
+          <td>iapp</td>
+          <td>Decommissioned</td>
+          <td>api server</td>
+          <td>Aaliyah Mumin</td>
+          <td>Aaron Van Etten</td>
+          <td class="first-row p-0">Shawn Bauer</td>
+          <td>
+            <button class="d-btn d-btn--circle white-bg-circle sm">
+              <span class="icon-threedots icon--more-sm"></span>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="first-row">
+            <button class="d-btn--circle dark-bg--purple vs">W</button>
+            WDH Test 1
+          </td>
+          <td>wdh</td>
+          <td>Decommissioned</td>
+          <td>Description</td>
+          <td class="first-row p-0">
+            Aaliyah Mumin<button class="d-btn--circle light-bg--purple vs">
+              +1
+            </button>
+          </td>
+          <td>N / A</td>
+          <td>Ravi Kumar</td>
+          <td>
+            <button class="d-btn d-btn--circle white-bg-circle sm">
+              <span class="icon-threedots icon--more-sm"></span>
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="first-row">
+            <button class="d-btn--circle dark-bg--red vs">T</button>
+            Test application
+          </td>
+          <td>Test application</td>
+          <td>Decommissioned</td>
+          <td>Description</td>
+          <td>N / A</td>
+          <td>N / A</td>
+          <td class="first-row p-0">Aaliyah Bansal</td>
+          <td>
+            <button class="d-btn d-btn--circle white-bg-circle sm">
+              <span class="icon-threedots icon--more-sm"></span>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="first-row">
+            <button class="d-btn--circle dark-bg--brown vs">N</button>
+            New App
+          </td>
+          <td>N /A</td>
+          <td>Decommissioned</td>
+          <td>New app description</td>
+          <td>Arron Van Etten</td>
+          <td>N / A</td>
+          <td class="first-row p-0">
+            Aarohi Bhatt
+            <button class="d-btn--circle light-bg--purple vs">+2</button>
+          </td>
+          <td>
+            <button class="d-btn d-btn--circle white-bg-circle sm">
+              <span class="icon-threedots icon--more-sm"></span>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="first-row">
+            <button class="d-btn--circle dark-bg--orange vs">N</button>
+            New App
+          </td>
+          <td>N /A</td>
+          <td>Decommissioned</td>
+          <td>New app description</td>
+          <td>Arron Van Etten</td>
+          <td>N / A</td>
+          <td class="first-row p-0">
+            Aarohi Bhatt
+            <button class="d-btn--circle light-bg--purple vs">+2</button>
+          </td>
+          <td>
+            <button class="d-btn d-btn--circle white-bg-circle sm">
+              <span class="icon-threedots icon--more-sm"></span>
+            </button>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="first-row">
+            <button class="d-btn--circle dark-bg--green vs">I</button>
+            IAPP Test
+          </td>
+          <td>iapp</td>
+          <td>Decommissioned</td>
+          <td>api server</td>
+          <td>Aaliyah Mumin</td>
+          <td>Aaron Van Etten</td>
+          <td class="first-row p-0">Shawn Bauer</td>
+          <td>
+            <button class="d-btn d-btn--circle white-bg-circle sm">
+              <span class="icon-threedots icon--more-sm"></span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>`.trim(),
+        language: 'html',
+      },
+    },
+  },
+};

@@ -32,7 +32,7 @@
 
     .message-notify-container {
       @include flex-box(na, space-between, center, na, 8);
-      width: 130px;
+      width: 100%;
       p {
         @include typography(13, na, 400, #4d4d4d);
       }

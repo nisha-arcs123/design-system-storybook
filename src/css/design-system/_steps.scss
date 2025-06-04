@@ -11,17 +11,17 @@
       border: 1px solid #D0D4E4;
       background-color: white;
       transition: all 0.3s ease;
-      margin-top: $vvs-m;
-      @include dimensions(38,38);
+      // margin-top: $vvs-m;
+      // @include dimensions(38,38);
       @include flex-box(na,center,center,na,na);
       @include typography(16,na,700,#676879);
+      @include dimensions(54,54);
      
       &.active {
         background-color: #007bff;
         color: white;
         position: relative;
         margin-top: 0;
-         @include dimensions(54,54);
         &::before{
           content:"";
           border: 5px solid white;

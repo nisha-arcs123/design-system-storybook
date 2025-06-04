@@ -23,14 +23,26 @@ export const SimpleAvatar: Story = {
     docs: {
       source: {
         code: `       
-      <div class="containers">
+        <div class="containers">
+        <button class="d-btn--circle light-bg--primary xl">CS</button>
+        <button class="d-btn--circle light-bg--primary xxl">CS</button>
         <button class="d-btn--circle light-bg--primary xxxl">CS</button>
       </div>
 
       <div class="containers">
+        <button class="d-btn--circle danger-bg-cicle sm">OS</button>
+        <button class="d-btn--circle danger-bg-cicle md">OS</button>
+        <button class="d-btn--circle danger-bg-cicle lg">OS</button>
+        <button class="d-btn--circle danger-bg-cicle xl">OS</button>
+      </div>
+
+      <div class="containers">
         <button class="d-btn--circle light-bg--danger vs">AI</button>
-        <button class="d-btn--circle light-bg--success vs">IA</button>
-        <button class="d-btn--circle light-bg--purple vs">IT</button>
+        <button class="d-btn--circle light-bg--success sm">IA</button>
+        <button class="d-btn--circle light-bg--purple md">IT</button>
+        <button class="d-btn--circle light-bg--danger lg">AI</button>
+        <button class="d-btn--circle light-bg--success xl">IA</button>
+        <button class="d-btn--circle light-bg--purple xxl">IT</button>
       </div>
       `.trim(),
         language: `html`,

@@ -137,6 +137,31 @@
         @include typography($fs-tertiary,na,$font-bolder,#ffffff);
       }
     }
+
+    &.dark-bg{
+        @include typography($fs-small,na,$font-medium,#ffffff);
+        &--purple{
+          background-color: #6242A5;
+        }
+        &--green{
+          background-color: #447B80;
+        }
+        &--blue{
+          background-color: #017BBA;
+        }
+        &--red{
+          background-color: #D83A52;
+        }
+        &--orange{
+          background-color: #FF8358;
+        }
+        &--brown{
+          background-color: #CA9A8B;
+        }
+    }
+    &.vvs{
+      @include dimensions(24,24);
+    }
     &.vs {
       @include dimensions(28,28);
     }

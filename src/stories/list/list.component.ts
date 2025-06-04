@@ -8,7 +8,7 @@ import { Component, Input } from '@angular/core';
   styleUrl: './list.component.scss'
 })
 export class ListComponent {
-@Input() inputClass: 'simple-list' = 'simple-list';
+@Input() inputClass: 'simple-list' | 'icon-list'  | 'initials' | 'multiselect' | 'download' = 'simple-list';
   @Input() heading = 'Default heading';
 }
 
