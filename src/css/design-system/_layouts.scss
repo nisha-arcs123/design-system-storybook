@@ -1,5 +1,8 @@
 
-
+@use "./mixins" as *;
+@use "./foundation" as *;
+@use "./theme/blue-theme" as *;
+@use "./fonts/medium" as *;
 .wrapper {
   width: 100%;
   display: flex;
@@ -106,7 +109,7 @@
         p {
           font-size: 13px;
           font-weight: 500;
-          color: #676879;
+          color: $secondary-text-color;
         }
 
         .d-btn {
@@ -318,14 +321,14 @@
           p {
             font-size: 12px;
             font-weight: 500;
-            color: #676879;
+            color: $secondary-text-color;
             margin: 0;
           }
         }
         .vertical-line {
           width: 1px;
           height: 17px;
-          background-color: #676879;
+          background-color: $secondary-text-color;
           transform: rotate(20deg);
         }
       }
@@ -334,7 +337,7 @@
         .d-btn {
           span {
             &::before {
-              color: #676879;
+              color: $secondary-text-color;
               transform: rotate(180deg);
             }
           }

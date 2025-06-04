@@ -22,7 +22,7 @@
         }
         .btn-close {
           @include dimensions(26, 26);
-          background-color: #ffffff;
+          background-color: $primary-background-color;
           border-radius: $border-radius-small;
           box-shadow: none;
           opacity: 1;
@@ -41,7 +41,12 @@
       padding-top: 0;
       .text-muted {
         margin-bottom: 28px;
-        @include typography($fs-medium, na, $font-medium, $secondary-text-color);
+        @include typography(
+          $fs-medium,
+          na,
+          $font-medium,
+          $secondary-text-color
+        );
       }
 
       .input-box {
@@ -51,19 +56,29 @@
         }
         .toplabel-input {
           border-radius: $border-radius-small;
-          background-color: #f2f3f5;
-          @include typography($fs-medium, na, $font-medium, $secondary-text-color);
+          background-color: $secondary-background-color;
+          @include typography(
+            $fs-medium,
+            na,
+            $font-medium,
+            $secondary-text-color
+          );
           padding: 3px 8px;
           height: 18px;
           display: inline-flex;
           align-items: center;
-          @include absolute(-8,na,na,8);
+          @include absolute(-8, na, na, 8);
         }
         .form-control {
-          border: 1px solid #dddede;
+          border: 1px solid $layout-border-color;
           border-radius: $border-radius-small;
           &::placeholder {
-            @include typography($fs-medium, na, $font-medium, $secondary-text-color);
+            @include typography(
+              $fs-medium,
+              na,
+              $font-medium,
+              $secondary-text-color
+            );
           }
           &:focus {
             box-shadow: none;
@@ -119,7 +134,12 @@
       padding: 0 $large-p;
 
       .popup-content {
-        @include typography($fs-medium, 20, $font-regular, $secondary-text-color);
+        @include typography(
+          $fs-medium,
+          20,
+          $font-regular,
+          $secondary-text-color
+        );
         margin: 0;
         margin-bottom: 12px;
       }
@@ -130,18 +150,19 @@
         gap: 12px 8px;
 
         .primary-colors {
-          border: 1px solid #c3c6d4;
+          border: 1px solid $ui-border-color;
           border-radius: $border-radius-small;
+          background-color: $primary-background-color;
           padding: 7px 8px;
           height: 32px;
           @include flex-box(na, na, center, na, 8);
 
           &.active {
-            background-color: #cce5ff;
-            border-color: #0073ea;
+            background-color: $primary-selected-color;
+            border-color: $primary-color;
 
             p {
-              color: #172b4d;
+              color: $primary-text-color;
             }
           }
 
@@ -155,7 +176,7 @@
       .light-dark {
         height: 38px;
         padding: 4px;
-        background-color:#F1F2F4;
+        background-color: $secondary-background-color;
         border-radius: $border-radius-small;
         display: flex;
         gap: 4px;
@@ -167,10 +188,15 @@
           height: 30px;
           border-radius: $border-radius-small;
           @include flex-box(na, center, center, na, 4);
-          @include typography($fs-medium, na, $font-medium, $secondary-text-color);
+          @include typography(
+            $fs-medium,
+            na,
+            $font-medium,
+            $secondary-text-color
+          );
 
           &.active {
-            background-color: #ffffff;
+            background-color: $primary-background-color;
           }
         }
       }
@@ -191,7 +217,12 @@
       }
 
       .popup-content {
-        @include typography($fs-medium, na, $font-regular, $secondary-text-color);
+        @include typography(
+          $fs-medium,
+          na,
+          $font-regular,
+          $secondary-text-color
+        );
         margin: 0;
         margin-bottom: 12px;
       }
@@ -199,7 +230,7 @@
       .light-dark {
         height: 38px;
         padding: 4px;
-        background-color:#F1F2F4;
+        background-color:  $secondary-background-color;
         border-radius: $border-radius-small;
         display: flex;
         gap: 4px;
@@ -210,7 +241,12 @@
           background-color: transparent;
           height: 30px;
           @include flex-box(na, center, center, na, 4);
-          @include typography($fs-medium, na, $font-medium, $secondary-text-color);
+          @include typography(
+            $fs-medium,
+            na,
+            $font-medium,
+            $secondary-text-color
+          );
           border-radius: $border-radius-small;
 
           &.active {

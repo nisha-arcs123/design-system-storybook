@@ -1,17 +1,18 @@
-@use "./fonts/medium" as *;
-@use "./foundation" as *;
 @use "./mixins" as *;
+@use "./foundation" as *;
+@use "./theme/blue-theme" as *;
+@use "./fonts/medium" as *;
 
 
 .tooltip-container {
-  border: 1px solid #d0d4e4;
+  border: 1px solid $layout-border-color;
   border-radius: $vvs-m;
   padding: $xl-p;
   padding-left: 350px;
   @include flex-box(column,na,na,na,20);
   .tooltip-btn {
     width: max-content;
-    @include typography($fs-large,na,$font-regular,#676879);
+    @include typography($fs-large,na,$font-regular,$secondary-text-color);
   }
   .tooltip-inner {
     padding: $vvs-p;
@@ -19,7 +20,7 @@
     min-width: 78px;
     max-width: 300px;
     text-align: start;
-    @include typography($fs-small,na,$font-medium,#ffffff);
+    @include typography($fs-small,na,$font-medium,$fixed-light-color);
   }
   .no-arrow + .tooltip .tooltip-arrow {
     display: none !important;

@@ -2,27 +2,29 @@
 @use "./storybook";
 @use "./foundation" as *;
 @use "./fonts/medium" as *;
+@use "./theme/blue-theme" as *;
+
 
 .custom-checkbox {
   cursor: pointer;
   padding: 6px $vvs-p;
   margin-right: $vvs-m;
   @include flex-box(na, na, center, na, 8);
-  @include typography($fs-medium, na, $font-medium, #676879);
+  @include typography($fs-medium, na, $font-medium, $secondary-text-color);
 
   input[type="checkbox"] {
     display: none;
   }
   &--outer-circle-border {
-    border: 1px solid #c3c6d4;
+    border: 1px solid $layout-border-color;
     border-radius: 100px;
   }
   &--outer-rectangle-border {
-    border: 1px solid #c3c6d4;
+    border: 1px solid $layout-border-color;
     border-radius: $border-radius-small;
   }
   .checkbox-box {
-    border: 1px solid #c3c6d4;
+    border: 1px solid $layout-border-color;
     border-radius: $border-radius-small;
     padding-bottom: 3px;
     transition: border-color 0.3s ease, background-color 0.3s ease;
@@ -33,16 +35,16 @@
     }
     .checkmark {
       @include dimensions(12, 6);
-      border-right: 2px solid #ffffff;
-      border-bottom: 2px solid #ffffff;
+      border-right: 2px solid $fixed-light-color;
+      border-bottom: 2px solid $fixed-light-color;
       transition: transform 0.2s ease;
       transform: rotate(0) scale(0);
     }
   }
 
   input[type="checkbox"]:checked ~ .checkbox-box {
-    border-color: #007bff;
-    background-color: #007bff;
+    border-color: $primary-color;
+    background-color: $primary-color;
   }
 
   input[type="checkbox"]:checked ~ .checkbox-box .checkmark {
@@ -51,29 +53,29 @@
 
   &.checkbox-green {
     input[type="checkbox"]:checked ~ .checkbox-box {
-      background-color: #1b5e20;
-      border-color: #1b5e20;
+      background-color: $positive-color;
+      border-color: $positive-color;
     }
   }
 
   &.checkbox-yellow {
     input[type="checkbox"]:checked ~ .checkbox-box {
-      background-color: #febe07;
-      border-color: #febe07;
+      background-color: $warning-color;
+      border-color: $warning-color;
     }
   }
 
   &.checkbox-red {
     input[type="checkbox"]:checked ~ .checkbox-box {
-      background-color: #b71c1c;
-      border-color: #b71c1c;
+      background-color: $negative-color;
+      border-color: $negative-color;
     }
   }
 
   &.checkbox-indigo {
     input[type="checkbox"]:checked ~ .checkbox-box {
-      background-color: #4a148c;
-      border-color: #4a148c;
+      background-color: $shareable-color;
+      border-color: $shareable-color;
     }
   }
 
@@ -142,19 +144,19 @@
 }
 
 .building-container-checkbox {
-  border: 1px solid #c3c6d4;
+  border: 1px solid $layout-border-color;
   border-radius: $border-radius-small;
   position: relative;
   padding: 28px;
   width: 274px;
   @include flex-box(na, na, center, na, 12);
-  @include typography($fs-large, na, $font-bold, #676879);
+  @include typography($fs-large, na, $font-bold, $secondary-text-color);
   span {
     font-size: 44px;
   }
   &:hover {
-    background-color: #cce5ff;
-    border: 1px soldi #cce5ff;
+    background-color: $primary-selected-color;
+    border: 1px solid $primary-selected-color;
   }
 
   label {
@@ -166,13 +168,13 @@
   cursor: pointer;
   padding: 6px 8px;
   @include flex-box(na, na, center, na, na);
-  @include typography($fs-medium, na, $font-medium, #676879);
+  @include typography($fs-medium, na, $font-medium, $secondary-text-color);
   &--outer-circle-border {
-    border: 1px solid #c3c6d4;
+    border: 1px solid $layout-border-color;
     border-radius: 100px;
   }
   &--outer-rectangle-border {
-    border: 1px solid #c3c6d4;
+    border: 1px solid $layout-border-color;
     border-radius: $border-radius-small;
   }
 
@@ -181,7 +183,7 @@
   }
 
   .radio-box {
-    border: 1px solid #c3c6d4;
+    border: 1px solid $layout-border-color;
     border-radius: 50%;
     margin-right: 8px;
     transition: border-color 0.3s ease;
@@ -191,7 +193,7 @@
 
   .radio-dot {
     @include dimensions(12, 12);
-    background-color: #007bff;
+    background-color: $primary-color;
     border-radius: 50%;
     transform: scale(0);
     transition: transform 0.3s ease;
@@ -202,7 +204,7 @@
   }
 
   input[type="radio"]:checked ~ .radio-box {
-    border-color: #007bff;
+    border-color: $primary-color;
   }
 
   &.radio-vs {
@@ -258,63 +260,24 @@
   }
 }
 
-.switchBox {
-  @include typography($fs-medium,na,$font-medium,#676879);
-  @include flex-box(na,na,center,na,4);
-  .switch {
-    position: relative;
-    display: inline-block;
-    @include dimensions(14, 24);
-
-    input {
-      display: none;
-    }
-
-    .slider {
-      cursor: pointer;
-      background-color: #a3adba;
-      transition: 0.4s;
-      border-radius: 100px;
-      @include absolute(0,0,0,0);
-
-      &::before {
-        content: "";
-        background-color: white;
-        transition: 0.4s;
-        border-radius: 100px;
-        @include dimensions(10,10);
-        @include absolute(na,na,2,2);
-      }
-    }
-
-    input:checked + .slider {
-      background-color: #2196f3;
-    }
-
-    input:checked + .slider::before {
-      transform: translateX(10px);
-    }
-  }
-}
-
 .datetime {
   padding: 12px;
-  border: 1px solid #c3c6d4;
+  border: 1px solid $layout-border-color;
   border-radius: $border-radius-small;
 
   &:focus {
     outline: none;
-    border: 1px solid #2196f3;
+    border: 1px solid $primary-color;
   }
 }
 
 .flatpickr-calendar {
-  color: #202020;
+  color: $primary-text-color;
 }
 
 .switchBox {
   @include flex-box(na, na, center, na, 4);
-  @include typography($fs-medium, na, $font-medium, #676879);
+  @include typography($fs-medium, na, $font-medium, $secondary-text-color);
   .switch {
     position: relative;
     display: inline-block;
@@ -325,13 +288,13 @@
 
     .slider {
       cursor: pointer;
-      background-color: #a3adba;
+      background-color: $grey-background-color;
       transition: 0.4s;
       border-radius: 100px;
       @include absolute(0, 0, 0, 0);
       &::before {
         content: "";
-        background-color: white;
+        background-color: $primary-background-color;
         transition: 0.4s;
         border-radius: 100px;
         @include dimensions(10, 10);
@@ -340,7 +303,7 @@
     }
 
     input:checked + .slider {
-      background-color: #2196f3;
+      background-color: $primary-color;
     }
 
     input:checked + .slider::before {
@@ -355,7 +318,7 @@
   font-family: sans-serif;
 
   .calendar-header {
-    background: #017bba;
+    background: $primary-color;
     color: white;
     padding: 16px 24px;
     .calendar-year {
@@ -379,7 +342,7 @@
     }
 
     .curMonth {
-      @include typography($fs-xl, na, $font-bolder, #202020);
+      @include typography($fs-xl, na, $font-bolder, $primary-text-color);
     }
   }
 
@@ -395,7 +358,7 @@
       background: none;
       font-weight: light;
       &.selected {
-        background-color: #007ac2;
+        background-color: $primary-selected-color;
         color: white;
         border-radius: 50%;
       }
@@ -413,7 +376,7 @@
     button {
       background-color: transparent;
       border: none;
-      @include typography($fs-large, na, $font-bolder, #017bba);
+      @include typography($fs-large, na, $font-bolder, $primary-color);
     }
   }
 }

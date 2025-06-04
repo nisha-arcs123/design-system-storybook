@@ -1,9 +1,11 @@
-@use './mixins' as *;
-@use './foundation' as *;
+@use "./mixins" as *;
+@use "./foundation" as *;
+@use "./theme/blue-theme" as *;
+@use "./fonts/medium" as *;
 
 .chips{
     border-radius: $border-radius-small;
-    background-color: #F2F3F5;
+    background-color: $secondary-background-color;
     padding:2px 3px;
     display: inline-flex;
     width: auto;
@@ -16,8 +18,8 @@
         height: 22px;
     }
     p{
-        font-size: 14px;
-        color: #4D4D4D;
+        font-size: $fs-large;
+        color: $secondary-text-color;
     }
 
     .cross-sign{
@@ -25,7 +27,7 @@
         padding: 4.5px;
         @include dimensions(18,18);
         @include flex-box(na,center,center,na,na);
-        background-color: #ffffff;
+        background-color: $primary-background-color;
         span{
             width: fit-content;
             box-sizing: content-box;

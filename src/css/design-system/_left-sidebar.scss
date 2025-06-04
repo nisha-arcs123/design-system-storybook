@@ -1,50 +1,49 @@
 @use "./mixins" as *;
 @use "./foundation" as *;
 @use "./fonts/medium" as *;
+@use "./theme/blue-theme" as *;
 .leftsidebar-container {
   height: 100vh;
   @include flex-box(column, space-between, center, na, na);
-  border: 1px solid #d0d4e4;
-
+  
   &.large-sidebar {
+    border: 1px solid $layout-border-color;
     width: 221px;
     box-shadow: 16px 0 26px 0 #0000000f;
     padding: 8px;
-
     .upper-icons {
       @include flex-box(column, start, center, na, 4);
-
       .icon-div {
         border-radius: $border-radius-small;
-        background-color: #ffffff;
+        background-color: $primary-background-color;
         @include dimensions(32, 204);
         @include flex-box(na, start, center, na, 11);
         padding: 7px;
 
         p {
           font-family: "Figtree", sans-serif;
-          @include typography(13, na, 500, #797979);
+          @include typography($fs-medium, na, $font-medium, $secondary-text-color);
         }
         .icon--vs {
           &::before {
-            font-size: 18px;
+            font-size: $fs-xxl;
           }
         }
 
         &.active {
-          background-color: #e6f1fd;
+          background-color: $primary-selected-color;
           .icon--vs {
             &::before {
-              color: #007db8;
+              color: $primary-color;
             }
           }
           p {
-            @include typography(13, na, 500, #007db8);
+            @include typography($fs-medium, na, $font-medium, $primary-color);
           }
         }
 
         &:hover {
-          background-color: #eeeeef;
+          background-color: $primary-background-hover-color;
         }
       }
     }
@@ -53,7 +52,7 @@
   &.small-sidebar {
     width: 48px;
     padding: 4px;
-
+    border-right: 1px solid $layout-border-color;
     .upper-icons {
       @include flex-box(column, start, center, na, 4);
 
@@ -61,11 +60,16 @@
         border-radius: $border-radius-small;
         @include dimensions(38, 40);
         @include flex-box(na, center, center, na, 8);
-        background-color: #ffffff;
+        background-color: $primary-background-color;
         &.active {
-          background-color: #e6f1fd;
+          background-color: $primary-selected-color;
           p {
-            @include typography(13, na, 500, #007db8);
+            @include typography($fs-medium, na, $font-medium, $primary-color);
+          }
+          span {
+            &::before {
+              color: $primary-color;
+            }
           }
         }
         .tooltip-btn {
@@ -74,17 +78,12 @@
           background-color: transparent;
         }
         &:hover {
-          background-color: #e6f1fd;
-          span {
-            &::before {
-              color: #323238;
-            }
-          }
+          background-color: $primary-background-hover-color;
         }
 
         span {
           font-size: $fs-tertiary;
-          color: #344563;
+          color: $primary-color;
         }
       }
     }

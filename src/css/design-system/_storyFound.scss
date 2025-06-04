@@ -5,7 +5,7 @@
 @use "./foundation" as *;
 
 .inner-container {
-  border: 1px solid #d0d4e4;
+  border: 1px solid $layout-border-color;
   padding: 32px;
   border-radius: $border-radius-medium;
   @include flex-box(column, na, na, na, 20);
@@ -87,14 +87,14 @@
       }
       &--icon-fixed-light {
         background-color: $fixed-light-color;
-        border: 1px solid #c3c6d4;
+        border: 1px solid $light-border;
       }
       &--fixed-dark {
         background-color: $fixed-dark-color;
       }
       &--primary-background {
         background-color: $primary-background-color;
-        border: 1px solid #c3c6d4;
+        border: 1px solid $light-border;
       }
       &--secondary-background {
         background-color: $secondary-background-color;
@@ -129,15 +129,15 @@
       }
       &--secondary-text-on-secondary {
         background-color: $secondary-text-on-secondary-color;
-        border: 1px solid #c3c6d4;
+        border: 1px solid $light-border;
       }
       &--text-color-on-inverted {
         background-color: $text-color-on-inverted;
-        border: 1px solid #c3c6d4;
+        border: 1px solid $light-border;
       }
       &--text-color-on-primary {
         background-color: $text-color-on-primary;
-        border: 1px solid #c3c6d4;
+        border: 1px solid $light-border;
       }
       &--disabled-text {
         background-color: $disabled-text-color;
@@ -171,14 +171,14 @@
     .color-text {
       h5 {
         margin: 0;
-        @include typography($fs-forth, na, $font-medium, #323238);
+        @include typography($fs-forth, na, $font-medium, $primary-text-color);
       }
       p {
         margin: 0;
-        @include typography($fs-large, na, $font-regular, #676879);
+        @include typography($fs-large, na, $font-regular, $secondary-text-color);
         span {
           text-transform: lowercase;
-          @include typography($fs-large, na, $font-medium, #323238);
+          @include typography($fs-large, na, $font-medium, $primary-text-color);
         }
       }
     }
@@ -190,7 +190,7 @@
     h2 {
       margin: 0;
       margin-bottom: 30px;
-      @include typography(24, na, $font-light, #323238);
+      @include typography(24, na, $font-light, $primary-text-color);
     }
   }
 }
@@ -200,7 +200,7 @@
     h2 {
       margin: 0;
       margin-bottom: 30px;
-      @include typography(24, na, $font-light, #323238);
+      @include typography(24, na, $font-light, $primary-text-color);
     }
   }
 
@@ -210,7 +210,7 @@
       @include flex-box(column, na, na, na, na);
       .margin {
         width: 100px;
-        background-color: #f4c3cb;
+        background-color: $negative-selected-color;
         &--my-1 {
           height: 1px;
         }
@@ -257,7 +257,7 @@
 
       .marginx {
         height: 100px;
-        background-color: #f4c3cb;
+        background-color: $negative-selected-color;
 
         &--mx-1 {
           width: 1px;
@@ -306,7 +306,7 @@
         p {
           margin: 0;
           margin-top: 4px;
-          @include typography($fs-large, na, $font-regular, #676879);
+          @include typography($fs-large, na, $font-regular, $secondary-text-color);
         }
       }
     }
@@ -318,12 +318,12 @@
   .border-div {
     @include flex-box(column, na, na, na, 12);
     .borders {
-      border: 2px solid #d83a52;
-      background-color: transparent;
+      border: 2px solid $negative-color;
+      background-color: $primary-background-color;
       box-sizing: border-box;
       @include dimensions(200, 200);
       @include flex-box(na, center, center, na, na);
-      @include typography($fs-xxl, na, $font-bolder, #323238);
+      @include typography($fs-xxl, na, $font-bolder, $primary-text-color);
       &--small {
         border-radius: $border-radius-small;
       }
@@ -342,9 +342,9 @@
       border-radius: $border-radius-small;
 
       .shadow-header {
-        border-bottom: 1px solid #dddede;
+        border-bottom: 1px solid $ui-border-color;
         padding-bottom: 4px;
-        @include typography($fs-small, na, $font-medium, #202020);
+        @include typography($fs-small, na, $font-medium, $primary-text-color);
       }
 
       .x-axis {
@@ -355,10 +355,9 @@
           margin: 0;
           font-size: $fs-small;
           font-weight: $font-regular;
-          color: #4d4d4d;
-          @include typography($fs-small, na, $font-regular, #4d4d4d);
+          @include typography($fs-small, na, $font-regular, $primary-text-color);
           span {
-            @include typography($fs-small, na, $font-regular, #202020);
+            @include typography($fs-small, na, $font-regular, $primary-text-color);
           }
         }
       }
@@ -376,11 +375,11 @@
 
     .border-text {
       span {
-        @include typography($fs-large, na, $font-medium, #323238);
+        @include typography($fs-large, na, $font-medium, $primary-text-color);
       }
       p {
         margin: 0;
-        @include typography($fs-large, na, $font-regular, #676879);
+        @include typography($fs-large, na, $font-regular, $secondary-text-color);
       }
     }
   }
@@ -396,19 +395,19 @@
       background: transparent;
       cursor: pointer;
       text-wrap: nowrap;
-      border-bottom: 3px solid #d9d9d9;
-      @include typography($fs-xxl, na, $font-regular, #676879);
+      border-bottom: 3px solid $layout-border-color;
+      @include typography($fs-xxl, na, $font-regular, $secondary-text-color);
       &.active {
-        border-bottom: 3px solid #017bba;
-        @include typography($fs-xxl, na, $font-bold, #323238);
+        border-bottom: 3px solid $primary-color;
+        @include typography($fs-xxl, na, $font-bold, $primary-text-color);
       }
     }
   }
 
   .tab-content {
     padding: 28px;
-    border: 1px solid #d0d4e4;
-    background: #ffffff;
+    border: 1px solid $layout-border-color;
+    background: $primary-background-color;
     border-radius: $border-radius-large;
 
     .typography-grid {
@@ -420,19 +419,19 @@
 
       .class-name {
         padding: 0 30px;
-        @include typography($fs-large, na, $font-regular, #676879);
+        @include typography($fs-large, na, $font-regular, $secondary-text-color);
       }
 
       .description {
         p {
           margin: 0;
-          @include typography($fs-large, na, $font-regular, #676879);
+          @include typography($fs-large, na, $font-regular, $secondary-text-color);
         }
       }
     }
     // laptop
     .heading-laptop {
-      color: #323238;
+      color: $primary-text-color;
       .primary-heading {
         @include typography(
           $fs-secondary,
@@ -584,7 +583,7 @@
 
     //   tablet
     .heading-tablet {
-      color: #323238;
+      color: $primary-text-color;
       .primary-heading {
         @include typography(
           $fs-forth,
@@ -733,7 +732,7 @@
     }
     //   mobile
     .heading-mobile {
-      color: #323238;
+      color: $primary-text-color;
       .primary-heading {
         @include typography($fs-xl, na, $font-extra-bold, $primary-text-color);
       }
@@ -889,8 +888,8 @@
 .labels {
   border-radius: $border-radius-small;
   padding: 4px;
-  background-color: #eeeeef;
+  background-color: $light-grey-background-color;
   height: 23px;
-  @include typography($fs-medium, na, $font-medium, #4d4d4d);
+  @include typography($fs-medium, na, $font-medium, $primary-text-color);
   @include flex-box(na, na, center, na, na);
 }

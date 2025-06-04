@@ -1,6 +1,7 @@
 @use "./mixins" as *;
-@use "./fonts/medium" as *;
 @use "./foundation" as *;
+@use "./theme/blue-theme" as *;
+@use "./fonts/medium" as *;
 
 .table-container {
   width: 100%;
@@ -58,7 +59,7 @@
         padding: 5px 8px;
         border-top: 1px solid #d0d4e4;
         text-wrap: nowrap;
-        @include typography($fs-medium, na, $font-medium, #676879);
+        @include typography($fs-medium, na, $font-medium, $secondary-text-color);
         &.first-row {
           text-wrap: nowrap;
           @include flex-box(na, na, center, na, 8);

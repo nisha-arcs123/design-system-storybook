@@ -1,4 +1,7 @@
 @use "./mixins" as *;
+@use "./foundation" as *;
+@use "./theme/blue-theme" as *;
+@use "./fonts/medium" as *;
 
 .breadcrumb {
   @include flex-box(na, na, center, na, na);
@@ -8,21 +11,20 @@
     padding: 0;
     margin: 0;
     @include flex-box(na, na, center, na, na);
-
     .breadcrumb-item {
       @include flex-box(na, na, center, na, na);
 
       a {
         text-decoration: none;
-        @include typography(14, 22, 400, #676879);
+        @include typography($fs-large, $lh-xxl, $font-regular, $secondary-text-color);
       }
 
       span {
         float: left;
         padding: 0 10px;
-        color: #676879;
+        color: $secondary-text-color;
         &::before {
-          font-size: 18px;
+          font-size: $fs-xxl;
         }
       }
 
@@ -33,12 +35,12 @@
           padding-right: 5px;
           padding-bottom: 5px;
           &::before {
-            font-size: 16px;
+            font-size: $fs-xl;
           }
         }
       }
       &.active {
-        @include typography(14, 22, 400, #323238);
+        @include typography($fs-large, $lh-xxl, $font-regular, $primary-text-color);
       }
       &::before {
         content: none;

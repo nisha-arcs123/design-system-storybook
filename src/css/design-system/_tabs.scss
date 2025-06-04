@@ -1,19 +1,21 @@
 @use "./mixins" as *;
-
+@use "./foundation" as *;
+@use "./theme/blue-theme" as *;
+@use "./fonts/medium" as *;
 .nav {
   &.nav-tabs {
     gap: 12px;
     .nav-item {
       .nav-link {
         padding: 8px;
-        @include typography(13, 22, 500, #676879);
+        @include typography($fs-medium, $lh-xxl, $font-medium, $secondary-text-color);
         &:hover {
           border-color: transparent;
         }
         &.active {
           border-color: transparent;
-          color: #323238;
-          border-bottom-color: #007db8;
+          color: $primary-text-color;
+          border-bottom-color: $primary-color;
           border-bottom-width: 2px;
         }
         &:focus {
@@ -29,18 +31,15 @@
     .nav-item-button {
       .nav-link {
         height: 32px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-        @include typography(13, 22, 500, #797979);
+        @include flex-box(na,center,center,na,8);
+        @include typography($fs-medium, $lh-xxl, $font-medium, $secondary-text-color);
         &.active {
           border-color: transparent;
           border-bottom-color: transparent;
-          @include typography(13, 22, 500, #007db8);
+          @include typography($fs-medium, $lh-xxl, $font-medium, $primary-color);
           border-bottom-width: 0;
           border-radius: 8px;
-          background-color: #e6f2f8;
+          background-color: $primary-selected-color;
         }
       }
     }

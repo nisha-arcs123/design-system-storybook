@@ -33,11 +33,11 @@
     @include flex-box(column, na, na, na, na);
     .text1 {
       margin: 0;
-      @include typography($fs-small, na, $font-medium, #202020);
+      @include typography($fs-small, na, $font-medium, $primary-text-color);
     }
 
     .text2 {
-      @include typography($fs-xl, 18, $font-bold, #53585b);
+      @include typography($fs-xl, 18, $font-bold, $secondary-text-color);
     }
   }
 }

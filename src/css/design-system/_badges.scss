@@ -9,7 +9,7 @@
   padding: $vvs-p;
   border-radius: 100px;
   background-color: $primary-color;
-  @include typography($fs-medium,1,$font-medium,#ffffff);
+  @include typography($fs-medium,1,$font-medium,$fixed-light-color);
   @include flex-box(na,center,center,na,na);
   &.sm {
     @include dimensions(18,18);

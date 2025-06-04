@@ -1,8 +1,6 @@
-@use "./theme/blue-theme" as *;
 @use "./mixins" as *;
+@use "./theme/blue-theme" as *;
 @use "./fonts/medium" as *;
-
-//same media query font size remove
 
 h1,
 .primary-heading {

@@ -1,5 +1,7 @@
 @use "./mixins" as *;
 @use "./foundation" as *;
+@use "./theme/blue-theme" as *;
+@use "./fonts/medium" as *;
 .outer-container {
   @include flex-box(column, na, na, na, 48);
 }
@@ -7,27 +9,27 @@
 .heading {
   h1 {
     margin: 0;
-    @include typography(28, 42, 800, #323238);
+    @include typography(28, 42, 800, $primary-text-color);
   }
   .line {
     height: 2px;
-    background-color: #d0d4e4;
+    background-color: $layout-border-color;
     width: 100%;
   }
   h2 {
     margin: 0;
     margin-top: 32px;
-    @include typography(24, 30, 300, #323238);
+    @include typography(24, 30, 300, $primary-text-color);
   }
   p {
     margin: 0;
     margin-top: 12px;
-    @include typography(16, 24, 400, #676879);
+    @include typography(16, 24, 400, $secondary-text-color);
   }
 }
 
 .containers {
-  border: 1px solid #d0d4e4;
+  border: 1px solid $light-border;
   padding: 32px;
   border-radius: $border-radius-medium;
   @include flex-box(na, na, na, na, 20);

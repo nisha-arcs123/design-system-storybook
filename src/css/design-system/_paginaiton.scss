@@ -1,5 +1,7 @@
 @use "./mixins" as *;
-
+@use "./foundation" as *;
+@use "./theme/blue-theme" as *;
+@use "./fonts/medium" as *;
 .pagination-wrapper {
   // border: 1px solid #53585B;
   border-radius: 4px;
@@ -26,7 +28,7 @@
   //     p {
   //       font-size: 13px;
   //       font-weight: 500;
-  //       color: #676879;
+  //       color: $secondary-text-color;
   //     }
   //     span {
   //       font-size: 2px;
@@ -52,14 +54,14 @@
     p {
       font-size: 13px;
       font-weight: 500;
-      color: #676879;
+      color: $secondary-text-color;
     }
     span {
       font-size: 8px;
     }
   }
   .text {
-    // color: #676879;
+    // color: $secondary-text-color;
     font-size: 12px;
     font-weight: 500;
     color: #53585b;

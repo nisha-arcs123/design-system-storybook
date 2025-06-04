@@ -1,7 +1,6 @@
-@use "sass:math";
-@use './mixins.scss' as *;
-
-
+@use "./mixins" as *;
+@use "./theme/blue-theme" as *;
+@use "./fonts/medium" as *;
 .m-auto{
   margin-right: auto;
   margin-left: auto;
