@@ -5,7 +5,7 @@
 .leftsidebar-container {
   height: 100vh;
   @include flex-box(column, space-between, center, na, na);
-  
+
   &.large-sidebar {
     border: 1px solid $layout-border-color;
     width: 221px;
@@ -22,7 +22,12 @@
 
         p {
           font-family: "Figtree", sans-serif;
-          @include typography($fs-medium, na, $font-medium, $secondary-text-color);
+          @include typography(
+            $fs-medium,
+            na,
+            $font-medium,
+            $secondary-text-color
+          );
         }
         .icon--vs {
           &::before {
@@ -32,6 +37,9 @@
 
         &.active {
           background-color: $primary-selected-color;
+          &:hover {
+            background-color: $primary-selected-color;
+          }
           .icon--vs {
             &::before {
               color: $primary-color;
@@ -63,6 +71,9 @@
         background-color: $primary-background-color;
         &.active {
           background-color: $primary-selected-color;
+          &:hover {
+            background-color: $primary-selected-color;
+          }
           p {
             @include typography($fs-medium, na, $font-medium, $primary-color);
           }

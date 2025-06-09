@@ -9,55 +9,8 @@
   border-radius: $border-radius-small;
   @include flex-box(na, na, center, nowrap, 10);
   @include typography($fs-large, na, $font-medium, na);
-  // border: 1px solid transparent;
   font-family: "Figtree", sans-serif;
   box-sizing: border-box;
-
-  // &--primary {
-  //   background-color: $primary-color;
-  //   color: $text-color-on-primary;
-  //   transition: all 0.2s ease-in;
-  //   &:hover {
-  //     background-color: $primary-hover-color;
-  //   }
-  // }
-
-  // &--secondary {
-  //   border: 1px solid $primary-color;
-  //   background-color:  $primary-background-color;
-  //   color: $primary-color;
-  //   transition: all 0.2s ease-in;
-
-  //   &:hover {
-  //     background-color:  $primary-hover-color;
-  //     color: $text-color-on-primary;
-  //     border: 1px solid  $primary-hover-color;
-  //   }
-  // }
-
-  // &--tertiary {
-  //   background-color: $primary-background-color;
-  //   transition: all 0.2s ease-in;
-  //   padding: $vvs-p;
-  //   gap: 8px;
-    
-  //   p {
-  //     @include typography($fs-medium, na, $font-medium, $secondary-text-color);
-  //   }
-  //   .header-icon {
-  //     font-size: $fs-xl;
-  //   }
-
-  //   &:hover {
-  //     background-color: $primary-background-hover-color;
-  //     transition: all 0.2s ease-in;
-  //     .header-icon {
-  //       &::before {
-  //         color: $secondary-text-color;
-  //       }
-  //     }
-  //   }
-  // }
 
   &--secondary-dotted {
     border: 2px dotted $primary-color ;
@@ -69,7 +22,7 @@
       border: 2px dotted $primary-hover-color;
     }
   }
-
+  
   &--circle {
     border-radius: 50px;
     background-color: transparent;

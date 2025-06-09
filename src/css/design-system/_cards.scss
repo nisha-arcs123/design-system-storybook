@@ -12,14 +12,14 @@
   &.negative-color {
     background-color: $negative-selected-color;
   }
-  &.warning-color{
+  &.warning-color {
     background-color: $warning-selected-color;
   }
-  &.primary-color{
+  &.primary-color {
     background-color: $primary-selected-color;
   }
 
-  &.positive-color{
+  &.positive-color {
     background-color: $positive-selected-color;
   }
   .card-img-div {
@@ -38,6 +38,99 @@
 
     .text2 {
       @include typography($fs-xl, 18, $font-bold, $secondary-text-color);
+    }
+  }
+}
+
+
+
+
+
+//tableau card
+.card{
+  border: 2px solid $light-border;
+  @include dimensions(192, na);
+  border-radius: $border-radius-medium;
+  width: 100%;
+  transition: all .25s ease-in-out;
+  transform: scale(1.01);
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  &.item-count-2 {
+    width: calc(50% - 8px);
+    height: 223px;
+    .card-img {
+      height: calc(100% - 44px);
+    }
+    .card-details{
+      height: 44px;
+    }
+  }
+  &.item-count-4 {
+    width: calc(25% - 3px);
+    height: 192px;
+    .card-img {
+      height: calc(100% - 44px);
+    }
+    .card-details{
+      height: 44px;
+    }
+  }
+
+  &.item-count-6 {
+    width: calc(16% - 2px);
+    height: 153px;
+    .card-img {
+      height: calc(100% - 26px);
+    }
+    .card-details{
+      height: 36px;
+    }
+  }
+
+  .card-img {
+    @include absolute(0, na, na, na);
+  }
+  .card-details {
+    width: 100%;
+    @include absolute(na, na, 0, na);
+    @include flex-box(na, space-between, center, na, na);
+    border-top: 1px solid $light-border;
+    padding: 0 7px;
+    background-color: $primary-background-color;
+    .card-name {
+      @include typography($fs-large, na, $font-medium, $primary-text-color);
+    }
+    .card-icons {
+      display: none;
+      transition: all 0.5s ease-in;
+    }
+  }
+
+  &:hover {
+    border: 2px solid $primary-color;
+    box-shadow: 0 12px 28px 0 #0000001f;
+    transform: scale(1);
+    .card-details {
+      .card-icons {
+        @include flex-box(na, space-between, center, na, 1);
+        button {
+          span {
+            &::before {
+              color: $icon-color; // Default icon color on hover of parent
+            }
+          }
+
+          &:hover {
+            span {
+              &::before {
+                color: $icon-active-color; // Icon color when button is hovered
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

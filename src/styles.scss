@@ -1,4 +1,5 @@
-@use './css/main.scss';
+
+@use './css/main.scss' as *;
 
 body {
   font-family: "Figtree", sans-serif !important;
@@ -31,6 +32,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-signout:before {
+  content: "\e95d";
+  color: #344563;
+}
 .icon-Vector-Stroke-21:before {
   content: "\e95c";
   color: #878a8c;
@@ -90,6 +95,10 @@ body {
 .icon-Vector-9:before {
   content: "\e94f";
   color: #676879;
+}
+.icon-paint:before {
+  content: "\e95e";
+  color: #344563;
 }
 .icon-sun2:before {
   content: "\e951";

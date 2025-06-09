@@ -12,6 +12,8 @@
   @include flex-box(column,na,na,na,20);
   .tooltip-btn {
     width: max-content;
+    z-index: 9;
+    position: relative;
     @include typography($fs-large,na,$font-regular,$secondary-text-color);
   }
   .tooltip-inner {

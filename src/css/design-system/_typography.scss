@@ -1,6 +1,22 @@
-@use "./mixins" as *;
 @use "./theme/blue-theme" as *;
 @use "./fonts/medium" as *;
+@use "./mixins" as *;
+@use "./foundation" as *;
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
 
 h1,
 .primary-heading {
@@ -63,25 +79,20 @@ h6,
 
 p,
 .normal-text {
-  @include typography(na, na, $font-regular, $primary-text-color);
+  @include typography($fs-large, $lh-xxl, $font-regular, $primary-text-color);
   margin: 0;
-
-  &.xl {
-    @include typography($fs-xl, $lh-forth, $font-regular, $primary-text-color);
+  @include max-width(1366px) {
+    font-size: $fs-medium;
+  }
+  @include max-width(768px) {
+    font-size: $fs-medium;
   }
 
+  @include max-width(375px) {
+    font-size: $fs-medium;
+  }
   &.large {
-    @include typography($fs-large, $lh-xxl, $font-regular, $primary-text-color);
-    @include max-width(1366px) {
-      font-size: $fs-medium;
-    }
-    @include max-width(768px) {
-      font-size: $fs-medium;
-    }
-
-    @include max-width(375px) {
-      font-size: $fs-medium;
-    }
+    @include typography($fs-xl, $lh-forth, $font-regular, $primary-text-color);
   }
 
   &.small {
@@ -91,20 +102,27 @@ p,
 
 a,
 .link-text {
+  text-decoration: none;
   text-transform: capitalize;
   @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
 
   &.large {
     font-size: $fs-large;
   }
-  &.small {
+  &.medium {
     font-size: $fs-medium;
   }
 }
 
 button,
 .common-btn {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
   text-transform: capitalize;
+  text-align: start;
+  padding: $zero-p;
   @include typography($fs-medium, na, $font-medium, $primary-text-color);
 
   &.small {
@@ -126,8 +144,10 @@ button,
 label,
 .label {
   text-transform: capitalize;
-  @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
-
+  @include typography($fs-medium, $lh-xxl, $font-medium, $primary-text-color);
+  @include max-width(1366px) {
+    font-size: $fs-small;
+  }
   &.x-large {
     font-size: $fs-xl;
     @include max-width(1366px) {
@@ -139,13 +159,6 @@ label,
     font-size: $fs-large;
     @include max-width(1366px) {
       font-size: $fs-medium;
-    }
-  }
-
-  &.medium {
-    font-size: $fs-medium;
-    @include max-width(1366px) {
-      font-size: $fs-small;
     }
   }
 }

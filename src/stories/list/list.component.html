@@ -263,4 +263,48 @@
       </div>
     </div>
   </div>
+
+  <div *ngSwitchCase="'signout'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          A list is a basic data structure used to organize and manage a
+          collection of items. In user interfaces, lists are often displayed
+          visually to present information in an ordered or unordered format.
+          Lists are fundamental components in both web and application design,
+          used for various purposes such as navigation, data display, or options
+          selection.
+        </p>
+      </div>
+
+      <div class="containers">
+        <ul class="unordered-list profile_edit">
+          <li class="list-item common-list">
+            <button class="d-btn--circle dark-bg--purple md">OS</button>
+            <div class="user-info">
+              <p class="large">Opinder Singh</p>
+              <p class="small">opinder.singhtele.us</p>
+            </div>
+          </li>
+          <li class="list-item common-list">
+            <button class="d-btn d-btn--tertiary vs">
+              <span class="icon-paint icon--vs"></span>
+            </button>
+
+            <p class="large">Themes & Font Size</p>
+          </li>
+          <div class="line"></div>
+          <li class="list-item common-list">
+            <button class="d-btn d-btn--tertiary vs">
+              <span class="icon-signout icon--vs"></span>
+            </button>
+            <p class="large">Log Out</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>

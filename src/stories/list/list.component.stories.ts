@@ -242,3 +242,46 @@ export const Download: Story = {
     },
   },
 };
+
+
+
+
+export const SignOut: Story = {
+  args: {
+    inputClass: 'signout',
+    heading: 'Signo Out',
+  },
+  parameters: {
+    docs: {
+      source: {
+        code: `
+       <ul class="unordered-list profile_edit">
+          <li class="list-item common-list">
+            <button class="d-btn--circle dark-bg--purple md">OS</button>
+            <div class="user-info">
+              <p class="large">Opinder Singh</p>
+              <p class="small">opinder.singhtele.us</p>
+            </div>
+          </li>
+          
+          <li class="list-item common-list">
+            <button class="d-btn d-btn--tertiary vs">
+              <span class="icon-paint icon--vs"></span>
+            </button>
+
+            <p class="large">Themes & Font Size</p>
+          </li>
+          <div class="line"></div>
+          <li class="list-item common-list">
+            <button class="d-btn d-btn--tertiary vs">
+              <span class="icon-signout icon--vs"></span>
+            </button>
+            <p class="large">Log Out</p>
+          </li>
+        </ul>
+        `.trim(),
+        language: 'html',
+      },
+    },
+  },
+};

@@ -12,53 +12,200 @@
           selections in a list format.
         </p>
       </div>
-      <div class="second-container">
-        <div class="heading">
-          <h2>Primary</h2>
+      <div class="containers">
+        <div class="card item-count-4">
+          <div class="card-img">
+            <img src="" alt="" />
+          </div>
+          <div class="card-details">
+            <p class="card-name">Overview</p>
+            <div class="card-icons">
+              <button
+                class="d-btn d-btn--circle white-bg-circle tooltip-btn sm"
+                placement="top"
+                ngbTooltip="Quick View"
+              >
+                <span class="icon-expand-01 icon--vs"></span>
+              </button>
+
+              <button
+                class="d-btn d-btn--circle white-bg-circle tooltip-btn sm"
+                placement="top"
+                ngbTooltip="Tooltip on top lorem ispsum"
+              >
+                <span class="icon-alert-circle icon--vs"></span>
+              </button>
+
+              <button
+                class="d-btn d-btn--circle white-bg-circle tooltip-btn sm"
+                placement="top"
+                ngbTooltip="Favorite"
+              >
+                <span class="icon-start-vector icon--vs"></span>
+              </button>
+            </div>
+          </div>
         </div>
 
-        <div class="containers">
-          <div class="cards-container negative-color">
-            <div class="card-img-div">
-              <span class="icon-Close-Square"></span>
-            </div>
-            <div class="card-text-div">
-              <p class="text1">Invaild</p>
-              <p class="text2">55</p>
+        <div class="card item-count-4">
+          <div class="card-img">
+            <img src="" alt="" />
+          </div>
+          <div class="card-details">
+            <p class="card-name">Overview</p>
+            <div class="card-icons">
+              <button
+                class="d-btn d-btn--circle white-bg-circle tooltip-btn sm"
+                placement="top"
+                ngbTooltip="Quick View"
+              >
+                <span class="icon-expand-01 icon--vs"></span>
+              </button>
+
+              <button
+                class="d-btn d-btn--circle white-bg-circle tooltip-btn sm"
+                placement="top"
+                ngbTooltip="Tooltip on top lorem ispsum"
+              >
+                <span class="icon-alert-circle icon--vs"></span>
+              </button>
+
+              <button
+                class="d-btn d-btn--circle white-bg-circle tooltip-btn sm"
+                placement="top"
+                ngbTooltip="Favorite"
+              >
+                <span class="icon-start-vector icon--vs"></span>
+              </button>
             </div>
           </div>
+        </div>
 
+        <div class="card item-count-4">
+          <div class="card-img">
+            <img src="" alt="" />
+          </div>
+          <div class="card-details">
+            <p class="card-name">Overview</p>
+            <div class="card-icons">
+              <button
+                class="d-btn d-btn--circle white-bg-circle tooltip-btn sm"
+                placement="top"
+                ngbTooltip="Quick View"
+              >
+                <span class="icon-expand-01 icon--vs"></span>
+              </button>
 
-          <div class="cards-container warning-color">
-            <div class="card-img-div">
-              <span class="icon-timers"></span>
-            </div>
-            <div class="card-text-div">
-              <p class="text1">Not Started</p>
-              <p class="text2">1 Day</p>
+              <button
+                class="d-btn d-btn--circle white-bg-circle tooltip-btn sm"
+                placement="top"
+                ngbTooltip="Tooltip on top lorem ispsum"
+              >
+                <span class="icon-alert-circle icon--vs"></span>
+              </button>
+
+              <button
+                class="d-btn d-btn--circle white-bg-circle tooltip-btn sm"
+                placement="top"
+                ngbTooltip="Favorite"
+              >
+                <span class="icon-start-vector icon--vs"></span>
+              </button>
             </div>
           </div>
+        </div>
 
-
-          <div class="cards-container primary-color">
-            <div class="card-img-div">
-              <span class="icon-Time-Circle"></span>
-            </div>
-            <div class="card-text-div">
-              <p class="text1">In-progress</p>
-              <p class="text2">12 Day</p>
-            </div>
+        <div class="card item-count-4">
+          <div class="card-img">
+            <img src="" alt="" />
           </div>
 
+          <div class="card-details">
+            <p class="card-name">Overview</p>
 
-          <div class="cards-container positive-color">
-            <div class="card-img-div">
-              <span class="icon-Paper"></span>
+            <div class="card-icons">
+              <button
+                class="d-btn d-btn--circle white-bg-circle tooltip-btn sm"
+                placement="top"
+                ngbTooltip="Quick View"
+              >
+                <span class="icon-expand-01 icon--vs"></span>
+              </button>
+
+              <button
+                class="d-btn d-btn--circle white-bg-circle tooltip-btn sm"
+                placement="top"
+                ngbTooltip="Tooltip on top lorem ispsum"
+              >
+                <span class="icon-alert-circle icon--vs"></span>
+              </button>
+
+              <button
+                class="d-btn d-btn--circle white-bg-circle tooltip-btn sm"
+                placement="top"
+                ngbTooltip="Favorite"
+              >
+                <span class="icon-start-vector icon--vs"></span>
+              </button>
             </div>
-            <div class="card-text-div">
-              <p class="text1">Completed</p>
-              <p class="text2">5</p>
-            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div *ngSwitchCase="'secondary'">
+    <div class="outer-container">
+      <div class="heading">
+        <h1>{{ heading }}</h1>
+        <div class="line"></div>
+        <h2>Overview</h2>
+        <p>
+          Chips are a user interface component used to represent small pieces of
+          information or interactive elements in a compact and visually
+          appealing way. They are often used to display tags, contacts, or
+          selections in a list format.
+        </p>
+      </div>
+
+      <div class="containers">
+        <div class="cards-container negative-color">
+          <div class="card-img-div">
+            <span class="icon-Close-Square"></span>
+          </div>
+          <div class="card-text-div">
+            <p class="text1">Invaild</p>
+            <p class="text2">55</p>
+          </div>
+        </div>
+
+        <div class="cards-container warning-color">
+          <div class="card-img-div">
+            <span class="icon-timers"></span>
+          </div>
+          <div class="card-text-div">
+            <p class="text1">Not Started</p>
+            <p class="text2">1 Day</p>
+          </div>
+        </div>
+
+        <div class="cards-container primary-color">
+          <div class="card-img-div">
+            <span class="icon-Time-Circle"></span>
+          </div>
+          <div class="card-text-div">
+            <p class="text1">In-progress</p>
+            <p class="text2">12 Day</p>
+          </div>
+        </div>
+
+        <div class="cards-container positive-color">
+          <div class="card-img-div">
+            <span class="icon-Paper"></span>
+          </div>
+          <div class="card-text-div">
+            <p class="text1">Completed</p>
+            <p class="text2">5</p>
           </div>
         </div>
       </div>

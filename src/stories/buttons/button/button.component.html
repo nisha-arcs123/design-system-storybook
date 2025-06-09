@@ -87,18 +87,17 @@
       </div>
 
       <!-- tertiary button with img  -->
+
       <div class="containers">
+
         <button class="d-btn d-btn--tertiary sm">
           <span class="icon-expand-01-1 header-icon"></span>
           <p>Expand All</p>
         </button>
+
         <button class="d-btn d-btn--tertiary sm">
           <span class="icon-Frame-2610516 header-icon"></span>
           <p>Collapse All</p>
-        </button>
-        <button class="d-btn d-btn--tertiary sm">
-          <span class="icon-filter-funnel-01 header-icon"></span>
-          <p>Filter</p>
         </button>
 
         <div ngbDropdown class="d-inline-block nav-dropdown">
@@ -195,6 +194,37 @@
                 <button ngbDropdownItem>
                   <p>Updated date</p>
                   <span class="checkmark"></span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <button class="d-btn d-btn--tertiary sm">
+          <span class="icon-filter-funnel-01 header-icon"></span>
+          <p>Filter</p>
+        </button>
+
+         <div ngbDropdown class="d-inline-block nav-dropdown">
+          <button
+            type="button"
+            class="d-btn d-btn--tertiary sm"
+            id="dropdownBasic1"
+            ngbDropdownToggle
+          >
+            <p>Home</p>
+            <span class="arrow-icon"></span>
+          </button>
+          <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+            <ul>
+              <li>
+                <button ngbDropdownItem class="active">
+                  <p>Home</p>
+                </button>
+              </li>
+              <li>
+                <button ngbDropdownItem>
+                  <p>Personas</p>
                 </button>
               </li>
             </ul>

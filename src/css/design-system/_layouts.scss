@@ -1,25 +1,21 @@
-
 @use "./mixins" as *;
 @use "./foundation" as *;
 @use "./theme/blue-theme" as *;
 @use "./fonts/medium" as *;
+
 .wrapper {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  @include flex-box(column, na, na, na, na);
   .header {
     width: 100%;
     border: 1px solid black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     height: 80px;
-    padding: 16px;
+    padding: $small-p;
     border-bottom: 0;
+    @include flex-box(na, space-between, center, na, na);
+
     .logo {
-      color: #202020;
-      font-size: 18px;
-      font-weight: 800;
+      @include typography($fs-xxl, na, $font-extra-bold, $primary-text-color);
     }
   }
 
@@ -29,21 +25,17 @@
     height: 80vh;
     .sidebar {
       width: 150px;
-      padding: 16px;
+      padding: $small-p;
       border: 1px solid black;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-direction: column;
       border-right: 0;
+      @include flex-box(column, space-between, center, na, na);
     }
     .main-content {
       width: 100%;
-      padding: 16px;
-      display: flex;
-      gap: 16px;
-      flex-direction: column;
+      padding: $small-p;
       border: 1px solid black;
+      @include flex-box(column, na, na, na, 16);
+
       .subheader {
         border: 1px solid black;
         height: 60px;
@@ -59,11 +51,11 @@
         th {
           border: 1px solid black;
           height: 50px;
-          padding: 12px;
+          padding: $vs-p;
         }
         td {
           border: 1px solid black;
-          padding: 12px;
+          padding: $vs-p;
         }
       }
       .footer {
@@ -75,45 +67,39 @@
 }
 
 .pdf-wrapper {
-  width: 1278px;
-  height: 673px;
-  border-radius: 18px;
-  background-color: #ffffff;
+  @include dimensions(673, 1278);
+  border-radius: $border-radius-large;
+  background-color: $primary-background-color;
   margin: auto;
 
   .pdf-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 18px;
-    // background-color: #f2f2f2;
-    border-top-left-radius: 18px;
-    border-top-right-radius: 18px;
-    border-bottom: 1px solid #dbdbde;
+    padding: $small-p;
+    border-top-left-radius: $border-radius-large;
+    border-top-right-radius: $border-radius-large;
+    border-bottom: 1px solid $layout-border-color;
     height: 68px;
+    @include flex-box(na, space-between, center, na, na);
     .left {
-      font-size: 20px;
-      font-weight: 500;
-      color: #262626;
+      @include typography($fs-forth, na, $font-medium, $primary-text-color);
     }
 
     .right {
-      display: flex;
-      align-items: center;
-      justify-content: end;
-      gap: 5px;
+      @include flex-box(na, end, center, na, 5);
+
       .refresh-div {
-        display: flex;
-        align-items: center;
-        gap: 8px;
+        @include flex-box(na, na, center, na, 8);
+
         p {
-          font-size: 13px;
-          font-weight: 500;
-          color: $secondary-text-color;
+          @include typography(
+            $fs-medium,
+            na,
+            $font-medium,
+            $secondary-text-color
+          );
         }
 
         .d-btn {
-          padding: 0;
+          padding: $zero-p;
           &:hover {
             background-color: transparent;
           }
@@ -121,10 +107,9 @@
       }
 
       .line-div {
-        height: 32px;
-        width: 1px;
-        background-color: #dbdbde;
-        margin: 0 8px;
+        @include dimensions(32, 1);
+        background-color: $layout-border-color;
+        margin: $zero-m $vvs-m;
       }
 
       .dropdown .dropdown-toggle::after {
@@ -138,19 +123,17 @@
           }
         }
         .drop {
-          display: flex;
-          align-items: center;
-          gap: 8px;
+          @include flex-box(na, na, center, na, 8);
         }
       }
     }
   }
   .pdf-body {
     height: 568px;
-    padding: 18px;
-    background-color: #ffffff;
-    border-bottom-left-radius: 18px;
-    border-bottom-right-radius: 18px;
+    padding: $small-p;
+    background-color: $primary-background-color;
+    border-bottom-left-radius: $border-radius-large;
+    border-bottom-right-radius: $border-radius-large;
   }
 }
 
@@ -159,11 +142,6 @@
   width: 100%;
   height: 800px;
   .overley-colored-container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     background: linear-gradient(
       to bottom,
       #f1eaec 0%,
@@ -173,105 +151,98 @@
       #f4f5f6 100%
     );
     z-index: -1;
+    @include absolute(0, 0, 0, 0);
   }
   .recent-upper-container {
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
-    padding: 20px 16px;
+    padding: $medium-p $small-p;
     background-color: transparent;
+    @include flex-box(na, space-between, start, na, na);
     .txt-div {
       width: 55%;
       h4 {
-        font-size: 20px;
-        font-weight: 700;
-        color: #172b4d;
-        margin: 0;
-        margin-bottom: 10px;
+        @include typography($fs-forth, na, $font-bolder, $primary-text-color);
+        margin: $zero-m;
+        margin-bottom: $vvs-m;
       }
 
       p {
-        font-size: 13px;
-        font-weight: 400;
-        color: #444444;
-        margin: 0;
+        margin: $zero-m;
+        @include typography(
+          $fs-medium,
+          na,
+          $font-regular,
+          $secondary-text-color
+        );
       }
     }
 
     .close-btn {
-      position: absolute;
-      top: 1rem;
-      right: 1rem;
+      @include absolute(20px, 20px, 0, 0);
     }
   }
 
   .recent-bottom-container {
     width: 100%;
     height: calc(100% - 135px);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-box(column, center, center, na, na);
+
     .img-txt-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      @include flex-box(column, na, center, na, na);
+
       .img {
         width: fit-content;
       }
 
       .text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        @include flex-box(column, center, center, na, na);
+
         h4 {
-          font-size: 20px;
-          font-weight: 700;
-          color: #172b4d;
-          margin: 0;
-          margin-top: 21px;
-          margin-bottom: 10px;
+          @include typography($fs-forth, na, $font-bolder, $primary-text-color);
+          margin: $zero-m;
+          margin-top: $medium-m;
+          margin-bottom: $vvs-m;
         }
 
         p {
-          font-size: 13px;
-          font-weight: 400;
-          color: #444444;
-          margin: 0;
-          margin-bottom: 20px;
+          margin: $zero-m;
+          @include typography(
+            $fs-medium,
+            na,
+            $font-regular,
+            $secondary-text-color
+          );
+          margin-bottom: $medium-m;
           width: 80%;
           text-align: center;
         }
 
         button {
-          background-color: #0073ea;
           width: 116px;
-          padding: 0;
+          padding: $zero-p;
           position: relative;
           overflow: hidden;
-          display: inline-flex;
-          align-items: center;
-          justify-content: center;
           cursor: pointer;
+          @include flex-box(na, center, center, na, na);
 
           p {
-            margin: 0;
-            font-size: 13px;
-            font-weight: 400;
-            color: #ffffff;
+            margin: $zero-m;
             text-align: center;
             transition: transform 0.5s ease;
+            @include typography(
+              $fs-medium,
+              na,
+              $font-regular,
+              $text-color-on-primary
+            );
           }
 
           &::after {
             content: "\e900"; // IcoMoon icon code
             font-family: "IcoMoon";
-            font-size: 12px;
-            color: #ffffff;
-            position: absolute;
-            right: 0;
+            font-size: $fs-small;
+            color: $fixed-light-color;
             opacity: 0;
+            @include absolute(na, 0, na, na);
             transform: translateX(-20px);
             transition: opacity 0.5s ease, transform 0.5s ease;
           }
@@ -293,7 +264,7 @@
 }
 
 .reports-container {
-  background-color: #f1f1f1;
+  background-color: $secondary-background-color;
 
   .upper-report {
     &.show {
@@ -303,31 +274,29 @@
       display: none;
     }
     .breadcrumb-section {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
       height: 38px;
-      padding: 0 16px;
+      padding: $zero-p $small-p;
+      @include flex-box(na, space-between, center, na, na);
       border-bottom: 1px solid #d0d4e4;
       .breadcumb {
-        display: flex;
-        align-items: center;
-        gap: 8px;
+        @include flex-box(na, na, center, na, 8);
+
         .bread {
-          display: flex;
-          align-items: center;
-          gap: 4px;
           height: 32px;
+          @include flex-box(na, na, center, na, 4);
+
           p {
-            font-size: 12px;
-            font-weight: 500;
-            color: $secondary-text-color;
-            margin: 0;
+            margin: $zero-m;
+            @include typography(
+              $fs-small,
+              na,
+              $font-medium,
+              $secondary-text-color
+            );
           }
         }
         .vertical-line {
-          width: 1px;
-          height: 17px;
+          @include dimensions(17, 1);
           background-color: $secondary-text-color;
           transform: rotate(20deg);
         }
@@ -350,59 +319,67 @@
     }
 
     .reports-section {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 16px;
+      @include flex-box(na, na, center, na, 8);
+      padding: $vvs-p $small-p;
       .report-heading {
-        font-size: 20px;
-        font-weight: 600;
-        color: #000000;
-        margin: 0;
+        @include typography($fs-forth, na, $font-bold, $primary-text-color);
+        margin: $zero-m;
       }
     }
   }
   .overview-section {
     height: 38px;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    padding: $vvs-p $small-p;
+    background-color: $primary-background-color;
+    @include flex-box(na, space-between, center, na, na);
 
     .overview-left {
-      display: flex;
-      align-items: center;
+      @include flex-box(na, na, center, na, na);
 
       .overview {
-        padding: 0 0 0 11px;
-        border-bottom: 2px solid #0073ea;
-        display: flex;
-        align-items: center;
+        padding-left: $vvs-p;
+        border-bottom: 2px solid transparent;
         height: 38px;
+        @include flex-box(na, na, center, na, na);
+
         .overview-text {
-          width: 75px;
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
-          font-size: 14px;
-          font-weight: 500;
-          color: #000000;
-          margin: 0;
+          transition: all .5s ease;
+          @include typography(
+            $fs-large,
+            na,
+            $font-medium,
+            $secondary-text-color
+          );
+          margin: $zero-m;
         }
         .cross-iconHover {
           display: none;
           flex-shrink: 0;
           background-color: transparent;
-          padding: 0;
+          padding: $zero-p;
           height: 22px;
+          transition: all .5s ease;
           .md {
             height: 0;
           }
         }
 
         &:hover {
+          border-color: $primary-color;
           .overview-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             width: 50px;
+            @include typography(
+              $fs-large,
+              na,
+              $font-medium,
+              $primary-text-color
+            );
           }
           .cross-iconHover {
             display: inline;
@@ -416,18 +393,18 @@
   }
 
   .executive-container {
-    padding: 16px;
+    padding: $small-p;
     width: 100%;
     height: 100%;
     overflow: hidden;
 
     .img-container {
       border: 1px solid #d0d4e4;
-      border-radius: 8px;
+      border-radius: $border-radius-medium;
       width: 100%;
       height: 100%;
       img {
-        border-radius: 8px;
+        border-radius: $border-radius-medium;
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -435,4 +412,3 @@
     }
   }
 }
-

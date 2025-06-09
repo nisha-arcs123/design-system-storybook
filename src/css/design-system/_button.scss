@@ -5,7 +5,7 @@
 @use "./foundation" as *;
 
 .d-btn {
-  padding: $vvs-p $small-p;
+  // padding: $vvs-p $small-p;
   border-radius: $border-radius-small;
   @include typography($fs-large, na, $font-medium, na);
   @include flex-box(na, center, center, nowrap, 10);
@@ -14,7 +14,6 @@
   box-sizing: border-box;
   margin: 0;
 
-
   &.vs {
     font-size: $fs-small;
     padding: $zero-p $vs-p;
@@ -22,7 +21,7 @@
   }
   &.sm {
     font-size: $fs-medium;
-    padding: 0 $small-p;
+    // padding: 0 $small-p;
     @include dimensions($btn-sm-size, na);
   }
   &.md {
@@ -48,7 +47,7 @@
 
   &--primary {
     background-color: $primary-color;
-    color:$text-color-on-primary;
+    color: $text-color-on-primary;
     transition: all 0.2s ease-in;
     &:hover {
       background-color: $primary-hover-color;
@@ -62,59 +61,63 @@
     transition: all 0.2s ease-in;
     &:hover {
       background-color: $primary-hover-color;
-      color:$text-color-on-primary;
+      color: $text-color-on-primary;
       border: 1px solid $primary-hover-color;
     }
   }
 
   &--tertiary {
-    background-color: $primary-background-color;
+    background-color: transparent;
     transition: all 0.2s ease-in;
     padding: $vvs-p;
     gap: 8px;
-    
     p {
       @include typography($fs-medium, na, $font-medium, $secondary-text-color);
     }
     .header-icon {
-      font-size: $fs-xl;
+      &::before {
+        color: $icon-color-secondary;
+        font-size: $fs-xl;
+      }
     }
 
     &:hover {
       background-color: $primary-background-hover-color;
       transition: all 0.2s ease-in;
+      p {
+        color: $primary-text-color;
+      }
       .header-icon {
         &::before {
-          color: $secondary-text-color;
+          color: $icon-active-color;
         }
       }
     }
   }
 
   &--link {
-    background-color: $primary-background-color;
+    background-color: transparent;
     color: $primary-color;
     cursor: pointer;
     transition: all 0.2s ease-in;
     &:hover {
-      color:$primary-hover-color;
+      color: $primary-hover-color;
     }
   }
 
-
   &--success {
-    background-color:$positive-color;
-    color:  $fixed-light-color;
+    background-color: $positive-color;
+    color: $fixed-light-color;
   }
 
   &--danger {
     background-color: $negative-color;
-    color:  $fixed-light-color;
+    color: $fixed-light-color;
   }
 
   &--primary-disable {
     background-color: $primary-color;
-    color:  $fixed-light-color;
+    color: $fixed-light-color;
     opacity: 0.5;
     cursor: not-allowed;
   }
@@ -143,7 +146,7 @@
     .loading {
       @include dimensions(16, 16);
       border: 3px solid #d3d3d3;
-      border-top: 3px solid  $fixed-light-color;
+      border-top: 3px solid $fixed-light-color;
       border-radius: 50%;
       animation: spin 0.8s linear infinite;
       animation-play-state: running;
@@ -228,14 +231,14 @@
   border-radius: 4px;
   span {
     @include dimensions(13, 13);
-    &::before{
-        color: $icon-color-on-dark-bg;
-      }
+    &::before {
+      color: $icon-color-on-dark-bg;
+    }
   }
-  &:hover{
+  &:hover {
     background-color: $secondary-background-color;
-    span{
-      &::before{
+    span {
+      &::before {
         color: $icon-color-secondary;
       }
     }

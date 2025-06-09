@@ -51,12 +51,15 @@
         }
       }
       .d-btn {
+        padding: 8px;
         p,
+        
         .excel {
           @include typography(na,na,$font-medium,$secondary-text-color);
           @include flex-box(na,na,center,na,8);
           @include max-width(1096) {
             display: none;
+            margin: 0;
           }
         }
         &--primary {
