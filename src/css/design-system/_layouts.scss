@@ -112,9 +112,20 @@
         margin: $zero-m $vvs-m;
       }
 
-      .dropdown .dropdown-toggle::after {
-        content: "";
-        display: none;
+      .dropdown {
+        .dropdown-menu{
+          ul{
+            margin: $zero-m;
+            padding: $zero-p;
+            li{
+              list-style-type: none;
+            }
+          }
+        }
+        .dropdown-toggle::after {
+          content: "";
+          display: none;
+        }
       }
       .dropdown .dropdown-menu.show ul li .dropdown-item {
         span {
@@ -346,7 +357,7 @@
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
-          transition: all .5s ease;
+          transition: all 0.5s ease;
           @include typography(
             $fs-large,
             na,
@@ -361,7 +372,7 @@
           background-color: transparent;
           padding: $zero-p;
           height: 22px;
-          transition: all .5s ease;
+          transition: all 0.5s ease;
           .md {
             height: 0;
           }
@@ -399,7 +410,7 @@
     overflow: hidden;
 
     .img-container {
-      border: 1px solid #d0d4e4;
+      border: 1px solid $layout-border-color;
       border-radius: $border-radius-medium;
       width: 100%;
       height: 100%;

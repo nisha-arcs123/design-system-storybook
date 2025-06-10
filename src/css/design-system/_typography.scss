@@ -21,7 +21,7 @@ h6 {
 h1,
 .primary-heading {
   text-transform: capitalize;
-  @include typography($fs-primary, na, $font-extra-bold, $primary-text-color);
+  @include typography($fs-primary, $lh-primary, $font-extra-bold, $primary-text-color);
   @include max-width(1366px) {
     font-size: $fs-secondary;
   }
@@ -166,11 +166,7 @@ label,
 span,
 .caption {
   text-transform: capitalize;
-  @include typography(na, $lh-xl, na, $primary-text-color);
-
-  &.medium {
-    @include typography($fs-small, $lh-xl, $font-medium, $primary-text-color);
-  }
+  @include typography($fs-small, $lh-xl,  $font-medium, $primary-text-color);
 
   &.bold {
     @include typography($fs-small, $lh-xl, $font-bolder, $primary-text-color);

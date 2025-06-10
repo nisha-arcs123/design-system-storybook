@@ -401,36 +401,27 @@
         }
       }
     }
+
     // laptop
     .heading-laptop {
       color: $primary-text-color;
-      h1{
-        @include typography(
-          $fs-secondary,
-          na,
-          na,
-          na
-        );
+      h1 {
+        @include typography($fs-secondary, na, na, na);
       }
 
       h2 {
-        @include typography(
-          $fs-forth,
-          na,
-          na,
-          na
-        );
+        @include typography($fs-forth, na, na, na);
       }
 
-   
-     
-
-      
-
       .normal-text {
-        @include typography(na, na, $font-regular, $primary-text-color);
+        @include typography(
+          $fs-medium,
+          $lh-xxl,
+          $font-regular,
+          $primary-text-color
+        );
         margin: 0;
-        &.xl {
+        &.large {
           @include typography(
             $fs-xl,
             $lh-xl,
@@ -438,16 +429,6 @@
             $primary-text-color
           );
         }
-
-        &.large {
-          @include typography(
-            $fs-medium,
-            $lh-xxl,
-            $font-regular,
-            $primary-text-color
-          );
-        }
-
         &.small {
           @include typography(
             $fs-small,
@@ -460,12 +441,9 @@
 
       .link-text {
         text-decoration: none;
-        @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
+        @include typography( $fs-medium, $lh-xxl, $font-medium, $primary-text-color);
         &.large {
           font-size: $fs-large;
-        }
-        &.small {
-          font-size: $fs-medium;
         }
       }
       .common-btn {
@@ -494,7 +472,7 @@
       }
 
       .label {
-        @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
+        @include typography($fs-small, $lh-xxl, $font-medium, $primary-text-color);
         &.x-large {
           font-size: $fs-large;
         }
@@ -503,24 +481,10 @@
           font-size: $fs-medium;
         }
 
-        &.medium {
-          font-size: $fs-small;
-        }
       }
 
       .caption {
-        line-height: $lh-xl;
-        color: $primary-text-color;
-        @include typography(na, $lh-xl, na, $primary-text-color);
-        &.medium {
-          @include typography(
-            $fs-small,
-            $lh-xl,
-            $font-medium,
-            $primary-text-color
-          );
-        }
-
+        @include typography( $fs-small, $lh-xl, $font-medium, $primary-text-color);
         &.bold {
           font-size: $fs-small;
           font-weight: $font-bold;
@@ -532,35 +496,22 @@
     .heading-tablet {
       color: $primary-text-color;
       h1 {
-        @include typography(
-          $fs-forth,
-          na,
-          na,
-          na
-        );
+        @include typography($fs-forth, na, na, na);
       }
 
       h2 {
-        @include typography(
-          $fs-xl,
-          na,
-          na,
-          na
-        );
+        @include typography($fs-xl, na, na, na);
       }
-  
-
-     
-
-     
-
-      
 
       .normal-text {
-        @include typography(na, na, $font-regular, $primary-text-color);
-
+        @include typography(
+          $fs-medium,
+          $lh-xxl,
+          $font-regular,
+          $primary-text-color
+        );
         margin: 0;
-        &.xl {
+        &.large {
           @include typography(
             $fs-xl,
             $lh-xl,
@@ -568,28 +519,21 @@
             $primary-text-color
           );
         }
-
-        &.large {
+        &.small {
           @include typography(
-            $fs-medium,
+            $fs-small,
             $lh-xxl,
             $font-regular,
             $primary-text-color
           );
         }
-
-        &.small {
-          font-size: $fs-small;
-        }
       }
 
       .link-text {
-        @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
+        text-decoration: none;
+        @include typography( $fs-medium, $lh-xxl, $font-medium, $primary-text-color);
         &.large {
           font-size: $fs-large;
-        }
-        &.small {
-          font-size: $fs-medium;
         }
       }
       .common-btn {
@@ -618,7 +562,7 @@
       }
 
       .label {
-        @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
+        @include typography($fs-small, $lh-xxl, $font-medium, $primary-text-color);
         &.x-large {
           font-size: $fs-large;
         }
@@ -627,32 +571,17 @@
           font-size: $fs-medium;
         }
 
-        &.medium {
-          font-size: $fs-small;
-        }
       }
 
       .caption {
-        @include typography(na, $lh-xl, na, $primary-text-color);
-        &.medium {
-          @include typography(
-            $fs-small,
-            $lh-xl,
-            $font-medium,
-            $primary-text-color
-          );
-        }
-
+        @include typography( $fs-small, $lh-xl, $font-medium, $primary-text-color);
         &.bold {
-          @include typography(
-            $fs-small,
-            $lh-xl,
-            $font-bold,
-            $primary-text-color
-          );
+          font-size: $fs-small;
+          font-weight: $font-bold;
         }
       }
     }
+
     //   mobile
     .heading-mobile {
       color: $primary-text-color;
@@ -661,26 +590,18 @@
       }
 
       h2 {
-        @include typography(
-          $fs-large,
-          na,
-          na,
-          na
-        );
+        @include typography($fs-large, na, na, na);
       }
 
-   
-
-     
-
-     
-
-      
-
       .normal-text {
+        @include typography(
+          $fs-medium,
+          $lh-xxl,
+          $font-regular,
+          $primary-text-color
+        );
         margin: 0;
-        @include typography(na, na, $font-regular, $primary-text-color);
-        &.xl {
+        &.large {
           @include typography(
             $fs-xl,
             $lh-xl,
@@ -688,16 +609,6 @@
             $primary-text-color
           );
         }
-
-        &.large {
-          @include typography(
-            $fs-medium,
-            $lh-xxl,
-            $font-regular,
-            $primary-text-color
-          );
-        }
-
         &.small {
           @include typography(
             $fs-small,
@@ -709,13 +620,10 @@
       }
 
       .link-text {
-        @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
-
+        text-decoration: none;
+        @include typography( $fs-medium, $lh-xxl, $font-medium, $primary-text-color);
         &.large {
           font-size: $fs-large;
-        }
-        &.small {
-          font-size: $fs-medium;
         }
       }
       .common-btn {
@@ -725,7 +633,6 @@
           $font-medium,
           $primary-text-color
         );
-
         &.small {
           font-size: $fs-small;
         }
@@ -745,8 +652,7 @@
       }
 
       .label {
-        @include typography(na, $lh-xxl, $font-medium, $primary-text-color);
-
+        @include typography($fs-small, $lh-xxl, $font-medium, $primary-text-color);
         &.x-large {
           font-size: $fs-large;
         }
@@ -755,30 +661,13 @@
           font-size: $fs-medium;
         }
 
-        &.medium {
-          font-size: $fs-small;
-        }
       }
 
       .caption {
-        @include typography(na, $lh-xl, na, $primary-text-color);
-
-        &.medium {
-          @include typography(
-            $fs-small,
-            $lh-xl,
-            $font-medium,
-            $primary-text-color
-          );
-        }
-
+        @include typography( $fs-small, $lh-xl, $font-medium, $primary-text-color);
         &.bold {
-          @include typography(
-            $fs-small,
-            $lh-xl,
-            $font-bold,
-            $primary-text-color
-          );
+          font-size: $fs-small;
+          font-weight: $font-bold;
         }
       }
     }

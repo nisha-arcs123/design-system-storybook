@@ -55,7 +55,6 @@
     }
   }
 
-
   &.profile_edit {
     @include flex-box(column, start, start, na, 8);
     padding: 8px;
@@ -69,9 +68,6 @@
       height: auto;
       @include flex-box(na, start, center, na, 8);
       padding: 0;
-      &:not(:first-child) {
-        height: 32px;
-      }
       .user-info {
         @include flex-box(column, start, start, na, na);
         .large {
@@ -91,7 +87,6 @@
           );
         }
       }
-
       .large {
         @include typography(
           $fs-medium,
@@ -100,16 +95,51 @@
           $secondary-text-color
         );
       }
-
       .d-btn {
         &:hover {
           background-color: transparent;
         }
       }
 
-      &:not(:first-child):hover {
+      &:last-child {
+        @include flex-box(na, center, center, na, 5);
+      }
+
+      &:last-child:hover{
+        p{
+          color: $primary-text-color;
+        }
+
+        span{
+          &::before{
+            color: $icon-active-color;
+          }
+        }
+      }
+    }
+
+    .theme {
+      @include flex-box(column, start, center, na, 1);
+      padding: $zero-p;
+      margin-top: $vvs-m;
+      width: 100%;
+      .theme-item {
+        list-style-type: none;
+        padding: $vvs-p;
         border-radius: $border-radius-small;
-        background-color: $primary-background-hover-color;
+        height: 32px;
+        width: 100%;
+        @include flex-box(na, start, center, na, 1);
+
+        &:hover {
+          background-color: $primary-background-hover-color;
+        }
+        &.active {
+          background-color: $primary-selected-hover-color;
+          p {
+            color: $primary-color;
+          }
+        }
       }
     }
   }

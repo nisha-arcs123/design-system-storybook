@@ -73,6 +73,11 @@
           background-color: $primary-selected-color;
           &:hover {
             background-color: $primary-selected-color;
+            span {
+            &::before {
+              color: $primary-color;
+            }
+          }
           }
           p {
             @include typography($fs-medium, na, $font-medium, $primary-color);
@@ -90,11 +95,18 @@
         }
         &:hover {
           background-color: $primary-background-hover-color;
+          span{
+            &::before{
+              color: $icon-active-color;
+            }
+          }
         }
 
         span {
           font-size: $fs-tertiary;
-          color: $primary-color;
+          &::before{
+              color: $icon-color-secondary;
+            }
         }
       }
     }

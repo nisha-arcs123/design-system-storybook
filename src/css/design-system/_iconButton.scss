@@ -5,7 +5,7 @@
 @use "./foundation" as *;
 
 .d-btn {
-  padding: 8px 16px;
+  // padding: 8px 16px;
   border-radius: $border-radius-small;
   @include flex-box(na, na, center, nowrap, 10);
   @include typography($fs-large, na, $font-medium, na);

@@ -4,6 +4,7 @@
 @use "./storybook.scss";
 @use "./foundation" as *;
 
+
 .d-btn {
   // padding: $vvs-p $small-p;
   border-radius: $border-radius-small;
@@ -21,7 +22,7 @@
   }
   &.sm {
     font-size: $fs-medium;
-    // padding: 0 $small-p;
+    padding: $zero-p $small-p;
     @include dimensions($btn-sm-size, na);
   }
   &.md {
@@ -49,6 +50,8 @@
     background-color: $primary-color;
     color: $text-color-on-primary;
     transition: all 0.2s ease-in;
+    padding: $vvs-p !important;
+
     &:hover {
       background-color: $primary-hover-color;
     }
@@ -58,6 +61,7 @@
     border: 1px solid $primary-color;
     background-color: $primary-background-color;
     color: $primary-color;
+    padding: $vvs-p !important;
     transition: all 0.2s ease-in;
     &:hover {
       background-color: $primary-hover-color;
@@ -69,12 +73,12 @@
   &--tertiary {
     background-color: transparent;
     transition: all 0.2s ease-in;
-    padding: $vvs-p;
-    gap: 8px;
+    padding: $vvs-p !important;
+    gap: 8px !important;
     p {
       @include typography($fs-medium, na, $font-medium, $secondary-text-color);
     }
-    .header-icon {
+    span,.header-icon {
       &::before {
         color: $icon-color-secondary;
         font-size: $fs-xl;
@@ -87,7 +91,7 @@
       p {
         color: $primary-text-color;
       }
-      .header-icon {
+      span,.header-icon {
         &::before {
           color: $icon-active-color;
         }

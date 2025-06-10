@@ -42,28 +42,23 @@
   }
 }
 
-
-
-
-
 //tableau card
-.card{
+.card {
   border: 2px solid $light-border;
   @include dimensions(192, na);
   border-radius: $border-radius-medium;
   width: 100%;
-  transition: all .25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   transform: scale(1.01);
   position: relative;
   box-sizing: border-box;
-  overflow: hidden;
   &.item-count-2 {
     width: calc(50% - 8px);
     height: 223px;
     .card-img {
       height: calc(100% - 44px);
     }
-    .card-details{
+    .card-details {
       height: 44px;
     }
   }
@@ -73,7 +68,7 @@
     .card-img {
       height: calc(100% - 44px);
     }
-    .card-details{
+    .card-details {
       height: 44px;
     }
   }
@@ -84,13 +79,14 @@
     .card-img {
       height: calc(100% - 26px);
     }
-    .card-details{
+    .card-details {
       height: 36px;
     }
   }
 
   .card-img {
     @include absolute(0, na, na, na);
+    overflow: hidden;
   }
   .card-details {
     width: 100%;

@@ -3,18 +3,22 @@
 @use "./theme/blue-theme" as *;
 @use "./fonts/medium" as *;
 
-
 .tooltip-container {
   border: 1px solid $layout-border-color;
   border-radius: $vvs-m;
   padding: $xl-p;
   padding-left: 350px;
-  @include flex-box(column,na,na,na,20);
+  @include flex-box(column, na, na, na, 20);
   .tooltip-btn {
     width: max-content;
     z-index: 9;
     position: relative;
-    @include typography($fs-large,na,$font-regular,$secondary-text-color);
+    @include typography($fs-large, na, $font-regular, $secondary-text-color);
+  }
+  .tooltip-arrow {
+    &::before {
+      color: currentColor;
+    }
   }
   .tooltip-inner {
     padding: $vvs-p;
@@ -22,10 +26,11 @@
     min-width: 78px;
     max-width: 300px;
     text-align: start;
-    @include typography($fs-small,na,$font-medium,$fixed-light-color);
+    color: $inverted-background-color;
+    background-color: $inverted-background-color;
+    @include typography($fs-small, na, $font-medium, $fixed-light-color);
   }
   .no-arrow + .tooltip .tooltip-arrow {
     display: none !important;
   }
 }
-
