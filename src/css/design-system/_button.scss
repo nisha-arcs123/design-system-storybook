@@ -4,43 +4,46 @@
 @use "./storybook.scss";
 @use "./foundation" as *;
 
-
 .d-btn {
-  // padding: $vvs-p $small-p;
   border-radius: $border-radius-small;
-  @include typography($fs-large, na, $font-medium, na);
-  @include flex-box(na, center, center, nowrap, 10);
-  border: none;
+  @include flex-box(na, center, center, nowrap, 8);
   outline: none;
-  box-sizing: border-box;
-  margin: 0;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: capitalize;
+  padding: $zero-p;
+  @include typography($fs-medium, na, $font-medium, $primary-text-color);
 
   &.vs {
     font-size: $fs-small;
-    padding: $zero-p $vs-p;
+    padding: $zero-p $vvs-p;
     @include dimensions($btn-vs-size, na);
   }
   &.sm {
     font-size: $fs-medium;
-    padding: $zero-p $small-p;
+    padding: $zero-p $vvs-p;
     @include dimensions($btn-sm-size, na);
   }
   &.md {
-    font-size: $fs-large;
-    padding: $zero-p $small-p;
+    font-size: $fs-medium;
+    padding: $zero-p $vs-p;
     @include dimensions($btn-md-size, na);
   }
   &.lg {
     font-size: $fs-large;
-    padding: $zero-p $medium-p;
+    padding: $zero-p $small-p;
     @include dimensions($btn-lg-size, na);
+    @include max-width(375px) {
+      font-size: $fs-medium;
+    }
   }
   &.xl {
-    font-size: $fs-large;
-    padding: $zero-p $medium-p;
+    padding: $zero-p $small-p;
+    @include typography($fs-large, na, $font-bold, na);
     @include dimensions($btn-xl-size, na);
   }
-  &.xxl {
+  &.double-xl {
     padding: $zero-p $medium-p;
     @include typography($fs-xl, na, $font-bolder, na);
     @include dimensions($btn-xxl-size, na);
@@ -50,8 +53,6 @@
     background-color: $primary-color;
     color: $text-color-on-primary;
     transition: all 0.2s ease-in;
-    padding: $vvs-p !important;
-
     &:hover {
       background-color: $primary-hover-color;
     }
@@ -61,7 +62,6 @@
     border: 1px solid $primary-color;
     background-color: $primary-background-color;
     color: $primary-color;
-    padding: $vvs-p !important;
     transition: all 0.2s ease-in;
     &:hover {
       background-color: $primary-hover-color;
@@ -73,12 +73,11 @@
   &--tertiary {
     background-color: transparent;
     transition: all 0.2s ease-in;
-    padding: $vvs-p !important;
     gap: 8px !important;
-    p {
-      @include typography($fs-medium, na, $font-medium, $secondary-text-color);
-    }
-    span,.header-icon {
+    padding: $zero-p $vvs-p;
+    @include typography($fs-medium, na, $font-medium, $secondary-text-color);
+
+    span {
       &::before {
         color: $icon-color-secondary;
         font-size: $fs-xl;
@@ -88,10 +87,9 @@
     &:hover {
       background-color: $primary-background-hover-color;
       transition: all 0.2s ease-in;
-      p {
-        color: $primary-text-color;
-      }
-      span,.header-icon {
+      color: $primary-text-color;
+
+      span {
         &::before {
           color: $icon-active-color;
         }
@@ -101,9 +99,12 @@
 
   &--link {
     background-color: transparent;
-    color: $primary-color;
-    cursor: pointer;
     transition: all 0.2s ease-in;
+    padding: 0;
+    height: 0;
+    color: $primary-color;
+    text-decoration: none;
+
     &:hover {
       color: $primary-hover-color;
     }
@@ -226,28 +227,6 @@
   }
 }
 
-.squr-btn {
-  padding: 10px;
-  border: none;
-  outline: none;
-  background-color: $primary-background-color;
-  @include dimensions(35, 35);
-  border-radius: 4px;
-  span {
-    @include dimensions(13, 13);
-    &::before {
-      color: $icon-color-on-dark-bg;
-    }
-  }
-  &:hover {
-    background-color: $secondary-background-color;
-    span {
-      &::before {
-        color: $icon-color-secondary;
-      }
-    }
-  }
-}
 
 @keyframes spin {
   to {

@@ -47,7 +47,7 @@ export const CircleCloseButton: Story = {
         <button class="d-btn d-btn--tertiary xl">
           <span class="icon-Vector-7 icon--xl"></span>
         </button>
-        <button class="d-btn d-btn--tertiary xxl">
+        <button class="d-btn d-btn--tertiary double-xl">
           <span class="icon-Vector-7 icon--xxl"></span>
         </button>
       </div>
@@ -84,7 +84,7 @@ export const CircleMoreButton: Story = {
         <button class="d-btn d-btn--tertiary xl">
           <span class="icon-dots-horizontal-5 icon--xl"></span>
         </button>
-        <button class="d-btn d-btn--tertiary xxl">
+        <button class="d-btn d-btn--tertiary double-xl">
           <span class="icon-dots-horizontal-5 icon--xxl"></span>
         </button>
       </div>
@@ -121,7 +121,7 @@ export const CircleBackButton: Story = {
         <button class="d-btn d-btn--tertiary xl">
           <span class="icon-Vector-6 icon--xl"></span>
         </button>
-        <button class="d-btn d-btn--tertiary xxl">
+        <button class="d-btn d-btn--tertiary double-xl">
           <span class="icon-Vector-6 icon--xxl"></span>
         </button>
       </div>
@@ -158,7 +158,7 @@ export const CircleSearchButton: Story = {
         <button class="d-btn d-btn--tertiary xl">
           <span class="icon-Vector-3 icon--xl"></span>
         </button>
-        <button class="d-btn d-btn--tertiary xxl">
+        <button class="d-btn d-btn--tertiary double-xl">
           <span class="icon-Vector-3 icon--xxl"></span>
         </button>
       </div>
@@ -195,7 +195,7 @@ export const EditButtonCircleTertiary: Story = {
         <button class="d-btn d-btn--tertiary xl">
           <span class="icon-Vector-1 icon--xl"></span>Edit
         </button>
-        <button class="d-btn d-btn--tertiary xxl">
+        <button class="d-btn d-btn--tertiary double-xl">
           <span class="icon-Vector-1 icon--xxl"></span>Edit
         </button>
       </div>
@@ -216,7 +216,7 @@ export const EditButtonCircleTertiary: Story = {
         <button class="d-btn d-btn--tertiary xl">
           <span class="icon-Vector-1 icon--xl"></span>
         </button>
-        <button class="d-btn d-btn--tertiary xxl">
+        <button class="d-btn d-btn--tertiary double-xl">
           <span class="icon-Vector-1 icon--xxl"></span>
         </button>
       </div>
@@ -259,7 +259,7 @@ export const DeleteButtonCircleTertiary: Story = {
           <span class="icon-Vector icon--xl"></span>
           Delete
         </button>
-        <button class="d-btn d-btn--tertiary xxl">
+        <button class="d-btn d-btn--tertiary double-xl">
           <span class="icon-Vector icon--xxl"></span>
           Delete
         </button>
@@ -280,7 +280,7 @@ export const DeleteButtonCircleTertiary: Story = {
         <button class="d-btn d-btn--tertiary xl">
           <span class="icon-Vector icon--xl"></span>
         </button>
-        <button class="d-btn d-btn--tertiary xxl">
+        <button class="d-btn d-btn--tertiary double-xl">
           <span class="icon-Vector icon--xxl"></span>
         </button>
       </div>
@@ -323,7 +323,7 @@ export const IconRight: Story = {
           Extra Large
           <span class="icon-Vector-5 add--xl"></span>
         </button>
-        <button class="d-btn d-btn--primary xxl">
+        <button class="d-btn d-btn--primary double-xl">
           XX Large
           <span class="icon-Vector-5 add--xxl"></span>
         </button>
@@ -366,7 +366,7 @@ export const IconLeft: Story = {
           <span class="icon-Vector-5 add--xl"></span>
           Extra Large
         </button>
-        <button class="d-btn d-btn--primary xxl">
+        <button class="d-btn d-btn--primary double-xl">
           <span class="icon-Vector-5 add--xxl"></span>
           XX Large
         </button>
@@ -410,7 +410,7 @@ export const AddButton: Story = {
           <span class="icon-Vector-4 add--xl"></span>
           Extra Large
         </button>
-        <button class="d-btn d-btn--secondary-dotted xxl">
+        <button class="d-btn d-btn--secondary-dotted double-xl">
           <span class="icon-Vector-4 add--xxl"></span>
           XXL Large
         </button>
@@ -439,7 +439,7 @@ export const AddButton: Story = {
           <span class="icon-Vector-4 add--xl"></span>
           Extra Large
         </button>
-        <button class="d-btn d-btn--secondary xxl">
+        <button class="d-btn d-btn--secondary double-xl">
           <span class="icon-Vector-4 add--xxl"></span>
           XXL Large
         </button>
@@ -463,7 +463,7 @@ export const AddButton: Story = {
         <button class="d-btn--circle dotted-circle xl">
           <span class="icon-Vector-4 add--xl"></span>
         </button>
-        <button class="d-btn--circle dotted-circle xxl">
+        <button class="d-btn--circle dotted-circle double-xl">
           <span class="icon-Vector-4 add--xxl"></span>
         </button>
       </div>
@@ -487,7 +487,7 @@ export const AddButton: Story = {
         <button class="d-btn--circle solid-circle xl">
           <span class="icon-Vector-4 add--xl"></span>
         </button>
-        <button class="d-btn--circle solid-circle xxl">
+        <button class="d-btn--circle solid-circle double-xl">
           <span class="icon-Vector-4 add--xxl"></span>
         </button>
       </div>
@@ -511,7 +511,7 @@ export const AddButton: Story = {
         <button class="d-btn--circle primary-bg-circle xl">
           <span class="icon-Vector-5 add--xl"></span>
         </button>
-        <button class="d-btn--circle primary-bg-circle xxl">
+        <button class="d-btn--circle primary-bg-circle double-xl">
           <span class="icon-Vector-5 add--xxl"></span>
         </button>
       </div>

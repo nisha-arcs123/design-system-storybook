@@ -37,7 +37,7 @@ export const Header: Story = {
           <span class="icon-Vector-Stroke2 icon--vs"></span>
         </div>
 
-        <button class="d-btn--circle danger-bg-cicle sm">OS</button>
+        <button class="d-btn--circle brown-bg-circle sm">OS</button>
       </div>
         `.trim(),
         language: 'html',
@@ -114,7 +114,7 @@ export const SubHeader: Story = {
               placement="top"
               [ngbTooltip]="!showTooltip ? 'More' : null"
             >
-              <span class="icon-Icon-Stroke-1 icon--&--more-vs"></span>
+              <span class="icon-Icon-Stroke-1 icon---vs"></span>
             </button>
 
             <button

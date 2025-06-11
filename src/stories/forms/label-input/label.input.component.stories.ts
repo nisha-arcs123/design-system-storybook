@@ -143,7 +143,7 @@ export const DoubleExtraLargeLabel: Story = {
         code: `
         <div class="form-group">
       <label for="label">label </label>
-      <div class="input-wrapper xxl">
+      <div class="input-wrapper double-xl">
         <input type="text" class="medium" placeholder="label" />
       </div>
       <div class="error-message d-none">This is error alert</div>

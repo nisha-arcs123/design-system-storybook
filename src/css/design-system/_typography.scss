@@ -114,32 +114,32 @@ a,
   }
 }
 
-button,
-.common-btn {
-  outline: none;
-  border: none;
-  cursor: pointer;
-  background-color: transparent;
-  text-transform: capitalize;
-  text-align: start;
-  padding: $zero-p;
-  @include typography($fs-medium, na, $font-medium, $primary-text-color);
+// button,
+// .common-btn {
+//   outline: none;
+//   border: none;
+//   cursor: pointer;
+//   background-color: transparent;
+//   text-transform: capitalize;
+//   text-align: start;
+//   padding: $zero-p;
+//   @include typography($fs-medium, na, $font-medium, $primary-text-color);
 
-  &.small {
-    font-size: $fs-small;
-  }
+//   &.small {
+//     font-size: $fs-small;
+//   }
 
-  &.large {
-    font-size: $fs-large;
-    @include max-width(375px) {
-      font-size: $fs-medium;
-    }
-  }
+//   &.large {
+//     font-size: $fs-large;
+//     @include max-width(375px) {
+//       font-size: $fs-medium;
+//     }
+//   }
 
-  &.x-large {
-    @include typography($fs-xl, $lh-forth, $font-bolder, $primary-text-color);
-  }
-}
+//   &.x-large {
+//     @include typography($fs-xl, $lh-forth, $font-bolder, $primary-text-color);
+//   }
+// }
 
 label,
 .label {

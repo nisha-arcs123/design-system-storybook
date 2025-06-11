@@ -573,7 +573,7 @@ export const TableTwo: Story = {
           <th>Product Manager(s)</th>
           <th>System Owner(s)</th>
           <th>
-            <span class="icon-Icon-Stroke-3 icon--more-sm"></span>
+            <span class="icon-Icon-Stroke-3 icon--sm"></span>
           </th>
         </tr>
       </thead>
@@ -591,8 +591,8 @@ export const TableTwo: Story = {
           <td>N / A</td>
           <td class="first-row p-0">Hiep Luong</td>
           <td>
-            <button class="d-btn d-btn--circle white-bg-circle sm">
-              <span class="icon-threedots icon--more-sm"></span>
+            <button class="d-btn d-btn--circle sm">
+              <span class="icon-threedots icon--sm"></span>
             </button>
           </td>
         </tr>
@@ -609,8 +609,8 @@ export const TableTwo: Story = {
           <td>N / A</td>
           <td class="first-row p-0">Joan Pritchett</td>
           <td>
-            <button class="d-btn d-btn--circle white-bg-circle sm">
-              <span class="icon-threedots icon--more-sm"></span>
+            <button class="d-btn d-btn--circle sm">
+              <span class="icon-threedots icon--sm"></span>
             </button>
           </td>
         </tr>
@@ -631,8 +631,8 @@ export const TableTwo: Story = {
           <td>N / A</td>
           <td>Ravi Kumar</td>
           <td>
-            <button class="d-btn d-btn--circle white-bg-circle sm">
-              <span class="icon-threedots icon--more-sm"></span>
+            <button class="d-btn d-btn--circle sm">
+              <span class="icon-threedots icon--sm"></span>
             </button>
           </td>
         </tr>
@@ -648,8 +648,8 @@ export const TableTwo: Story = {
           <td>N / A</td>
           <td class="first-row p-0">Aaliyah Bansal</td>
           <td>
-            <button class="d-btn d-btn--circle white-bg-circle sm">
-              <span class="icon-threedots icon--more-sm"></span>
+            <button class="d-btn d-btn--circle sm">
+              <span class="icon-threedots icon--sm"></span>
             </button>
           </td>
         </tr>
@@ -669,8 +669,8 @@ export const TableTwo: Story = {
             <button class="d-btn--circle light-bg--purple vs">+2</button>
           </td>
           <td>
-            <button class="d-btn d-btn--circle white-bg-circle sm">
-              <span class="icon-threedots icon--more-sm"></span>
+            <button class="d-btn d-btn--circle sm">
+              <span class="icon-threedots icon--sm"></span>
             </button>
           </td>
         </tr>
@@ -687,8 +687,8 @@ export const TableTwo: Story = {
           <td>Aaron Van Etten</td>
           <td class="first-row p-0">Shawn Bauer</td>
           <td>
-            <button class="d-btn d-btn--circle white-bg-circle sm">
-              <span class="icon-threedots icon--more-sm"></span>
+            <button class="d-btn d-btn--circle sm">
+              <span class="icon-threedots icon--sm"></span>
             </button>
           </td>
         </tr>
@@ -709,8 +709,8 @@ export const TableTwo: Story = {
           <td>N / A</td>
           <td>Ravi Kumar</td>
           <td>
-            <button class="d-btn d-btn--circle white-bg-circle sm">
-              <span class="icon-threedots icon--more-sm"></span>
+            <button class="d-btn d-btn--circle sm">
+              <span class="icon-threedots icon--sm"></span>
             </button>
           </td>
         </tr>
@@ -726,8 +726,8 @@ export const TableTwo: Story = {
           <td>N / A</td>
           <td class="first-row p-0">Aaliyah Bansal</td>
           <td>
-            <button class="d-btn d-btn--circle white-bg-circle sm">
-              <span class="icon-threedots icon--more-sm"></span>
+            <button class="d-btn d-btn--circle sm">
+              <span class="icon-threedots icon--sm"></span>
             </button>
           </td>
         </tr>
@@ -747,8 +747,8 @@ export const TableTwo: Story = {
             <button class="d-btn--circle light-bg--purple vs">+2</button>
           </td>
           <td>
-            <button class="d-btn d-btn--circle white-bg-circle sm">
-              <span class="icon-threedots icon--more-sm"></span>
+            <button class="d-btn d-btn--circle sm">
+              <span class="icon-threedots icon--sm"></span>
             </button>
           </td>
         </tr>
@@ -768,8 +768,8 @@ export const TableTwo: Story = {
             <button class="d-btn--circle light-bg--purple vs">+2</button>
           </td>
           <td>
-            <button class="d-btn d-btn--circle white-bg-circle sm">
-              <span class="icon-threedots icon--more-sm"></span>
+            <button class="d-btn d-btn--circle sm">
+              <span class="icon-threedots icon--sm"></span>
             </button>
           </td>
         </tr>
@@ -786,8 +786,8 @@ export const TableTwo: Story = {
           <td>Aaron Van Etten</td>
           <td class="first-row p-0">Shawn Bauer</td>
           <td>
-            <button class="d-btn d-btn--circle white-bg-circle sm">
-              <span class="icon-threedots icon--more-sm"></span>
+            <button class="d-btn d-btn--circle sm">
+              <span class="icon-threedots icon--sm"></span>
             </button>
           </td>
         </tr>

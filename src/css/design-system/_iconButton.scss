@@ -5,13 +5,7 @@
 @use "./foundation" as *;
 
 .d-btn {
-  // padding: 8px 16px;
-  border-radius: $border-radius-small;
-  @include flex-box(na, na, center, nowrap, 10);
-  @include typography($fs-large, na, $font-medium, na);
-  font-family: "Figtree", sans-serif;
-  box-sizing: border-box;
-
+   
   &--secondary-dotted {
     border: 2px dotted $primary-color ;
     color: $primary-color ;
@@ -25,21 +19,23 @@
   
   &--circle {
     border-radius: 50px;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    padding: 0;
+    background-color: $primary-background-color;
     @include flex-box(na, center, center, na, na);
     @include typography($fs-small, na, $font-medium, $fixed-light-color);
 
+    &:hover{
+      background-color: $primary-background-hover-color;
+    }
+
     &.dotted-circle {
-      border: 2px dotted $primary-color;
+      border: 2px dotted $primary-color; 
       &:hover {
         background-color: $primary-hover-color;
         color: $text-color-on-primary;
         border: 1px solid $primary-hover-color;
       }
     }
+
     &.solid-circle {
       border: 1px solid $primary-color;
       &:hover {
@@ -48,39 +44,22 @@
         border: 1px solid $primary-hover-color;
       }
     }
+
     &.primary-bg-circle {
       background-color: $primary-color;
-      border: 2px solid $primary-color;
       &:hover {
         background-color: $primary-hover-color;
         color: $text-color-on-primary;
-        border: 1px solid $primary-hover-color;
       }
     }
-    &.danger-bg-cicle {
-      background-color: #f65f7c;
-    }
-    &.tertiary-circle {
-      &:hover {
-        background-color: #dcdfec;
-      }
-    }
-    &.white-bg-circle {
-      background-color: $primary-background-color;
-      &:hover {
-        background-color: #dcdfec;
-      }
-    }
-    &.gray-bg-circle{
-      background-color: #DCE0EC;
-      @include  typography(12,na,500,$primary-text-color);
-    }
+
     &.brown-bg-circle {
-      background-color: #f1f2f4;
+      background-color: $secondary-background-color;
       &:hover {
-        background-color: #dcdfec;
+        background-color: $primary-background-hover-color;
       }
     }
+
     &.light-bg {
       font-weight: $font-bold;
       &--danger {
@@ -123,6 +102,7 @@
           background-color: #CA9A8B;
         }
     }
+
     &.vvs{
       @include dimensions(24,24);
     }
@@ -150,6 +130,9 @@
   }
 
   .icon {
+    &--vvs {
+      font-size: 16px;
+    }
     &--vs {
       font-size: 18px;
     }
@@ -160,162 +143,13 @@
       font-size: 22px;
     }
     &--lg {
-      font-size: 28px;
+      font-size: 24px;
     }
     &--xl {
+      font-size: 28px;
+    }
+    &--xxl {
       font-size: 32px;
-    }
-
-    &--cross-vs {
-      font-size: 18px;
-    }
-    &--cross-sm {
-      font-size: 20px;
-    }
-    &--cross-md {
-      font-size: 22px;
-    }
-    &--cross-lg {
-      font-size: 24px;
-    }
-    &--cross-xl {
-      font-size: 24px;
-    }
-    &--cross-xxl {
-      font-size: 28px;
-    }
-
-    &--more-vs {
-      font-size: 18px;
-    }
-    &--more-sm {
-      font-size: 20px;
-    }
-    &--more-md {
-      font-size: 22px;
-    }
-    &--more-lg {
-      font-size: 24px;
-    }
-    &--more-xl {
-      font-size: 24px;
-    }
-    &--more-xxl {
-      font-size: 28px;
-    }
-
-    &--back-vs {
-      font-size: 18px;
-    }
-    &--back-sm {
-      font-size: 20px;
-    }
-    &--back-md {
-      font-size: 22px;
-    }
-    &--back-lg {
-      font-size: 24px;
-    }
-    &--back-xl {
-      font-size: 24px;
-    }
-    &--back-xxl {
-      font-size: 28px;
-    }
-
-    &--search-vs {
-      font-size: 18px;
-    }
-    &--search-sm {
-      font-size: 18px;
-    }
-    &--search-md {
-      font-size: 22px;
-    }
-    &--search-lg {
-      font-size: 24px;
-    }
-    &--search-xl {
-      font-size: 24px;
-    }
-    &--search-xxl {
-      font-size: 28px;
-    }
-
-    &--edit-vs {
-      font-size: 14px;
-    }
-    &--edit-sm {
-      font-size: 14px;
-    }
-    &--edit-md {
-      font-size: 15px;
-    }
-    &--edit-lg {
-      font-size: 16px;
-    }
-    &--edit-xl {
-      font-size: 19px;
-    }
-    &--edit-xxl {
-      font-size: 20px;
-    }
-
-    &--edit-vvs {
-      font-size: 18px;
-    }
-    &--edit-ssm {
-      font-size: 20px;
-    }
-    &--edit-mmd {
-      font-size: 24px;
-    }
-    &--edit-llg {
-      font-size: 24px;
-    }
-    &--edit-xll {
-      font-size: 24px;
-    }
-    &--edit-xxll {
-      font-size: 28px;
-    }
-
-    &--delete-vs {
-      font-size: 14px;
-    }
-    &--delete-sm {
-      font-size: 14px;
-    }
-    &--delete-md {
-      font-size: 15px;
-    }
-    &--delete-lg {
-      font-size: 16px;
-    }
-    &--delete-xl {
-      font-size: 19px;
-    }
-    &--delete-xxl {
-      font-size: 20px;
-    }
-
-    &--delete-vvs {
-      font-size: 18px;
-    }
-    &--delete-ssm {
-      font-size: 20px;
-    }
-    &--delete-mmd {
-      font-size: 24px;
-    }
-    &--delete-llg {
-      font-size: 24px;
-    }
-    &--delete-xll {
-      font-size: 24px;
-    }
-    &--delete-xxll {
-      font-size: 28px;
     }
   }
 }

@@ -200,6 +200,7 @@
   }
 }
 
+
 //margin-padding
 .containers {
   @include flex-box(row, na, end, wrap, na);
@@ -379,23 +380,24 @@
       align-items: start;
       padding: 24px;
 
-      .class-name {
-        padding: 0 30px;
-        @include typography(
-          $fs-large,
-          na,
-          $font-regular,
-          $secondary-text-color
-        );
+      .d-btn{
+        display: block
+      }
+      p {
+       @include typography(
+            na,
+            na,
+            na,
+            $secondary-text-color
+          );
       }
 
       .description {
         p {
-          margin: 0;
           @include typography(
-            $fs-large,
             na,
-            $font-regular,
+            na,
+            na,
             $secondary-text-color
           );
         }

@@ -25,15 +25,15 @@ export const SimpleAvatar: Story = {
         code: `       
         <div class="containers">
         <button class="d-btn--circle light-bg--primary xl">CS</button>
-        <button class="d-btn--circle light-bg--primary xxl">CS</button>
+        <button class="d-btn--circle light-bg--primary double-xl">CS</button>
         <button class="d-btn--circle light-bg--primary xxxl">CS</button>
       </div>
 
       <div class="containers">
-        <button class="d-btn--circle danger-bg-cicle sm">OS</button>
-        <button class="d-btn--circle danger-bg-cicle md">OS</button>
-        <button class="d-btn--circle danger-bg-cicle lg">OS</button>
-        <button class="d-btn--circle danger-bg-cicle xl">OS</button>
+        <button class="d-btn--circle brown-bg-circle sm">OS</button>
+        <button class="d-btn--circle brown-bg-circle md">OS</button>
+        <button class="d-btn--circle brown-bg-circle lg">OS</button>
+        <button class="d-btn--circle brown-bg-circle xl">OS</button>
       </div>
 
       <div class="containers">
@@ -42,7 +42,7 @@ export const SimpleAvatar: Story = {
         <button class="d-btn--circle light-bg--purple md">IT</button>
         <button class="d-btn--circle light-bg--danger lg">AI</button>
         <button class="d-btn--circle light-bg--success xl">IA</button>
-        <button class="d-btn--circle light-bg--purple xxl">IT</button>
+        <button class="d-btn--circle light-bg--purple double-xl">IT</button>
       </div>
       `.trim(),
         language: `html`,

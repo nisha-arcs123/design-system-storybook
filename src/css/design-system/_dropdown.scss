@@ -83,9 +83,10 @@
       border: 0;
       color: $icon-color-secondary;
       font-size: $fs-xl;
+      margin: 0;
     }
     &:hover::after {
-      color: $secondary-text-color;
+      color: $icon-active-color;
     }
 
     p {

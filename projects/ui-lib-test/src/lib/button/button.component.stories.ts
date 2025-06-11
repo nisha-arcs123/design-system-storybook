@@ -83,7 +83,7 @@ export const PrimaryButtonSize: Story = {
         <button class="btn btn-primary md">label</button>
         <button class="btn btn-primary lg">label</button>
         <button class="btn btn-primary xl">label</button>
-        <button class="btn btn-primary xxl">label</button>
+        <button class="btn btn-primary double-xl">label</button>
       </div>
     </div>
          `.trim(),
@@ -119,7 +119,7 @@ export const SecondaryButtonSize: Story = {
         <button class="btn btn-secondary md">label</button>
         <button class="btn btn-secondary lg">label</button>
         <button class="btn btn-secondary xl">label</button>
-        <button class="btn btn-secondary xxl">label</button>
+        <button class="btn btn-secondary double-xl">label</button>
       </div>
     </div>
      `.trim(),
@@ -154,7 +154,7 @@ export const TertiaryButtonSize: Story = {
         <button class="btn btn-tertiary md">label</button>
         <button class="btn btn-tertiary lg">label</button>
         <button class="btn btn-tertiary xl">label</button>
-        <button class="btn btn-tertiary xxl">label</button>
+        <button class="btn btn-tertiary double-xl">label</button>
       </div>
     </div>
      `.trim(),
@@ -190,7 +190,7 @@ export const LinkButtonSize: Story = {
             <button class="btn btn-link md">label</button>
             <button class="btn btn-link lg">label</button>
             <button class="btn btn-link xl">label</button>
-            <button class="btn btn-link xxl">label</button>
+            <button class="btn btn-link double-xl">label</button>
           </div>
         </div>
          `.trim(),
@@ -237,7 +237,7 @@ export const LinkButtonSize: Story = {
         <button class="loading-button xl">
           <span class="loader"></span>
         </button>
-        <button class="loading-button xxl">
+        <button class="loading-button double-xl">
           <span class="loader"></span>
         </button>
       </div>

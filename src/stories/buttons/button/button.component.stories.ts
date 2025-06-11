@@ -67,7 +67,7 @@ export const PrimaryButtonSize: Story = {
         <button class="d-btn d-btn-primary md">Primary</button>
         <button class="d-btn d-btn-primary lg">Primary</button>
         <button class="d-btn d-btn-primary xl">Primary</button>
-        <button class="d-btn d-btn-primary xxl">Primary</button>
+        <button class="d-btn d-btn-primary double-xl">Primary</button>
       </div>
          `.trim(),
             language: 'html',
@@ -93,7 +93,7 @@ export const SecondaryButtonSize: Story = {
         <button class="d-btn d-btn-secondary md">Secondary</button>
         <button class="d-btn d-btn-secondary lg">Secondary</button>
         <button class="d-btn d-btn-secondary xl">Secondary</button>
-        <button class="d-btn d-btn-secondary xxl">Secondary</button>
+        <button class="d-btn d-btn-secondary double-xl">Secondary</button>
       </div>
      `.trim(),
         language: 'html',
@@ -172,7 +172,7 @@ export const TertiaryButtonSize: Story = {
         <button class="d-btn d-btn-tertiary md">Tertiary</button>
         <button class="d-btn d-btn-tertiary lg">Tertiary</button>
         <button class="d-btn d-btn-tertiary xl">Tertiary</button>
-        <button class="d-btn d-btn-tertiary xxl">Tertiary</button>
+        <button class="d-btn d-btn-tertiary double-xl">Tertiary</button>
       </div>
 
      `.trim(),
@@ -199,7 +199,7 @@ export const LinkButtonSize: Story = {
             <button class="d-btn d-btn-link md">Link</button>
             <button class="d-btn d-btn-link lg">Link</button>
             <button class="d-btn d-btn-link xl">Link</button>
-            <button class="d-btn d-btn-link xxl">Link</button>
+            <button class="d-btn d-btn-link double-xl">Link</button>
           </div>
          `.trim(),
             language: 'html',

@@ -16,14 +16,8 @@
         <button class="d-btn d-btn--primary md">Primary</button>
         <button class="d-btn d-btn--secondary md">Secondary</button>
         <button class="d-btn d-btn--tertiary md">Tertiary</button>
-        <button class="d-btn d-btn--link md">Link</button>
+        <a href="#" class="d-btn d-btn--link md">Link</a>
       </div>
-
-      <!-- <div class="containers">
-        <button class="d-btn-small d-btn-small--danger">High</button>
-        <button class="d-btn-small d-btn-small--warning">Medium</button>
-        <button class="d-btn-small d-btn-small--success">Low</button>
-      </div> -->
     </div>
   </div>
 
@@ -40,12 +34,12 @@
       </div>
       <!-- primary button in all size -->
       <div class="containers">
-        <button class="d-btn d-btn--primary vs">{{ label }}</button>
-        <button class="d-btn d-btn--primary sm">{{ label }}</button>
-        <button class="d-btn d-btn--primary md">{{ label }}</button>
-        <button class="d-btn d-btn--primary lg">{{ label }}</button>
-        <button class="d-btn d-btn--primary xl">{{ label }}</button>
-        <button class="d-btn d-btn--primary xxl">{{ label }}</button>
+        <button class="d-btn d-btn--primary vs">Very Small</button>
+        <button class="d-btn d-btn--primary sm">Small</button>
+        <button class="d-btn d-btn--primary md">Medium</button>
+        <button class="d-btn d-btn--primary lg">Large</button>
+        <button class="d-btn d-btn--primary xl">Extra Large</button>
+        <button class="d-btn d-btn--primary double-xl">XX Large</button>
       </div>
     </div>
   </div>
@@ -69,7 +63,7 @@
         <button class="d-btn d-btn--secondary md">{{ label }}</button>
         <button class="d-btn d-btn--secondary lg">{{ label }}</button>
         <button class="d-btn d-btn--secondary xl">{{ label }}</button>
-        <button class="d-btn d-btn--secondary xxl">{{ label }}</button>
+        <button class="d-btn d-btn--secondary double-xl">{{ label }}</button>
       </div>
     </div>
   </div>
@@ -89,15 +83,14 @@
       <!-- tertiary button with img  -->
 
       <div class="containers">
-
         <button class="d-btn d-btn--tertiary sm">
           <span class="icon-expand-01-1 header-icon"></span>
-          <p>Expand All</p>
+          Expand All
         </button>
 
         <button class="d-btn d-btn--tertiary sm">
           <span class="icon-Frame-2610516 header-icon"></span>
-          <p>Collapse All</p>
+          Collapse All
         </button>
 
         <div ngbDropdown class="d-inline-block nav-dropdown">
@@ -108,26 +101,25 @@
             ngbDropdownToggle
           >
             <span class="icon-dotpoints-01 header-icon"></span>
-            <p>Item Count</p>
-            <span class="arrow-icon"></span>
+            Item Count
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <ul>
               <li>
                 <button ngbDropdownItem>
-                  <p>02 Cards</p>
+                  02 Cards
                   <span class="checkmark"></span>
                 </button>
               </li>
               <li>
                 <button ngbDropdownItem>
-                  <p>04 Cards</p>
+                  04 Cards
                   <span class="checkmark"></span>
                 </button>
               </li>
               <li>
                 <button ngbDropdownItem>
-                  <p>06 Cards</p>
+                  06 Cards
                   <span class="checkmark"></span>
                 </button>
               </li>
@@ -143,21 +135,20 @@
             ngbDropdownToggle
           >
             <span class="icon-filter-lines header-icon"></span>
-            <p>Sort By</p>
-            <span class="arrow-icon"></span>
+            Sort By
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <ul>
               Order
               <li>
                 <button ngbDropdownItem>
-                  <p>Ascending</p>
+                  Ascending
                   <span class="checkmark"></span>
                 </button>
               </li>
               <li>
                 <button ngbDropdownItem>
-                  <p>Descending</p>
+                  Descending
                   <span class="checkmark"></span>
                 </button>
               </li>
@@ -168,31 +159,31 @@
               Sort
               <li>
                 <button ngbDropdownItem>
-                  <p>Name</p>
+                  Name
                   <span class="checkmark"></span>
                 </button>
               </li>
               <li>
                 <button ngbDropdownItem>
-                  <p>Projects</p>
+                  Projects
                   <span class="checkmark"></span>
                 </button>
               </li>
               <li>
                 <button ngbDropdownItem>
-                  <p>Workbooks</p>
+                  Workbooks
                   <span class="checkmark"></span>
                 </button>
               </li>
               <li>
                 <button ngbDropdownItem>
-                  <p>Created date</p>
+                  Created date
                   <span class="checkmark"></span>
                 </button>
               </li>
               <li>
                 <button ngbDropdownItem>
-                  <p>Updated date</p>
+                  Updated date
                   <span class="checkmark"></span>
                 </button>
               </li>
@@ -202,37 +193,32 @@
 
         <button class="d-btn d-btn--tertiary sm">
           <span class="icon-filter-funnel-01 header-icon"></span>
-          <p>Filter</p>
+          Filter
         </button>
 
-         <div ngbDropdown class="d-inline-block nav-dropdown">
+        <div ngbDropdown class="d-inline-block nav-dropdown">
           <button
             type="button"
             class="d-btn d-btn--tertiary sm"
             id="dropdownBasic1"
             ngbDropdownToggle
           >
-            <p>Home</p>
-            <span class="arrow-icon"></span>
+            Home
           </button>
           <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
             <ul>
               <li>
-                <button ngbDropdownItem class="active">
-                  <p>Home</p>
-                </button>
+                <button ngbDropdownItem class="active">Home</button>
               </li>
               <li>
-                <button ngbDropdownItem>
-                  <p>Personas</p>
-                </button>
+                <button ngbDropdownItem>Personas</button>
               </li>
             </ul>
           </div>
         </div>
 
-        <button class="squr-btn"><span class="icon-left"></span></button>
-        <button class="squr-btn"><span class="icon-right"></span></button>
+        <button class="d-btn d-btn--tertiary md"><span class="icon-left"></span></button>
+        <button class="d-btn d-btn--tertiary md"><span class="icon-right"></span></button>
       </div>
 
       <!-- tertiary button without image and in all size -->
@@ -242,7 +228,7 @@
         <button class="d-btn d-btn--tertiary md">{{ label }}</button>
         <button class="d-btn d-btn--tertiary lg">{{ label }}</button>
         <button class="d-btn d-btn--tertiary xl">{{ label }}</button>
-        <button class="d-btn d-btn--tertiary xxl">{{ label }}</button>
+        <button class="d-btn d-btn--tertiary double-xl">{{ label }}</button>
       </div>
     </div>
   </div>
@@ -261,12 +247,12 @@
 
       <!-- link button in all size -->
       <div class="containers">
-        <button class="d-btn d-btn--link vs">link</button>
-        <button class="d-btn d-btn--link sm">{{ label }}</button>
-        <button class="d-btn d-btn--link md">{{ label }}</button>
-        <button class="d-btn d-btn--link lg">{{ label }}</button>
-        <button class="d-btn d-btn--link xl">{{ label }}</button>
-        <button class="d-btn d-btn--link xxl">{{ label }}</button>
+        <a href="#" class="d-btn d-btn--link vs">Very Small</a>
+        <a href="#" class="d-btn d-btn--link sm">Small</a>
+        <a href="#" class="d-btn d-btn--link md">Medium</a>
+        <a href="#" class="d-btn d-btn--link lg">Large</a>
+        <a href="#" class="d-btn d-btn--link xl">Extra Large</a>
+        <a href="#" class="d-btn d-btn--link double-xl">XX Large</a>
       </div>
     </div>
   </div>
@@ -299,7 +285,7 @@
         <button class="d-btn loader loader--xl">
           <div class="loading"></div>
         </button>
-        <button class="d-btn loader loader--xxl">
+        <button class="d-btn loader loader--double-xl">
           <div class="loading"></div>
         </button>
       </div>

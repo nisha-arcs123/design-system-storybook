@@ -164,7 +164,7 @@ export const DoubleExtraLarge: Story = {
         code: `
         <div class="form-group">
       <label for="label" class="d-none">{{ label }}</label>
-      <div class="input-wrapper xxl">
+      <div class="input-wrapper double-xl">
         <select class="custom-select">
           <option value="">Select Option</option>
           <option value="1">Option 1</option>
